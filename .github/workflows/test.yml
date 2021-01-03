@@ -30,7 +30,7 @@ jobs:
 
     - name: Run mydra
       run: |
-        git clone https://github.com/NixOS/nixpkgs.git --branch master --single-branch nixpkgs  --depth 1
+        git clone https://github.com/NixOS/nixpkgs.git --branch master --single-branch nixpkgs  --depth 1 --quiet
         nix build -f .
         nix run -c mydra -f ./nixpkgs mydra.yml -t 60m -o report.json
 
@@ -43,6 +43,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        keep_files: true
         publish_dir: ./public
         destination_dir: ./
 
