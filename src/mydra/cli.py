@@ -38,7 +38,9 @@ def main():
         else None
     )
 
-    return execute(nixpkgs=args.nixpkgs, yml=args.yml, report=args.report, deadline=deadline)
+    return execute(
+        nixpkgs=args.nixpkgs, yml=args.yml, report=args.report, deadline=deadline
+    )
 
 
 def expand_package_attrnames(yml: str):
@@ -55,7 +57,9 @@ def expand_package_attrnames(yml: str):
         yield item
 
 
-def execute(nixpkgs: Path, yml: Path, report: Optional[str], deadline: Optional[datetime]):
+def execute(
+    nixpkgs: Path, yml: Path, report: Optional[str], deadline: Optional[datetime]
+):
     try:
         nixpkgs_hash = str(git.Repo(nixpkgs).commit())
     except git.exc.InvalidGitRepositoryError:
@@ -79,12 +83,14 @@ def execute(nixpkgs: Path, yml: Path, report: Optional[str], deadline: Optional[
     for drvpath, reason in failures.items():
         attr = drv2attr.get(drvpath, "")
         color = "white" if reason == "CANNOT BUILD" else "red"
-        rows.append({
-            "icon": colored("✗", color),
-            "attr": attr,
-            "status": reason,
-            "drvpath": drvpath,
-        })
+        rows.append(
+            {
+                "icon": colored("✗", color),
+                "attr": attr,
+                "status": reason,
+                "drvpath": drvpath,
+            }
+        )
 
     df = pd.DataFrame(rows)
     print(tabulate(df[["icon", "attr", "status"]].to_records(index=False)))
