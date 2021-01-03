@@ -1,3 +1,4 @@
+from __future__ import annotations
 # Based heavily on https://github.com/timokau/nix-bisect/blob/master/nix_bisect/nix.py
 import fcntl
 import itertools
@@ -12,7 +13,7 @@ from datetime import datetime
 from distutils.spawn import find_executable
 from pathlib import Path
 from subprocess import PIPE, CalledProcessError, run
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 import nix
 import pexpect
@@ -23,9 +24,12 @@ Attribute = str
 Drvpath = str
 
 
-def log(drv: Drvpath) -> str:
+def log(drv: Drvpath, out="return") -> Optional[str]:
     """Returns the build log of a store path."""
-    result = run(["nix", "log", "-f.", drv], stdout=PIPE, stderr=PIPE, text=True)
+    if out == "stdout":
+        result = run(["nix", "log", "-f.", drv], text=True)
+    else:
+        result = run(["nix", "log", "-f.", drv], stdout=PIPE, stderr=PIPE, text=True)
     if result.returncode != 0:
         return None
     return result.stdout

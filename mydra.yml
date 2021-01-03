@@ -38,4 +38,3 @@ pythonPackageNames:
 
 nativePackages:
   - elfx86exts
-  - jq
