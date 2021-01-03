@@ -6,8 +6,7 @@ pythonVersions:
 
 pythonPackageNames:
   - aiomysql
-  - aplpy
-  - tensorflow_2
+  - aplpy  
   # - asdf
   # - astropy
   # - astroquery
