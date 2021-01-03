@@ -1,11 +1,13 @@
 import argparse
 import itertools
+import json
 import os
 from contextlib import contextmanager
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Optional
 
+import git
 import pandas as pd
 import pytimeparse
 import strictyaml
@@ -62,20 +64,30 @@ def execute(nixpkgs: Path, yml: Path, report: Optional[str], deadline: Optional[
     for drvpath, storepath in successes.items():
         attr = drv2attr[drvpath]
         rows.append(
-            (
-                colored("✓", "green"),
-                attr,
-                "SUCCESS",
-            )
+            {
+                "icon": colored("✓", "green"),
+                "attr": attr,
+                "status": "SUCCESS",
+                "drvpath": drvpath,
+            }
         )
     for drvpath, reason in failures.items():
         attr = drv2attr.get(drvpath, "")
         color = "white" if reason == "CANNOT BUILD" else "red"
-        rows.append((colored("✗", color), attr, reason))
+        rows.append({
+            "icon": colored("✗", color),
+            "attr": attr,
+            "status": reason,
+            "drvpath": drvpath,
+        })
 
-    print()
-    print(tabulate(rows))
+    df = pd.DataFrame(rows)
+    print(tabulate(df[["icon", "attr", "status"]].to_records(index=False)))
 
     if report is not None:
-        with open(report) as f:
-            pd.DataFrame(data=rows, columns=["icon", "attr", "status"]).to_json(f, indent=4)
+        outjson = {
+            "nixpkgs": str(git.Repo(nixpkgs).commit()),
+            "build_results": rows,
+        }
+        with open(report, "w") as f:
+            json.dump(outjson, f, indent=4)

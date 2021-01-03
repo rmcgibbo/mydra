@@ -27,6 +27,7 @@ in buildPythonPackage {
   nativeBuildInputs = [ flit ];
   propagatedBuildInputs = [
     appdirs
+    GitPython
     pandas
     pexpect
     pythonix
