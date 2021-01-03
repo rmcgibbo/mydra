@@ -21,6 +21,12 @@ jobs:
       with:
         name: rmcgibbo-mydra
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+    - name: Cache build failures
+      uses: actions/cache@v2
+      with:
+        path: |
+          ~/.cache/mydra
+        key: ${{ runner.os }}-mydra
 
     # Run tool
     - run: wget -qO- https://codeload.github.com/NixOS/nixpkgs/tar.gz/master | tar -xz
@@ -28,18 +34,11 @@ jobs:
     - run: nix run -c mydra -f ./nixpkgs-master mydra.yml -t 60m -o report.json
     - run: mkdir public && cp -r ~/.cache/mydra/logs ./public && cp report.json ./public/report-$GITHUB_RUN_NUMBER.json
 
-    # Deploy html
-    - name: Deploy
+    # Deploy
+    - name: Deploy GH pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
         destination_dir: ./
 
-    # Cache build failures
-    - name: Cache multiple paths
-      uses: actions/cache@v2
-      with:
-        path: |
-          ~/.cache/mydra
-        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}

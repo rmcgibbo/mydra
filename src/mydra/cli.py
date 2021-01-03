@@ -86,7 +86,7 @@ def execute(nixpkgs: Path, yml: Path, report: Optional[str], deadline: Optional[
 
     if report is not None:
         outjson = {
-            "nixpkgs": str(git.Repo(nixpkgs).commit()),
+            # "nixpkgs": str(git.Repo(nixpkgs).commit()),
             "build_results": rows,
         }
         with open(report, "w") as f:
