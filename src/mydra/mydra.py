@@ -168,8 +168,9 @@ def _build_uncached(
         if not build_process.closed:
             build_process.setwinsize(a[0], a[1])
 
-    _update_build_winsize()
-    signal.signal(signal.SIGWINCH, lambda _sig, _data: _update_build_winsize())
+    if sys.stdout.isatty():
+        _update_build_winsize()
+        signal.signal(signal.SIGWINCH, lambda _sig, _data: _update_build_winsize())
 
     drvs_failed = {}
     try:
