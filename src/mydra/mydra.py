@@ -158,6 +158,7 @@ def _build_uncached(
     if not sys.stdout.isatty():
         cmd += ["--print-build-logs"]
     print(f"Building {drvs}")
+    sys.stdout.flush()
     build_process = pexpect.spawn(
         "nix",
         cmd + drvs,
