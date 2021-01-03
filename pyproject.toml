@@ -1,0 +1,10 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "mydra"
+author = "Robert T. McGibbon"
+
+[tool.flit.scripts]
+mydra = "mydra.cli:main"
