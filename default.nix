@@ -27,6 +27,7 @@ in buildPythonPackage {
   nativeBuildInputs = [ flit ];
   propagatedBuildInputs = [
     appdirs
+    pandas
     pexpect
     pythonix
     pytimeparse

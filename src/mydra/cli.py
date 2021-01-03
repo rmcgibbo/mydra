@@ -6,8 +6,10 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Optional
 
+import pandas as pd
 import pytimeparse
 import strictyaml
+from appdirs import AppDirs
 from tabulate import tabulate
 from termcolor import colored
 
@@ -51,10 +53,9 @@ def expand_package_attrnames(yml: str):
 
 
 def execute(nixpkgs: Path, yml: Path, deadline: Optional[datetime]):
-    with github_ci_group("Build logs"):
-        packages = list(expand_package_attrnames(yml))
-        drv2attr = instantiate(packages, nixpkgs)
-        successes, failures = build(drv2attr, deadline=deadline)
+    packages = list(expand_package_attrnames(yml))
+    drv2attr = instantiate(packages, nixpkgs)
+    successes, failures = build(drv2attr, deadline=deadline)
 
     rows = []
     for drvpath, storepath in successes.items():
@@ -74,17 +75,8 @@ def execute(nixpkgs: Path, yml: Path, deadline: Optional[datetime]):
     print()
     print(tabulate(rows))
 
-    with github_ci_group("Failure logs"):
-        for drvpath in failures:
-            print(colored(f"$ nix log -f. {drvpath}", "red"))
-            log(drvpath, "stdout")
+    cache_dir = Path(AppDirs("mydra").user_cache_dir)
+    cache_dir.mkdir(parents=True, exist_ok=True)
 
-
-@contextmanager
-def github_ci_group(s: str):
-    if os.environ.get("GITHUB_ACTIONS") == "true":
-        print(f"::group::{s}")
-        yield
-        print("::endgroup::")
-    else:
-        yield
+    with open("report.json") as f:
+        pd.DataFrame(data=rows, columns=["icon", "attr", "status"]).to_json(f, indent=4)

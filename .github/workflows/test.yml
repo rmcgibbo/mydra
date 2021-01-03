@@ -26,7 +26,7 @@ jobs:
     - run: wget -qO- https://codeload.github.com/NixOS/nixpkgs/tar.gz/master | tar -xz
     - run: nix build -f .
     - run: nix run -c mydra -f ./nixpkgs-master mydra.yml -t 60m
-    - run: mkdir public && echo "hell world" > public/$GITHUB_RUN_NUMBER.html
+    - run: mkdir public && cp -r ~/.cache/mydra/logs ./public && cp ~/.cache/mydra/report.json ./public/report-$GITHUB_RUN_NUMBER.json
 
     # Deploy html
     - name: Deploy
@@ -34,4 +34,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
-        destination_dir: subdir
+        destination_dir: ./
