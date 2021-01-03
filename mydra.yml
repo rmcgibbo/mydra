@@ -21,20 +21,20 @@ pythonPackageNames:
   - fixtures
   - flower
   - geopandas
-  # - gpy
-  # - hmmlearn
-  # - imageio-ffmpeg
-  # - imbalanced-learn
-  # - macropy
-  # - numexpr
-  # - pandas
-  # - paramz
-  # - pyerfa
-  # - reproject
-  # - scipy
-  # - spectral-cube
-  # - sunpy
-  # - typing-inspect
+  - gpy
+  - hmmlearn
+  - imageio-ffmpeg
+  - imbalanced-learn
+  - macropy
+  - numexpr
+  - pandas
+  - paramz
+  - pyerfa
+  - reproject
+  - scipy
+  - spectral-cube
+  - sunpy
+  - typing-inspect
 
 nativePackages:
   - elfx86exts
