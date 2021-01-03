@@ -7,20 +7,20 @@ pythonVersions:
 pythonPackageNames:
   - aiomysql
   - aplpy  
-  # - asdf
-  # - astropy
-  # - astroquery
-  # - billiard
-  # - clifford
-  # - datasets
-  # - datasette
-  # - dask
-  # - drms
-  # - fastparquet
-  # - fiona
-  # - fixtures
-  # - flower
-  # - geopandas
+  - asdf
+  - astropy
+  - astroquery
+  - billiard
+  - clifford
+  - datasets
+  - datasette
+  - dask
+  - drms
+  - fastparquet
+  - fiona
+  - fixtures
+  - flower
+  - geopandas
   # - gpy
   # - hmmlearn
   # - imageio-ffmpeg
