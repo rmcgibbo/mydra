@@ -56,6 +56,11 @@ def expand_package_attrnames(yml: str):
 
 
 def execute(nixpkgs: Path, yml: Path, report: Optional[str], deadline: Optional[datetime]):
+    try:
+        nixpkgs_hash = str(git.Repo(nixpkgs).commit())
+    except git.exc.InvalidGitRepositoryError:
+        nixpkgs_hash = None
+
     packages = list(expand_package_attrnames(yml))
     drv2attr = instantiate(packages, nixpkgs)
     successes, failures = build(drv2attr, deadline=deadline)
@@ -86,7 +91,7 @@ def execute(nixpkgs: Path, yml: Path, report: Optional[str], deadline: Optional[
 
     if report is not None:
         outjson = {
-            # "nixpkgs": str(git.Repo(nixpkgs).commit()),
+            "nixpkgs": nixpkgs_hash,
             "build_results": rows,
         }
         with open(report, "w") as f:

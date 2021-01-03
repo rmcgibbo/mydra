@@ -28,11 +28,15 @@ jobs:
           ~/.cache/mydra
         key: ${{ runner.os }}-mydra
 
-    # Run tool
-    - run: wget -qO- https://codeload.github.com/NixOS/nixpkgs/tar.gz/master | tar -xz
-    - run: nix build -f .
-    - run: nix run -c mydra -f ./nixpkgs-master mydra.yml -t 60m -o report.json
-    - run: mkdir public && cp -r ~/.cache/mydra/logs ./public && cp report.json ./public/report-$GITHUB_RUN_NUMBER.json
+    - name: Run mydra
+      run: |
+        git clone https://github.com/NixOS/nixpkgs.git --branch master --single-branch nixpkgs  --depth 1
+        nix build -f .
+        nix run -c mydra -f ./nixpkgs mydra.yml -t 60m -o report.json
+
+        mkdir public
+        cp -r ~/.cache/mydra/logs ./public
+        cp report.json ./public/report-$GITHUB_RUN_NUMBER.json
 
     # Deploy
     - name: Deploy GH pages
