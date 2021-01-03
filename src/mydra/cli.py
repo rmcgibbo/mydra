@@ -14,14 +14,12 @@ def main():
         "-f",
         "--nixpkgs",
         help="Path to nixpkgs git checkout",
-        default="<master>",
+        required=True,
+        type=os.path.abspath,
     )
     p.add_argument("yml")
-
     args = p.parse_args()
-    if args.nixpkgs.endswith("/"):
-        args.nixpkgs = args.nixpkgs.rstrip("/")
-
+    
     return execute(nixpkgs=args.nixpkgs, yml=args.yml)
 
 
