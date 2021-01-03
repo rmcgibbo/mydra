@@ -15,5 +15,5 @@ jobs:
         name: rmcgibbo-mydra
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
     - run: wget -qO- https://codeload.github.com/NixOS/nixpkgs/tar.gz/master | tar -xz
-    - run: nix build .
+    - run: nix build -f .
     - run: nix run -c mydra -f ./nixpkgs-master mydra.yml
