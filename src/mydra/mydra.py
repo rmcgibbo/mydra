@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 # Based heavily on https://github.com/timokau/nix-bisect/blob/master/nix_bisect/nix.py
 import fcntl
 import itertools

@@ -4,6 +4,7 @@ import os
 from contextlib import contextmanager
 from datetime import datetime, timedelta
 from pathlib import Path
+from typing import Optional
 
 import pytimeparse
 import strictyaml
@@ -22,11 +23,15 @@ def main():
         required=True,
         type=os.path.abspath,
     )
-    p.add_argument("-t", "--timeout", type=pytimeparse.parse, default=float("inf"))
+    p.add_argument("-t", "--timeout", type=pytimeparse.parse, default=None)
     p.add_argument("yml")
 
     args = p.parse_args()
-    deadline = datetime.now() + timedelta(seconds=args.timeout)
+    deadline = (
+        (datetime.now() + timedelta(seconds=args.timeout))
+        if args.timeout is not None
+        else None
+    )
 
     return execute(nixpkgs=args.nixpkgs, yml=args.yml, deadline=deadline)
 
@@ -45,7 +50,7 @@ def expand_package_attrnames(yml: str):
         yield item
 
 
-def execute(nixpkgs: Path, yml: Path, deadline: datetime):
+def execute(nixpkgs: Path, yml: Path, deadline: Optional[datetime]):
     with github_ci_group("Build logs"):
         packages = list(expand_package_attrnames(yml))
         drv2attr = instantiate(packages, nixpkgs)
@@ -54,12 +59,18 @@ def execute(nixpkgs: Path, yml: Path, deadline: datetime):
     rows = []
     for drvpath, storepath in successes.items():
         attr = drv2attr[drvpath]
-        rows.append((colored("✓", "green"), attr, "SUCCESS",))
+        rows.append(
+            (
+                colored("✓", "green"),
+                attr,
+                "SUCCESS",
+            )
+        )
     for drvpath, reason in failures.items():
         attr = drv2attr.get(drvpath, "")
         color = "white" if reason == "CANNOT BUILD" else "red"
         rows.append((colored("✗", color), attr, reason))
-    
+
     print()
     print(tabulate(rows))
 
