@@ -27,6 +27,7 @@ def main():
     )
     p.add_argument("-t", "--timeout", type=pytimeparse.parse, default=None)
     p.add_argument("yml")
+    p.add_argument("-o", "--report", default=None)
 
     args = p.parse_args()
     deadline = (
@@ -35,7 +36,7 @@ def main():
         else None
     )
 
-    return execute(nixpkgs=args.nixpkgs, yml=args.yml, deadline=deadline)
+    return execute(nixpkgs=args.nixpkgs, yml=args.yml, report=args.report, deadline=deadline)
 
 
 def expand_package_attrnames(yml: str):
@@ -52,7 +53,7 @@ def expand_package_attrnames(yml: str):
         yield item
 
 
-def execute(nixpkgs: Path, yml: Path, deadline: Optional[datetime]):
+def execute(nixpkgs: Path, yml: Path, report: Optional[str], deadline: Optional[datetime]):
     packages = list(expand_package_attrnames(yml))
     drv2attr = instantiate(packages, nixpkgs)
     successes, failures = build(drv2attr, deadline=deadline)
@@ -75,8 +76,6 @@ def execute(nixpkgs: Path, yml: Path, deadline: Optional[datetime]):
     print()
     print(tabulate(rows))
 
-    cache_dir = Path(AppDirs("mydra").user_cache_dir)
-    cache_dir.mkdir(parents=True, exist_ok=True)
-
-    with open("report.json") as f:
-        pd.DataFrame(data=rows, columns=["icon", "attr", "status"]).to_json(f, indent=4)
+    if report is not None:
+        with open(report) as f:
+            pd.DataFrame(data=rows, columns=["icon", "attr", "status"]).to_json(f, indent=4)

@@ -111,6 +111,7 @@ def build(
     logs_dir = cache_dir.joinpath("logs")
     logs_dir.mkdir(exist_ok=True)
 
+    cache_file = cache_dir.joinpath("build-results.json")
     if (use_cache or write_cache) and cache_file.exists():
         with open(cache_file, "r") as cf:
             result_cache = json.loads(cf.read())
@@ -142,6 +143,9 @@ def build(
             if failure_log is not None:
                 with open(logs_dir.joinpath(Path(drv).name), "w") as f:
                     f.write(failure_log)
+        with open(cache_file, "w") as cf:
+            # Write human-readable json for easy hacking.
+            cf.write(json.dumps(result_cache, indent=4))
 
     return success_storepaths, failures
 
