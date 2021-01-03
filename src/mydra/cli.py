@@ -1,10 +1,13 @@
-import os
 import argparse
 import itertools
+import os
+from datetime import datetime, timedelta
+from pathlib import Path
 
+import pytimeparse
 import strictyaml
-from termcolor import colored
 from tabulate import tabulate
+from termcolor import colored
 
 from .mydra import build, instantiate
 
@@ -18,10 +21,13 @@ def main():
         required=True,
         type=os.path.abspath,
     )
+    p.add_argument("-t", "--timeout", type=pytimeparse.parse, default=float("inf"))
     p.add_argument("yml")
-    args = p.parse_args()
 
-    return execute(nixpkgs=args.nixpkgs, yml=args.yml)
+    args = p.parse_args()
+    deadline = datetime.now() + timedelta(seconds=args.timeout)
+
+    return execute(nixpkgs=args.nixpkgs, yml=args.yml, deadline=deadline)
 
 
 def expand_package_attrnames(yml: str):
@@ -38,10 +44,10 @@ def expand_package_attrnames(yml: str):
         yield item
 
 
-def execute(nixpkgs: str, yml: str):
+def execute(nixpkgs: Path, yml: Path, deadline: datetime):
     packages = list(expand_package_attrnames(yml))
     drv2attr = instantiate(packages, nixpkgs)
-    successes, failures = build(drv2attr, use_cache=False)
+    successes, failures = build(drv2attr, deadline=deadline)
 
     rows = []
     for drvpath, storepath in successes.items():

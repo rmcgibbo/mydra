@@ -5,8 +5,9 @@ pythonVersions:
   - 39
 
 pythonPackageNames:
-  # - aiomysql
-  # - aplpy
+  - aiomysql
+  - aplpy
+  - tensorflow_2
   # - asdf
   # - astropy
   # - astroquery
@@ -29,7 +30,7 @@ pythonPackageNames:
   # - numexpr
   # - pandas
   # - paramz
-  - pyerfa
+  # - pyerfa
   # - reproject
   # - scipy
   # - spectral-cube

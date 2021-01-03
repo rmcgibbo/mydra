@@ -29,6 +29,7 @@ in buildPythonPackage {
     appdirs
     pexpect
     pythonix
+    pytimeparse
     strictyaml
     tabulate
     termcolor

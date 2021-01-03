@@ -8,6 +8,7 @@ import signal
 import struct
 import sys
 import termios
+from datetime import datetime
 from distutils.spawn import find_executable
 from pathlib import Path
 from subprocess import PIPE, CalledProcessError, run
@@ -87,7 +88,10 @@ in pkgs.lib.genAttrs maybePackages (n: getDrvPath (getPkg n))
 
 
 def build(
-    drvs: Dict[Drvpath, Attribute], use_cache=True, write_cache=True
+    drvs: Dict[Drvpath, Attribute],
+    use_cache: bool = True,
+    write_cache: bool = True,
+    deadline: datetime = None,
 ) -> Tuple[Dict[Drvpath, Storepath], Dict[Drvpath, str]]:
     """Builds `drvs`, returning a list of store paths"""
 
@@ -119,11 +123,16 @@ def build(
                 del drvs_to_build[drv]
                 failures[drv] = result_cache[drv]
 
-    success_storepaths, new_failures = _build_uncached(list(drvs_to_build))
+    success_storepaths, new_failures = _build_uncached(
+        list(drvs_to_build), deadline=deadline
+    )
     failures.update(new_failures)
 
     if write_cache:
-        result_cache.update(failures)
+        for drv, reason in failures.items():
+            if reason not in ("MYDRA TIMEOUT",):
+                result_cache[drv] = reason
+
         for drv in failures:
             failure_log = log(drv)
             if failure_log is not None:
@@ -138,6 +147,7 @@ def build(
 
 def _build_uncached(
     drvs: List[Drvpath],
+    deadline: datetime = None,
 ) -> Tuple[Dict[Drvpath, Storepath], Dict[Drvpath, str]]:
     if len(drvs) == 0:
         # nothing to do
@@ -157,8 +167,10 @@ def _build_uncached(
     cmd = ["build", "--no-link", "--keep-going"]
     if not sys.stdout.isatty():
         cmd += ["--print-build-logs"]
-    print(f"Building {drvs}")
-    sys.stdout.flush()
+
+    # print(f"Building {drvs}")
+    # sys.stdout.flush()
+
     build_process = pexpect.spawn(
         "nix",
         cmd + drvs,
@@ -178,6 +190,8 @@ def _build_uncached(
         _update_build_winsize()
         signal.signal(signal.SIGWINCH, lambda _sig, _data: _update_build_winsize())
 
+    TIMED_OUT = False
+
     drvs_failed = {}
     try:
         while True:
@@ -185,15 +199,22 @@ def _build_uncached(
             # can only reliably use this for the final error output, not for
             # the streamed output of the actual build (since `nix build` skips
             # lines and trims output). Use `nix.log` for that.
-            build_process.expect(
-                [
-                    _CANNOT_BUILD_PAT,
-                    _BUILD_FAILED_PAT,
-                    _BUILD_TIMEOUT_PAT,
-                    _BUILDER_FAILED_PAT,
-                ],
-                timeout=None,
-            )
+            try:
+                build_process.expect(
+                    [
+                        _CANNOT_BUILD_PAT,
+                        _BUILD_FAILED_PAT,
+                        _BUILD_TIMEOUT_PAT,
+                        _BUILDER_FAILED_PAT,
+                    ],
+                    timeout=(deadline - datetime.now()).total_seconds()
+                    if deadline is not None
+                    else None,
+                )
+            except pexpect.exceptions.TIMEOUT:
+                print("Timeout", file=sys.stderr)
+                TIMED_OUT = True
+                break
 
             line = build_process.match.group(0)
             # Re-match to find out which pattern matched. This doesn't happen very
@@ -230,6 +251,14 @@ def _build_uncached(
         pass
 
     drvs_succeeded = list(set(drvs) - set(drvs_failed))
+
+    if TIMED_OUT:
+        build_process.kill(9)
+        dry = build_dry(drvs_succeeded)
+        for drv in dry[0] + dry[1]:
+            drvs_failed[drv] = "MYDRA TIMEOUT"
+            drvs_succeeded.remove(drv)
+
     drvs_succeeded_names = {
         os.path.splitext(e)[0].split("-", 1)[1] for e in drvs_succeeded
     }
