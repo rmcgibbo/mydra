@@ -81,7 +81,8 @@ in pkgs.lib.genAttrs maybePackages (n: getDrvPath (getPkg n))
         nixpkgs=nixpkgs, attribs=" ".join(answer.values())
     )
     cmd2 = [find_executable("nix-instantiate"), "-E", expr2]
-    q = run(cmd2, stdout=PIPE, stderr=PIPE, check=True, shell=False)
+    run(cmd2, stdout=PIPE, stderr=PIPE, check=True, shell=False)
+
     return answer
 
 
@@ -153,9 +154,12 @@ def _build_uncached(
     # print(f"nix build {' '.join(drvs)}")
     # We need to use pexpect instead of subprocess.Popen here, since `nix
     # build` will not produce its regular output when it does not detect a tty.
+    cmd = ["build", "--no-link", "--keep-going"]
+    if not sys.stdout.isatty():
+        cmd += ["--print-build-logs"]
     build_process = pexpect.spawn(
         "nix",
-        ["build", "--no-link", "--keep-going"] + drvs,
+        cmd + drvs,
         logfile=sys.stdout.buffer,
     )
 
@@ -224,6 +228,9 @@ def _build_uncached(
         pass
 
     drvs_succeeded = list(set(drvs) - set(drvs_failed))
+    drvs_succeeded_names = {
+        os.path.splitext(e)[0].split("-", 1)[1] for e in drvs_succeeded
+    }
 
     location_process = run(
         ["nix-store", "--realize"] + drvs_succeeded,
@@ -232,5 +239,10 @@ def _build_uncached(
         text=True,
         check=True,
     )
-    storepaths = [e for e in location_process.stdout.splitlines() if e]
+    storepaths = [
+        e
+        for e in location_process.stdout.splitlines()
+        if e and e.split("-", 1)[1] in drvs_succeeded_names
+    ]
+    assert len(storepaths) == len(drvs_succeeded)
     return {d: sp for d, sp in zip(drvs_succeeded, storepaths)}, drvs_failed

@@ -20,7 +20,7 @@ def main():
     )
     p.add_argument("yml")
     args = p.parse_args()
-    
+
     return execute(nixpkgs=args.nixpkgs, yml=args.yml)
 
 
@@ -29,7 +29,7 @@ def expand_package_attrnames(yml: str):
         cfg = strictyaml.load(f.read()).data
     if cfg["mydraApi"] != "0":
         raise NotImplementedError(f"Unsupported mydraApi = {cfg['mydraApi']}")
-    
+
     for pyVer, name in itertools.product(
         cfg["pythonVersions"], cfg["pythonPackageNames"]
     ):
@@ -41,7 +41,7 @@ def expand_package_attrnames(yml: str):
 def execute(nixpkgs: str, yml: str):
     packages = list(expand_package_attrnames(yml))
     drv2attr = instantiate(packages, nixpkgs)
-    successes, failures = build(drv2attr)
+    successes, failures = build(drv2attr, use_cache=False)
 
     rows = []
     for drvpath, storepath in successes.items():

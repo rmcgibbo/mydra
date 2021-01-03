@@ -4,7 +4,7 @@ pythonVersions:
   - 38
   - 39
 
-pythonPackageNames:  
+pythonPackageNames:
   - aiomysql
   - aplpy
   - asdf
@@ -38,3 +38,4 @@ pythonPackageNames:
 
 nativePackages:
   - elfx86exts
+  - jq
