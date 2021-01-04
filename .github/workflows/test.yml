@@ -33,6 +33,7 @@ jobs:
     - name: Run mydra
       run: |
         # Sync logs down
+        mkdir ~/.cache/mydra
         nix-shell -p awscli2 --command 'bash -c "aws s3 sync ~/.cache/mydra/ s3://rmcgibbo-mydra-cache"'
 
         ls ~/.cache/mydra  # Initial
