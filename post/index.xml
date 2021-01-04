@@ -6,18 +6,18 @@
     <description>Recent content in Posts on mydra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Jan 2021 22:53:52 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 Jan 2021 23:19:31 +0000</lastBuildDate>
     
 	<atom:link href="https://rmcgibbo.github.io/mydra/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>nixpkgs 7cd7ff7a</title>
-      <link>https://rmcgibbo.github.io/mydra/post/nixpkgs-7cd7ff7a/</link>
-      <pubDate>Mon, 04 Jan 2021 22:53:52 +0000</pubDate>
+      <title>nixpkgs a43963db</title>
+      <link>https://rmcgibbo.github.io/mydra/post/nixpkgs-a43963db/</link>
+      <pubDate>Mon, 04 Jan 2021 23:19:31 +0000</pubDate>
       
-      <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-7cd7ff7a/</guid>
-      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/7cd7ff7acbb33be72d7a4a6c7c929d8df7a2e188&#34;&gt;7cd7ff7a&lt;/a&gt;; Jan 4 17:53 PM EST&lt;br&gt;
+      <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-a43963db/</guid>
+      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/a43963db12774a01af9159981d877bb8326463ca&#34;&gt;a43963db&lt;/a&gt;; Jan 4 6:19 PM EST&lt;br&gt;
 failure(s): flatbuffers-1.12.0&lt;/p&gt;</description>
     </item>
     
@@ -27,7 +27,7 @@ failure(s): flatbuffers-1.12.0&lt;/p&gt;</description>
       <pubDate>Mon, 04 Jan 2021 18:41:30 +0000</pubDate>
       
       <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-f284b440/</guid>
-      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/f284b44089bfd83bdba704789cb4ac457c374831&#34;&gt;f284b440&lt;/a&gt;; Jan 4 13:41 PM EST&lt;br&gt;
+      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/f284b44089bfd83bdba704789cb4ac457c374831&#34;&gt;f284b440&lt;/a&gt;; Jan 4 1:41 PM EST&lt;br&gt;
 failure(s): flatbuffers-1.12.0&lt;/p&gt;</description>
     </item>
     
