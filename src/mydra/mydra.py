@@ -108,7 +108,7 @@ def build(
 
     cache_dir = Path(AppDirs("mydra").user_cache_dir)
     cache_dir.mkdir(parents=True, exist_ok=True)
-    logs_dir = cache_dir.joinpath("logs")
+    logs_dir = Path(AppDirs("mydra-logs").user_cache_dir)
     logs_dir.mkdir(exist_ok=True)
 
     cache_file = cache_dir.joinpath("mydra-failures.json")

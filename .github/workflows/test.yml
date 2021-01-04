@@ -31,22 +31,27 @@ jobs:
         aws-region: us-east-1
 
     - name: Run mydra
+      env:
+        AWS_BUCKET_CACHE: "s3://rmcgibbo-mydra-cache"
+        AWS_BUCKET_LOGS: "s3://rmcgibbo-mydra-build-logs"
       run: |
-        # Sync logs down
+        # Sync down build-{hash}.json files and mydra-failures.json
+        # We really only need mydra-failures.json now, the other ones are used for the
+        # mydra-generate step.
         mkdir ~/.cache/mydra
-        nix-shell -p awscli2 --command 'bash -c "aws s3 sync --quiet s3://rmcgibbo-mydra-cache ~/.cache/mydra/"'
+        nix run nixpkgs.awscli2 -c aws s3 sync --quiet $AWS_BUCKET_CACHE ~/.cache/mydra/
 
         ls ~/.cache/mydra  # Initial
         git clone https://github.com/NixOS/nixpkgs.git --branch master --single-branch nixpkgs  --depth 1 --quiet
         nix build -f .
         nix run -c mydra -f ./nixpkgs mydra.yml -t 60m
         nix run -c mydra-generate
+
         ls ~/.cache/mydra  # Final
         cat ~/.cache/mydra/mydra-failures.json
-        cp -r ~/.cache/mydra/logs ./public/logs
 
-        # Sync more logs up
-        nix-shell -p awscli2 --command 'bash -c "aws s3 sync --quiet ~/.cache/mydra/ s3://rmcgibbo-mydra-cache"'
+        # Upload new build logs
+        nix run nixpkgs.awscli2 -c aws s3 sync --quiet ~/.cache/mydra-logs/ $AWS_BUCKET_LOGS
 
     # Deploy
     - name: Deploy GH pages
