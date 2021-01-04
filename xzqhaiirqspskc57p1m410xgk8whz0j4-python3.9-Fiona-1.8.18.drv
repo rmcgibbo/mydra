@@ -1,0 +1,659 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing setuptools-build-hook
+Using setuptoolsBuildPhase
+Using setuptoolsShellHook
+Sourcing pip-install-hook
+Using pipInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing setuptools-check-hook
+unpacking sources
+unpacking source archive /nix/store/f5a3r1wk5ia1kzwc52mbbmrrdqa0sgma-Fiona-1.8.18.tar.gz
+source root is Fiona-1.8.18
+setting SOURCE_DATE_EPOCH to timestamp 1605637894 of file Fiona-1.8.18/fiona/_shim3.c
+patching sources
+configuring
+no configure script, doing nothing
+building
+Executing setuptoolsBuildPhase
+/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/lib/python3.9/distutils/dist.py:274: UserWarning: Unknown distribution option: 'metadata_version'
+  warnings.warn(msg)
+/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/lib/python3.9/distutils/dist.py:274: UserWarning: Unknown distribution option: 'requires_python'
+  warnings.warn(msg)
+/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/lib/python3.9/distutils/dist.py:274: UserWarning: Unknown distribution option: 'requires_external'
+  warnings.warn(msg)
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib.linux-x86_64-3.9
+creating build/lib.linux-x86_64-3.9/fiona
+copying ./fiona/io.py -> build/lib.linux-x86_64-3.9/fiona
+copying ./fiona/path.py -> build/lib.linux-x86_64-3.9/fiona
+copying ./fiona/_show_versions.py -> build/lib.linux-x86_64-3.9/fiona
+copying ./fiona/vfs.py -> build/lib.linux-x86_64-3.9/fiona
+copying ./fiona/drvsupport.py -> build/lib.linux-x86_64-3.9/fiona
+copying ./fiona/crs.py -> build/lib.linux-x86_64-3.9/fiona
+copying ./fiona/transform.py -> build/lib.linux-x86_64-3.9/fiona
+copying ./fiona/_loading.py -> build/lib.linux-x86_64-3.9/fiona
+copying ./fiona/logutils.py -> build/lib.linux-x86_64-3.9/fiona
+copying ./fiona/rfc3339.py -> build/lib.linux-x86_64-3.9/fiona
+copying ./fiona/compat.py -> build/lib.linux-x86_64-3.9/fiona
+copying ./fiona/__init__.py -> build/lib.linux-x86_64-3.9/fiona
+copying ./fiona/inspector.py -> build/lib.linux-x86_64-3.9/fiona
+copying ./fiona/errors.py -> build/lib.linux-x86_64-3.9/fiona
+copying ./fiona/session.py -> build/lib.linux-x86_64-3.9/fiona
+copying ./fiona/env.py -> build/lib.linux-x86_64-3.9/fiona
+copying ./fiona/collection.py -> build/lib.linux-x86_64-3.9/fiona
+creating build/lib.linux-x86_64-3.9/fiona/fio
+copying ./fiona/fio/distrib.py -> build/lib.linux-x86_64-3.9/fiona/fio
+copying ./fiona/fio/main.py -> build/lib.linux-x86_64-3.9/fiona/fio
+copying ./fiona/fio/calc.py -> build/lib.linux-x86_64-3.9/fiona/fio
+copying ./fiona/fio/cat.py -> build/lib.linux-x86_64-3.9/fiona/fio
+copying ./fiona/fio/collect.py -> build/lib.linux-x86_64-3.9/fiona/fio
+copying ./fiona/fio/info.py -> build/lib.linux-x86_64-3.9/fiona/fio
+copying ./fiona/fio/load.py -> build/lib.linux-x86_64-3.9/fiona/fio
+copying ./fiona/fio/helpers.py -> build/lib.linux-x86_64-3.9/fiona/fio
+copying ./fiona/fio/__init__.py -> build/lib.linux-x86_64-3.9/fiona/fio
+copying ./fiona/fio/filter.py -> build/lib.linux-x86_64-3.9/fiona/fio
+copying ./fiona/fio/insp.py -> build/lib.linux-x86_64-3.9/fiona/fio
+copying ./fiona/fio/rm.py -> build/lib.linux-x86_64-3.9/fiona/fio
+copying ./fiona/fio/options.py -> build/lib.linux-x86_64-3.9/fiona/fio
+copying ./fiona/fio/bounds.py -> build/lib.linux-x86_64-3.9/fiona/fio
+copying ./fiona/fio/dump.py -> build/lib.linux-x86_64-3.9/fiona/fio
+copying ./fiona/fio/ls.py -> build/lib.linux-x86_64-3.9/fiona/fio
+copying ./fiona/fio/env.py -> build/lib.linux-x86_64-3.9/fiona/fio
+running build_ext
+building 'fiona.schema' extension
+creating build/temp.linux-x86_64-3.9
+creating build/temp.linux-x86_64-3.9/fiona
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/include -I/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/include/python3.9 -c fiona/schema.c -o build/temp.linux-x86_64-3.9/fiona/schema.o
+gcc -shared -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib build/temp.linux-x86_64-3.9/fiona/schema.o -L/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/lib -L/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/lib -lgdal -o build/lib.linux-x86_64-3.9/fiona/schema.cpython-39-x86_64-linux-gnu.so
+building 'fiona._transform' extension
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/include -I/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/include/python3.9 -c fiona/_transform.cpp -o build/temp.linux-x86_64-3.9/fiona/_transform.o -std=c++11
+g++ -shared -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib build/temp.linux-x86_64-3.9/fiona/_transform.o -L/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/lib -L/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/lib -lgdal -o build/lib.linux-x86_64-3.9/fiona/_transform.cpython-39-x86_64-linux-gnu.so
+building 'fiona._geometry' extension
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/include -I/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/include/python3.9 -c fiona/_geometry.c -o build/temp.linux-x86_64-3.9/fiona/_geometry.o
+gcc -shared -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib build/temp.linux-x86_64-3.9/fiona/_geometry.o -L/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/lib -L/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/lib -lgdal -o build/lib.linux-x86_64-3.9/fiona/_geometry.cpython-39-x86_64-linux-gnu.so
+building 'fiona._crs' extension
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/include -I/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/include/python3.9 -c fiona/_crs.c -o build/temp.linux-x86_64-3.9/fiona/_crs.o
+gcc -shared -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib build/temp.linux-x86_64-3.9/fiona/_crs.o -L/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/lib -L/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/lib -lgdal -o build/lib.linux-x86_64-3.9/fiona/_crs.cpython-39-x86_64-linux-gnu.so
+building 'fiona._env' extension
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/include -I/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/include/python3.9 -c fiona/_env.c -o build/temp.linux-x86_64-3.9/fiona/_env.o
+gcc -shared -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib build/temp.linux-x86_64-3.9/fiona/_env.o -L/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/lib -L/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/lib -lgdal -o build/lib.linux-x86_64-3.9/fiona/_env.cpython-39-x86_64-linux-gnu.so
+building 'fiona._err' extension
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/include -I/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/include/python3.9 -c fiona/_err.c -o build/temp.linux-x86_64-3.9/fiona/_err.o
+gcc -shared -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib build/temp.linux-x86_64-3.9/fiona/_err.o -L/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/lib -L/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/lib -lgdal -o build/lib.linux-x86_64-3.9/fiona/_err.cpython-39-x86_64-linux-gnu.so
+building 'fiona.ogrext' extension
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/include -I/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/include/python3.9 -c fiona/ogrext.c -o build/temp.linux-x86_64-3.9/fiona/ogrext.o
+fiona/ogrext.c: In function ‘__pyx_pf_5fiona_6ogrext_14WritingSession_start’:
+fiona/ogrext.c:18963:37: warning: passing argument 1 of ‘CPLCheckForFile’ discards ‘const’ qualifier from pointer target type [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers8;;]
+18963 |     __pyx_t_5 = ((!(CPLCheckForFile(__pyx_v_path_c, NULL) != 0)) != 0);
+      |                                     ^~~~~~~~~~~~~~
+In file included from fiona/ogrext.c:644:
+/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/include/cpl_conv.h:168:36: note: expected ‘char *’ but argument is of type ‘const char *’
+  168 | int CPL_DLL CPLCheckForFile( char *pszFilename, char **papszSiblingList );
+      |                              ~~~~~~^~~~~~~~~~~
+fiona/ogrext.c:20458:28: warning: ‘__pyx_v_cogr_ds’ may be used uninitialized in this function [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized8;;]
+20458 |       __pyx_v_cogr_layer = GDALDatasetGetLayer(__pyx_v_cogr_ds, __pyx_v_i);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -shared -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib build/temp.linux-x86_64-3.9/fiona/ogrext.o -L/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/lib -L/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/lib -lgdal -o build/lib.linux-x86_64-3.9/fiona/ogrext.cpython-39-x86_64-linux-gnu.so
+building 'fiona._shim' extension
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/include -I/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/include/python3.9 -c fiona/_shim22.c -o build/temp.linux-x86_64-3.9/fiona/_shim22.o
+fiona/_shim22.c: In function ‘__pyx_f_5fiona_5_shim_gdal_open_vector’:
+fiona/_shim22.c:2267:136: warning: passing argument 4 of ‘GDALOpenEx’ from incompatible pointer type [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types8;;]
+ 2267 |         __pyx_t_20 = __pyx_f_5fiona_4_err_exc_wrap_pointer(GDALOpenEx(__pyx_v_path_c, __pyx_t_19, ((char const *const *)__pyx_v_drvs), __pyx_v_open_opts, NULL)); if (unlikely(__pyx_t_20 == ((void *)NULL))) __PYX_ERR(0, 74, __pyx_L17_error)
+      |                                                                                                                                        ^~~~~~~~~~~~~~~~~
+      |                                                                                                                                        |
+      |                                                                                                                                        char **
+In file included from fiona/_shim22.c:611:
+/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/include/gdal.h:523:65: note: expected ‘const char * const*’ but argument is of type ‘char **’
+  523 |                                              const char* const* papszOpenOptions,
+      |                                              ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+gcc -shared -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib build/temp.linux-x86_64-3.9/fiona/_shim22.o -L/nix/store/xpxds3qdflabl9gl1c53jg64nkixf3d5-gdal-2.4.0/lib -L/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/lib -lgdal -o build/lib.linux-x86_64-3.9/fiona/_shim.cpython-39-x86_64-linux-gnu.so
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/env.py -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/logutils.py -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/io.py -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/_loading.py -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/collection.py -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/inspector.py -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/schema.cpython-39-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/_err.cpython-39-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/_shim.cpython-39-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/path.py -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/compat.py -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/_transform.cpython-39-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/_geometry.cpython-39-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/rfc3339.py -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/crs.py -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/ogrext.cpython-39-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/_env.cpython-39-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/fiona
+creating build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/fio/env.py -> build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/fio/insp.py -> build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/fio/options.py -> build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/fio/bounds.py -> build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/fio/dump.py -> build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/fio/helpers.py -> build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/fio/main.py -> build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/fio/cat.py -> build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/fio/collect.py -> build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/fio/rm.py -> build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/fio/distrib.py -> build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/fio/calc.py -> build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/fio/filter.py -> build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/fio/ls.py -> build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/fio/info.py -> build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/fio/__init__.py -> build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/fio/load.py -> build/bdist.linux-x86_64/wheel/fiona/fio
+copying build/lib.linux-x86_64-3.9/fiona/errors.py -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/_show_versions.py -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/_crs.cpython-39-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/vfs.py -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/transform.py -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/__init__.py -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/drvsupport.py -> build/bdist.linux-x86_64/wheel/fiona
+copying build/lib.linux-x86_64-3.9/fiona/session.py -> build/bdist.linux-x86_64/wheel/fiona
+running install_egg_info
+running egg_info
+creating Fiona.egg-info
+writing Fiona.egg-info/PKG-INFO
+writing dependency_links to Fiona.egg-info/dependency_links.txt
+writing entry points to Fiona.egg-info/entry_points.txt
+writing requirements to Fiona.egg-info/requires.txt
+writing top-level names to Fiona.egg-info/top_level.txt
+writing manifest file 'Fiona.egg-info/SOURCES.txt'
+reading manifest file 'Fiona.egg-info/SOURCES.txt'
+writing manifest file 'Fiona.egg-info/SOURCES.txt'
+Copying Fiona.egg-info to build/bdist.linux-x86_64/wheel/Fiona-1.8.18-py3.9.egg-info
+running install_scripts
+adding license file "LICENSE.txt" (matched pattern "LICEN[CS]E*")
+creating build/bdist.linux-x86_64/wheel/Fiona-1.8.18.dist-info/WHEEL
+creating 'dist/Fiona-1.8.18-cp39-cp39-linux_x86_64.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'fiona/__init__.py'
+adding 'fiona/_crs.cpython-39-x86_64-linux-gnu.so'
+adding 'fiona/_env.cpython-39-x86_64-linux-gnu.so'
+adding 'fiona/_err.cpython-39-x86_64-linux-gnu.so'
+adding 'fiona/_geometry.cpython-39-x86_64-linux-gnu.so'
+adding 'fiona/_loading.py'
+adding 'fiona/_shim.cpython-39-x86_64-linux-gnu.so'
+adding 'fiona/_show_versions.py'
+adding 'fiona/_transform.cpython-39-x86_64-linux-gnu.so'
+adding 'fiona/collection.py'
+adding 'fiona/compat.py'
+adding 'fiona/crs.py'
+adding 'fiona/drvsupport.py'
+adding 'fiona/env.py'
+adding 'fiona/errors.py'
+adding 'fiona/inspector.py'
+adding 'fiona/io.py'
+adding 'fiona/logutils.py'
+adding 'fiona/ogrext.cpython-39-x86_64-linux-gnu.so'
+adding 'fiona/path.py'
+adding 'fiona/rfc3339.py'
+adding 'fiona/schema.cpython-39-x86_64-linux-gnu.so'
+adding 'fiona/session.py'
+adding 'fiona/transform.py'
+adding 'fiona/vfs.py'
+adding 'fiona/fio/__init__.py'
+adding 'fiona/fio/bounds.py'
+adding 'fiona/fio/calc.py'
+adding 'fiona/fio/cat.py'
+adding 'fiona/fio/collect.py'
+adding 'fiona/fio/distrib.py'
+adding 'fiona/fio/dump.py'
+adding 'fiona/fio/env.py'
+adding 'fiona/fio/filter.py'
+adding 'fiona/fio/helpers.py'
+adding 'fiona/fio/info.py'
+adding 'fiona/fio/insp.py'
+adding 'fiona/fio/load.py'
+adding 'fiona/fio/ls.py'
+adding 'fiona/fio/main.py'
+adding 'fiona/fio/options.py'
+adding 'fiona/fio/rm.py'
+adding 'Fiona-1.8.18.dist-info/LICENSE.txt'
+adding 'Fiona-1.8.18.dist-info/METADATA'
+adding 'Fiona-1.8.18.dist-info/WHEEL'
+adding 'Fiona-1.8.18.dist-info/entry_points.txt'
+adding 'Fiona-1.8.18.dist-info/top_level.txt'
+adding 'Fiona-1.8.18.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Finished executing setuptoolsBuildPhase
+installing
+Executing pipInstallPhase
+/build/Fiona-1.8.18/dist /build/Fiona-1.8.18
+Processing ./Fiona-1.8.18-cp39-cp39-linux_x86_64.whl
+Requirement already satisfied: cligj>=0.5 in /nix/store/5hic93fs8i511m3rv0w0rs240p44qxb7-python3.9-cligj-0.5.0/lib/python3.9/site-packages (from Fiona==1.8.18) (0.5.0)
+Requirement already satisfied: click-plugins>=1.0 in /nix/store/s2a3rlwcivb1i6ifzd8f32l1q7r0xiy9-python3.9-click-plugins-1.1.1/lib/python3.9/site-packages (from Fiona==1.8.18) (1.1.1)
+Requirement already satisfied: click<8,>=4.0 in /nix/store/r3lxn18106mg6hqazb8vb9pnm1vx40d5-python3.9-click-7.1.2/lib/python3.9/site-packages (from Fiona==1.8.18) (7.1.2)
+Requirement already satisfied: certifi in /nix/store/p5af5gg81d38w5z3r5wyyi9krj88zilm-python3.9-certifi-2020.11.8/lib/python3.9/site-packages (from Fiona==1.8.18) (2020.11.8)
+Requirement already satisfied: six>=1.7 in /nix/store/h8rgddlhmqdnayrbrlnfl7wfcnw1gmj0-python3.9-six-1.15.0/lib/python3.9/site-packages (from Fiona==1.8.18) (1.15.0)
+Requirement already satisfied: munch in /nix/store/lpz65zmfzq39668kx01sw0qqb6lnmv6m-python3.9-munch-2.5.0/lib/python3.9/site-packages (from Fiona==1.8.18) (2.5.0)
+Requirement already satisfied: attrs>=17 in /nix/store/2rfcv7wd2236qqr26s0rgwfk86xx7mpa-python3.9-attrs-20.3.0/lib/python3.9/site-packages (from Fiona==1.8.18) (20.3.0)
+Requirement already satisfied: click<8,>=4.0 in /nix/store/r3lxn18106mg6hqazb8vb9pnm1vx40d5-python3.9-click-7.1.2/lib/python3.9/site-packages (from Fiona==1.8.18) (7.1.2)
+Requirement already satisfied: click<8,>=4.0 in /nix/store/r3lxn18106mg6hqazb8vb9pnm1vx40d5-python3.9-click-7.1.2/lib/python3.9/site-packages (from Fiona==1.8.18) (7.1.2)
+Requirement already satisfied: six>=1.7 in /nix/store/h8rgddlhmqdnayrbrlnfl7wfcnw1gmj0-python3.9-six-1.15.0/lib/python3.9/site-packages (from Fiona==1.8.18) (1.15.0)
+Installing collected packages: Fiona
+Successfully installed Fiona-1.8.18
+/build/Fiona-1.8.18
+Finished executing pipInstallPhase
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18
+shrinking /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/_shim.cpython-39-x86_64-linux-gnu.so
+shrinking /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/ogrext.cpython-39-x86_64-linux-gnu.so
+shrinking /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/_err.cpython-39-x86_64-linux-gnu.so
+shrinking /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/_transform.cpython-39-x86_64-linux-gnu.so
+shrinking /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/_env.cpython-39-x86_64-linux-gnu.so
+shrinking /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/_geometry.cpython-39-x86_64-linux-gnu.so
+shrinking /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/_crs.cpython-39-x86_64-linux-gnu.so
+shrinking /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/schema.cpython-39-x86_64-linux-gnu.so
+strip is /nix/store/4l1qrgxfy171bngpphp4p9wj7bhrlfn3-binutils-2.34/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib  /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/bin 
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/Fiona-1.8.18.dist-info/LICENSE.txt: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/Fiona-1.8.18.dist-info/top_level.txt: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/Fiona-1.8.18.dist-info/METADATA: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/Fiona-1.8.18.dist-info/WHEEL: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/Fiona-1.8.18.dist-info/INSTALLER: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/Fiona-1.8.18.dist-info/RECORD: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/Fiona-1.8.18.dist-info/entry_points.txt: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/Fiona-1.8.18.dist-info/direct_url.json: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/errors.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__pycache__/io.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__pycache__/_show_versions.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__pycache__/vfs.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__pycache__/rfc3339.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__pycache__/logutils.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__pycache__/drvsupport.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__pycache__/_loading.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__pycache__/crs.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__pycache__/env.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__pycache__/path.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__pycache__/transform.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__pycache__/errors.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__pycache__/collection.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__pycache__/inspector.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__pycache__/session.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__pycache__/__init__.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__pycache__/compat.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/crs.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/collection.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/logutils.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/compat.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/vfs.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/path.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/_loading.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/inspector.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/drvsupport.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/transform.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/io.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/session.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/env.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/__init__.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/_show_versions.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/rfc3339.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/main.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/options.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/filter.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/cat.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/calc.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/info.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/load.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__pycache__/main.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__pycache__/distrib.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__pycache__/filter.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__pycache__/ls.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__pycache__/insp.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__pycache__/helpers.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__pycache__/info.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__pycache__/dump.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__pycache__/cat.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__pycache__/options.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__pycache__/__init__.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__pycache__/env.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__pycache__/collect.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__pycache__/load.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__pycache__/calc.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__pycache__/bounds.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__pycache__/rm.cpython-39.pyc: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/insp.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/ls.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/distrib.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/dump.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/collect.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/bounds.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/env.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/rm.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/__init__.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/helpers.py: file format not recognized
+strip: /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/bin/fio: file format not recognized
+patching script interpreter paths in /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18
+checking for references to /build/ in /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18...
+Rewriting #!/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/bin/python3.9 to #!/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1
+wrapping `/nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/bin/fio'...
+Executing pythonRemoveTestsDir
+Finished executing pythonRemoveTestsDir
+running install tests
+============================= test session starts ==============================
+platform linux -- Python 3.9.1, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+GDAL: 2.4.0 (2040000)
+Supported drivers: ARCGEN, AeronavFAA, BNA, CSV, DGN, DXF, ESRI Shapefile, ESRIJSON, GML, GPKG, GPSTrackMaker, GPX, GeoJSON, GeoJSONSeq, Idrisi, MapInfo File, OGR_GMT, OGR_PDS, OpenFileGDB, PCIDSK, S57, SEGY, SUA, TopoJSON
+rootdir: /build/Fiona-1.8.18
+collected 1420 items / 16 deselected / 1404 selected                           
+
+tests/test__env.py .........                                             [  0%]
+tests/test_bigint.py ...                                                 [  0%]
+tests/test_binary_field.py .                                             [  0%]
+tests/test_bounds.py ............                                        [  1%]
+tests/test_bytescollection.py ......................................s    [  4%]
+tests/test_collection.py ............................................... [  7%]
+..................................................                       [ 11%]
+tests/test_collection_crs.py ...s..                                      [ 11%]
+tests/test_collection_legacy.py ..................................       [ 14%]
+tests/test_compound_crs.py .                                             [ 14%]
+tests/test_crs.py ................                                       [ 15%]
+tests/test_cursor_interruptions.py ............                          [ 16%]
+tests/test_curve_geometries.py .                                         [ 16%]
+tests/test_data_paths.py ..                                              [ 16%]
+tests/test_datetime.py ................................................. [ 20%]
+..................................................                       [ 23%]
+tests/test_driver_options.py .                                           [ 23%]
+tests/test_drivers.py .                                                  [ 23%]
+tests/test_drvsupport.py ............................................... [ 27%]
+...                                                                      [ 27%]
+tests/test_encoding.py ...                                               [ 27%]
+tests/test_env.py ......                                                 [ 27%]
+tests/test_feature.py .........                                          [ 28%]
+tests/test_fio_bounds.py ...........                                     [ 29%]
+tests/test_fio_calc.py ....                                              [ 29%]
+tests/test_fio_cat.py ..........                                         [ 30%]
+tests/test_fio_collect.py ........                                       [ 30%]
+tests/test_fio_distrib.py ..                                             [ 31%]
+tests/test_fio_dump.py ...                                               [ 31%]
+tests/test_fio_filter.py ..                                              [ 31%]
+tests/test_fio_info.py .......                                           [ 31%]
+tests/test_fio_load.py ..........                                        [ 32%]
+tests/test_fio_ls.py ....                                                [ 32%]
+tests/test_fio_rm.py ...                                                 [ 33%]
+tests/test_geojson.py .....                                              [ 33%]
+tests/test_geometry.py ................                                  [ 34%]
+tests/test_geopackage.py ...                                             [ 34%]
+tests/test_integration.py .                                              [ 34%]
+tests/test_layer.py .................................................... [ 38%]
+.....................................................                    [ 42%]
+tests/test_listing.py ............                                       [ 43%]
+tests/test_logutils.py ...                                               [ 43%]
+tests/test_memoryfile.py .................                               [ 44%]
+tests/test_multiconxn.py ........                                        [ 45%]
+tests/test_non_counting_layer.py ......                                  [ 45%]
+tests/test_open.py ..X                                                   [ 45%]
+tests/test_profile.py ..                                                 [ 46%]
+tests/test_props.py ......                                               [ 46%]
+tests/test_read_drivers.py ..                                            [ 46%]
+tests/test_remove.py ............                                        [ 47%]
+tests/test_revolvingdoor.py .                                            [ 47%]
+tests/test_rfc3339.py ..............                                     [ 48%]
+tests/test_rfc64_tin.py ..                                               [ 48%]
+tests/test_schema.py ................................................... [ 52%]
+....sss.........                                                         [ 53%]
+tests/test_schema_geom.py ...........                                    [ 54%]
+tests/test_session.py .                                                  [ 54%]
+tests/test_slice.py .................................................... [ 58%]
+........................................................................ [ 63%]
+........................................................................ [ 68%]
+........................................................................ [ 73%]
+.................................................................        [ 78%]
+tests/test_subtypes.py ..                                                [ 78%]
+tests/test_transactions.py .                                             [ 78%]
+tests/test_transform.py ............                                     [ 79%]
+tests/test_unicode.py ...x...                                            [ 79%]
+tests/test_version.py ..s                                                [ 79%]
+tests/test_vfs.py ...................................................... [ 83%]
+............................X........................................... [ 88%]
+...........X...............................X............................ [ 93%]
+......X..................................X.................X............ [ 99%]
+........s...                                                             [ 99%]
+tests/test_write.py .                                                    [100%]
+
+=============================== warnings summary ===============================
+tests/__init__.py:1
+  /build/Fiona-1.8.18/tests/__init__.py:1: DeprecationWarning: invalid escape sequence \.
+    """Do not delete!  At least one of the ``unittest.TestCase()`` based tests do
+
+tests/conftest.py:273
+  /build/Fiona-1.8.18/tests/conftest.py:273: DeprecationWarning: invalid escape sequence \[
+    WGS84PATTERN = 'GEOGCS\["(?:GCS_WGS_1984|WGS 84)",DATUM\["WGS_1984",SPHEROID\["WGS[_ ]84"'
+
+tests/test_collection.py:364
+  /build/Fiona-1.8.18/tests/test_collection.py:364: PytestUnknownMarkWarning: Unknown pytest.mark.iconv - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/mark.html
+    @pytest.mark.iconv
+
+tests/test_collection.py:862
+  /build/Fiona-1.8.18/tests/test_collection.py:862: PytestUnknownMarkWarning: Unknown pytest.mark.network - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/mark.html
+    @pytest.mark.network
+
+tests/test_collection.py:875
+  /build/Fiona-1.8.18/tests/test_collection.py:875: PytestUnknownMarkWarning: Unknown pytest.mark.network - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/mark.html
+    @pytest.mark.network
+
+tests/test_data_paths.py:13
+  /build/Fiona-1.8.18/tests/test_data_paths.py:13: PytestUnknownMarkWarning: Unknown pytest.mark.wheel - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/mark.html
+    @pytest.mark.wheel
+
+tests/test_data_paths.py:19
+  /build/Fiona-1.8.18/tests/test_data_paths.py:19: PytestUnknownMarkWarning: Unknown pytest.mark.wheel - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/mark.html
+    @pytest.mark.wheel
+
+tests/test_data_paths.py:25
+  /build/Fiona-1.8.18/tests/test_data_paths.py:25: PytestUnknownMarkWarning: Unknown pytest.mark.wheel - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/mark.html
+    @pytest.mark.wheel
+
+tests/test_data_paths.py:33
+  /build/Fiona-1.8.18/tests/test_data_paths.py:33: PytestUnknownMarkWarning: Unknown pytest.mark.wheel - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/mark.html
+    @pytest.mark.wheel
+
+tests/test_fio_load.py:126
+  /build/Fiona-1.8.18/tests/test_fio_load.py:126: PytestUnknownMarkWarning: Unknown pytest.mark.iconv - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/mark.html
+    @pytest.mark.iconv
+
+tests/test_unicode.py:104
+  /build/Fiona-1.8.18/tests/test_unicode.py:104: PytestUnknownMarkWarning: Unknown pytest.mark.iconv - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/mark.html
+    @pytest.mark.iconv
+
+tests/test_unicode.py:123
+  /build/Fiona-1.8.18/tests/test_unicode.py:123: PytestUnknownMarkWarning: Unknown pytest.mark.iconv - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/mark.html
+    @pytest.mark.iconv
+
+tests/test_vfs.py:176
+  /build/Fiona-1.8.18/tests/test_vfs.py:176: PytestUnknownMarkWarning: Unknown pytest.mark.network - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/mark.html
+    @pytest.mark.network
+
+tests/test_vfs.py:184
+  /build/Fiona-1.8.18/tests/test_vfs.py:184: PytestUnknownMarkWarning: Unknown pytest.mark.network - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/mark.html
+    @pytest.mark.network
+
+tests/test_vfs.py:190
+  /build/Fiona-1.8.18/tests/test_vfs.py:190: PytestUnknownMarkWarning: Unknown pytest.mark.network - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/mark.html
+    @pytest.mark.network
+
+tests/test_binary_field.py::test_binary_field
+  /build/Fiona-1.8.18/tests/test_binary_field.py:39: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    feature = next(iter(src))
+
+tests/test_bytescollection.py::TestFilterReading::test_filter_1
+  /build/Fiona-1.8.18/tests/test_bytescollection.py:186: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    results = list(self.c.filter(bbox=(-120.0, 30.0, -100.0, 50.0)))
+
+tests/test_bytescollection.py::TestFilterReading::test_filter_reset
+  /build/Fiona-1.8.18/tests/test_bytescollection.py:193: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    results = list(self.c.filter(bbox=(-112.0, 38.0, -106.0, 40.0)))
+
+tests/test_bytescollection.py::TestFilterReading::test_filter_mask
+  /build/Fiona-1.8.18/tests/test_bytescollection.py:203: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    results = list(self.c.filter(mask=mask))
+
+tests/test_collection.py::TestFilterReading::test_filter_1
+  /build/Fiona-1.8.18/tests/test_collection.py:333: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    results = list(self.c.filter(bbox=(-120.0, 30.0, -100.0, 50.0)))
+
+tests/test_collection.py::TestFilterReading::test_filter_reset
+  /build/Fiona-1.8.18/tests/test_collection.py:340: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    results = list(self.c.filter(bbox=(-112.0, 38.0, -106.0, 40.0)))
+
+tests/test_collection.py::TestFilterReading::test_filter_mask
+  /build/Fiona-1.8.18/tests/test_collection.py:350: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    results = list(self.c.filter(mask=mask))
+
+tests/test_collection.py::test_mask_polygon_triangle[ESRI Shapefile-test.shp]
+tests/test_collection.py::test_mask_polygon_triangle[GeoJSON-test.json]
+tests/test_collection.py::test_mask_polygon_triangle[GPKG-test.gpkg]
+  /build/Fiona-1.8.18/tests/test_collection.py:939: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    items = list(
+
+tests/test_cursor_interruptions.py::test_write_getextent[GPKG]
+tests/test_cursor_interruptions.py::test_write_getextent[PCIDSK]
+tests/test_cursor_interruptions.py::test_write_getextent[GeoJSONSeq]
+  /build/Fiona-1.8.18/tests/test_cursor_interruptions.py:36: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    data = set([int(f['properties']['position']) for f in c])
+
+tests/test_cursor_interruptions.py::test_read_getextent[GPKG]
+tests/test_cursor_interruptions.py::test_read_getextent[PCIDSK]
+tests/test_cursor_interruptions.py::test_read_getextent[GeoJSONSeq]
+  /build/Fiona-1.8.18/tests/test_cursor_interruptions.py:65: FionaDeprecationWarning: Collection.__next__() is buggy and will be removed in Fiona 2.0. Switch to `next(iter(collection))`.
+    f = next(c)
+
+tests/test_cursor_interruptions.py::test_read_getextent[GPKG]
+tests/test_cursor_interruptions.py::test_read_getextent[PCIDSK]
+tests/test_cursor_interruptions.py::test_read_getextent[GeoJSONSeq]
+tests/test_cursor_interruptions.py::test_read_getfeaturecount[GPKG]
+tests/test_cursor_interruptions.py::test_read_getfeaturecount[PCIDSK]
+tests/test_cursor_interruptions.py::test_read_getfeaturecount[GeoJSONSeq]
+  /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/collection.py:345: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    return next(self.iterator)
+
+tests/test_cursor_interruptions.py::test_read_getextent[GPKG]
+tests/test_cursor_interruptions.py::test_read_getextent[PCIDSK]
+tests/test_cursor_interruptions.py::test_read_getextent[GeoJSONSeq]
+  /build/Fiona-1.8.18/tests/test_cursor_interruptions.py:75: FionaDeprecationWarning: Collection.__next__() is buggy and will be removed in Fiona 2.0. Switch to `next(iter(collection))`.
+    f = next(c)
+
+tests/test_cursor_interruptions.py::test_write_getfeaturecount[GPKG]
+tests/test_cursor_interruptions.py::test_write_getfeaturecount[PCIDSK]
+tests/test_cursor_interruptions.py::test_write_getfeaturecount[GeoJSONSeq]
+  /build/Fiona-1.8.18/tests/test_cursor_interruptions.py:109: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    data = set([int(f['properties']['position']) for f in c])
+
+tests/test_cursor_interruptions.py::test_read_getfeaturecount[GPKG]
+tests/test_cursor_interruptions.py::test_read_getfeaturecount[PCIDSK]
+tests/test_cursor_interruptions.py::test_read_getfeaturecount[GeoJSONSeq]
+  /build/Fiona-1.8.18/tests/test_cursor_interruptions.py:138: FionaDeprecationWarning: Collection.__next__() is buggy and will be removed in Fiona 2.0. Switch to `next(iter(collection))`.
+    f = next(c)
+
+tests/test_cursor_interruptions.py::test_read_getfeaturecount[GPKG]
+tests/test_cursor_interruptions.py::test_read_getfeaturecount[PCIDSK]
+tests/test_cursor_interruptions.py::test_read_getfeaturecount[GeoJSONSeq]
+  /build/Fiona-1.8.18/tests/test_cursor_interruptions.py:148: FionaDeprecationWarning: Collection.__next__() is buggy and will be removed in Fiona 2.0. Switch to `next(iter(collection))`.
+    f = next(c)
+
+tests/test_curve_geometries.py::test_line_curve_conversion
+  /build/Fiona-1.8.18/tests/test_curve_geometries.py:16: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    features = list(col)
+
+tests/test_datetime.py: 11 warnings
+  /build/Fiona-1.8.18/tests/test_datetime.py:337: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    items = [get_field(driver, f) for f in c]
+
+tests/test_datetime.py: 11 warnings
+  /build/Fiona-1.8.18/tests/test_datetime.py:522: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    items = [get_field(driver, f) for f in c]
+
+tests/test_datetime.py: 22 warnings
+  /build/Fiona-1.8.18/tests/test_datetime.py:555: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    items = [get_field(driver, f) for f in c]
+
+tests/test_drvsupport.py: 12 warnings
+  /build/Fiona-1.8.18/tests/test_drvsupport.py:60: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    items = list(c)
+
+tests/test_drvsupport.py::test_append_or_driver_error[CSV]
+tests/test_drvsupport.py::test_append_or_driver_error[GPKG]
+tests/test_drvsupport.py::test_append_or_driver_error[MapInfo File]
+tests/test_drvsupport.py::test_append_or_driver_error[DGN]
+  /build/Fiona-1.8.18/tests/test_drvsupport.py:147: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    items = list(c)
+
+tests/test_drvsupport.py::test_no_append_driver_cannot_append[OGR_GMT]
+tests/test_drvsupport.py::test_no_append_driver_cannot_append[PCIDSK]
+  /build/Fiona-1.8.18/tests/test_drvsupport.py:278: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    items = list(c)
+
+tests/test_fio_cat.py::test_bbox_yes
+tests/test_fio_cat.py::test_bbox_yes_two_files
+tests/test_fio_cat.py::test_bbox_json_yes
+  /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/cat.py:96: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    for i, feat in src.items(bbox=bbox):
+
+tests/test_fio_dump.py::test_dump_layer
+  /nix/store/ckg7mpdp8a4vhjd58rsf4glm2dkchc7s-python3.9-Fiona-1.8.18/lib/python3.9/site-packages/fiona/fio/dump.py:175: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    collection['features'] = [
+
+tests/test_geopackage.py::test_read_gpkg
+  /build/Fiona-1.8.18/tests/test_geopackage.py:46: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    feature = next(iter(src))
+
+tests/test_non_counting_layer.py::TestNonCountingLayer::test_list
+  /build/Fiona-1.8.18/tests/test_non_counting_layer.py:20: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    features = list(self.c)
+
+tests/test_rfc64_tin.py::test_tin_csv
+  /build/Fiona-1.8.18/tests/test_rfc64_tin.py:33: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    features = list(col)
+
+tests/test_schema.py::test_geometry_only_schema_write[GPKG]
+  /build/Fiona-1.8.18/tests/test_schema.py:252: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    data = [f for f in c]
+
+tests/test_schema.py::test_geometry_only_schema_update[GPKG]
+  /build/Fiona-1.8.18/tests/test_schema.py:294: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    data = [f for f in c]
+
+tests/test_schema.py::test_property_only_schema_write[GPKG]
+  /build/Fiona-1.8.18/tests/test_schema.py:324: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    data = [f for f in c]
+
+tests/test_schema.py::test_property_only_schema_update[GPKG]
+  /build/Fiona-1.8.18/tests/test_schema.py:366: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    data = [f for f in c]
+
+tests/test_slice.py: 216 warnings
+  /build/Fiona-1.8.18/tests/test_slice.py:144: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    items = list(c.items(start, stop, step))
+
+tests/test_vfs.py::VsiReadingTest::test_filter_vsi
+tests/test_vfs.py::TarArchiveReadingTest::test_filter_vsi
+  /build/Fiona-1.8.18/tests/test_vfs.py:39: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    results = list(self.c.filter(bbox=(-114.0, 35.0, -104, 45.0)))
+
+tests/test_vfs.py::TestVsiReading::test_filter_vsi
+tests/test_vfs.py::TestZipReading::test_filter_vsi
+tests/test_vfs.py::TestZipArchiveReading::test_filter_vsi
+tests/test_vfs.py::TestZipArchiveReadingAbsPath::test_filter_vsi
+  /build/Fiona-1.8.18/tests/test_vfs.py:56: RuntimeWarning: Sequential read of iterator was interrupted. Resetting iterator. This can negatively impact the performance.
+    results = list(self.c.filter(bbox=(-114.0, 35.0, -104, 45.0)))
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+= 1389 passed, 7 skipped, 16 deselected, 1 xfailed, 7 xpassed, 345 warnings in 15.90s =
+pythonCatchConflictsPhase
+pythonRemoveBinBytecodePhase
+pythonImportsCheckPhase
+Executing pythonImportsCheckPhase
+pytestcachePhase

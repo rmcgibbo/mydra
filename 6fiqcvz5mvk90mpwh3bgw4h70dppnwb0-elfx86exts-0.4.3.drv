@@ -1,0 +1,76 @@
+unpacking sources
+unpacking source archive /nix/store/q34whs0g1dn3hszsmxwlc69x5d4m1ysf-source
+source root is source
+unpacking source archive /nix/store/szy3s2zadm8v8f2rq4a76hmw6y77z4qk-elfx86exts-0.4.3-vendor.tar.gz
+patching sources
+Validating consistency between /build/source/Cargo.lock and /build/elfx86exts-0.4.3-vendor.tar.gz/Cargo.lock
+configuring
+building
+++ env CC_x86_64-unknown-linux-gnu=/nix/store/y78inja64xaaq6bx33nxn2h1lgw0jswk-gcc-wrapper-10.2.0/bin/cc CXX_x86_64-unknown-linux-gnu=/nix/store/y78inja64xaaq6bx33nxn2h1lgw0jswk-gcc-wrapper-10.2.0/bin/c++ CC_x86_64-unknown-linux-gnu=/nix/store/y78inja64xaaq6bx33nxn2h1lgw0jswk-gcc-wrapper-10.2.0/bin/cc CXX_x86_64-unknown-linux-gnu=/nix/store/y78inja64xaaq6bx33nxn2h1lgw0jswk-gcc-wrapper-10.2.0/bin/c++ cargo build -j 48 --release --target x86_64-unknown-linux-gnu --frozen
+   Compiling libc v0.2.69
+   Compiling crc32fast v1.2.0
+   Compiling cc v1.0.52
+   Compiling adler32 v1.0.4
+   Compiling cfg-if v0.1.10
+   Compiling bitflags v1.2.1
+   Compiling unicode-width v0.1.7
+   Compiling strsim v0.8.0
+   Compiling wasmparser v0.57.0
+   Compiling ansi_term v0.11.0
+   Compiling vec_map v0.8.2
+   Compiling miniz_oxide v0.3.6
+   Compiling textwrap v0.11.0
+   Compiling capstone-sys v0.11.0
+   Compiling flate2 v1.0.14
+   Compiling atty v0.2.14
+   Compiling memmap v0.7.0
+   Compiling clap v2.33.3
+   Compiling object v0.21.1
+   Compiling capstone v0.7.0
+   Compiling elfx86exts v0.4.3 (/build/source)
+    Finished release [optimized] target(s) in 1m 58s
+running tests
+Running cargo test --release --target x86_64-unknown-linux-gnu --frozen --  
+   Compiling proc-macro2 v1.0.12
+   Compiling unicode-xid v0.2.0
+   Compiling syn v1.0.19
+   Compiling serde v1.0.110
+   Compiling ryu v1.0.4
+   Compiling log v0.4.8
+   Compiling predicates-core v1.0.0
+   Compiling doc-comment v0.3.3
+   Compiling difference v2.0.0
+   Compiling treeline v0.1.0
+   Compiling escargot v0.5.0
+   Compiling itoa v0.4.5
+   Compiling lazy_static v1.4.0
+   Compiling wait-timeout v0.2.0
+   Compiling predicates-tree v1.0.0
+   Compiling predicates v1.0.4
+   Compiling assert_cmd v1.0.1
+   Compiling quote v1.0.4
+   Compiling serde_derive v1.0.110
+   Compiling serde_json v1.0.53
+   Compiling elfx86exts v0.4.3 (/build/source)
+    Finished release [optimized] target(s) in 58.06s
+     Running target/x86_64-unknown-linux-gnu/release/deps/elfx86exts-50c1a770ea821782
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
+
+     Running target/x86_64-unknown-linux-gnu/release/deps/command-e3e9f479ba00ae03
+
+running 1 test
+test run_on_self ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
+
+installing
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/acigy2x64q50dwp2r62dibbigxj9w130-elfx86exts-0.4.3
+shrinking /nix/store/acigy2x64q50dwp2r62dibbigxj9w130-elfx86exts-0.4.3/bin/elfx86exts
+strip is /nix/store/4l1qrgxfy171bngpphp4p9wj7bhrlfn3-binutils-2.34/bin/strip
+stripping (with command strip and flags -S) in /nix/store/acigy2x64q50dwp2r62dibbigxj9w130-elfx86exts-0.4.3/bin 
+patching script interpreter paths in /nix/store/acigy2x64q50dwp2r62dibbigxj9w130-elfx86exts-0.4.3
+checking for references to /build/ in /nix/store/acigy2x64q50dwp2r62dibbigxj9w130-elfx86exts-0.4.3...

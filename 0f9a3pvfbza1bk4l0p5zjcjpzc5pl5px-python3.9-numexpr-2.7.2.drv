@@ -1,0 +1,523 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing setuptools-build-hook
+Using setuptoolsBuildPhase
+Using setuptoolsShellHook
+Sourcing pip-install-hook
+Using pipInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing setuptools-check-hook
+unpacking sources
+unpacking source archive /nix/store/wm284f5gb0903izr5fjva4x1789y5f36-numexpr-2.7.2.tar.gz
+source root is numexpr-2.7.2
+setting SOURCE_DATE_EPOCH to timestamp 1609223677 of file numexpr-2.7.2/setup.cfg
+patching sources
+configuring
+no configure script, doing nothing
+building
+Executing setuptoolsBuildPhase
+mkl_info:
+customize UnixCCompiler
+  libraries mkl_rt not found in ['/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/lib']
+  NOT AVAILABLE
+
+Warning: Assuming default configuration (numexpr/tests/{setup_tests,setup}.py was not found)
+running bdist_wheel
+running build
+running config_cc
+unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+build_src
+building py_modules sources
+creating build
+creating build/src.linux-x86_64-3.9
+creating build/src.linux-x86_64-3.9/numexpr
+building extension "numexpr.interpreter" sources
+build_src: building npy-pkg config files
+running build_py
+creating build/lib.linux-x86_64-3.9
+creating build/lib.linux-x86_64-3.9/numexpr
+copying numexpr/version.py -> build/lib.linux-x86_64-3.9/numexpr
+copying numexpr/utils.py -> build/lib.linux-x86_64-3.9/numexpr
+copying numexpr/necompiler.py -> build/lib.linux-x86_64-3.9/numexpr
+copying numexpr/expressions.py -> build/lib.linux-x86_64-3.9/numexpr
+copying numexpr/cpuinfo.py -> build/lib.linux-x86_64-3.9/numexpr
+copying numexpr/__init__.py -> build/lib.linux-x86_64-3.9/numexpr
+copying build/src.linux-x86_64-3.9/numexpr/__config__.py -> build/lib.linux-x86_64-3.9/numexpr
+creating build/lib.linux-x86_64-3.9/numexpr/tests
+copying ./numexpr/tests/test_numexpr.py -> build/lib.linux-x86_64-3.9/numexpr/tests
+copying ./numexpr/tests/__init__.py -> build/lib.linux-x86_64-3.9/numexpr/tests
+Skipping optional fixer: buffer
+Skipping optional fixer: idioms
+Skipping optional fixer: set_literal
+Skipping optional fixer: ws_comma
+running build_ext
+customize UnixCCompiler
+customize UnixCCompiler using build_ext
+customize UnixCCompiler
+customize UnixCCompiler using build_ext
+building 'numexpr.interpreter' extension
+compiling C++ sources
+C compiler: g++ -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC
+
+creating build/temp.linux-x86_64-3.9/numexpr
+compile options: '-I/nix/store/x3qq1rc3yc9kgynbqx4qaax0hcn70g6m-python3.9-numpy-1.19.4/lib/python3.9/site-packages/numpy/core/include -I/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/include/python3.9 -c'
+extra options: '-funroll-all-loops'
+g++: numexpr/interpreter.cpp
+g++: numexpr/module.cpp
+g++: numexpr/numexpr_object.cpp
+numexpr/interpreter.cpp: In function ‘PyObject* NumExpr_run(NumExprObject*, PyObject*, PyObject*)’:
+numexpr/interpreter.cpp:990:9: warning: variable ‘ex_uses_vml’ set but not used [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable8;;]
+  990 |     int ex_uses_vml = 0, is_reduction = 0;
+      |         ^~~~~~~~~~~
+g++ -shared -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib build/temp.linux-x86_64-3.9/numexpr/interpreter.o build/temp.linux-x86_64-3.9/numexpr/module.o build/temp.linux-x86_64-3.9/numexpr/numexpr_object.o -L/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/lib -L/nix/store/r5dcj0y1s34sr5vjdlvff1vgnbnvnfrp-python3-3.9.1/lib -lm -o build/lib.linux-x86_64-3.9/numexpr/interpreter.cpython-39-x86_64-linux-gnu.so
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/numexpr
+copying build/lib.linux-x86_64-3.9/numexpr/interpreter.cpython-39-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/numexpr
+creating build/bdist.linux-x86_64/wheel/numexpr/tests
+copying build/lib.linux-x86_64-3.9/numexpr/tests/__init__.py -> build/bdist.linux-x86_64/wheel/numexpr/tests
+copying build/lib.linux-x86_64-3.9/numexpr/tests/test_numexpr.py -> build/bdist.linux-x86_64/wheel/numexpr/tests
+copying build/lib.linux-x86_64-3.9/numexpr/__config__.py -> build/bdist.linux-x86_64/wheel/numexpr
+copying build/lib.linux-x86_64-3.9/numexpr/__init__.py -> build/bdist.linux-x86_64/wheel/numexpr
+copying build/lib.linux-x86_64-3.9/numexpr/cpuinfo.py -> build/bdist.linux-x86_64/wheel/numexpr
+copying build/lib.linux-x86_64-3.9/numexpr/expressions.py -> build/bdist.linux-x86_64/wheel/numexpr
+copying build/lib.linux-x86_64-3.9/numexpr/necompiler.py -> build/bdist.linux-x86_64/wheel/numexpr
+copying build/lib.linux-x86_64-3.9/numexpr/utils.py -> build/bdist.linux-x86_64/wheel/numexpr
+copying build/lib.linux-x86_64-3.9/numexpr/version.py -> build/bdist.linux-x86_64/wheel/numexpr
+running install_egg_info
+running egg_info
+writing numexpr.egg-info/PKG-INFO
+writing dependency_links to numexpr.egg-info/dependency_links.txt
+writing requirements to numexpr.egg-info/requires.txt
+writing top-level names to numexpr.egg-info/top_level.txt
+reading manifest file 'numexpr.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files found matching 'numexpr/__config__.py'
+warning: no previously-included files found matching 'RELEASING.txt'
+writing manifest file 'numexpr.egg-info/SOURCES.txt'
+Copying numexpr.egg-info to build/bdist.linux-x86_64/wheel/numexpr-2.7.2-py3.9.egg-info
+running install_scripts
+running install_clib
+customize UnixCCompiler
+adding license file "LICENSE.txt" (matched pattern "LICEN[CS]E*")
+adding license file "AUTHORS.txt" (matched pattern "AUTHORS*")
+creating build/bdist.linux-x86_64/wheel/numexpr-2.7.2.dist-info/WHEEL
+creating 'dist/numexpr-2.7.2-cp39-cp39-linux_x86_64.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'numexpr/__config__.py'
+adding 'numexpr/__init__.py'
+adding 'numexpr/cpuinfo.py'
+adding 'numexpr/expressions.py'
+adding 'numexpr/interpreter.cpython-39-x86_64-linux-gnu.so'
+adding 'numexpr/necompiler.py'
+adding 'numexpr/utils.py'
+adding 'numexpr/version.py'
+adding 'numexpr/tests/__init__.py'
+adding 'numexpr/tests/test_numexpr.py'
+adding 'numexpr-2.7.2.dist-info/AUTHORS.txt'
+adding 'numexpr-2.7.2.dist-info/LICENSE.txt'
+adding 'numexpr-2.7.2.dist-info/METADATA'
+adding 'numexpr-2.7.2.dist-info/WHEEL'
+adding 'numexpr-2.7.2.dist-info/top_level.txt'
+adding 'numexpr-2.7.2.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Finished executing setuptoolsBuildPhase
+installing
+Executing pipInstallPhase
+/build/numexpr-2.7.2/dist /build/numexpr-2.7.2
+Processing ./numexpr-2.7.2-cp39-cp39-linux_x86_64.whl
+Requirement already satisfied: numpy>=1.7 in /nix/store/x3qq1rc3yc9kgynbqx4qaax0hcn70g6m-python3.9-numpy-1.19.4/lib/python3.9/site-packages (from numexpr==2.7.2) (1.19.4)
+Installing collected packages: numexpr
+Successfully installed numexpr-2.7.2
+/build/numexpr-2.7.2
+Finished executing pipInstallPhase
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2
+shrinking /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/interpreter.cpython-39-x86_64-linux-gnu.so
+strip is /nix/store/4l1qrgxfy171bngpphp4p9wj7bhrlfn3-binutils-2.34/bin/strip
+stripping (with command strip and flags -S) in /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib 
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr-2.7.2.dist-info/METADATA: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr-2.7.2.dist-info/AUTHORS.txt: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr-2.7.2.dist-info/RECORD: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr-2.7.2.dist-info/LICENSE.txt: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr-2.7.2.dist-info/top_level.txt: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr-2.7.2.dist-info/direct_url.json: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr-2.7.2.dist-info/WHEEL: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr-2.7.2.dist-info/INSTALLER: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/__pycache__/cpuinfo.cpython-39.pyc: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/__pycache__/utils.cpython-39.pyc: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/__pycache__/__init__.cpython-39.pyc: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/__pycache__/__config__.cpython-39.pyc: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/__pycache__/expressions.cpython-39.pyc: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/__pycache__/necompiler.cpython-39.pyc: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/__pycache__/version.cpython-39.pyc: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/version.py: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/__config__.py: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/utils.py: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/expressions.py: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/tests/__pycache__/test_numexpr.cpython-39.pyc: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/tests/__pycache__/__init__.cpython-39.pyc: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/tests/test_numexpr.py: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/tests/__init__.py: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/cpuinfo.py: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/necompiler.py: file format not recognized
+strip: /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2/lib/python3.9/site-packages/numexpr/__init__.py: file format not recognized
+patching script interpreter paths in /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2
+checking for references to /build/ in /nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2...
+Executing pythonRemoveTestsDir
+Finished executing pythonRemoveTestsDir
+running install tests
+/nix/store/8rzg05cba9kkv2nn7pvdmf79qsp0qzdj-python3.9-numexpr-2.7.2 /build/numexpr-2.7.2
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Numexpr version:   2.7.2
+NumPy version:     1.19.4
+Python version:    3.9.1 (default, Dec  7 2020, 22:33:43) 
+[GCC 10.2.0]
+Platform:          linux-x86_64-#1-NixOS SMP Wed Oct 7 06:01:31 UTC 2020
+CPU vendor:        
+CPU model:         
+CPU clock speed:    MHz
+VML available?     False
+Number of threads used by default: 8 (out of 48 detected cores)
+Maximum number of threads: 64
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+.......................................................................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+.............................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+.............................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+..<string>:1: RuntimeWarning: overflow encountered in sinh
+.<string>:1: RuntimeWarning: overflow encountered in cosh
+...<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+.<string>:1: RuntimeWarning: overflow encountered in exp
+.<string>:1: RuntimeWarning: overflow encountered in expm1
+......................................<string>:1: RuntimeWarning: overflow encountered in sinh
+...........................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: invalid value encountered in remainder
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+..<string>:1: RuntimeWarning: overflow encountered in sinh
+.<string>:1: RuntimeWarning: overflow encountered in cosh
+...<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+.<string>:1: RuntimeWarning: overflow encountered in exp
+.<string>:1: RuntimeWarning: overflow encountered in expm1
+......................................<string>:1: RuntimeWarning: overflow encountered in sinh
+...........................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: invalid value encountered in remainder
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+..<string>:1: RuntimeWarning: overflow encountered in sinh
+.<string>:1: RuntimeWarning: overflow encountered in cosh
+...<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+.<string>:1: RuntimeWarning: overflow encountered in exp
+.<string>:1: RuntimeWarning: overflow encountered in expm1
+......................................<string>:1: RuntimeWarning: overflow encountered in sinh
+...........................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: invalid value encountered in remainder
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+...................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: invalid value encountered in remainder
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+...................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: invalid value encountered in remainder
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+...................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: invalid value encountered in remainder
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+.............<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+................................................................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: divide by zero encountered in remainder
+........................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: divide by zero encountered in remainder
+.....................................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+.............<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+................................................................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: divide by zero encountered in remainder
+........................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: divide by zero encountered in remainder
+.....................................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+.............<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+................................................................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: divide by zero encountered in remainder
+........................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: divide by zero encountered in remainder
+........................................................................................................<string>:1: RuntimeWarning: divide by zero encountered in double_scalars
+.............................................................................................<string>:1: RuntimeWarning: divide by zero encountered in double_scalars
+.............................................................................................<string>:1: RuntimeWarning: divide by zero encountered in double_scalars
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+..<string>:1: RuntimeWarning: overflow encountered in sinh
+.<string>:1: RuntimeWarning: overflow encountered in cosh
+...<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+.<string>:1: RuntimeWarning: overflow encountered in exp
+.<string>:1: RuntimeWarning: overflow encountered in expm1
+......................................<string>:1: RuntimeWarning: overflow encountered in sinh
+...........................................<string>:1: RuntimeWarning: divide by zero encountered in double_scalars
+........<string>:1: RuntimeWarning: invalid value encountered in double_scalars
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+..<string>:1: RuntimeWarning: overflow encountered in sinh
+.<string>:1: RuntimeWarning: overflow encountered in cosh
+...<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+.<string>:1: RuntimeWarning: overflow encountered in exp
+.<string>:1: RuntimeWarning: overflow encountered in expm1
+......................................<string>:1: RuntimeWarning: overflow encountered in sinh
+...........................................<string>:1: RuntimeWarning: divide by zero encountered in double_scalars
+........<string>:1: RuntimeWarning: invalid value encountered in double_scalars
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+..<string>:1: RuntimeWarning: overflow encountered in sinh
+.<string>:1: RuntimeWarning: overflow encountered in cosh
+...<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+.<string>:1: RuntimeWarning: overflow encountered in exp
+.<string>:1: RuntimeWarning: overflow encountered in expm1
+......................................<string>:1: RuntimeWarning: overflow encountered in sinh
+...........................................<string>:1: RuntimeWarning: divide by zero encountered in double_scalars
+........<string>:1: RuntimeWarning: invalid value encountered in double_scalars
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+...................................................................................<string>:1: RuntimeWarning: divide by zero encountered in double_scalars
+........<string>:1: RuntimeWarning: invalid value encountered in double_scalars
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+...................................................................................<string>:1: RuntimeWarning: divide by zero encountered in double_scalars
+........<string>:1: RuntimeWarning: invalid value encountered in double_scalars
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+...................................................................................<string>:1: RuntimeWarning: divide by zero encountered in double_scalars
+........<string>:1: RuntimeWarning: invalid value encountered in double_scalars
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+.............<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+................................................................................................................................<string>:1: RuntimeWarning: divide by zero encountered in long_scalars
+........<string>:1: RuntimeWarning: divide by zero encountered in long_scalars
+.......................................<string>:1: RuntimeWarning: divide by zero encountered in long_scalars
+........<string>:1: RuntimeWarning: divide by zero encountered in long_scalars
+....................................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+.............<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+................................................................................................................................<string>:1: RuntimeWarning: divide by zero encountered in long_scalars
+........<string>:1: RuntimeWarning: divide by zero encountered in long_scalars
+.......................................<string>:1: RuntimeWarning: divide by zero encountered in long_scalars
+........<string>:1: RuntimeWarning: divide by zero encountered in long_scalars
+....................................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+.............<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+.<string>:1: RuntimeWarning: divide by zero encountered in log
+..<string>:1: RuntimeWarning: divide by zero encountered in log10
+................................................................................................................................<string>:1: RuntimeWarning: divide by zero encountered in long_scalars
+........<string>:1: RuntimeWarning: divide by zero encountered in long_scalars
+.......................................<string>:1: RuntimeWarning: divide by zero encountered in long_scalars
+........<string>:1: RuntimeWarning: divide by zero encountered in long_scalars
+.......................................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+.............................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+.............................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+..<string>:1: RuntimeWarning: overflow encountered in sinh
+.<string>:1: RuntimeWarning: overflow encountered in cosh
+...<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+....<string>:1: RuntimeWarning: overflow encountered in exp
+.<string>:1: RuntimeWarning: overflow encountered in expm1
+......................................<string>:1: RuntimeWarning: overflow encountered in sinh
+...........................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: invalid value encountered in remainder
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+..<string>:1: RuntimeWarning: overflow encountered in sinh
+.<string>:1: RuntimeWarning: overflow encountered in cosh
+...<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+....<string>:1: RuntimeWarning: overflow encountered in exp
+.<string>:1: RuntimeWarning: overflow encountered in expm1
+......................................<string>:1: RuntimeWarning: overflow encountered in sinh
+...........................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: invalid value encountered in remainder
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+..<string>:1: RuntimeWarning: overflow encountered in sinh
+.<string>:1: RuntimeWarning: overflow encountered in cosh
+...<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+....<string>:1: RuntimeWarning: overflow encountered in exp
+.<string>:1: RuntimeWarning: overflow encountered in expm1
+......................................<string>:1: RuntimeWarning: overflow encountered in sinh
+...........................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: invalid value encountered in remainder
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+......................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: invalid value encountered in remainder
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+......................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: invalid value encountered in remainder
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+......................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: invalid value encountered in remainder
+..........................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+...................................................................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: divide by zero encountered in remainder
+.......................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: divide by zero encountered in remainder
+....................................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+...................................................................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: divide by zero encountered in remainder
+.......................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: divide by zero encountered in remainder
+....................................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+................<string>:1: RuntimeWarning: invalid value encountered in arcsin
+.<string>:1: RuntimeWarning: invalid value encountered in arccos
+......<string>:1: RuntimeWarning: invalid value encountered in arccosh
+.<string>:1: RuntimeWarning: invalid value encountered in arctanh
+...................................................................................................................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: divide by zero encountered in remainder
+.......................................<string>:1: RuntimeWarning: divide by zero encountered in true_divide
+........<string>:1: RuntimeWarning: divide by zero encountered in remainder
+..................................................../build/numexpr-2.7.2/numexpr/tests/test_numexpr.py:994: DeprecationWarning: Please use assertEqual instead.
+  self.assertEquals(3, numexpr._init_num_threads())
+./build/numexpr-2.7.2/numexpr/tests/test_numexpr.py:998: DeprecationWarning: Please use assertEqual instead.
+  self.assertEquals(5, numexpr._init_num_threads())
+.....
+----------------------------------------------------------------------
+Ran 5523 tests in 14.497s
+
+OK
+/build/numexpr-2.7.2
+pythonCatchConflictsPhase
+pythonRemoveBinBytecodePhase
+pythonImportsCheckPhase
+Executing pythonImportsCheckPhase

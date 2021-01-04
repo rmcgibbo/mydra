@@ -1,0 +1,147 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing setuptools-build-hook
+Using setuptoolsBuildPhase
+Using setuptoolsShellHook
+Sourcing pip-install-hook
+Using pipInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+unpacking sources
+unpacking source archive /nix/store/lc3gdld1pphin9xlg5mp5l9vhlpay2z3-source
+source root is source
+setting SOURCE_DATE_EPOCH to timestamp 315619200 of file source/tests/test_ssl.py
+patching sources
+configuring
+no configure script, doing nothing
+building
+Executing setuptoolsBuildPhase
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/aiomysql
+copying aiomysql/connection.py -> build/lib/aiomysql
+copying aiomysql/log.py -> build/lib/aiomysql
+copying aiomysql/utils.py -> build/lib/aiomysql
+copying aiomysql/pool.py -> build/lib/aiomysql
+copying aiomysql/cursors.py -> build/lib/aiomysql
+copying aiomysql/__init__.py -> build/lib/aiomysql
+creating build/lib/aiomysql/sa
+copying aiomysql/sa/transaction.py -> build/lib/aiomysql/sa
+copying aiomysql/sa/engine.py -> build/lib/aiomysql/sa
+copying aiomysql/sa/connection.py -> build/lib/aiomysql/sa
+copying aiomysql/sa/__init__.py -> build/lib/aiomysql/sa
+copying aiomysql/sa/result.py -> build/lib/aiomysql/sa
+copying aiomysql/sa/exc.py -> build/lib/aiomysql/sa
+running egg_info
+creating aiomysql.egg-info
+writing aiomysql.egg-info/PKG-INFO
+writing dependency_links to aiomysql.egg-info/dependency_links.txt
+writing requirements to aiomysql.egg-info/requires.txt
+writing top-level names to aiomysql.egg-info/top_level.txt
+writing manifest file 'aiomysql.egg-info/SOURCES.txt'
+reading manifest file 'aiomysql.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files matching '*.pyc' found anywhere in distribution
+warning: no previously-included files matching '*.swp' found anywhere in distribution
+writing manifest file 'aiomysql.egg-info/SOURCES.txt'
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/aiomysql
+copying build/lib/aiomysql/utils.py -> build/bdist.linux-x86_64/wheel/aiomysql
+copying build/lib/aiomysql/log.py -> build/bdist.linux-x86_64/wheel/aiomysql
+copying build/lib/aiomysql/__init__.py -> build/bdist.linux-x86_64/wheel/aiomysql
+copying build/lib/aiomysql/cursors.py -> build/bdist.linux-x86_64/wheel/aiomysql
+copying build/lib/aiomysql/connection.py -> build/bdist.linux-x86_64/wheel/aiomysql
+copying build/lib/aiomysql/pool.py -> build/bdist.linux-x86_64/wheel/aiomysql
+creating build/bdist.linux-x86_64/wheel/aiomysql/sa
+copying build/lib/aiomysql/sa/transaction.py -> build/bdist.linux-x86_64/wheel/aiomysql/sa
+copying build/lib/aiomysql/sa/__init__.py -> build/bdist.linux-x86_64/wheel/aiomysql/sa
+copying build/lib/aiomysql/sa/connection.py -> build/bdist.linux-x86_64/wheel/aiomysql/sa
+copying build/lib/aiomysql/sa/engine.py -> build/bdist.linux-x86_64/wheel/aiomysql/sa
+copying build/lib/aiomysql/sa/exc.py -> build/bdist.linux-x86_64/wheel/aiomysql/sa
+copying build/lib/aiomysql/sa/result.py -> build/bdist.linux-x86_64/wheel/aiomysql/sa
+running install_egg_info
+Copying aiomysql.egg-info to build/bdist.linux-x86_64/wheel/aiomysql-0.0.21-py3.9.egg-info
+running install_scripts
+adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
+creating build/bdist.linux-x86_64/wheel/aiomysql-0.0.21.dist-info/WHEEL
+creating 'dist/aiomysql-0.0.21-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'aiomysql/__init__.py'
+adding 'aiomysql/connection.py'
+adding 'aiomysql/cursors.py'
+adding 'aiomysql/log.py'
+adding 'aiomysql/pool.py'
+adding 'aiomysql/utils.py'
+adding 'aiomysql/sa/__init__.py'
+adding 'aiomysql/sa/connection.py'
+adding 'aiomysql/sa/engine.py'
+adding 'aiomysql/sa/exc.py'
+adding 'aiomysql/sa/result.py'
+adding 'aiomysql/sa/transaction.py'
+adding 'aiomysql-0.0.21.dist-info/LICENSE'
+adding 'aiomysql-0.0.21.dist-info/METADATA'
+adding 'aiomysql-0.0.21.dist-info/WHEEL'
+adding 'aiomysql-0.0.21.dist-info/top_level.txt'
+adding 'aiomysql-0.0.21.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Finished executing setuptoolsBuildPhase
+installing
+Executing pipInstallPhase
+/build/source/dist /build/source
+Processing ./aiomysql-0.0.21-py3-none-any.whl
+Requirement already satisfied: PyMySQL in /nix/store/0w3klja3lxnlyd3lji0820pzyray3awd-python3.9-PyMySQL-0.10.1/lib/python3.9/site-packages (from aiomysql==0.0.21) (0.10.1)
+Installing collected packages: aiomysql
+Successfully installed aiomysql-0.0.21
+/build/source
+Finished executing pipInstallPhase
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21
+strip is /nix/store/4l1qrgxfy171bngpphp4p9wj7bhrlfn3-binutils-2.34/bin/strip
+stripping (with command strip and flags -S) in /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib 
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/__init__.py: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/sa/result.py: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/sa/__pycache__/__init__.cpython-39.pyc: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/sa/__pycache__/connection.cpython-39.pyc: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/sa/__pycache__/engine.cpython-39.pyc: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/sa/__pycache__/exc.cpython-39.pyc: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/sa/__pycache__/transaction.cpython-39.pyc: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/sa/__pycache__/result.cpython-39.pyc: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/sa/engine.py: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/sa/exc.py: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/sa/__init__.py: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/sa/connection.py: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/sa/transaction.py: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/cursors.py: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/log.py: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/utils.py: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/__pycache__/log.cpython-39.pyc: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/__pycache__/utils.cpython-39.pyc: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/__pycache__/__init__.cpython-39.pyc: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/__pycache__/cursors.cpython-39.pyc: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/__pycache__/connection.cpython-39.pyc: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/__pycache__/pool.cpython-39.pyc: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/connection.py: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql/pool.py: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql-0.0.21.dist-info/direct_url.json: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql-0.0.21.dist-info/WHEEL: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql-0.0.21.dist-info/METADATA: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql-0.0.21.dist-info/RECORD: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql-0.0.21.dist-info/top_level.txt: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql-0.0.21.dist-info/INSTALLER: file format not recognized
+strip: /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21/lib/python3.9/site-packages/aiomysql-0.0.21.dist-info/LICENSE: file format not recognized
+patching script interpreter paths in /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21
+checking for references to /build/ in /nix/store/jm1g5j0bgsa51dy20rqmv6ibia6b2qc5-python3.9-aiomysql-0.0.21...
+Executing pythonRemoveTestsDir
+Finished executing pythonRemoveTestsDir
+pythonCatchConflictsPhase
+pythonRemoveBinBytecodePhase
+pythonImportsCheckPhase
+Executing pythonImportsCheckPhase

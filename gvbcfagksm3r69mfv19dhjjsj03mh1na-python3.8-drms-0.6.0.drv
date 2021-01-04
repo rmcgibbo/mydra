@@ -1,0 +1,158 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pip-build-hook
+Using pipBuildPhase
+Using pipShellHook
+Sourcing pip-install-hook
+Using pipInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing pytest-check-hook
+Using pytestCheckPhase
+unpacking sources
+unpacking source archive /nix/store/md51b6yq4x2si8j85kqlm76knbnwrqsb-drms-0.6.0.tar.gz
+source root is drms-0.6.0
+setting SOURCE_DATE_EPOCH to timestamp 1605227935 of file drms-0.6.0/setup.cfg
+patching sources
+configuring
+no configure script, doing nothing
+building
+Executing pipBuildPhase
+Creating a wheel...
+WARNING: The directory '/homeless-shelter/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Processing /build/drms-0.6.0
+    Preparing wheel metadata ... - done
+Building wheels for collected packages: drms
+  Building wheel for drms (PEP 517) ... - \ done
+  Created wheel for drms: filename=drms-0.6.0-py3-none-any.whl size=34814 sha256=5800c6c4bced0c8e1967e00d699d50bb2f90795ee4ae4b65dd2eedcfd3a8ddb0
+  Stored in directory: /build/pip-ephem-wheel-cache-0wkmf1kw/wheels/77/c6/0c/74f269249e92a41db48bc73cdf141ec1cd716900fcd94ad705
+Successfully built drms
+Finished creating a wheel...
+Finished executing pipBuildPhase
+installing
+Executing pipInstallPhase
+/build/drms-0.6.0/dist /build/drms-0.6.0
+Processing ./drms-0.6.0-py3-none-any.whl
+Requirement already satisfied: numpy in /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages (from drms==0.6.0) (1.19.4)
+Requirement already satisfied: pandas in /nix/store/y3xhn2ai8mjd155hfl975aqmhywn6n1i-python3.8-pandas-1.1.5/lib/python3.8/site-packages (from drms==0.6.0) (1.1.5)
+Requirement already satisfied: numpy in /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages (from drms==0.6.0) (1.19.4)
+Requirement already satisfied: pytz>=2017.2 in /nix/store/8glwxlghq5k4f14kyyqbg4d5pxys40s6-python3.8-pytz-2020.4/lib/python3.8/site-packages (from pandas->drms==0.6.0) (2020.4)
+Requirement already satisfied: python-dateutil>=2.7.3 in /nix/store/q0yf2gqk7i23pgzpn02l7qg04h1hfjsy-python3.8-python-dateutil-2.8.1/lib/python3.8/site-packages (from pandas->drms==0.6.0) (2.8.1)
+Requirement already satisfied: six>=1.5 in /nix/store/z7q0h3dcvrmm6cmz9cm3hn9z1smvrisn-python3.8-six-1.15.0/lib/python3.8/site-packages (from python-dateutil>=2.7.3->pandas->drms==0.6.0) (1.15.0)
+Installing collected packages: drms
+Successfully installed drms-0.6.0
+/build/drms-0.6.0
+Finished executing pipInstallPhase
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0
+strip is /nix/store/4l1qrgxfy171bngpphp4p9wj7bhrlfn3-binutils-2.34/bin/strip
+stripping (with command strip and flags -S) in /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib  /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/bin 
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms-0.6.0.dist-info/WHEEL: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms-0.6.0.dist-info/top_level.txt: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms-0.6.0.dist-info/entry_points.txt: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms-0.6.0.dist-info/RECORD: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms-0.6.0.dist-info/direct_url.json: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms-0.6.0.dist-info/INSTALLER: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms-0.6.0.dist-info/LICENSE.rst: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms-0.6.0.dist-info/METADATA: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/test_utils.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/test_exceptions.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/test_kis_basic.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/test_to_datetime.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/test_jsoc_email.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/test_init.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/test_config.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/__pycache__/test_jsoc_export.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/__pycache__/test_jsoc_basic.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/__pycache__/test_config.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/__pycache__/test_jsoc_info.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/__pycache__/test_init.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/__pycache__/test_to_datetime.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/__pycache__/test_jsoc_email.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/__pycache__/test_jsoc_query.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/__pycache__/test_main.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/__pycache__/test_series_info.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/__pycache__/test_exceptions.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/__pycache__/test_client.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/__pycache__/test_utils.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/__pycache__/test_kis_basic.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/test_jsoc_query.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/test_jsoc_info.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/test_client.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/test_series_info.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/test_jsoc_basic.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/test_main.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/tests/test_jsoc_export.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/_version.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/json.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/CITATION.rst: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/exceptions.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/__init__.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/main.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/version.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/client.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/utils.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/config.py: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/__pycache__/main.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/__pycache__/config.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/__pycache__/version.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/__pycache__/utils.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/__pycache__/json.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/__pycache__/client.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/__pycache__/_version.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/lib/python3.8/site-packages/drms/__pycache__/exceptions.cpython-38.pyc: file format not recognized
+strip: /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/bin/drms: file format not recognized
+patching script interpreter paths in /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0
+checking for references to /build/ in /nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0...
+Rewriting #!/nix/store/papbnjfxwrdkmz6xfp7v2q7nxyvgcr5l-python3-3.8.6/bin/python3.8 to #!/nix/store/papbnjfxwrdkmz6xfp7v2q7nxyvgcr5l-python3-3.8.6
+wrapping `/nix/store/w8c9h32riyfghgdc3p4a1v3l2z44pars-python3.8-drms-0.6.0/bin/drms'...
+Executing pythonRemoveTestsDir
+Finished executing pythonRemoveTestsDir
+running install tests
+no Makefile or custom installCheckPhase, doing nothing
+pythonCatchConflictsPhase
+pythonRemoveBinBytecodePhase
+pythonImportsCheckPhase
+Executing pythonImportsCheckPhase
+pytestCheckPhase
+Executing pytestCheckPhase
+============================= test session starts ==============================
+platform linux -- Python 3.8.6, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /build/drms-0.6.0, configfile: setup.cfg, testpaths: drms, docs
+plugins: doctestplus-0.8.0
+collected 166 items                                                            
+
+drms/tests/test_client.py .........                                      [  5%]
+drms/tests/test_config.py .......................                        [ 19%]
+drms/tests/test_exceptions.py ....                                       [ 21%]
+drms/tests/test_init.py ...........                                      [ 28%]
+drms/tests/test_jsoc_basic.py ssss                                       [ 30%]
+drms/tests/test_jsoc_email.py ssssssssssss.                              [ 38%]
+drms/tests/test_jsoc_export.py sssssss                                   [ 42%]
+drms/tests/test_jsoc_info.py sssssssssss                                 [ 49%]
+drms/tests/test_jsoc_query.py ssssssss.s                                 [ 55%]
+drms/tests/test_kis_basic.py sssssssss                                   [ 60%]
+drms/tests/test_main.py ......                                           [ 64%]
+drms/tests/test_series_info.py ....                                      [ 66%]
+drms/tests/test_to_datetime.py ................xxx.................      [ 88%]
+drms/tests/test_utils.py ..................                              [ 99%]
+docs/tutorial.rst .                                                      [100%]
+
+=============================== warnings summary ===============================
+../../nix/store/xs9h2mlfdkygg2m8pz0h137nqgf4nzsp-python3.8-pytest-6.1.2/lib/python3.8/site-packages/_pytest/config/__init__.py:1230
+  /nix/store/xs9h2mlfdkygg2m8pz0h137nqgf4nzsp-python3.8-pytest-6.1.2/lib/python3.8/site-packages/_pytest/config/__init__.py:1230: PytestConfigWarning: Unknown config option: remote_data_strict
+  
+    self._warn_or_fail_if_strict("Unknown config option: {}\n".format(key))
+
+docs/tutorial.rst::tutorial.rst
+  /nix/store/dvpcwgcgwkj7s0x21x7w416svqi8ymda-python3.8-astropy-4.2/lib/python3.8/site-packages/astropy/config/configuration.py:582: ConfigurationMissingWarning: Configuration defaults will be used due to FileNotFoundError:2 on None
+    warn(ConfigurationMissingWarning(msg))
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+============ 111 passed, 52 skipped, 3 xfailed, 2 warnings in 0.87s ============
+Finished executing pytestCheckPhase
+pytestcachePhase

@@ -1,0 +1,77 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pip-build-hook
+Using pipBuildPhase
+Using pipShellHook
+Sourcing pip-install-hook
+Using pipInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+unpacking sources
+unpacking source archive /nix/store/cnhal5xb4vhyzj3kfn7vgx5ky4gq488n-pyerfa-1.7.1.1.tar.gz
+source root is pyerfa-1.7.1.1
+setting SOURCE_DATE_EPOCH to timestamp 1605710995 of file pyerfa-1.7.1.1/setup.cfg
+patching sources
+configuring
+fixing libtool script ./liberfa/erfa/build-aux/ltmain.sh
+no configure script, doing nothing
+building
+Executing pipBuildPhase
+Creating a wheel...
+WARNING: The directory '/homeless-shelter/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Processing /build/pyerfa-1.7.1.1
+    Preparing wheel metadata ... - \ done
+Building wheels for collected packages: pyerfa
+  Building wheel for pyerfa (PEP 517) ... - \ | / - \ | / - \ | / done
+  Created wheel for pyerfa: filename=pyerfa-0.0.0-cp39-cp39-linux_x86_64.whl size=476753 sha256=6d01156894e5272ea082a497031b1926b40aceea5ffff04c516e3cfa407f2a9a
+  Stored in directory: /build/pip-ephem-wheel-cache-4pvxb0ir/wheels/ba/4e/f5/896bcdda3bcee9a71a525176bf543f8ef226aed2f8c24b3ac9
+Successfully built pyerfa
+Finished creating a wheel...
+Finished executing pipBuildPhase
+installing
+Executing pipInstallPhase
+/build/pyerfa-1.7.1.1/dist /build/pyerfa-1.7.1.1
+Processing ./pyerfa-0.0.0-cp39-cp39-linux_x86_64.whl
+Requirement already satisfied: numpy>=1.16 in /nix/store/x3qq1rc3yc9kgynbqx4qaax0hcn70g6m-python3.9-numpy-1.19.4/lib/python3.9/site-packages (from pyerfa==0.0.0) (1.19.4)
+Installing collected packages: pyerfa
+Successfully installed pyerfa-0.0.0
+/build/pyerfa-1.7.1.1
+Finished executing pipInstallPhase
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1
+shrinking /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/erfa/ufunc.cpython-39-x86_64-linux-gnu.so
+strip is /nix/store/4l1qrgxfy171bngpphp4p9wj7bhrlfn3-binutils-2.34/bin/strip
+stripping (with command strip and flags -S) in /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib 
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/pyerfa-0.0.0.dist-info/METADATA: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/pyerfa-0.0.0.dist-info/RECORD: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/pyerfa-0.0.0.dist-info/top_level.txt: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/pyerfa-0.0.0.dist-info/direct_url.json: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/pyerfa-0.0.0.dist-info/WHEEL: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/pyerfa-0.0.0.dist-info/INSTALLER: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/pyerfa-0.0.0.dist-info/LICENSE.rst: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/erfa/__pycache__/__init__.cpython-39.pyc: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/erfa/__pycache__/core.cpython-39.pyc: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/erfa/__pycache__/_version.cpython-39.pyc: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/erfa/__pycache__/helpers.cpython-39.pyc: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/erfa/__pycache__/version.cpython-39.pyc: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/erfa/helpers.py: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/erfa/version.py: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/erfa/tests/__pycache__/__init__.cpython-39.pyc: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/erfa/tests/__pycache__/test_erfa.cpython-39.pyc: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/erfa/tests/__pycache__/helper.cpython-39.pyc: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/erfa/tests/test_erfa.py: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/erfa/tests/helper.py: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/erfa/tests/__init__.py: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/erfa/_version.py: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/erfa/core.py: file format not recognized
+strip: /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1/lib/python3.9/site-packages/erfa/__init__.py: file format not recognized
+patching script interpreter paths in /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1
+checking for references to /build/ in /nix/store/flz53s8rqc84frgwsddzj48lp2gb76c0-python3.9-pyerfa-1.7.1.1...
+Executing pythonRemoveTestsDir
+Finished executing pythonRemoveTestsDir
+pythonCatchConflictsPhase
+pythonRemoveBinBytecodePhase
+pythonImportsCheckPhase
+Executing pythonImportsCheckPhase

@@ -1,0 +1,416 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing setuptools-build-hook
+Using setuptoolsBuildPhase
+Using setuptoolsShellHook
+Sourcing pip-install-hook
+Using pipInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing setuptools-check-hook
+unpacking sources
+unpacking source archive /nix/store/s3iy81zplkwpgslwvycb1lrgc2qhdb2h-paramz-0.9.5.tar.gz
+source root is paramz-0.9.5
+setting SOURCE_DATE_EPOCH to timestamp 1558112462 of file paramz-0.9.5/setup.cfg
+patching sources
+configuring
+no configure script, doing nothing
+building
+Executing setuptoolsBuildPhase
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/paramz
+copying paramz/__init__.py -> build/lib/paramz
+copying paramz/param.py -> build/lib/paramz
+copying paramz/domains.py -> build/lib/paramz
+copying paramz/transformations.py -> build/lib/paramz
+copying paramz/model.py -> build/lib/paramz
+copying paramz/parameterized.py -> build/lib/paramz
+copying paramz/caching.py -> build/lib/paramz
+copying paramz/util.py -> build/lib/paramz
+copying paramz/__version__.py -> build/lib/paramz
+creating build/lib/paramz/core
+copying paramz/core/lists_and_dicts.py -> build/lib/paramz/core
+copying paramz/core/index_operations.py -> build/lib/paramz/core
+copying paramz/core/nameable.py -> build/lib/paramz/core
+copying paramz/core/__init__.py -> build/lib/paramz/core
+copying paramz/core/pickleable.py -> build/lib/paramz/core
+copying paramz/core/gradcheckable.py -> build/lib/paramz/core
+copying paramz/core/observable_array.py -> build/lib/paramz/core
+copying paramz/core/parentable.py -> build/lib/paramz/core
+copying paramz/core/parameter_core.py -> build/lib/paramz/core
+copying paramz/core/constrainable.py -> build/lib/paramz/core
+copying paramz/core/indexable.py -> build/lib/paramz/core
+copying paramz/core/updateable.py -> build/lib/paramz/core
+copying paramz/core/observable.py -> build/lib/paramz/core
+creating build/lib/paramz/optimization
+copying paramz/optimization/scg.py -> build/lib/paramz/optimization
+copying paramz/optimization/__init__.py -> build/lib/paramz/optimization
+copying paramz/optimization/optimization.py -> build/lib/paramz/optimization
+copying paramz/optimization/verbose_optimization.py -> build/lib/paramz/optimization
+creating build/lib/paramz/examples
+copying paramz/examples/ridge_regression.py -> build/lib/paramz/examples
+copying paramz/examples/__init__.py -> build/lib/paramz/examples
+creating build/lib/paramz/tests
+copying paramz/tests/lists_and_dicts_tests.py -> build/lib/paramz/tests
+copying paramz/tests/init_tests.py -> build/lib/paramz/tests
+copying paramz/tests/index_operations_tests.py -> build/lib/paramz/tests
+copying paramz/tests/pickle_tests.py -> build/lib/paramz/tests
+copying paramz/tests/parameterized_tests.py -> build/lib/paramz/tests
+copying paramz/tests/__init__.py -> build/lib/paramz/tests
+copying paramz/tests/observable_tests.py -> build/lib/paramz/tests
+copying paramz/tests/array_core_tests.py -> build/lib/paramz/tests
+copying paramz/tests/cacher_tests.py -> build/lib/paramz/tests
+copying paramz/tests/verbose_optimize_tests.py -> build/lib/paramz/tests
+copying paramz/tests/examples_tests.py -> build/lib/paramz/tests
+copying paramz/tests/model_tests.py -> build/lib/paramz/tests
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/paramz
+creating build/bdist.linux-x86_64/wheel/paramz/examples
+copying build/lib/paramz/examples/ridge_regression.py -> build/bdist.linux-x86_64/wheel/paramz/examples
+copying build/lib/paramz/examples/__init__.py -> build/bdist.linux-x86_64/wheel/paramz/examples
+copying build/lib/paramz/domains.py -> build/bdist.linux-x86_64/wheel/paramz
+copying build/lib/paramz/param.py -> build/bdist.linux-x86_64/wheel/paramz
+creating build/bdist.linux-x86_64/wheel/paramz/tests
+copying build/lib/paramz/tests/observable_tests.py -> build/bdist.linux-x86_64/wheel/paramz/tests
+copying build/lib/paramz/tests/model_tests.py -> build/bdist.linux-x86_64/wheel/paramz/tests
+copying build/lib/paramz/tests/pickle_tests.py -> build/bdist.linux-x86_64/wheel/paramz/tests
+copying build/lib/paramz/tests/array_core_tests.py -> build/bdist.linux-x86_64/wheel/paramz/tests
+copying build/lib/paramz/tests/index_operations_tests.py -> build/bdist.linux-x86_64/wheel/paramz/tests
+copying build/lib/paramz/tests/parameterized_tests.py -> build/bdist.linux-x86_64/wheel/paramz/tests
+copying build/lib/paramz/tests/examples_tests.py -> build/bdist.linux-x86_64/wheel/paramz/tests
+copying build/lib/paramz/tests/__init__.py -> build/bdist.linux-x86_64/wheel/paramz/tests
+copying build/lib/paramz/tests/cacher_tests.py -> build/bdist.linux-x86_64/wheel/paramz/tests
+copying build/lib/paramz/tests/init_tests.py -> build/bdist.linux-x86_64/wheel/paramz/tests
+copying build/lib/paramz/tests/lists_and_dicts_tests.py -> build/bdist.linux-x86_64/wheel/paramz/tests
+copying build/lib/paramz/tests/verbose_optimize_tests.py -> build/bdist.linux-x86_64/wheel/paramz/tests
+copying build/lib/paramz/util.py -> build/bdist.linux-x86_64/wheel/paramz
+copying build/lib/paramz/__version__.py -> build/bdist.linux-x86_64/wheel/paramz
+copying build/lib/paramz/__init__.py -> build/bdist.linux-x86_64/wheel/paramz
+copying build/lib/paramz/caching.py -> build/bdist.linux-x86_64/wheel/paramz
+copying build/lib/paramz/transformations.py -> build/bdist.linux-x86_64/wheel/paramz
+copying build/lib/paramz/model.py -> build/bdist.linux-x86_64/wheel/paramz
+creating build/bdist.linux-x86_64/wheel/paramz/core
+copying build/lib/paramz/core/gradcheckable.py -> build/bdist.linux-x86_64/wheel/paramz/core
+copying build/lib/paramz/core/pickleable.py -> build/bdist.linux-x86_64/wheel/paramz/core
+copying build/lib/paramz/core/indexable.py -> build/bdist.linux-x86_64/wheel/paramz/core
+copying build/lib/paramz/core/lists_and_dicts.py -> build/bdist.linux-x86_64/wheel/paramz/core
+copying build/lib/paramz/core/parentable.py -> build/bdist.linux-x86_64/wheel/paramz/core
+copying build/lib/paramz/core/observable_array.py -> build/bdist.linux-x86_64/wheel/paramz/core
+copying build/lib/paramz/core/__init__.py -> build/bdist.linux-x86_64/wheel/paramz/core
+copying build/lib/paramz/core/nameable.py -> build/bdist.linux-x86_64/wheel/paramz/core
+copying build/lib/paramz/core/parameter_core.py -> build/bdist.linux-x86_64/wheel/paramz/core
+copying build/lib/paramz/core/constrainable.py -> build/bdist.linux-x86_64/wheel/paramz/core
+copying build/lib/paramz/core/updateable.py -> build/bdist.linux-x86_64/wheel/paramz/core
+copying build/lib/paramz/core/observable.py -> build/bdist.linux-x86_64/wheel/paramz/core
+copying build/lib/paramz/core/index_operations.py -> build/bdist.linux-x86_64/wheel/paramz/core
+copying build/lib/paramz/parameterized.py -> build/bdist.linux-x86_64/wheel/paramz
+creating build/bdist.linux-x86_64/wheel/paramz/optimization
+copying build/lib/paramz/optimization/__init__.py -> build/bdist.linux-x86_64/wheel/paramz/optimization
+copying build/lib/paramz/optimization/optimization.py -> build/bdist.linux-x86_64/wheel/paramz/optimization
+copying build/lib/paramz/optimization/scg.py -> build/bdist.linux-x86_64/wheel/paramz/optimization
+copying build/lib/paramz/optimization/verbose_optimization.py -> build/bdist.linux-x86_64/wheel/paramz/optimization
+running install_egg_info
+running egg_info
+writing paramz.egg-info/PKG-INFO
+writing dependency_links to paramz.egg-info/dependency_links.txt
+writing requirements to paramz.egg-info/requires.txt
+writing top-level names to paramz.egg-info/top_level.txt
+reading manifest file 'paramz.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'paramz.egg-info/SOURCES.txt'
+Copying paramz.egg-info to build/bdist.linux-x86_64/wheel/paramz-0.9.5-py3.9.egg-info
+running install_scripts
+adding license file "LICENSE" (matched pattern "LICEN[CS]E*")
+creating build/bdist.linux-x86_64/wheel/paramz-0.9.5.dist-info/WHEEL
+creating 'dist/paramz-0.9.5-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'paramz/__init__.py'
+adding 'paramz/__version__.py'
+adding 'paramz/caching.py'
+adding 'paramz/domains.py'
+adding 'paramz/model.py'
+adding 'paramz/param.py'
+adding 'paramz/parameterized.py'
+adding 'paramz/transformations.py'
+adding 'paramz/util.py'
+adding 'paramz/core/__init__.py'
+adding 'paramz/core/constrainable.py'
+adding 'paramz/core/gradcheckable.py'
+adding 'paramz/core/index_operations.py'
+adding 'paramz/core/indexable.py'
+adding 'paramz/core/lists_and_dicts.py'
+adding 'paramz/core/nameable.py'
+adding 'paramz/core/observable.py'
+adding 'paramz/core/observable_array.py'
+adding 'paramz/core/parameter_core.py'
+adding 'paramz/core/parentable.py'
+adding 'paramz/core/pickleable.py'
+adding 'paramz/core/updateable.py'
+adding 'paramz/examples/__init__.py'
+adding 'paramz/examples/ridge_regression.py'
+adding 'paramz/optimization/__init__.py'
+adding 'paramz/optimization/optimization.py'
+adding 'paramz/optimization/scg.py'
+adding 'paramz/optimization/verbose_optimization.py'
+adding 'paramz/tests/__init__.py'
+adding 'paramz/tests/array_core_tests.py'
+adding 'paramz/tests/cacher_tests.py'
+adding 'paramz/tests/examples_tests.py'
+adding 'paramz/tests/index_operations_tests.py'
+adding 'paramz/tests/init_tests.py'
+adding 'paramz/tests/lists_and_dicts_tests.py'
+adding 'paramz/tests/model_tests.py'
+adding 'paramz/tests/observable_tests.py'
+adding 'paramz/tests/parameterized_tests.py'
+adding 'paramz/tests/pickle_tests.py'
+adding 'paramz/tests/verbose_optimize_tests.py'
+adding 'paramz-0.9.5.dist-info/LICENSE'
+adding 'paramz-0.9.5.dist-info/METADATA'
+adding 'paramz-0.9.5.dist-info/WHEEL'
+adding 'paramz-0.9.5.dist-info/top_level.txt'
+adding 'paramz-0.9.5.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Finished executing setuptoolsBuildPhase
+installing
+Executing pipInstallPhase
+/build/paramz-0.9.5/dist /build/paramz-0.9.5
+Processing ./paramz-0.9.5-py3-none-any.whl
+Requirement already satisfied: decorator>=4.0.10 in /nix/store/fc3b4p3fg40iyc36n2470n39lc82d61z-python3.9-decorator-4.4.2/lib/python3.9/site-packages (from paramz==0.9.5) (4.4.2)
+Requirement already satisfied: six in /nix/store/h8rgddlhmqdnayrbrlnfl7wfcnw1gmj0-python3.9-six-1.15.0/lib/python3.9/site-packages (from paramz==0.9.5) (1.15.0)
+Requirement already satisfied: numpy>=1.7 in /nix/store/x3qq1rc3yc9kgynbqx4qaax0hcn70g6m-python3.9-numpy-1.19.4/lib/python3.9/site-packages (from paramz==0.9.5) (1.19.4)
+Requirement already satisfied: scipy in /nix/store/hii5z6jy4sybmyhrydhxalngr2v8623x-python3.9-scipy-1.5.4/lib/python3.9/site-packages (from paramz==0.9.5) (1.5.4)
+Requirement already satisfied: numpy>=1.7 in /nix/store/x3qq1rc3yc9kgynbqx4qaax0hcn70g6m-python3.9-numpy-1.19.4/lib/python3.9/site-packages (from paramz==0.9.5) (1.19.4)
+Installing collected packages: paramz
+Successfully installed paramz-0.9.5
+/build/paramz-0.9.5
+Finished executing pipInstallPhase
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5
+strip is /nix/store/4l1qrgxfy171bngpphp4p9wj7bhrlfn3-binutils-2.34/bin/strip
+stripping (with command strip and flags -S) in /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib 
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/optimization/scg.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/optimization/__pycache__/__init__.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/optimization/__pycache__/optimization.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/optimization/__pycache__/verbose_optimization.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/optimization/__pycache__/scg.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/optimization/verbose_optimization.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/optimization/__init__.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/optimization/optimization.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/nameable.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/gradcheckable.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/observable.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/updateable.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/indexable.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/observable_array.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/parentable.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/__init__.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/index_operations.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/pickleable.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/lists_and_dicts.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/parameter_core.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/__pycache__/updateable.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/__pycache__/lists_and_dicts.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/__pycache__/pickleable.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/__pycache__/observable_array.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/__pycache__/gradcheckable.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/__pycache__/constrainable.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/__pycache__/parameter_core.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/__pycache__/__init__.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/__pycache__/index_operations.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/__pycache__/observable.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/__pycache__/parentable.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/__pycache__/nameable.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/__pycache__/indexable.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/core/constrainable.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/transformations.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/model.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/parameterized.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/__init__.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/caching.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/__version__.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/examples/__init__.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/examples/ridge_regression.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/examples/__pycache__/ridge_regression.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/examples/__pycache__/__init__.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/util.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/param.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/domains.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/__pycache__/transformations.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/__pycache__/caching.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/__pycache__/__init__.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/__pycache__/domains.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/__pycache__/__version__.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/__pycache__/param.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/__pycache__/parameterized.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/__pycache__/model.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/__pycache__/util.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/lists_and_dicts_tests.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/examples_tests.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/array_core_tests.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/observable_tests.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/cacher_tests.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/model_tests.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/verbose_optimize_tests.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/__pycache__/parameterized_tests.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/__pycache__/cacher_tests.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/__pycache__/model_tests.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/__pycache__/lists_and_dicts_tests.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/__pycache__/array_core_tests.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/__pycache__/__init__.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/__pycache__/observable_tests.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/__pycache__/examples_tests.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/__pycache__/index_operations_tests.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/__pycache__/pickle_tests.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/__pycache__/verbose_optimize_tests.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/__pycache__/init_tests.cpython-39.pyc: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/index_operations_tests.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/parameterized_tests.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/init_tests.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz/tests/pickle_tests.py: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz-0.9.5.dist-info/METADATA: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz-0.9.5.dist-info/RECORD: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz-0.9.5.dist-info/WHEEL: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz-0.9.5.dist-info/direct_url.json: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz-0.9.5.dist-info/INSTALLER: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz-0.9.5.dist-info/top_level.txt: file format not recognized
+strip: /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5/lib/python3.9/site-packages/paramz-0.9.5.dist-info/LICENSE: file format not recognized
+patching script interpreter paths in /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5
+checking for references to /build/ in /nix/store/2820xccqc3qzz9a8rfprkw4w1dclnhdq-python3.9-paramz-0.9.5...
+Executing pythonRemoveTestsDir
+Finished executing pythonRemoveTestsDir
+running install tests
+test_init (paramz.tests.array_core_tests.ArrayCoreTest) ... ok
+test_slice (paramz.tests.array_core_tests.ArrayCoreTest) ... ok
+test_cached_ObsAr (paramz.tests.cacher_tests.Test) ... ok
+test_cached_atomic_int (paramz.tests.cacher_tests.Test) ... ok
+test_cached_atomic_str (paramz.tests.cacher_tests.Test) ... ok
+test_caching_non_cachables (paramz.tests.cacher_tests.Test) ... ok
+test_chached_ObsAr_atomic (paramz.tests.cacher_tests.Test) ... ok
+test_copy (paramz.tests.cacher_tests.Test) ... ok
+test_force_kwargs (paramz.tests.cacher_tests.Test) ... ok
+test_name (paramz.tests.cacher_tests.Test) ... ok
+test_pickling (paramz.tests.cacher_tests.Test) ... ok
+test_reset (paramz.tests.cacher_tests.Test) ... ok
+test_reset_on_operation_error (paramz.tests.cacher_tests.Test) ... ok
+test_sum_ObsAr (paramz.tests.cacher_tests.Test) ... ok
+test_cacher_cache (paramz.tests.cacher_tests.TestDecorator) ... ok
+test_offswitch (paramz.tests.cacher_tests.TestDecorator) ... ok
+test_opcalls (paramz.tests.cacher_tests.TestDecorator) ... ok
+test_reset (paramz.tests.cacher_tests.TestDecorator) ... ok
+test_signature (paramz.tests.cacher_tests.TestDecorator) ... ok
+testLassoRegression (paramz.tests.examples_tests.Test2D) ... ok
+testRidgeRegression (paramz.tests.examples_tests.Test2D) ... ok
+test_clear (paramz.tests.index_operations_tests.Test) ... ok
+test_index_conversions (paramz.tests.index_operations_tests.Test) ... ok
+test_index_view (paramz.tests.index_operations_tests.Test) ... ok
+test_indexview_remove (paramz.tests.index_operations_tests.Test) ... ok
+test_misc (paramz.tests.index_operations_tests.Test) ... ok
+test_print (paramz.tests.index_operations_tests.Test) ... ok
+test_remove (paramz.tests.index_operations_tests.Test) ... ok
+test_shift_left (paramz.tests.index_operations_tests.Test) ... ok
+test_shift_right (paramz.tests.index_operations_tests.Test) ... ok
+test_view_of_view (paramz.tests.index_operations_tests.Test) ... ok
+test_initialize (paramz.tests.init_tests.InitTests) ... ok
+test_load_initialized (paramz.tests.init_tests.InitTests) ... ok
+paramz.tests.init_tests.test_constraints_in_init ... ok
+paramz.tests.init_tests.test_parameter_modify_in_init ... ok
+testArrayList (paramz.tests.lists_and_dicts_tests.Test) ... ok
+testPrintObserverListObj (paramz.tests.lists_and_dicts_tests.Test) ... ok
+testPrintObserverListObsAr (paramz.tests.lists_and_dicts_tests.Test) ... ok
+testPrintObserverListParameterized (paramz.tests.lists_and_dicts_tests.Test) ... ok
+testPrintPriority (paramz.tests.lists_and_dicts_tests.Test) ... ok
+test_caching_offswitch (paramz.tests.model_tests.ModelTest) ... ok
+test_checkgrad (paramz.tests.model_tests.ModelTest) ... ok
+test_constraints_set_direct (paramz.tests.model_tests.ModelTest) ... ok
+test_constraints_testmodel (paramz.tests.model_tests.ModelTest) ... ok
+test_empty_parameterized (paramz.tests.model_tests.ModelTest) ... ok
+test_fix_constrain (paramz.tests.model_tests.ModelTest) ... ok
+test_fix_unfix (paramz.tests.model_tests.ModelTest) ... ok
+test_fix_unfix_constraints (paramz.tests.model_tests.ModelTest) ... ok
+test_fixing_optimize (paramz.tests.model_tests.ModelTest) ... ok
+test_get_by_name (paramz.tests.model_tests.ModelTest) ... ok
+test_hierarchy_error (paramz.tests.model_tests.ModelTest) ... ok
+test_likelihood_replicate (paramz.tests.model_tests.ModelTest) ... ok
+test_likelihood_set (paramz.tests.model_tests.ModelTest) ... ok
+test_optimize_ada (paramz.tests.model_tests.ModelTest) ... SKIP: climin not installed, skipping test
+test_optimize_adam (paramz.tests.model_tests.ModelTest) ... SKIP: climin not installed, skipping test
+test_optimize_cgd (paramz.tests.model_tests.ModelTest) ... ok
+test_optimize_error (paramz.tests.model_tests.ModelTest) ... /nix/store/hii5z6jy4sybmyhrydhxalngr2v8623x-python3.9-scipy-1.5.4/lib/python3.9/site-packages/scipy/optimize/linesearch.py:153: RuntimeWarning: invalid value encountered in double_scalars
+  alpha1 = min(1.0, 1.01*2*(phi0 - old_phi0)/derphi0)
+ok
+test_optimize_fix (paramz.tests.model_tests.ModelTest) ... ok
+test_optimize_org_bfgs (paramz.tests.model_tests.ModelTest) ... ok
+test_optimize_preferred (paramz.tests.model_tests.ModelTest) ... ok
+test_optimize_restarts (paramz.tests.model_tests.ModelTest) ... ok
+test_optimize_restarts_parallel (paramz.tests.model_tests.ModelTest) ... ok
+test_optimize_rprop (paramz.tests.model_tests.ModelTest) ... SKIP: climin not installed, skipping test
+test_optimize_scg (paramz.tests.model_tests.ModelTest) ... ok
+test_optimize_simplex (paramz.tests.model_tests.ModelTest) ... ok
+test_optimize_tnc (paramz.tests.model_tests.ModelTest) ... ok
+test_printing (paramz.tests.model_tests.ModelTest) ... ok
+test_pydot (paramz.tests.model_tests.ModelTest) ... SKIP: pydot not available
+test_raveled_index (paramz.tests.model_tests.ModelTest) ... /build/paramz-0.9.5/paramz/core/indexable.py:161: FutureWarning: arrays to stack must be passed as a "sequence" type such as list or tuple. Support for non-sequence iterables such as generators is deprecated as of NumPy 1.16 and will raise an error in the future.
+  return np.hstack((self._raveled_index_for(p) for p in param.params))
+ok
+test_regular_expression_misc (paramz.tests.model_tests.ModelTest) ... ok
+test_set_empty (paramz.tests.model_tests.ModelTest) ... ok
+test_set_error (paramz.tests.model_tests.ModelTest) ... ok
+test_set_get (paramz.tests.model_tests.ModelTest) ... ok
+test_set_gradients (paramz.tests.model_tests.ModelTest) ... ok
+test_updates (paramz.tests.model_tests.ModelTest) ... ok
+testObsAr (paramz.tests.observable_tests.Test) ... ok
+test_observable (paramz.tests.observable_tests.Test) ... ok
+test_priority (paramz.tests.observable_tests.Test) ... ok
+test_priority_notify (paramz.tests.observable_tests.Test) ... ok
+test_set_params (paramz.tests.observable_tests.Test) ... ok
+test_casting (paramz.tests.observable_tests.TestMisc) ... ok
+test_add_parameter (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_add_parameter_already_in_hirarchy (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_add_parameter_in_hierarchy (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_checkgrad_hierarchy_error (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_constraints (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_constraints_link_unlink (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_constraints_views (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_default_constraints (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_fixed_optimizer_copy (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_fixes (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_fixing_randomize (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_fixing_randomize_parameter_handling (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_index_operations (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_names (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_names_already_exist (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_num_params (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_original (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_param_names (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_printing (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_randomize (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_recursion_limit (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_remove_parameter (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_remove_parameter_param_array_grad_array (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_set_param_array (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_traverse_parents (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_unfixed_param_array (paramz.tests.parameterized_tests.ParameterizedTest) ... ok
+test_observable_array (paramz.tests.pickle_tests.Test) ... ok
+test_param (paramz.tests.pickle_tests.Test) ... ok
+test_parameter_index_operations (paramz.tests.pickle_tests.Test) ... ok
+test_parameterized (paramz.tests.pickle_tests.Test) ... ok
+test_finish (paramz.tests.verbose_optimize_tests.Test) ... ok
+test_timestrings (paramz.tests.verbose_optimize_tests.Test) ... ok
+
+----------------------------------------------------------------------
+Ran 113 tests in 1.505s
+
+OK (SKIP=4)
+pythonCatchConflictsPhase
+pythonRemoveBinBytecodePhase
+pythonImportsCheckPhase
+Executing pythonImportsCheckPhase

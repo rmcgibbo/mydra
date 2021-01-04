@@ -1,0 +1,1551 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing setuptools-build-hook
+Using setuptoolsBuildPhase
+Using setuptoolsShellHook
+Sourcing pip-install-hook
+Using pipInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing setuptools-check-hook
+unpacking sources
+unpacking source archive /nix/store/0n49wa5dr2wl7jsa2nw1d75p98w7451y-GPy-1.9.9.tar.gz
+source root is GPy-1.9.9
+setting SOURCE_DATE_EPOCH to timestamp 1571299319 of file GPy-1.9.9/setup.cfg
+patching sources
+configuring
+no configure script, doing nothing
+building
+Executing setuptoolsBuildPhase
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib.linux-x86_64-3.8
+creating build/lib.linux-x86_64-3.8/GPy
+copying GPy/__init__.py -> build/lib.linux-x86_64-3.8/GPy
+copying GPy/__version__.py -> build/lib.linux-x86_64-3.8/GPy
+creating build/lib.linux-x86_64-3.8/GPy/core
+copying GPy/core/gp.py -> build/lib.linux-x86_64-3.8/GPy/core
+copying GPy/core/__init__.py -> build/lib.linux-x86_64-3.8/GPy/core
+copying GPy/core/symbolic.py -> build/lib.linux-x86_64-3.8/GPy/core
+copying GPy/core/gp_grid.py -> build/lib.linux-x86_64-3.8/GPy/core
+copying GPy/core/sparse_gp_mpi.py -> build/lib.linux-x86_64-3.8/GPy/core
+copying GPy/core/model.py -> build/lib.linux-x86_64-3.8/GPy/core
+copying GPy/core/sparse_gp.py -> build/lib.linux-x86_64-3.8/GPy/core
+copying GPy/core/svgp.py -> build/lib.linux-x86_64-3.8/GPy/core
+copying GPy/core/mapping.py -> build/lib.linux-x86_64-3.8/GPy/core
+creating build/lib.linux-x86_64-3.8/GPy/core/parameterization
+copying GPy/core/parameterization/param.py -> build/lib.linux-x86_64-3.8/GPy/core/parameterization
+copying GPy/core/parameterization/variational.py -> build/lib.linux-x86_64-3.8/GPy/core/parameterization
+copying GPy/core/parameterization/priorizable.py -> build/lib.linux-x86_64-3.8/GPy/core/parameterization
+copying GPy/core/parameterization/parameterized.py -> build/lib.linux-x86_64-3.8/GPy/core/parameterization
+copying GPy/core/parameterization/__init__.py -> build/lib.linux-x86_64-3.8/GPy/core/parameterization
+copying GPy/core/parameterization/priors.py -> build/lib.linux-x86_64-3.8/GPy/core/parameterization
+copying GPy/core/parameterization/transformations.py -> build/lib.linux-x86_64-3.8/GPy/core/parameterization
+creating build/lib.linux-x86_64-3.8/GPy/kern
+copying GPy/kern/__init__.py -> build/lib.linux-x86_64-3.8/GPy/kern
+creating build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/standard_periodic.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/sde_brownian.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/multioutput_derivative_kern.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/ODE_st.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/basis_funcs.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/multidimensional_integral_limits.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/eq_ode1.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/spline.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/eq_ode2.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/static.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/add.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/coregionalize.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/multioutput_kern.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/ODE_UYC.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/kernel_slice_operations.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/linear.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/integral.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/mlp.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/integral_limits.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/independent_outputs.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/symmetric.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/sde_matern.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/sde_stationary.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/stationary.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/grid_kerns.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/periodic.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/sde_standard_periodic.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/ODE_UY.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/rbf.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/sde_linear.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/trunclinear.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/symbolic.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/__init__.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/poly.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/splitKern.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/kern.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/diff_kern.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/sde_static.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/prod.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/ODE_t.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/brownian.py -> build/lib.linux-x86_64-3.8/GPy/kern/src
+creating build/lib.linux-x86_64-3.8/GPy/kern/src/psi_comp
+copying GPy/kern/src/psi_comp/rbf_psi_gpucomp.py -> build/lib.linux-x86_64-3.8/GPy/kern/src/psi_comp
+copying GPy/kern/src/psi_comp/linear_psi_comp.py -> build/lib.linux-x86_64-3.8/GPy/kern/src/psi_comp
+copying GPy/kern/src/psi_comp/sslinear_psi_comp.py -> build/lib.linux-x86_64-3.8/GPy/kern/src/psi_comp
+copying GPy/kern/src/psi_comp/ssrbf_psi_gpucomp.py -> build/lib.linux-x86_64-3.8/GPy/kern/src/psi_comp
+copying GPy/kern/src/psi_comp/rbf_psi_comp.py -> build/lib.linux-x86_64-3.8/GPy/kern/src/psi_comp
+copying GPy/kern/src/psi_comp/ssrbf_psi_comp.py -> build/lib.linux-x86_64-3.8/GPy/kern/src/psi_comp
+copying GPy/kern/src/psi_comp/__init__.py -> build/lib.linux-x86_64-3.8/GPy/kern/src/psi_comp
+copying GPy/kern/src/psi_comp/gaussherm.py -> build/lib.linux-x86_64-3.8/GPy/kern/src/psi_comp
+creating build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/bayesian_gplvm_minibatch.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/state_space_main.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/sparse_gp_regression.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/tp_regression.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/sparse_gp_minibatch.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/bayesian_gplvm.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/one_vs_all_sparse_classification.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/gp_offset_regression.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/sparse_gp_coregionalized_regression.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/sparse_gplvm.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/ibp_lfm.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/state_space_setup.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/input_warped_gp.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/dpgplvm.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/gp_coregionalized_regression.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/gplvm.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/state_space.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/mrd.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/gp_multiout_regression_md.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/gp_regression.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/gp_multiout_regression.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/__init__.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/bcgplvm.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/warped_gp.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/gp_grid_regression.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/gradient_checker.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/gp_var_gauss.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/sparse_gp_classification.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/gp_kronecker_gaussian_regression.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/sparse_gp_regression_md.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/ss_mrd.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/state_space_model.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/multioutput_gp.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/gp_classification.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/one_vs_all_classification.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/ss_gplvm.py -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/gp_heteroscedastic_regression.py -> build/lib.linux-x86_64-3.8/GPy/models
+creating build/lib.linux-x86_64-3.8/GPy/inference
+copying GPy/inference/__init__.py -> build/lib.linux-x86_64-3.8/GPy/inference
+creating build/lib.linux-x86_64-3.8/GPy/inference/optimization
+copying GPy/inference/optimization/stochastics.py -> build/lib.linux-x86_64-3.8/GPy/inference/optimization
+copying GPy/inference/optimization/__init__.py -> build/lib.linux-x86_64-3.8/GPy/inference/optimization
+creating build/lib.linux-x86_64-3.8/GPy/inference/mcmc
+copying GPy/inference/mcmc/hmc.py -> build/lib.linux-x86_64-3.8/GPy/inference/mcmc
+copying GPy/inference/mcmc/samplers.py -> build/lib.linux-x86_64-3.8/GPy/inference/mcmc
+copying GPy/inference/mcmc/__init__.py -> build/lib.linux-x86_64-3.8/GPy/inference/mcmc
+creating build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/laplace.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/expectation_propagation.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/var_dtc.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/posterior.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/vardtc_svi_multiout.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/pep.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/__init__.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/fitc.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/vardtc_svi_multiout_miss.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/dtc.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/exact_gaussian_inference.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/gaussian_grid_inference.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/svgp.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/grid_posterior.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/var_gauss.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/var_dtc_parallel.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/vardtc_md.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/exact_studentt_inference.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+copying GPy/inference/latent_function_inference/inferenceX.py -> build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference
+creating build/lib.linux-x86_64-3.8/GPy/likelihoods
+copying GPy/likelihoods/gamma.py -> build/lib.linux-x86_64-3.8/GPy/likelihoods
+copying GPy/likelihoods/loglogistic.py -> build/lib.linux-x86_64-3.8/GPy/likelihoods
+copying GPy/likelihoods/poisson.py -> build/lib.linux-x86_64-3.8/GPy/likelihoods
+copying GPy/likelihoods/loggaussian.py -> build/lib.linux-x86_64-3.8/GPy/likelihoods
+copying GPy/likelihoods/__init__.py -> build/lib.linux-x86_64-3.8/GPy/likelihoods
+copying GPy/likelihoods/multioutput_likelihood.py -> build/lib.linux-x86_64-3.8/GPy/likelihoods
+copying GPy/likelihoods/student_t.py -> build/lib.linux-x86_64-3.8/GPy/likelihoods
+copying GPy/likelihoods/weibull.py -> build/lib.linux-x86_64-3.8/GPy/likelihoods
+copying GPy/likelihoods/binomial.py -> build/lib.linux-x86_64-3.8/GPy/likelihoods
+copying GPy/likelihoods/link_functions.py -> build/lib.linux-x86_64-3.8/GPy/likelihoods
+copying GPy/likelihoods/mixed_noise.py -> build/lib.linux-x86_64-3.8/GPy/likelihoods
+copying GPy/likelihoods/gaussian.py -> build/lib.linux-x86_64-3.8/GPy/likelihoods
+copying GPy/likelihoods/exponential.py -> build/lib.linux-x86_64-3.8/GPy/likelihoods
+copying GPy/likelihoods/likelihood.py -> build/lib.linux-x86_64-3.8/GPy/likelihoods
+copying GPy/likelihoods/bernoulli.py -> build/lib.linux-x86_64-3.8/GPy/likelihoods
+creating build/lib.linux-x86_64-3.8/GPy/mappings
+copying GPy/mappings/__init__.py -> build/lib.linux-x86_64-3.8/GPy/mappings
+copying GPy/mappings/identity.py -> build/lib.linux-x86_64-3.8/GPy/mappings
+copying GPy/mappings/mlpext.py -> build/lib.linux-x86_64-3.8/GPy/mappings
+copying GPy/mappings/constant.py -> build/lib.linux-x86_64-3.8/GPy/mappings
+copying GPy/mappings/piecewise_linear.py -> build/lib.linux-x86_64-3.8/GPy/mappings
+copying GPy/mappings/compound.py -> build/lib.linux-x86_64-3.8/GPy/mappings
+copying GPy/mappings/linear.py -> build/lib.linux-x86_64-3.8/GPy/mappings
+copying GPy/mappings/additive.py -> build/lib.linux-x86_64-3.8/GPy/mappings
+copying GPy/mappings/mlp.py -> build/lib.linux-x86_64-3.8/GPy/mappings
+copying GPy/mappings/kernel.py -> build/lib.linux-x86_64-3.8/GPy/mappings
+creating build/lib.linux-x86_64-3.8/GPy/examples
+copying GPy/examples/classification.py -> build/lib.linux-x86_64-3.8/GPy/examples
+copying GPy/examples/dimensionality_reduction.py -> build/lib.linux-x86_64-3.8/GPy/examples
+copying GPy/examples/non_gaussian.py -> build/lib.linux-x86_64-3.8/GPy/examples
+copying GPy/examples/__init__.py -> build/lib.linux-x86_64-3.8/GPy/examples
+copying GPy/examples/state_space.py -> build/lib.linux-x86_64-3.8/GPy/examples
+copying GPy/examples/regression.py -> build/lib.linux-x86_64-3.8/GPy/examples
+creating build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/serialization_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/prior_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/svgp_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/pickle_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/rv_transformation_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/variational_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/gp_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/plotting_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/quadrature_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/inference_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/kernel_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/pep_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/misc_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/__init__.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/minibatch_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/mapping_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/linalg_test.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/fitc.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/examples_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/likelihood_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/state_space_main_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/gpy_kernels_state_space_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/mpi_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/ep_likelihood_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/tp_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/grid_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/util_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/model_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/cython_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/meanfunc_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+copying GPy/testing/link_function_tests.py -> build/lib.linux-x86_64-3.8/GPy/testing
+creating build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/choleskies.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/subarray_and_sorting.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/block_matrices.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/debug.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/misc.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/__init__.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/cluster_with_offset.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/functions.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/decorators.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/netpbmfile.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/warping_functions.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/config.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/pca.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/parallel.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/gpu_init.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/multioutput.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/initialization.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/normalizer.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/linalg.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/mocap.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/datasets.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/classification.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/squashers.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/input_warping_functions.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/diag.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/univariate_Gaussian.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/linalg_gpu.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/quad_integrate.py -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/ln_diff_erfs.py -> build/lib.linux-x86_64-3.8/GPy/util
+creating build/lib.linux-x86_64-3.8/GPy/plotting
+copying GPy/plotting/__init__.py -> build/lib.linux-x86_64-3.8/GPy/plotting
+copying GPy/plotting/abstract_plotting_library.py -> build/lib.linux-x86_64-3.8/GPy/plotting
+copying GPy/plotting/Tango.py -> build/lib.linux-x86_64-3.8/GPy/plotting
+creating build/lib.linux-x86_64-3.8/GPy/plotting/gpy_plot
+copying GPy/plotting/gpy_plot/kernel_plots.py -> build/lib.linux-x86_64-3.8/GPy/plotting/gpy_plot
+copying GPy/plotting/gpy_plot/plot_util.py -> build/lib.linux-x86_64-3.8/GPy/plotting/gpy_plot
+copying GPy/plotting/gpy_plot/data_plots.py -> build/lib.linux-x86_64-3.8/GPy/plotting/gpy_plot
+copying GPy/plotting/gpy_plot/latent_plots.py -> build/lib.linux-x86_64-3.8/GPy/plotting/gpy_plot
+copying GPy/plotting/gpy_plot/inference_plots.py -> build/lib.linux-x86_64-3.8/GPy/plotting/gpy_plot
+copying GPy/plotting/gpy_plot/gp_plots.py -> build/lib.linux-x86_64-3.8/GPy/plotting/gpy_plot
+copying GPy/plotting/gpy_plot/__init__.py -> build/lib.linux-x86_64-3.8/GPy/plotting/gpy_plot
+creating build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep
+copying GPy/plotting/matplot_dep/maps.py -> build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep
+copying GPy/plotting/matplot_dep/svig_plots.py -> build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep
+copying GPy/plotting/matplot_dep/visualize.py -> build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep
+copying GPy/plotting/matplot_dep/__init__.py -> build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep
+copying GPy/plotting/matplot_dep/defaults.py -> build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep
+copying GPy/plotting/matplot_dep/util.py -> build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep
+copying GPy/plotting/matplot_dep/priors_plots.py -> build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep
+copying GPy/plotting/matplot_dep/img_plots.py -> build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep
+copying GPy/plotting/matplot_dep/ssgplvm.py -> build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep
+copying GPy/plotting/matplot_dep/base_plots.py -> build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep
+copying GPy/plotting/matplot_dep/mapping_plots.py -> build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep
+copying GPy/plotting/matplot_dep/plot_definitions.py -> build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep
+copying GPy/plotting/matplot_dep/variational_plots.py -> build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep
+creating build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/controllers
+copying GPy/plotting/matplot_dep/controllers/axis_event_controller.py -> build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/controllers
+copying GPy/plotting/matplot_dep/controllers/__init__.py -> build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/controllers
+copying GPy/plotting/matplot_dep/controllers/imshow_controller.py -> build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/controllers
+creating build/lib.linux-x86_64-3.8/GPy/plotting/plotly_dep
+copying GPy/plotting/plotly_dep/__init__.py -> build/lib.linux-x86_64-3.8/GPy/plotting/plotly_dep
+copying GPy/plotting/plotly_dep/defaults.py -> build/lib.linux-x86_64-3.8/GPy/plotting/plotly_dep
+copying GPy/plotting/plotly_dep/plot_definitions.py -> build/lib.linux-x86_64-3.8/GPy/plotting/plotly_dep
+running egg_info
+writing GPy.egg-info/PKG-INFO
+writing dependency_links to GPy.egg-info/dependency_links.txt
+writing requirements to GPy.egg-info/requires.txt
+writing top-level names to GPy.egg-info/top_level.txt
+reading manifest file 'GPy.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching 'README.rst'
+writing manifest file 'GPy.egg-info/SOURCES.txt'
+copying GPy/defaults.cfg -> build/lib.linux-x86_64-3.8/GPy
+copying GPy/installation.cfg -> build/lib.linux-x86_64-3.8/GPy
+copying GPy/kern/src/coregionalize_cython.c -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/coregionalize_cython.pyx -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/stationary_cython.c -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/stationary_cython.pyx -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/stationary_utils.c -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/stationary_utils.h -> build/lib.linux-x86_64-3.8/GPy/kern/src
+copying GPy/kern/src/sympy_helpers.h -> build/lib.linux-x86_64-3.8/GPy/kern/src
+creating build/lib.linux-x86_64-3.8/GPy/kern/src/todo
+copying GPy/kern/src/todo/odekern1.c -> build/lib.linux-x86_64-3.8/GPy/kern/src/todo
+copying GPy/models/state_space_cython.c -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/models/state_space_cython.pyx -> build/lib.linux-x86_64-3.8/GPy/models
+copying GPy/util/choleskies_cython.c -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/choleskies_cython.pyx -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/data_resources.json -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/football_teams.json -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/linalg_cython.c -> build/lib.linux-x86_64-3.8/GPy/util
+copying GPy/util/linalg_cython.pyx -> build/lib.linux-x86_64-3.8/GPy/util
+running build_ext
+skipping 'GPy/kern/src/stationary_cython.c' Cython extension (up-to-date)
+skipping 'GPy/util/choleskies_cython.c' Cython extension (up-to-date)
+skipping 'GPy/util/linalg_cython.c' Cython extension (up-to-date)
+skipping 'GPy/kern/src/coregionalize_cython.c' Cython extension (up-to-date)
+skipping 'GPy/models/state_space_cython.c' Cython extension (up-to-date)
+building 'GPy.kern.src.stationary_cython' extension
+creating build/temp.linux-x86_64-3.8
+creating build/temp.linux-x86_64-3.8/GPy
+creating build/temp.linux-x86_64-3.8/GPy/kern
+creating build/temp.linux-x86_64-3.8/GPy/kern/src
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include -I. -I/nix/store/papbnjfxwrdkmz6xfp7v2q7nxyvgcr5l-python3-3.8.6/include/python3.8 -c GPy/kern/src/stationary_cython.c -o build/temp.linux-x86_64-3.8/GPy/kern/src/stationary_cython.o -fopenmp -O3
+In file included from /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/ndarraytypes.h:1822,
+                 from /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/ndarrayobject.h:12,
+                 from /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/arrayobject.h:4,
+                 from GPy/kern/src/stationary_cython.c:610:
+/nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:17:2: warning: #warning "Using deprecated NumPy API, disable it with " "#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp8;;]
+   17 | #warning "Using deprecated NumPy API, disable it with " \
+      |  ^~~~~~~
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include -I. -I/nix/store/papbnjfxwrdkmz6xfp7v2q7nxyvgcr5l-python3-3.8.6/include/python3.8 -c GPy/kern/src/stationary_utils.c -o build/temp.linux-x86_64-3.8/GPy/kern/src/stationary_utils.o -fopenmp -O3
+gcc -shared -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib build/temp.linux-x86_64-3.8/GPy/kern/src/stationary_cython.o build/temp.linux-x86_64-3.8/GPy/kern/src/stationary_utils.o -L/nix/store/papbnjfxwrdkmz6xfp7v2q7nxyvgcr5l-python3-3.8.6/lib -o build/lib.linux-x86_64-3.8/GPy/kern/src/stationary_cython.cpython-38-x86_64-linux-gnu.so -lgomp
+building 'GPy.util.choleskies_cython' extension
+creating build/temp.linux-x86_64-3.8/GPy/util
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include -I. -I/nix/store/papbnjfxwrdkmz6xfp7v2q7nxyvgcr5l-python3-3.8.6/include/python3.8 -c GPy/util/choleskies_cython.c -o build/temp.linux-x86_64-3.8/GPy/util/choleskies_cython.o -fopenmp -O3
+In file included from /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/ndarraytypes.h:1822,
+                 from /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/ndarrayobject.h:12,
+                 from /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/arrayobject.h:4,
+                 from GPy/util/choleskies_cython.c:610:
+/nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:17:2: warning: #warning "Using deprecated NumPy API, disable it with " "#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp8;;]
+   17 | #warning "Using deprecated NumPy API, disable it with " \
+      |  ^~~~~~~
+gcc -shared -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib build/temp.linux-x86_64-3.8/GPy/util/choleskies_cython.o -L/nix/store/papbnjfxwrdkmz6xfp7v2q7nxyvgcr5l-python3-3.8.6/lib -o build/lib.linux-x86_64-3.8/GPy/util/choleskies_cython.cpython-38-x86_64-linux-gnu.so -lgomp
+building 'GPy.util.linalg_cython' extension
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include -I. -I/nix/store/papbnjfxwrdkmz6xfp7v2q7nxyvgcr5l-python3-3.8.6/include/python3.8 -c GPy/util/linalg_cython.c -o build/temp.linux-x86_64-3.8/GPy/util/linalg_cython.o -fopenmp -O3
+In file included from /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/ndarraytypes.h:1822,
+                 from /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/ndarrayobject.h:12,
+                 from /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/arrayobject.h:4,
+                 from GPy/util/linalg_cython.c:611:
+/nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:17:2: warning: #warning "Using deprecated NumPy API, disable it with " "#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp8;;]
+   17 | #warning "Using deprecated NumPy API, disable it with " \
+      |  ^~~~~~~
+gcc -shared -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib build/temp.linux-x86_64-3.8/GPy/util/linalg_cython.o -L/nix/store/papbnjfxwrdkmz6xfp7v2q7nxyvgcr5l-python3-3.8.6/lib -o build/lib.linux-x86_64-3.8/GPy/util/linalg_cython.cpython-38-x86_64-linux-gnu.so -lgomp
+building 'GPy.kern.src.coregionalize_cython' extension
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include -I. -I/nix/store/papbnjfxwrdkmz6xfp7v2q7nxyvgcr5l-python3-3.8.6/include/python3.8 -c GPy/kern/src/coregionalize_cython.c -o build/temp.linux-x86_64-3.8/GPy/kern/src/coregionalize_cython.o -fopenmp -O3
+In file included from /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/ndarraytypes.h:1822,
+                 from /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/ndarrayobject.h:12,
+                 from /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/arrayobject.h:4,
+                 from GPy/kern/src/coregionalize_cython.c:610:
+/nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:17:2: warning: #warning "Using deprecated NumPy API, disable it with " "#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp8;;]
+   17 | #warning "Using deprecated NumPy API, disable it with " \
+      |  ^~~~~~~
+gcc -shared -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib build/temp.linux-x86_64-3.8/GPy/kern/src/coregionalize_cython.o -L/nix/store/papbnjfxwrdkmz6xfp7v2q7nxyvgcr5l-python3-3.8.6/lib -o build/lib.linux-x86_64-3.8/GPy/kern/src/coregionalize_cython.cpython-38-x86_64-linux-gnu.so -lgomp
+building 'GPy.models.state_space_cython' extension
+creating build/temp.linux-x86_64-3.8/GPy/models
+gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include -I. -I/nix/store/papbnjfxwrdkmz6xfp7v2q7nxyvgcr5l-python3-3.8.6/include/python3.8 -c GPy/models/state_space_cython.c -o build/temp.linux-x86_64-3.8/GPy/models/state_space_cython.o -fopenmp -O3
+In file included from /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/ndarraytypes.h:1822,
+                 from /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/ndarrayobject.h:12,
+                 from /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/arrayobject.h:4,
+                 from GPy/models/state_space_cython.c:610:
+/nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:17:2: warning: #warning "Using deprecated NumPy API, disable it with " "#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp8;;]
+   17 | #warning "Using deprecated NumPy API, disable it with " \
+      |  ^~~~~~~
+gcc -shared -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.2.11/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.6.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.2.10/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.2.5/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.18.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.34.0/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-6.3p08/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-1.1.1i/lib build/temp.linux-x86_64-3.8/GPy/models/state_space_cython.o -L/nix/store/papbnjfxwrdkmz6xfp7v2q7nxyvgcr5l-python3-3.8.6/lib -o build/lib.linux-x86_64-3.8/GPy/models/state_space_cython.cpython-38-x86_64-linux-gnu.so -lgomp
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/GPy
+creating build/bdist.linux-x86_64/wheel/GPy/likelihoods
+copying build/lib.linux-x86_64-3.8/GPy/likelihoods/likelihood.py -> build/bdist.linux-x86_64/wheel/GPy/likelihoods
+copying build/lib.linux-x86_64-3.8/GPy/likelihoods/link_functions.py -> build/bdist.linux-x86_64/wheel/GPy/likelihoods
+copying build/lib.linux-x86_64-3.8/GPy/likelihoods/multioutput_likelihood.py -> build/bdist.linux-x86_64/wheel/GPy/likelihoods
+copying build/lib.linux-x86_64-3.8/GPy/likelihoods/mixed_noise.py -> build/bdist.linux-x86_64/wheel/GPy/likelihoods
+copying build/lib.linux-x86_64-3.8/GPy/likelihoods/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/likelihoods
+copying build/lib.linux-x86_64-3.8/GPy/likelihoods/student_t.py -> build/bdist.linux-x86_64/wheel/GPy/likelihoods
+copying build/lib.linux-x86_64-3.8/GPy/likelihoods/exponential.py -> build/bdist.linux-x86_64/wheel/GPy/likelihoods
+copying build/lib.linux-x86_64-3.8/GPy/likelihoods/loggaussian.py -> build/bdist.linux-x86_64/wheel/GPy/likelihoods
+copying build/lib.linux-x86_64-3.8/GPy/likelihoods/loglogistic.py -> build/bdist.linux-x86_64/wheel/GPy/likelihoods
+copying build/lib.linux-x86_64-3.8/GPy/likelihoods/gamma.py -> build/bdist.linux-x86_64/wheel/GPy/likelihoods
+copying build/lib.linux-x86_64-3.8/GPy/likelihoods/weibull.py -> build/bdist.linux-x86_64/wheel/GPy/likelihoods
+copying build/lib.linux-x86_64-3.8/GPy/likelihoods/gaussian.py -> build/bdist.linux-x86_64/wheel/GPy/likelihoods
+copying build/lib.linux-x86_64-3.8/GPy/likelihoods/bernoulli.py -> build/bdist.linux-x86_64/wheel/GPy/likelihoods
+copying build/lib.linux-x86_64-3.8/GPy/likelihoods/poisson.py -> build/bdist.linux-x86_64/wheel/GPy/likelihoods
+copying build/lib.linux-x86_64-3.8/GPy/likelihoods/binomial.py -> build/bdist.linux-x86_64/wheel/GPy/likelihoods
+creating build/bdist.linux-x86_64/wheel/GPy/core
+copying build/lib.linux-x86_64-3.8/GPy/core/gp_grid.py -> build/bdist.linux-x86_64/wheel/GPy/core
+copying build/lib.linux-x86_64-3.8/GPy/core/sparse_gp.py -> build/bdist.linux-x86_64/wheel/GPy/core
+creating build/bdist.linux-x86_64/wheel/GPy/core/parameterization
+copying build/lib.linux-x86_64-3.8/GPy/core/parameterization/transformations.py -> build/bdist.linux-x86_64/wheel/GPy/core/parameterization
+copying build/lib.linux-x86_64-3.8/GPy/core/parameterization/priors.py -> build/bdist.linux-x86_64/wheel/GPy/core/parameterization
+copying build/lib.linux-x86_64-3.8/GPy/core/parameterization/parameterized.py -> build/bdist.linux-x86_64/wheel/GPy/core/parameterization
+copying build/lib.linux-x86_64-3.8/GPy/core/parameterization/param.py -> build/bdist.linux-x86_64/wheel/GPy/core/parameterization
+copying build/lib.linux-x86_64-3.8/GPy/core/parameterization/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/core/parameterization
+copying build/lib.linux-x86_64-3.8/GPy/core/parameterization/priorizable.py -> build/bdist.linux-x86_64/wheel/GPy/core/parameterization
+copying build/lib.linux-x86_64-3.8/GPy/core/parameterization/variational.py -> build/bdist.linux-x86_64/wheel/GPy/core/parameterization
+copying build/lib.linux-x86_64-3.8/GPy/core/symbolic.py -> build/bdist.linux-x86_64/wheel/GPy/core
+copying build/lib.linux-x86_64-3.8/GPy/core/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/core
+copying build/lib.linux-x86_64-3.8/GPy/core/model.py -> build/bdist.linux-x86_64/wheel/GPy/core
+copying build/lib.linux-x86_64-3.8/GPy/core/mapping.py -> build/bdist.linux-x86_64/wheel/GPy/core
+copying build/lib.linux-x86_64-3.8/GPy/core/svgp.py -> build/bdist.linux-x86_64/wheel/GPy/core
+copying build/lib.linux-x86_64-3.8/GPy/core/sparse_gp_mpi.py -> build/bdist.linux-x86_64/wheel/GPy/core
+copying build/lib.linux-x86_64-3.8/GPy/core/gp.py -> build/bdist.linux-x86_64/wheel/GPy/core
+copying build/lib.linux-x86_64-3.8/GPy/installation.cfg -> build/bdist.linux-x86_64/wheel/GPy
+creating build/bdist.linux-x86_64/wheel/GPy/plotting
+creating build/bdist.linux-x86_64/wheel/GPy/plotting/plotly_dep
+copying build/lib.linux-x86_64-3.8/GPy/plotting/plotly_dep/defaults.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/plotly_dep
+copying build/lib.linux-x86_64-3.8/GPy/plotting/plotly_dep/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/plotly_dep
+copying build/lib.linux-x86_64-3.8/GPy/plotting/plotly_dep/plot_definitions.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/plotly_dep
+creating build/bdist.linux-x86_64/wheel/GPy/plotting/gpy_plot
+copying build/lib.linux-x86_64-3.8/GPy/plotting/gpy_plot/data_plots.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/gpy_plot
+copying build/lib.linux-x86_64-3.8/GPy/plotting/gpy_plot/plot_util.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/gpy_plot
+copying build/lib.linux-x86_64-3.8/GPy/plotting/gpy_plot/inference_plots.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/gpy_plot
+copying build/lib.linux-x86_64-3.8/GPy/plotting/gpy_plot/kernel_plots.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/gpy_plot
+copying build/lib.linux-x86_64-3.8/GPy/plotting/gpy_plot/gp_plots.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/gpy_plot
+copying build/lib.linux-x86_64-3.8/GPy/plotting/gpy_plot/latent_plots.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/gpy_plot
+copying build/lib.linux-x86_64-3.8/GPy/plotting/gpy_plot/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/gpy_plot
+copying build/lib.linux-x86_64-3.8/GPy/plotting/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/plotting
+copying build/lib.linux-x86_64-3.8/GPy/plotting/Tango.py -> build/bdist.linux-x86_64/wheel/GPy/plotting
+creating build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep
+copying build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/priors_plots.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep
+copying build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/plot_definitions.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep
+copying build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/visualize.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep
+copying build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/svig_plots.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep
+copying build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/img_plots.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep
+copying build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/defaults.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep
+copying build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep
+creating build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep/controllers
+copying build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/controllers/imshow_controller.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep/controllers
+copying build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/controllers/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep/controllers
+copying build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/controllers/axis_event_controller.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep/controllers
+copying build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/util.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep
+copying build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/mapping_plots.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep
+copying build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/maps.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep
+copying build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/ssgplvm.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep
+copying build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/variational_plots.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep
+copying build/lib.linux-x86_64-3.8/GPy/plotting/matplot_dep/base_plots.py -> build/bdist.linux-x86_64/wheel/GPy/plotting/matplot_dep
+copying build/lib.linux-x86_64-3.8/GPy/plotting/abstract_plotting_library.py -> build/bdist.linux-x86_64/wheel/GPy/plotting
+creating build/bdist.linux-x86_64/wheel/GPy/examples
+copying build/lib.linux-x86_64-3.8/GPy/examples/state_space.py -> build/bdist.linux-x86_64/wheel/GPy/examples
+copying build/lib.linux-x86_64-3.8/GPy/examples/non_gaussian.py -> build/bdist.linux-x86_64/wheel/GPy/examples
+copying build/lib.linux-x86_64-3.8/GPy/examples/regression.py -> build/bdist.linux-x86_64/wheel/GPy/examples
+copying build/lib.linux-x86_64-3.8/GPy/examples/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/examples
+copying build/lib.linux-x86_64-3.8/GPy/examples/classification.py -> build/bdist.linux-x86_64/wheel/GPy/examples
+copying build/lib.linux-x86_64-3.8/GPy/examples/dimensionality_reduction.py -> build/bdist.linux-x86_64/wheel/GPy/examples
+creating build/bdist.linux-x86_64/wheel/GPy/kern
+copying build/lib.linux-x86_64-3.8/GPy/kern/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/kern
+creating build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/sde_matern.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/kernel_slice_operations.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/eq_ode1.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/coregionalize_cython.cpython-38-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/grid_kerns.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/stationary.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/multioutput_kern.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+creating build/bdist.linux-x86_64/wheel/GPy/kern/src/todo
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/todo/odekern1.c -> build/bdist.linux-x86_64/wheel/GPy/kern/src/todo
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/integral.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/eq_ode2.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/stationary_cython.c -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/sde_linear.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/rbf.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/symmetric.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/coregionalize_cython.c -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+creating build/bdist.linux-x86_64/wheel/GPy/kern/src/psi_comp
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/psi_comp/rbf_psi_comp.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src/psi_comp
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/psi_comp/ssrbf_psi_comp.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src/psi_comp
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/psi_comp/sslinear_psi_comp.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src/psi_comp
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/psi_comp/ssrbf_psi_gpucomp.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src/psi_comp
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/psi_comp/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src/psi_comp
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/psi_comp/gaussherm.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src/psi_comp
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/psi_comp/linear_psi_comp.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src/psi_comp
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/psi_comp/rbf_psi_gpucomp.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src/psi_comp
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/stationary_utils.c -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/prod.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/kern.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/diff_kern.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/standard_periodic.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/sde_static.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/poly.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/ODE_UY.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/ODE_UYC.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/splitKern.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/basis_funcs.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/symbolic.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/linear.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/multioutput_derivative_kern.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/sde_standard_periodic.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/multidimensional_integral_limits.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/add.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/sde_brownian.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/brownian.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/stationary_cython.cpython-38-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/static.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/stationary_cython.pyx -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/coregionalize.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/sde_stationary.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/integral_limits.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/trunclinear.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/sympy_helpers.h -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/independent_outputs.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/coregionalize_cython.pyx -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/periodic.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/ODE_st.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/spline.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/ODE_t.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/stationary_utils.h -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+copying build/lib.linux-x86_64-3.8/GPy/kern/src/mlp.py -> build/bdist.linux-x86_64/wheel/GPy/kern/src
+creating build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/misc.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/pca.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/functions.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/block_matrices.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/linalg_gpu.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/linalg_cython.cpython-38-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/config.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/subarray_and_sorting.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/debug.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/ln_diff_erfs.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/gpu_init.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/choleskies_cython.pyx -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/choleskies_cython.c -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/normalizer.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/univariate_Gaussian.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/input_warping_functions.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/datasets.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/squashers.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/initialization.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/netpbmfile.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/data_resources.json -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/warping_functions.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/decorators.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/parallel.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/multioutput.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/classification.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/diag.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/linalg_cython.c -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/football_teams.json -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/quad_integrate.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/linalg_cython.pyx -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/mocap.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/cluster_with_offset.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/choleskies.py -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/choleskies_cython.cpython-38-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/GPy/util
+copying build/lib.linux-x86_64-3.8/GPy/util/linalg.py -> build/bdist.linux-x86_64/wheel/GPy/util
+creating build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/misc_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/model_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/gp_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/pep_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/state_space_main_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/kernel_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/pickle_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/serialization_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/gpy_kernels_state_space_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/plotting_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/likelihood_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/minibatch_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/fitc.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/svgp_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/linalg_test.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/variational_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/examples_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/mpi_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/grid_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/util_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/quadrature_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/ep_likelihood_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/tp_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/mapping_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/link_function_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/inference_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/cython_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/meanfunc_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/rv_transformation_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/prior_tests.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+copying build/lib.linux-x86_64-3.8/GPy/testing/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/testing
+creating build/bdist.linux-x86_64/wheel/GPy/mappings
+copying build/lib.linux-x86_64-3.8/GPy/mappings/linear.py -> build/bdist.linux-x86_64/wheel/GPy/mappings
+copying build/lib.linux-x86_64-3.8/GPy/mappings/identity.py -> build/bdist.linux-x86_64/wheel/GPy/mappings
+copying build/lib.linux-x86_64-3.8/GPy/mappings/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/mappings
+copying build/lib.linux-x86_64-3.8/GPy/mappings/compound.py -> build/bdist.linux-x86_64/wheel/GPy/mappings
+copying build/lib.linux-x86_64-3.8/GPy/mappings/kernel.py -> build/bdist.linux-x86_64/wheel/GPy/mappings
+copying build/lib.linux-x86_64-3.8/GPy/mappings/piecewise_linear.py -> build/bdist.linux-x86_64/wheel/GPy/mappings
+copying build/lib.linux-x86_64-3.8/GPy/mappings/constant.py -> build/bdist.linux-x86_64/wheel/GPy/mappings
+copying build/lib.linux-x86_64-3.8/GPy/mappings/mlpext.py -> build/bdist.linux-x86_64/wheel/GPy/mappings
+copying build/lib.linux-x86_64-3.8/GPy/mappings/mlp.py -> build/bdist.linux-x86_64/wheel/GPy/mappings
+copying build/lib.linux-x86_64-3.8/GPy/mappings/additive.py -> build/bdist.linux-x86_64/wheel/GPy/mappings
+copying build/lib.linux-x86_64-3.8/GPy/__version__.py -> build/bdist.linux-x86_64/wheel/GPy
+copying build/lib.linux-x86_64-3.8/GPy/__init__.py -> build/bdist.linux-x86_64/wheel/GPy
+creating build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/bcgplvm.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/state_space_model.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/gp_grid_regression.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/sparse_gp_classification.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/gp_kronecker_gaussian_regression.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/gp_classification.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/sparse_gp_minibatch.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/gp_coregionalized_regression.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/gplvm.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/gp_regression.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/bayesian_gplvm.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/state_space_main.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/gp_multiout_regression.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/mrd.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/state_space.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/gp_var_gauss.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/input_warped_gp.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/sparse_gplvm.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/gp_multiout_regression_md.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/multioutput_gp.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/bayesian_gplvm_minibatch.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/ss_gplvm.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/state_space_cython.cpython-38-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/one_vs_all_sparse_classification.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/gp_heteroscedastic_regression.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/sparse_gp_regression.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/state_space_setup.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/ibp_lfm.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/warped_gp.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/tp_regression.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/sparse_gp_regression_md.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/state_space_cython.pyx -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/dpgplvm.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/gradient_checker.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/state_space_cython.c -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/sparse_gp_coregionalized_regression.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/ss_mrd.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/one_vs_all_classification.py -> build/bdist.linux-x86_64/wheel/GPy/models
+copying build/lib.linux-x86_64-3.8/GPy/models/gp_offset_regression.py -> build/bdist.linux-x86_64/wheel/GPy/models
+creating build/bdist.linux-x86_64/wheel/GPy/inference
+creating build/bdist.linux-x86_64/wheel/GPy/inference/mcmc
+copying build/lib.linux-x86_64-3.8/GPy/inference/mcmc/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/inference/mcmc
+copying build/lib.linux-x86_64-3.8/GPy/inference/mcmc/hmc.py -> build/bdist.linux-x86_64/wheel/GPy/inference/mcmc
+copying build/lib.linux-x86_64-3.8/GPy/inference/mcmc/samplers.py -> build/bdist.linux-x86_64/wheel/GPy/inference/mcmc
+creating build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/var_dtc_parallel.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/expectation_propagation.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/exact_studentt_inference.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/vardtc_md.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/dtc.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/svgp.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/exact_gaussian_inference.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/var_gauss.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/vardtc_svi_multiout_miss.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/posterior.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/fitc.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/vardtc_svi_multiout.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/var_dtc.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/gaussian_grid_inference.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/grid_posterior.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/laplace.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/inferenceX.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+copying build/lib.linux-x86_64-3.8/GPy/inference/latent_function_inference/pep.py -> build/bdist.linux-x86_64/wheel/GPy/inference/latent_function_inference
+creating build/bdist.linux-x86_64/wheel/GPy/inference/optimization
+copying build/lib.linux-x86_64-3.8/GPy/inference/optimization/stochastics.py -> build/bdist.linux-x86_64/wheel/GPy/inference/optimization
+copying build/lib.linux-x86_64-3.8/GPy/inference/optimization/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/inference/optimization
+copying build/lib.linux-x86_64-3.8/GPy/inference/__init__.py -> build/bdist.linux-x86_64/wheel/GPy/inference
+copying build/lib.linux-x86_64-3.8/GPy/defaults.cfg -> build/bdist.linux-x86_64/wheel/GPy
+running install_egg_info
+Copying GPy.egg-info to build/bdist.linux-x86_64/wheel/GPy-1.9.9-py3.8.egg-info
+running install_scripts
+adding license file "LICENSE.txt" (matched pattern "LICEN[CS]E*")
+adding license file "AUTHORS.txt" (matched pattern "AUTHORS*")
+creating build/bdist.linux-x86_64/wheel/GPy-1.9.9.dist-info/WHEEL
+creating 'dist/GPy-1.9.9-cp38-cp38-linux_x86_64.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'GPy/__init__.py'
+adding 'GPy/__version__.py'
+adding 'GPy/defaults.cfg'
+adding 'GPy/installation.cfg'
+adding 'GPy/core/__init__.py'
+adding 'GPy/core/gp.py'
+adding 'GPy/core/gp_grid.py'
+adding 'GPy/core/mapping.py'
+adding 'GPy/core/model.py'
+adding 'GPy/core/sparse_gp.py'
+adding 'GPy/core/sparse_gp_mpi.py'
+adding 'GPy/core/svgp.py'
+adding 'GPy/core/symbolic.py'
+adding 'GPy/core/parameterization/__init__.py'
+adding 'GPy/core/parameterization/param.py'
+adding 'GPy/core/parameterization/parameterized.py'
+adding 'GPy/core/parameterization/priorizable.py'
+adding 'GPy/core/parameterization/priors.py'
+adding 'GPy/core/parameterization/transformations.py'
+adding 'GPy/core/parameterization/variational.py'
+adding 'GPy/examples/__init__.py'
+adding 'GPy/examples/classification.py'
+adding 'GPy/examples/dimensionality_reduction.py'
+adding 'GPy/examples/non_gaussian.py'
+adding 'GPy/examples/regression.py'
+adding 'GPy/examples/state_space.py'
+adding 'GPy/inference/__init__.py'
+adding 'GPy/inference/latent_function_inference/__init__.py'
+adding 'GPy/inference/latent_function_inference/dtc.py'
+adding 'GPy/inference/latent_function_inference/exact_gaussian_inference.py'
+adding 'GPy/inference/latent_function_inference/exact_studentt_inference.py'
+adding 'GPy/inference/latent_function_inference/expectation_propagation.py'
+adding 'GPy/inference/latent_function_inference/fitc.py'
+adding 'GPy/inference/latent_function_inference/gaussian_grid_inference.py'
+adding 'GPy/inference/latent_function_inference/grid_posterior.py'
+adding 'GPy/inference/latent_function_inference/inferenceX.py'
+adding 'GPy/inference/latent_function_inference/laplace.py'
+adding 'GPy/inference/latent_function_inference/pep.py'
+adding 'GPy/inference/latent_function_inference/posterior.py'
+adding 'GPy/inference/latent_function_inference/svgp.py'
+adding 'GPy/inference/latent_function_inference/var_dtc.py'
+adding 'GPy/inference/latent_function_inference/var_dtc_parallel.py'
+adding 'GPy/inference/latent_function_inference/var_gauss.py'
+adding 'GPy/inference/latent_function_inference/vardtc_md.py'
+adding 'GPy/inference/latent_function_inference/vardtc_svi_multiout.py'
+adding 'GPy/inference/latent_function_inference/vardtc_svi_multiout_miss.py'
+adding 'GPy/inference/mcmc/__init__.py'
+adding 'GPy/inference/mcmc/hmc.py'
+adding 'GPy/inference/mcmc/samplers.py'
+adding 'GPy/inference/optimization/__init__.py'
+adding 'GPy/inference/optimization/stochastics.py'
+adding 'GPy/kern/__init__.py'
+adding 'GPy/kern/src/ODE_UY.py'
+adding 'GPy/kern/src/ODE_UYC.py'
+adding 'GPy/kern/src/ODE_st.py'
+adding 'GPy/kern/src/ODE_t.py'
+adding 'GPy/kern/src/__init__.py'
+adding 'GPy/kern/src/add.py'
+adding 'GPy/kern/src/basis_funcs.py'
+adding 'GPy/kern/src/brownian.py'
+adding 'GPy/kern/src/coregionalize.py'
+adding 'GPy/kern/src/coregionalize_cython.c'
+adding 'GPy/kern/src/coregionalize_cython.cpython-38-x86_64-linux-gnu.so'
+adding 'GPy/kern/src/coregionalize_cython.pyx'
+adding 'GPy/kern/src/diff_kern.py'
+adding 'GPy/kern/src/eq_ode1.py'
+adding 'GPy/kern/src/eq_ode2.py'
+adding 'GPy/kern/src/grid_kerns.py'
+adding 'GPy/kern/src/independent_outputs.py'
+adding 'GPy/kern/src/integral.py'
+adding 'GPy/kern/src/integral_limits.py'
+adding 'GPy/kern/src/kern.py'
+adding 'GPy/kern/src/kernel_slice_operations.py'
+adding 'GPy/kern/src/linear.py'
+adding 'GPy/kern/src/mlp.py'
+adding 'GPy/kern/src/multidimensional_integral_limits.py'
+adding 'GPy/kern/src/multioutput_derivative_kern.py'
+adding 'GPy/kern/src/multioutput_kern.py'
+adding 'GPy/kern/src/periodic.py'
+adding 'GPy/kern/src/poly.py'
+adding 'GPy/kern/src/prod.py'
+adding 'GPy/kern/src/rbf.py'
+adding 'GPy/kern/src/sde_brownian.py'
+adding 'GPy/kern/src/sde_linear.py'
+adding 'GPy/kern/src/sde_matern.py'
+adding 'GPy/kern/src/sde_standard_periodic.py'
+adding 'GPy/kern/src/sde_static.py'
+adding 'GPy/kern/src/sde_stationary.py'
+adding 'GPy/kern/src/spline.py'
+adding 'GPy/kern/src/splitKern.py'
+adding 'GPy/kern/src/standard_periodic.py'
+adding 'GPy/kern/src/static.py'
+adding 'GPy/kern/src/stationary.py'
+adding 'GPy/kern/src/stationary_cython.c'
+adding 'GPy/kern/src/stationary_cython.cpython-38-x86_64-linux-gnu.so'
+adding 'GPy/kern/src/stationary_cython.pyx'
+adding 'GPy/kern/src/stationary_utils.c'
+adding 'GPy/kern/src/stationary_utils.h'
+adding 'GPy/kern/src/symbolic.py'
+adding 'GPy/kern/src/symmetric.py'
+adding 'GPy/kern/src/sympy_helpers.h'
+adding 'GPy/kern/src/trunclinear.py'
+adding 'GPy/kern/src/psi_comp/__init__.py'
+adding 'GPy/kern/src/psi_comp/gaussherm.py'
+adding 'GPy/kern/src/psi_comp/linear_psi_comp.py'
+adding 'GPy/kern/src/psi_comp/rbf_psi_comp.py'
+adding 'GPy/kern/src/psi_comp/rbf_psi_gpucomp.py'
+adding 'GPy/kern/src/psi_comp/sslinear_psi_comp.py'
+adding 'GPy/kern/src/psi_comp/ssrbf_psi_comp.py'
+adding 'GPy/kern/src/psi_comp/ssrbf_psi_gpucomp.py'
+adding 'GPy/kern/src/todo/odekern1.c'
+adding 'GPy/likelihoods/__init__.py'
+adding 'GPy/likelihoods/bernoulli.py'
+adding 'GPy/likelihoods/binomial.py'
+adding 'GPy/likelihoods/exponential.py'
+adding 'GPy/likelihoods/gamma.py'
+adding 'GPy/likelihoods/gaussian.py'
+adding 'GPy/likelihoods/likelihood.py'
+adding 'GPy/likelihoods/link_functions.py'
+adding 'GPy/likelihoods/loggaussian.py'
+adding 'GPy/likelihoods/loglogistic.py'
+adding 'GPy/likelihoods/mixed_noise.py'
+adding 'GPy/likelihoods/multioutput_likelihood.py'
+adding 'GPy/likelihoods/poisson.py'
+adding 'GPy/likelihoods/student_t.py'
+adding 'GPy/likelihoods/weibull.py'
+adding 'GPy/mappings/__init__.py'
+adding 'GPy/mappings/additive.py'
+adding 'GPy/mappings/compound.py'
+adding 'GPy/mappings/constant.py'
+adding 'GPy/mappings/identity.py'
+adding 'GPy/mappings/kernel.py'
+adding 'GPy/mappings/linear.py'
+adding 'GPy/mappings/mlp.py'
+adding 'GPy/mappings/mlpext.py'
+adding 'GPy/mappings/piecewise_linear.py'
+adding 'GPy/models/__init__.py'
+adding 'GPy/models/bayesian_gplvm.py'
+adding 'GPy/models/bayesian_gplvm_minibatch.py'
+adding 'GPy/models/bcgplvm.py'
+adding 'GPy/models/dpgplvm.py'
+adding 'GPy/models/gp_classification.py'
+adding 'GPy/models/gp_coregionalized_regression.py'
+adding 'GPy/models/gp_grid_regression.py'
+adding 'GPy/models/gp_heteroscedastic_regression.py'
+adding 'GPy/models/gp_kronecker_gaussian_regression.py'
+adding 'GPy/models/gp_multiout_regression.py'
+adding 'GPy/models/gp_multiout_regression_md.py'
+adding 'GPy/models/gp_offset_regression.py'
+adding 'GPy/models/gp_regression.py'
+adding 'GPy/models/gp_var_gauss.py'
+adding 'GPy/models/gplvm.py'
+adding 'GPy/models/gradient_checker.py'
+adding 'GPy/models/ibp_lfm.py'
+adding 'GPy/models/input_warped_gp.py'
+adding 'GPy/models/mrd.py'
+adding 'GPy/models/multioutput_gp.py'
+adding 'GPy/models/one_vs_all_classification.py'
+adding 'GPy/models/one_vs_all_sparse_classification.py'
+adding 'GPy/models/sparse_gp_classification.py'
+adding 'GPy/models/sparse_gp_coregionalized_regression.py'
+adding 'GPy/models/sparse_gp_minibatch.py'
+adding 'GPy/models/sparse_gp_regression.py'
+adding 'GPy/models/sparse_gp_regression_md.py'
+adding 'GPy/models/sparse_gplvm.py'
+adding 'GPy/models/ss_gplvm.py'
+adding 'GPy/models/ss_mrd.py'
+adding 'GPy/models/state_space.py'
+adding 'GPy/models/state_space_cython.c'
+adding 'GPy/models/state_space_cython.cpython-38-x86_64-linux-gnu.so'
+adding 'GPy/models/state_space_cython.pyx'
+adding 'GPy/models/state_space_main.py'
+adding 'GPy/models/state_space_model.py'
+adding 'GPy/models/state_space_setup.py'
+adding 'GPy/models/tp_regression.py'
+adding 'GPy/models/warped_gp.py'
+adding 'GPy/plotting/Tango.py'
+adding 'GPy/plotting/__init__.py'
+adding 'GPy/plotting/abstract_plotting_library.py'
+adding 'GPy/plotting/gpy_plot/__init__.py'
+adding 'GPy/plotting/gpy_plot/data_plots.py'
+adding 'GPy/plotting/gpy_plot/gp_plots.py'
+adding 'GPy/plotting/gpy_plot/inference_plots.py'
+adding 'GPy/plotting/gpy_plot/kernel_plots.py'
+adding 'GPy/plotting/gpy_plot/latent_plots.py'
+adding 'GPy/plotting/gpy_plot/plot_util.py'
+adding 'GPy/plotting/matplot_dep/__init__.py'
+adding 'GPy/plotting/matplot_dep/base_plots.py'
+adding 'GPy/plotting/matplot_dep/defaults.py'
+adding 'GPy/plotting/matplot_dep/img_plots.py'
+adding 'GPy/plotting/matplot_dep/mapping_plots.py'
+adding 'GPy/plotting/matplot_dep/maps.py'
+adding 'GPy/plotting/matplot_dep/plot_definitions.py'
+adding 'GPy/plotting/matplot_dep/priors_plots.py'
+adding 'GPy/plotting/matplot_dep/ssgplvm.py'
+adding 'GPy/plotting/matplot_dep/svig_plots.py'
+adding 'GPy/plotting/matplot_dep/util.py'
+adding 'GPy/plotting/matplot_dep/variational_plots.py'
+adding 'GPy/plotting/matplot_dep/visualize.py'
+adding 'GPy/plotting/matplot_dep/controllers/__init__.py'
+adding 'GPy/plotting/matplot_dep/controllers/axis_event_controller.py'
+adding 'GPy/plotting/matplot_dep/controllers/imshow_controller.py'
+adding 'GPy/plotting/plotly_dep/__init__.py'
+adding 'GPy/plotting/plotly_dep/defaults.py'
+adding 'GPy/plotting/plotly_dep/plot_definitions.py'
+adding 'GPy/testing/__init__.py'
+adding 'GPy/testing/cython_tests.py'
+adding 'GPy/testing/ep_likelihood_tests.py'
+adding 'GPy/testing/examples_tests.py'
+adding 'GPy/testing/fitc.py'
+adding 'GPy/testing/gp_tests.py'
+adding 'GPy/testing/gpy_kernels_state_space_tests.py'
+adding 'GPy/testing/grid_tests.py'
+adding 'GPy/testing/inference_tests.py'
+adding 'GPy/testing/kernel_tests.py'
+adding 'GPy/testing/likelihood_tests.py'
+adding 'GPy/testing/linalg_test.py'
+adding 'GPy/testing/link_function_tests.py'
+adding 'GPy/testing/mapping_tests.py'
+adding 'GPy/testing/meanfunc_tests.py'
+adding 'GPy/testing/minibatch_tests.py'
+adding 'GPy/testing/misc_tests.py'
+adding 'GPy/testing/model_tests.py'
+adding 'GPy/testing/mpi_tests.py'
+adding 'GPy/testing/pep_tests.py'
+adding 'GPy/testing/pickle_tests.py'
+adding 'GPy/testing/plotting_tests.py'
+adding 'GPy/testing/prior_tests.py'
+adding 'GPy/testing/quadrature_tests.py'
+adding 'GPy/testing/rv_transformation_tests.py'
+adding 'GPy/testing/serialization_tests.py'
+adding 'GPy/testing/state_space_main_tests.py'
+adding 'GPy/testing/svgp_tests.py'
+adding 'GPy/testing/tp_tests.py'
+adding 'GPy/testing/util_tests.py'
+adding 'GPy/testing/variational_tests.py'
+adding 'GPy/util/__init__.py'
+adding 'GPy/util/block_matrices.py'
+adding 'GPy/util/choleskies.py'
+adding 'GPy/util/choleskies_cython.c'
+adding 'GPy/util/choleskies_cython.cpython-38-x86_64-linux-gnu.so'
+adding 'GPy/util/choleskies_cython.pyx'
+adding 'GPy/util/classification.py'
+adding 'GPy/util/cluster_with_offset.py'
+adding 'GPy/util/config.py'
+adding 'GPy/util/data_resources.json'
+adding 'GPy/util/datasets.py'
+adding 'GPy/util/debug.py'
+adding 'GPy/util/decorators.py'
+adding 'GPy/util/diag.py'
+adding 'GPy/util/football_teams.json'
+adding 'GPy/util/functions.py'
+adding 'GPy/util/gpu_init.py'
+adding 'GPy/util/initialization.py'
+adding 'GPy/util/input_warping_functions.py'
+adding 'GPy/util/linalg.py'
+adding 'GPy/util/linalg_cython.c'
+adding 'GPy/util/linalg_cython.cpython-38-x86_64-linux-gnu.so'
+adding 'GPy/util/linalg_cython.pyx'
+adding 'GPy/util/linalg_gpu.py'
+adding 'GPy/util/ln_diff_erfs.py'
+adding 'GPy/util/misc.py'
+adding 'GPy/util/mocap.py'
+adding 'GPy/util/multioutput.py'
+adding 'GPy/util/netpbmfile.py'
+adding 'GPy/util/normalizer.py'
+adding 'GPy/util/parallel.py'
+adding 'GPy/util/pca.py'
+adding 'GPy/util/quad_integrate.py'
+adding 'GPy/util/squashers.py'
+adding 'GPy/util/subarray_and_sorting.py'
+adding 'GPy/util/univariate_Gaussian.py'
+adding 'GPy/util/warping_functions.py'
+adding 'GPy-1.9.9.dist-info/AUTHORS.txt'
+adding 'GPy-1.9.9.dist-info/LICENSE.txt'
+adding 'GPy-1.9.9.dist-info/METADATA'
+adding 'GPy-1.9.9.dist-info/WHEEL'
+adding 'GPy-1.9.9.dist-info/top_level.txt'
+adding 'GPy-1.9.9.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+
+GPy: Saving user configuration file to /homeless-shelter/.config/GPy/user.cfg
+GPy: Could not write user configuration file /homeless-shelter/.config/GPy/user.cfg
+Finished executing setuptoolsBuildPhase
+installing
+Executing pipInstallPhase
+/build/GPy-1.9.9/dist /build/GPy-1.9.9
+Processing ./GPy-1.9.9-cp38-cp38-linux_x86_64.whl
+Requirement already satisfied: scipy>=0.16 in /nix/store/mj8cd16v7fdfvw6snk8hbm56k91ik3an-python3.8-scipy-1.5.4/lib/python3.8/site-packages (from GPy==1.9.9) (1.5.4)
+Requirement already satisfied: numpy>=1.7 in /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages (from GPy==1.9.9) (1.19.4)
+Requirement already satisfied: six in /nix/store/z7q0h3dcvrmm6cmz9cm3hn9z1smvrisn-python3.8-six-1.15.0/lib/python3.8/site-packages (from GPy==1.9.9) (1.15.0)
+Requirement already satisfied: paramz>=0.9.0 in /nix/store/34kr1w3kbbdnwb2cnq7bm25zl60wgzx0-python3.8-paramz-0.9.5/lib/python3.8/site-packages (from GPy==1.9.9) (0.9.5)
+Requirement already satisfied: numpy>=1.7 in /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages (from GPy==1.9.9) (1.19.4)
+Requirement already satisfied: six in /nix/store/z7q0h3dcvrmm6cmz9cm3hn9z1smvrisn-python3.8-six-1.15.0/lib/python3.8/site-packages (from GPy==1.9.9) (1.15.0)
+Requirement already satisfied: scipy>=0.16 in /nix/store/mj8cd16v7fdfvw6snk8hbm56k91ik3an-python3.8-scipy-1.5.4/lib/python3.8/site-packages (from GPy==1.9.9) (1.5.4)
+Requirement already satisfied: decorator>=4.0.10 in /nix/store/4g5mpvxzlrqa4dps5igx1xyjbrh6mzx6-python3.8-decorator-4.4.2/lib/python3.8/site-packages (from paramz>=0.9.0->GPy==1.9.9) (4.4.2)
+Requirement already satisfied: numpy>=1.7 in /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages (from GPy==1.9.9) (1.19.4)
+Installing collected packages: GPy
+Successfully installed GPy-1.9.9
+/build/GPy-1.9.9
+Finished executing pipInstallPhase
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9
+shrinking /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/linalg_cython.cpython-38-x86_64-linux-gnu.so
+shrinking /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/choleskies_cython.cpython-38-x86_64-linux-gnu.so
+shrinking /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/coregionalize_cython.cpython-38-x86_64-linux-gnu.so
+shrinking /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/stationary_cython.cpython-38-x86_64-linux-gnu.so
+shrinking /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/state_space_cython.cpython-38-x86_64-linux-gnu.so
+strip is /nix/store/4l1qrgxfy171bngpphp4p9wj7bhrlfn3-binutils-2.34/bin/strip
+stripping (with command strip and flags -S) in /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib 
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/variational_plots.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/priors_plots.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/maps.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/visualize.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/defaults.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/base_plots.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/util.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/plot_definitions.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/ssgplvm.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/controllers/axis_event_controller.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/controllers/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/controllers/imshow_controller.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/controllers/__pycache__/imshow_controller.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/controllers/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/controllers/__pycache__/axis_event_controller.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/img_plots.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/__pycache__/maps.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/__pycache__/defaults.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/__pycache__/util.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/__pycache__/svig_plots.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/__pycache__/plot_definitions.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/__pycache__/visualize.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/__pycache__/variational_plots.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/__pycache__/ssgplvm.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/__pycache__/base_plots.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/__pycache__/img_plots.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/__pycache__/priors_plots.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/__pycache__/mapping_plots.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/mapping_plots.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/matplot_dep/svig_plots.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/plotly_dep/defaults.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/plotly_dep/plot_definitions.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/plotly_dep/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/plotly_dep/__pycache__/defaults.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/plotly_dep/__pycache__/plot_definitions.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/__pycache__/abstract_plotting_library.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/__pycache__/Tango.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/gpy_plot/__pycache__/inference_plots.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/gpy_plot/__pycache__/data_plots.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/gpy_plot/__pycache__/latent_plots.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/gpy_plot/__pycache__/kernel_plots.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/gpy_plot/__pycache__/gp_plots.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/gpy_plot/__pycache__/plot_util.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/gpy_plot/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/gpy_plot/gp_plots.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/gpy_plot/data_plots.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/gpy_plot/inference_plots.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/gpy_plot/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/gpy_plot/latent_plots.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/gpy_plot/plot_util.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/gpy_plot/kernel_plots.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/Tango.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/plotting/abstract_plotting_library.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/__version__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/mapping_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/prior_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/svgp_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/pickle_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/meanfunc_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/variational_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/mpi_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/gp_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/prior_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/mapping_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/minibatch_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/gpy_kernels_state_space_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/state_space_main_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/model_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/fitc.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/rv_transformation_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/kernel_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/link_function_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/meanfunc_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/grid_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/tp_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/likelihood_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/quadrature_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/pep_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/inference_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/mpi_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/util_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/variational_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/serialization_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/examples_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/svgp_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/plotting_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/linalg_test.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/ep_likelihood_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/pickle_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/cython_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__pycache__/misc_tests.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/likelihood_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/examples_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/kernel_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/gp_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/inference_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/serialization_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/misc_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/link_function_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/linalg_test.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/pep_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/plotting_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/ep_likelihood_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/minibatch_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/gpy_kernels_state_space_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/state_space_main_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/fitc.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/quadrature_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/util_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/grid_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/cython_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/model_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/tp_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/testing/rv_transformation_tests.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/examples/regression.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/examples/__pycache__/state_space.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/examples/__pycache__/classification.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/examples/__pycache__/non_gaussian.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/examples/__pycache__/dimensionality_reduction.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/examples/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/examples/__pycache__/regression.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/examples/dimensionality_reduction.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/examples/state_space.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/examples/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/examples/classification.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/examples/non_gaussian.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/mapping.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/svgp.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/gp.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/parameterization/transformations.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/parameterization/parameterized.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/parameterization/priors.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/parameterization/__pycache__/priors.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/parameterization/__pycache__/priorizable.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/parameterization/__pycache__/parameterized.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/parameterization/__pycache__/variational.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/parameterization/__pycache__/transformations.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/parameterization/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/parameterization/__pycache__/param.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/parameterization/priorizable.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/parameterization/variational.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/parameterization/param.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/parameterization/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/symbolic.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/sparse_gp.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/gp_grid.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/sparse_gp_mpi.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/model.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/__pycache__/sparse_gp.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/__pycache__/gp_grid.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/__pycache__/symbolic.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/__pycache__/gp.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/__pycache__/mapping.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/__pycache__/model.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/__pycache__/svgp.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/core/__pycache__/sparse_gp_mpi.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/warping_functions.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/normalizer.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/mocap.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/univariate_Gaussian.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/parallel.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/choleskies_cython.c: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/diag.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/block_matrices.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/linalg.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/input_warping_functions.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/linalg_gpu.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/functions.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/ln_diff_erfs.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/pca.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/cluster_with_offset.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/choleskies.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/football_teams.json: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/initialization.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/debug.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/subarray_and_sorting.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/multioutput.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/netpbmfile.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/linalg_cython.pyx: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/squashers.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/config.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/linalg_gpu.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/ln_diff_erfs.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/choleskies.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/cluster_with_offset.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/diag.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/univariate_Gaussian.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/misc.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/datasets.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/netpbmfile.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/input_warping_functions.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/parallel.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/classification.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/decorators.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/warping_functions.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/debug.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/normalizer.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/linalg.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/gpu_init.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/block_matrices.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/subarray_and_sorting.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/mocap.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/quad_integrate.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/functions.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/pca.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/multioutput.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/__pycache__/initialization.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/linalg_cython.c: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/decorators.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/squashers.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/datasets.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/quad_integrate.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/choleskies_cython.pyx: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/data_resources.json: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/misc.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/classification.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/gpu_init.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/util/config.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/ODE_st.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/kern.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/coregionalize_cython.c: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/prod.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/spline.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/ODE_UY.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/sde_stationary.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/symmetric.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/ODE_t.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/independent_outputs.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/static.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/stationary.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/rbf.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/sde_static.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/symbolic.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/prod.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/kernel_slice_operations.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/coregionalize.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/kern.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/sde_linear.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/integral_limits.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/standard_periodic.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/sde_matern.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/periodic.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/ODE_UYC.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/sde_standard_periodic.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/add.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/eq_ode2.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/linear.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/brownian.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/diff_kern.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/splitKern.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/spline.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/sde_brownian.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/eq_ode1.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/grid_kerns.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/poly.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/integral.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/basis_funcs.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/ODE_st.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/multioutput_kern.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/mlp.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/multidimensional_integral_limits.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/multioutput_derivative_kern.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__pycache__/trunclinear.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/stationary_cython.c: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/stationary_utils.c: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/rbf.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/poly.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/static.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/integral.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/multioutput_kern.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/todo/odekern1.c: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/trunclinear.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/ODE_t.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/linear.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/ODE_UYC.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/integral_limits.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/sde_standard_periodic.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/ODE_UY.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/add.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/symbolic.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/stationary_cython.pyx: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/symmetric.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/independent_outputs.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/stationary_utils.h: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/sde_brownian.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/standard_periodic.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/brownian.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/coregionalize.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/sde_static.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/periodic.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/sympy_helpers.h: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/grid_kerns.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/stationary.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/splitKern.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/sde_matern.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/eq_ode2.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/sde_stationary.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/mlp.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/sde_linear.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/psi_comp/sslinear_psi_comp.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/psi_comp/ssrbf_psi_gpucomp.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/psi_comp/ssrbf_psi_comp.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/psi_comp/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/psi_comp/__pycache__/rbf_psi_gpucomp.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/psi_comp/__pycache__/ssrbf_psi_gpucomp.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/psi_comp/__pycache__/linear_psi_comp.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/psi_comp/__pycache__/ssrbf_psi_comp.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/psi_comp/__pycache__/gaussherm.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/psi_comp/__pycache__/rbf_psi_comp.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/psi_comp/__pycache__/sslinear_psi_comp.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/psi_comp/gaussherm.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/psi_comp/rbf_psi_gpucomp.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/psi_comp/linear_psi_comp.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/psi_comp/rbf_psi_comp.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/psi_comp/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/kernel_slice_operations.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/multidimensional_integral_limits.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/basis_funcs.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/multioutput_derivative_kern.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/diff_kern.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/coregionalize_cython.pyx: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/src/eq_ode1.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/kern/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/identity.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/mlpext.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/compound.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/piecewise_linear.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/mlp.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/constant.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/kernel.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/__pycache__/linear.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/__pycache__/constant.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/__pycache__/compound.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/__pycache__/piecewise_linear.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/__pycache__/mlpext.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/__pycache__/identity.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/__pycache__/kernel.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/__pycache__/additive.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/__pycache__/mlp.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/additive.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/mappings/linear.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/student_t.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/gamma.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/link_functions.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/gaussian.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/__pycache__/loglogistic.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/__pycache__/bernoulli.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/__pycache__/mixed_noise.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/__pycache__/exponential.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/__pycache__/link_functions.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/__pycache__/binomial.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/__pycache__/gaussian.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/__pycache__/gamma.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/__pycache__/student_t.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/__pycache__/loggaussian.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/__pycache__/likelihood.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/__pycache__/weibull.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/__pycache__/poisson.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/__pycache__/multioutput_likelihood.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/loglogistic.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/binomial.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/loggaussian.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/bernoulli.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/exponential.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/multioutput_likelihood.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/weibull.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/mixed_noise.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/poisson.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/likelihoods/likelihood.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/__pycache__/__version__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/defaults.cfg: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/mcmc/samplers.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/mcmc/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/mcmc/__pycache__/hmc.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/mcmc/__pycache__/samplers.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/mcmc/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/mcmc/hmc.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/optimization/__pycache__/stochastics.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/optimization/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/optimization/stochastics.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/optimization/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/gaussian_grid_inference.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/posterior.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/vardtc_svi_multiout.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/dtc.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/exact_gaussian_inference.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/fitc.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/exact_studentt_inference.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/var_dtc_parallel.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/inferenceX.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/grid_posterior.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/expectation_propagation.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/svgp.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/inferenceX.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/exact_gaussian_inference.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/svgp.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/pep.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/var_gauss.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/laplace.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/fitc.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/dtc.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/var_dtc_parallel.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/vardtc_md.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/expectation_propagation.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/gaussian_grid_inference.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/vardtc_svi_multiout.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/grid_posterior.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/var_dtc.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/vardtc_svi_multiout_miss.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/posterior.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/__pycache__/exact_studentt_inference.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/vardtc_md.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/vardtc_svi_multiout_miss.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/laplace.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/var_gauss.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/var_dtc.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/inference/latent_function_inference/pep.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/installation.cfg: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/gp_regression.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/sparse_gp_minibatch.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/one_vs_all_sparse_classification.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/state_space.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/state_space_cython.c: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/input_warped_gp.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/one_vs_all_classification.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/gp_grid_regression.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/gradient_checker.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/gplvm.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/dpgplvm.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/gp_multiout_regression_md.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/sparse_gplvm.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/ibp_lfm.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/bayesian_gplvm.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/ss_mrd.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/sparse_gp_classification.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/state_space_setup.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/gp_coregionalized_regression.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/input_warped_gp.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/bcgplvm.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/state_space_model.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/gp_classification.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/sparse_gp_minibatch.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/sparse_gp_regression.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/gplvm.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/one_vs_all_sparse_classification.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/sparse_gp_classification.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/bayesian_gplvm.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/multioutput_gp.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/state_space_setup.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/bayesian_gplvm_minibatch.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/gp_var_gauss.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/sparse_gp_regression_md.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/gp_heteroscedastic_regression.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/gp_offset_regression.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/warped_gp.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/gp_multiout_regression.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/gradient_checker.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/ibp_lfm.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/one_vs_all_classification.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/state_space_main.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/state_space.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/gp_regression.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/ss_mrd.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/ss_gplvm.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/dpgplvm.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/gp_kronecker_gaussian_regression.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/gp_grid_regression.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/sparse_gp_coregionalized_regression.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/sparse_gplvm.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/tp_regression.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/gp_multiout_regression_md.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__pycache__/mrd.cpython-38.pyc: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/state_space_main.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/ss_gplvm.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/gp_offset_regression.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/bcgplvm.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/warped_gp.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/gp_multiout_regression.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/multioutput_gp.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/tp_regression.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/gp_coregionalized_regression.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/gp_heteroscedastic_regression.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/gp_kronecker_gaussian_regression.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/gp_var_gauss.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/state_space_model.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/bayesian_gplvm_minibatch.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/sparse_gp_regression_md.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/sparse_gp_regression.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/sparse_gp_coregionalized_regression.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/gp_classification.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/mrd.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/__init__.py: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy/models/state_space_cython.pyx: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy-1.9.9.dist-info/LICENSE.txt: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy-1.9.9.dist-info/WHEEL: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy-1.9.9.dist-info/RECORD: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy-1.9.9.dist-info/INSTALLER: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy-1.9.9.dist-info/top_level.txt: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy-1.9.9.dist-info/METADATA: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy-1.9.9.dist-info/direct_url.json: file format not recognized
+strip: /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9/lib/python3.8/site-packages/GPy-1.9.9.dist-info/AUTHORS.txt: file format not recognized
+patching script interpreter paths in /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9
+checking for references to /build/ in /nix/store/wsn61fgb1qwid44jyxbhfksxll9rf8dy-python3.8-GPy-1.9.9...
+Executing pythonRemoveTestsDir
+Finished executing pythonRemoveTestsDir
+running install tests
+/build/GPy-1.9.9/GPy/kern/src/symmetric.py:56: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if symmetry_type is 'odd':
+/build/GPy-1.9.9/GPy/kern/src/symmetric.py:58: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif symmetry_type is 'even':
+ /build/GPy-1.9.9/GPy/models/mrd.py:309: SyntaxWarning:"is not" with a literal. Did you mean "!="?
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.113s
+
+OK
+pythonCatchConflictsPhase
+pythonRemoveBinBytecodePhase
+pythonImportsCheckPhase
+Executing pythonImportsCheckPhase
+Check whether the following modules can be imported: GPy
+Matplotlib created a temporary config/cache directory at /build/matplotlib-xqkiaov2 because the default path (/homeless-shelter/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.

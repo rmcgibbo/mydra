@@ -1,0 +1,296 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing setuptools-build-hook
+Using setuptoolsBuildPhase
+Using setuptoolsShellHook
+Sourcing pip-install-hook
+Using pipInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing setuptools-check-hook
+unpacking sources
+unpacking source archive /nix/store/59in38n3dhs4slysd6jpdahwqksfz6hd-fixtures-3.0.0.tar.gz
+source root is fixtures-3.0.0
+setting SOURCE_DATE_EPOCH to timestamp 1463698987 of file fixtures-3.0.0/setup.cfg
+patching sources
+configuring
+no configure script, doing nothing
+building
+Executing setuptoolsBuildPhase
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/fixtures
+copying fixtures/__init__.py -> build/lib/fixtures
+copying fixtures/fixture.py -> build/lib/fixtures
+copying fixtures/testcase.py -> build/lib/fixtures
+copying fixtures/callmany.py -> build/lib/fixtures
+creating build/lib/fixtures/_fixtures
+copying fixtures/_fixtures/packagepath.py -> build/lib/fixtures/_fixtures
+copying fixtures/_fixtures/timeout.py -> build/lib/fixtures/_fixtures
+copying fixtures/_fixtures/__init__.py -> build/lib/fixtures/_fixtures
+copying fixtures/_fixtures/pythonpackage.py -> build/lib/fixtures/_fixtures
+copying fixtures/_fixtures/warnings.py -> build/lib/fixtures/_fixtures
+copying fixtures/_fixtures/popen.py -> build/lib/fixtures/_fixtures
+copying fixtures/_fixtures/streams.py -> build/lib/fixtures/_fixtures
+copying fixtures/_fixtures/monkeypatch.py -> build/lib/fixtures/_fixtures
+copying fixtures/_fixtures/environ.py -> build/lib/fixtures/_fixtures
+copying fixtures/_fixtures/temphomedir.py -> build/lib/fixtures/_fixtures
+copying fixtures/_fixtures/logger.py -> build/lib/fixtures/_fixtures
+copying fixtures/_fixtures/pythonpath.py -> build/lib/fixtures/_fixtures
+copying fixtures/_fixtures/mockpatch.py -> build/lib/fixtures/_fixtures
+copying fixtures/_fixtures/tempdir.py -> build/lib/fixtures/_fixtures
+creating build/lib/fixtures/tests
+copying fixtures/tests/test_fixture.py -> build/lib/fixtures/tests
+copying fixtures/tests/test_callmany.py -> build/lib/fixtures/tests
+copying fixtures/tests/test_testcase.py -> build/lib/fixtures/tests
+copying fixtures/tests/helpers.py -> build/lib/fixtures/tests
+copying fixtures/tests/__init__.py -> build/lib/fixtures/tests
+creating build/lib/fixtures/tests/_fixtures
+copying fixtures/tests/_fixtures/test_mockpatch.py -> build/lib/fixtures/tests/_fixtures
+copying fixtures/tests/_fixtures/test_pythonpackage.py -> build/lib/fixtures/tests/_fixtures
+copying fixtures/tests/_fixtures/test_popen.py -> build/lib/fixtures/tests/_fixtures
+copying fixtures/tests/_fixtures/test_warnings.py -> build/lib/fixtures/tests/_fixtures
+copying fixtures/tests/_fixtures/test_timeout.py -> build/lib/fixtures/tests/_fixtures
+copying fixtures/tests/_fixtures/test_packagepath.py -> build/lib/fixtures/tests/_fixtures
+copying fixtures/tests/_fixtures/test_logger.py -> build/lib/fixtures/tests/_fixtures
+copying fixtures/tests/_fixtures/test_environ.py -> build/lib/fixtures/tests/_fixtures
+copying fixtures/tests/_fixtures/test_pythonpath.py -> build/lib/fixtures/tests/_fixtures
+copying fixtures/tests/_fixtures/test_streams.py -> build/lib/fixtures/tests/_fixtures
+copying fixtures/tests/_fixtures/__init__.py -> build/lib/fixtures/tests/_fixtures
+copying fixtures/tests/_fixtures/test_monkeypatch.py -> build/lib/fixtures/tests/_fixtures
+copying fixtures/tests/_fixtures/test_tempdir.py -> build/lib/fixtures/tests/_fixtures
+copying fixtures/tests/_fixtures/test_temphomedir.py -> build/lib/fixtures/tests/_fixtures
+running egg_info
+writing fixtures.egg-info/PKG-INFO
+writing dependency_links to fixtures.egg-info/dependency_links.txt
+writing requirements to fixtures.egg-info/requires.txt
+writing top-level names to fixtures.egg-info/top_level.txt
+[pbr] Reusing existing SOURCES.txt
+installing to build/bdist.linux-x86_64/wheel
+running install
+[pbr] Generating AUTHORS
+[pbr] AUTHORS complete (0.0s)
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/fixtures
+copying build/lib/fixtures/__init__.py -> build/bdist.linux-x86_64/wheel/fixtures
+creating build/bdist.linux-x86_64/wheel/fixtures/tests
+copying build/lib/fixtures/tests/test_fixture.py -> build/bdist.linux-x86_64/wheel/fixtures/tests
+copying build/lib/fixtures/tests/helpers.py -> build/bdist.linux-x86_64/wheel/fixtures/tests
+copying build/lib/fixtures/tests/test_callmany.py -> build/bdist.linux-x86_64/wheel/fixtures/tests
+copying build/lib/fixtures/tests/__init__.py -> build/bdist.linux-x86_64/wheel/fixtures/tests
+copying build/lib/fixtures/tests/test_testcase.py -> build/bdist.linux-x86_64/wheel/fixtures/tests
+creating build/bdist.linux-x86_64/wheel/fixtures/tests/_fixtures
+copying build/lib/fixtures/tests/_fixtures/test_mockpatch.py -> build/bdist.linux-x86_64/wheel/fixtures/tests/_fixtures
+copying build/lib/fixtures/tests/_fixtures/test_pythonpackage.py -> build/bdist.linux-x86_64/wheel/fixtures/tests/_fixtures
+copying build/lib/fixtures/tests/_fixtures/test_temphomedir.py -> build/bdist.linux-x86_64/wheel/fixtures/tests/_fixtures
+copying build/lib/fixtures/tests/_fixtures/test_tempdir.py -> build/bdist.linux-x86_64/wheel/fixtures/tests/_fixtures
+copying build/lib/fixtures/tests/_fixtures/test_popen.py -> build/bdist.linux-x86_64/wheel/fixtures/tests/_fixtures
+copying build/lib/fixtures/tests/_fixtures/test_monkeypatch.py -> build/bdist.linux-x86_64/wheel/fixtures/tests/_fixtures
+copying build/lib/fixtures/tests/_fixtures/__init__.py -> build/bdist.linux-x86_64/wheel/fixtures/tests/_fixtures
+copying build/lib/fixtures/tests/_fixtures/test_environ.py -> build/bdist.linux-x86_64/wheel/fixtures/tests/_fixtures
+copying build/lib/fixtures/tests/_fixtures/test_streams.py -> build/bdist.linux-x86_64/wheel/fixtures/tests/_fixtures
+copying build/lib/fixtures/tests/_fixtures/test_pythonpath.py -> build/bdist.linux-x86_64/wheel/fixtures/tests/_fixtures
+copying build/lib/fixtures/tests/_fixtures/test_packagepath.py -> build/bdist.linux-x86_64/wheel/fixtures/tests/_fixtures
+copying build/lib/fixtures/tests/_fixtures/test_logger.py -> build/bdist.linux-x86_64/wheel/fixtures/tests/_fixtures
+copying build/lib/fixtures/tests/_fixtures/test_warnings.py -> build/bdist.linux-x86_64/wheel/fixtures/tests/_fixtures
+copying build/lib/fixtures/tests/_fixtures/test_timeout.py -> build/bdist.linux-x86_64/wheel/fixtures/tests/_fixtures
+copying build/lib/fixtures/callmany.py -> build/bdist.linux-x86_64/wheel/fixtures
+creating build/bdist.linux-x86_64/wheel/fixtures/_fixtures
+copying build/lib/fixtures/_fixtures/pythonpath.py -> build/bdist.linux-x86_64/wheel/fixtures/_fixtures
+copying build/lib/fixtures/_fixtures/packagepath.py -> build/bdist.linux-x86_64/wheel/fixtures/_fixtures
+copying build/lib/fixtures/_fixtures/warnings.py -> build/bdist.linux-x86_64/wheel/fixtures/_fixtures
+copying build/lib/fixtures/_fixtures/pythonpackage.py -> build/bdist.linux-x86_64/wheel/fixtures/_fixtures
+copying build/lib/fixtures/_fixtures/__init__.py -> build/bdist.linux-x86_64/wheel/fixtures/_fixtures
+copying build/lib/fixtures/_fixtures/timeout.py -> build/bdist.linux-x86_64/wheel/fixtures/_fixtures
+copying build/lib/fixtures/_fixtures/logger.py -> build/bdist.linux-x86_64/wheel/fixtures/_fixtures
+copying build/lib/fixtures/_fixtures/monkeypatch.py -> build/bdist.linux-x86_64/wheel/fixtures/_fixtures
+copying build/lib/fixtures/_fixtures/tempdir.py -> build/bdist.linux-x86_64/wheel/fixtures/_fixtures
+copying build/lib/fixtures/_fixtures/temphomedir.py -> build/bdist.linux-x86_64/wheel/fixtures/_fixtures
+copying build/lib/fixtures/_fixtures/popen.py -> build/bdist.linux-x86_64/wheel/fixtures/_fixtures
+copying build/lib/fixtures/_fixtures/mockpatch.py -> build/bdist.linux-x86_64/wheel/fixtures/_fixtures
+copying build/lib/fixtures/_fixtures/streams.py -> build/bdist.linux-x86_64/wheel/fixtures/_fixtures
+copying build/lib/fixtures/_fixtures/environ.py -> build/bdist.linux-x86_64/wheel/fixtures/_fixtures
+copying build/lib/fixtures/fixture.py -> build/bdist.linux-x86_64/wheel/fixtures
+copying build/lib/fixtures/testcase.py -> build/bdist.linux-x86_64/wheel/fixtures
+running install_egg_info
+Copying fixtures.egg-info to build/bdist.linux-x86_64/wheel/fixtures-3.0.0-py3.8.egg-info
+running install_scripts
+adding license file "COPYING" (matched pattern "COPYING*")
+adding license file "AUTHORS" (matched pattern "AUTHORS*")
+creating build/bdist.linux-x86_64/wheel/fixtures-3.0.0.dist-info/WHEEL
+creating 'dist/fixtures-3.0.0-py2.py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'fixtures/__init__.py'
+adding 'fixtures/callmany.py'
+adding 'fixtures/fixture.py'
+adding 'fixtures/testcase.py'
+adding 'fixtures/_fixtures/__init__.py'
+adding 'fixtures/_fixtures/environ.py'
+adding 'fixtures/_fixtures/logger.py'
+adding 'fixtures/_fixtures/mockpatch.py'
+adding 'fixtures/_fixtures/monkeypatch.py'
+adding 'fixtures/_fixtures/packagepath.py'
+adding 'fixtures/_fixtures/popen.py'
+adding 'fixtures/_fixtures/pythonpackage.py'
+adding 'fixtures/_fixtures/pythonpath.py'
+adding 'fixtures/_fixtures/streams.py'
+adding 'fixtures/_fixtures/tempdir.py'
+adding 'fixtures/_fixtures/temphomedir.py'
+adding 'fixtures/_fixtures/timeout.py'
+adding 'fixtures/_fixtures/warnings.py'
+adding 'fixtures/tests/__init__.py'
+adding 'fixtures/tests/helpers.py'
+adding 'fixtures/tests/test_callmany.py'
+adding 'fixtures/tests/test_fixture.py'
+adding 'fixtures/tests/test_testcase.py'
+adding 'fixtures/tests/_fixtures/__init__.py'
+adding 'fixtures/tests/_fixtures/test_environ.py'
+adding 'fixtures/tests/_fixtures/test_logger.py'
+adding 'fixtures/tests/_fixtures/test_mockpatch.py'
+adding 'fixtures/tests/_fixtures/test_monkeypatch.py'
+adding 'fixtures/tests/_fixtures/test_packagepath.py'
+adding 'fixtures/tests/_fixtures/test_popen.py'
+adding 'fixtures/tests/_fixtures/test_pythonpackage.py'
+adding 'fixtures/tests/_fixtures/test_pythonpath.py'
+adding 'fixtures/tests/_fixtures/test_streams.py'
+adding 'fixtures/tests/_fixtures/test_tempdir.py'
+adding 'fixtures/tests/_fixtures/test_temphomedir.py'
+adding 'fixtures/tests/_fixtures/test_timeout.py'
+adding 'fixtures/tests/_fixtures/test_warnings.py'
+adding 'fixtures-3.0.0.dist-info/AUTHORS'
+adding 'fixtures-3.0.0.dist-info/COPYING'
+adding 'fixtures-3.0.0.dist-info/METADATA'
+adding 'fixtures-3.0.0.dist-info/WHEEL'
+adding 'fixtures-3.0.0.dist-info/pbr.json'
+adding 'fixtures-3.0.0.dist-info/top_level.txt'
+adding 'fixtures-3.0.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Finished executing setuptoolsBuildPhase
+installing
+Executing pipInstallPhase
+/build/fixtures-3.0.0/dist /build/fixtures-3.0.0
+Processing ./fixtures-3.0.0-py2.py3-none-any.whl
+Requirement already satisfied: testtools>=0.9.22 in /nix/store/3yxrwfrc24yw436410fvcca0p89pbbg5-python3.8-testtools-2.4.0/lib/python3.8/site-packages (from fixtures==3.0.0) (2.4.0)
+Requirement already satisfied: six in /nix/store/z7q0h3dcvrmm6cmz9cm3hn9z1smvrisn-python3.8-six-1.15.0/lib/python3.8/site-packages (from fixtures==3.0.0) (1.15.0)
+Requirement already satisfied: pbr>=0.11 in /nix/store/zvhr04rjf0hbc7fvlx5q1slcn9p35mr3-python3.8-pbr-5.5.1/lib/python3.8/site-packages (from fixtures==3.0.0) (5.5.1)
+Requirement already satisfied: extras>=1.0.0 in /nix/store/74nxksp3dn3x7c3yx1kdbly0qzmd2zni-python3.8-extras-1.0.0/lib/python3.8/site-packages (from testtools>=0.9.22->fixtures==3.0.0) (1.0.0)
+Requirement already satisfied: python-mimeparse in /nix/store/nijllsxgvnyqnzx0xs6v2q5is95kgn6r-python3.8-python-mimeparse-1.6.0/lib/python3.8/site-packages (from testtools>=0.9.22->fixtures==3.0.0) (1.6.0)
+Requirement already satisfied: traceback2 in /nix/store/dhn49b7g31hbbaijam1ak9da63yhdgkv-python3.8-traceback2-1.4.0/lib/python3.8/site-packages (from testtools>=0.9.22->fixtures==3.0.0) (1.4.0)
+Requirement already satisfied: unittest2>=1.0.0 in /nix/store/43wgkn4pr5rji5j9m2sv826gcww4nhsz-python3.8-unittest2-1.1.0/lib/python3.8/site-packages (from testtools>=0.9.22->fixtures==3.0.0) (1.1.0)
+Requirement already satisfied: pbr>=0.11 in /nix/store/zvhr04rjf0hbc7fvlx5q1slcn9p35mr3-python3.8-pbr-5.5.1/lib/python3.8/site-packages (from fixtures==3.0.0) (5.5.1)
+Requirement already satisfied: six in /nix/store/z7q0h3dcvrmm6cmz9cm3hn9z1smvrisn-python3.8-six-1.15.0/lib/python3.8/site-packages (from fixtures==3.0.0) (1.15.0)
+Requirement already satisfied: linecache2 in /nix/store/1w4189pvna26q9s86aimzfpwsw4qb257-python3.8-linecache2-1.0.0/lib/python3.8/site-packages (from traceback2->testtools>=0.9.22->fixtures==3.0.0) (1.0.0)
+Requirement already satisfied: six in /nix/store/z7q0h3dcvrmm6cmz9cm3hn9z1smvrisn-python3.8-six-1.15.0/lib/python3.8/site-packages (from fixtures==3.0.0) (1.15.0)
+Requirement already satisfied: traceback2 in /nix/store/dhn49b7g31hbbaijam1ak9da63yhdgkv-python3.8-traceback2-1.4.0/lib/python3.8/site-packages (from testtools>=0.9.22->fixtures==3.0.0) (1.4.0)
+Installing collected packages: fixtures
+Successfully installed fixtures-3.0.0
+/build/fixtures-3.0.0
+Finished executing pipInstallPhase
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0
+strip is /nix/store/4l1qrgxfy171bngpphp4p9wj7bhrlfn3-binutils-2.34/bin/strip
+stripping (with command strip and flags -S) in /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib 
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/test_callmany.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/test_streams.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/test_warnings.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/test_environ.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/__init__.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/test_mockpatch.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/test_logger.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/test_tempdir.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/test_packagepath.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/test_timeout.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/test_pythonpath.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/test_pythonpackage.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/__pycache__/test_pythonpackage.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/__pycache__/test_mockpatch.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/__pycache__/test_environ.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/__pycache__/test_monkeypatch.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/__pycache__/test_streams.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/__pycache__/test_packagepath.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/__pycache__/test_logger.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/__pycache__/test_tempdir.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/__pycache__/test_pythonpath.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/__pycache__/test_warnings.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/__pycache__/test_popen.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/__pycache__/test_temphomedir.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/__pycache__/test_timeout.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/test_temphomedir.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/test_popen.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/_fixtures/test_monkeypatch.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/test_testcase.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/__pycache__/test_callmany.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/__pycache__/test_testcase.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/__pycache__/helpers.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/__pycache__/test_fixture.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/test_fixture.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/__init__.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/tests/helpers.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/__init__.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/tempdir.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/packagepath.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/pythonpath.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/__init__.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/environ.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/warnings.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/streams.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/monkeypatch.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/pythonpackage.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/temphomedir.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/__pycache__/environ.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/__pycache__/logger.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/__pycache__/popen.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/__pycache__/warnings.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/__pycache__/streams.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/__pycache__/monkeypatch.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/__pycache__/packagepath.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/__pycache__/mockpatch.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/__pycache__/tempdir.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/__pycache__/pythonpath.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/__pycache__/timeout.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/__pycache__/pythonpackage.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/__pycache__/temphomedir.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/logger.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/popen.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/timeout.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/_fixtures/mockpatch.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/callmany.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/testcase.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/fixture.py: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/__pycache__/callmany.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/__pycache__/fixture.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures/__pycache__/testcase.cpython-38.pyc: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures-3.0.0.dist-info/METADATA: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures-3.0.0.dist-info/top_level.txt: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures-3.0.0.dist-info/WHEEL: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures-3.0.0.dist-info/RECORD: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures-3.0.0.dist-info/AUTHORS: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures-3.0.0.dist-info/direct_url.json: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures-3.0.0.dist-info/pbr.json: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures-3.0.0.dist-info/INSTALLER: file format not recognized
+strip: /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0/lib/python3.8/site-packages/fixtures-3.0.0.dist-info/COPYING: file format not recognized
+patching script interpreter paths in /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0
+checking for references to /build/ in /nix/store/ajlsy3mnvjakizwrbh85l12vi9psxns7-python3.8-fixtures-3.0.0...
+Executing pythonRemoveTestsDir
+Finished executing pythonRemoveTestsDir
+running install tests
+/nix/store/papbnjfxwrdkmz6xfp7v2q7nxyvgcr5l-python3-3.8.6/lib/python3.8/runpy.py:127: RuntimeWarning: 'testtools.run' found in sys.modules after import of package 'testtools', but prior to execution of 'testtools.run'; this may result in unpredictable behaviour
+  warn(RuntimeWarning(msg))
+Tests running...
+
+Ran 128 tests in 2.049s
+OK
+pythonCatchConflictsPhase
+pythonRemoveBinBytecodePhase
+pythonImportsCheckPhase
+Executing pythonImportsCheckPhase

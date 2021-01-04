@@ -1,0 +1,259 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing setuptools-build-hook
+Using setuptoolsBuildPhase
+Using setuptoolsShellHook
+Sourcing pip-install-hook
+Using pipInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing setuptools-check-hook
+Using setuptoolsCheckPhase
+Sourcing pytest-check-hook
+Using pytestCheckPhase
+Removing setuptoolsCheckPhase
+unpacking sources
+unpacking source archive /nix/store/8bhkf11h4nc8j90055pjp2fdci7x1wqp-billiard-3.6.3.0.tar.gz
+source root is billiard-3.6.3.0
+setting SOURCE_DATE_EPOCH to timestamp 1582810127 of file billiard-3.6.3.0/setup.cfg
+patching sources
+applying patch /nix/store/xpy6ik82mi93p837fx616wj7c4c9wccx-a508ebafadcfe2e25554b029593f3e66d01ede6c.patch
+patching file billiard/compat.py
+configuring
+no configure script, doing nothing
+building
+Executing setuptoolsBuildPhase
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/billiard
+copying billiard/compat.py -> build/lib/billiard
+copying billiard/util.py -> build/lib/billiard
+copying billiard/synchronize.py -> build/lib/billiard
+copying billiard/spawn.py -> build/lib/billiard
+copying billiard/sharedctypes.py -> build/lib/billiard
+copying billiard/semaphore_tracker.py -> build/lib/billiard
+copying billiard/resource_sharer.py -> build/lib/billiard
+copying billiard/reduction.py -> build/lib/billiard
+copying billiard/queues.py -> build/lib/billiard
+copying billiard/process.py -> build/lib/billiard
+copying billiard/popen_spawn_win32.py -> build/lib/billiard
+copying billiard/popen_spawn_posix.py -> build/lib/billiard
+copying billiard/popen_forkserver.py -> build/lib/billiard
+copying billiard/popen_fork.py -> build/lib/billiard
+copying billiard/pool.py -> build/lib/billiard
+copying billiard/managers.py -> build/lib/billiard
+copying billiard/heap.py -> build/lib/billiard
+copying billiard/forkserver.py -> build/lib/billiard
+copying billiard/five.py -> build/lib/billiard
+copying billiard/exceptions.py -> build/lib/billiard
+copying billiard/einfo.py -> build/lib/billiard
+copying billiard/context.py -> build/lib/billiard
+copying billiard/connection.py -> build/lib/billiard
+copying billiard/common.py -> build/lib/billiard
+copying billiard/_win.py -> build/lib/billiard
+copying billiard/_ext.py -> build/lib/billiard
+copying billiard/__init__.py -> build/lib/billiard
+creating build/lib/billiard/dummy
+copying billiard/dummy/connection.py -> build/lib/billiard/dummy
+copying billiard/dummy/__init__.py -> build/lib/billiard/dummy
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/billiard
+creating build/bdist.linux-x86_64/wheel/billiard/dummy
+copying build/lib/billiard/dummy/__init__.py -> build/bdist.linux-x86_64/wheel/billiard/dummy
+copying build/lib/billiard/dummy/connection.py -> build/bdist.linux-x86_64/wheel/billiard/dummy
+copying build/lib/billiard/__init__.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/_ext.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/_win.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/common.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/connection.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/context.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/einfo.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/exceptions.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/five.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/forkserver.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/heap.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/managers.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/pool.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/popen_fork.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/popen_forkserver.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/popen_spawn_posix.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/popen_spawn_win32.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/process.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/queues.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/reduction.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/resource_sharer.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/semaphore_tracker.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/sharedctypes.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/spawn.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/synchronize.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/util.py -> build/bdist.linux-x86_64/wheel/billiard
+copying build/lib/billiard/compat.py -> build/bdist.linux-x86_64/wheel/billiard
+running install_egg_info
+running egg_info
+writing billiard.egg-info/PKG-INFO
+writing dependency_links to billiard.egg-info/dependency_links.txt
+writing top-level names to billiard.egg-info/top_level.txt
+reading manifest file 'billiard.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching '*.py' under directory 'Lib'
+warning: no files found matching '*.py' under directory 'funtests'
+warning: no previously-included files matching '*' found under directory 'docs/_build'
+warning: no previously-included files matching '__pycache__' found under directory '*'
+warning: no previously-included files matching '*.py[co]' found under directory '*'
+warning: no previously-included files matching '.*.sw*' found under directory '*'
+writing manifest file 'billiard.egg-info/SOURCES.txt'
+Copying billiard.egg-info to build/bdist.linux-x86_64/wheel/billiard-3.6.3.0-py3.8.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/billiard-3.6.3.0.dist-info/WHEEL
+creating 'dist/billiard-3.6.3.0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'billiard/__init__.py'
+adding 'billiard/_ext.py'
+adding 'billiard/_win.py'
+adding 'billiard/common.py'
+adding 'billiard/compat.py'
+adding 'billiard/connection.py'
+adding 'billiard/context.py'
+adding 'billiard/einfo.py'
+adding 'billiard/exceptions.py'
+adding 'billiard/five.py'
+adding 'billiard/forkserver.py'
+adding 'billiard/heap.py'
+adding 'billiard/managers.py'
+adding 'billiard/pool.py'
+adding 'billiard/popen_fork.py'
+adding 'billiard/popen_forkserver.py'
+adding 'billiard/popen_spawn_posix.py'
+adding 'billiard/popen_spawn_win32.py'
+adding 'billiard/process.py'
+adding 'billiard/queues.py'
+adding 'billiard/reduction.py'
+adding 'billiard/resource_sharer.py'
+adding 'billiard/semaphore_tracker.py'
+adding 'billiard/sharedctypes.py'
+adding 'billiard/spawn.py'
+adding 'billiard/synchronize.py'
+adding 'billiard/util.py'
+adding 'billiard/dummy/__init__.py'
+adding 'billiard/dummy/connection.py'
+adding 'billiard-3.6.3.0.dist-info/LICENSE.txt'
+adding 'billiard-3.6.3.0.dist-info/METADATA'
+adding 'billiard-3.6.3.0.dist-info/WHEEL'
+adding 'billiard-3.6.3.0.dist-info/top_level.txt'
+adding 'billiard-3.6.3.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Finished executing setuptoolsBuildPhase
+installing
+Executing pipInstallPhase
+/build/billiard-3.6.3.0/dist /build/billiard-3.6.3.0
+Processing ./billiard-3.6.3.0-py3-none-any.whl
+Installing collected packages: billiard
+Successfully installed billiard-3.6.3.0
+/build/billiard-3.6.3.0
+Finished executing pipInstallPhase
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0
+strip is /nix/store/4l1qrgxfy171bngpphp4p9wj7bhrlfn3-binutils-2.34/bin/strip
+stripping (with command strip and flags -S) in /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib 
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard-3.6.3.0.dist-info/METADATA: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard-3.6.3.0.dist-info/RECORD: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard-3.6.3.0.dist-info/LICENSE.txt: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard-3.6.3.0.dist-info/top_level.txt: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard-3.6.3.0.dist-info/direct_url.json: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard-3.6.3.0.dist-info/WHEEL: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard-3.6.3.0.dist-info/INSTALLER: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/synchronize.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/forkserver.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/five.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/spawn.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/resource_sharer.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/compat.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/reduction.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/context.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/popen_forkserver.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/util.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/process.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/common.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/pool.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/popen_fork.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/heap.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/popen_spawn_posix.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/exceptions.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/_win.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/popen_spawn_win32.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/semaphore_tracker.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/queues.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/managers.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/einfo.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/sharedctypes.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/_ext.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__pycache__/connection.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/einfo.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/compat.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/managers.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/_win.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/popen_fork.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/spawn.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/five.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/common.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/context.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/forkserver.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/connection.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/process.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/popen_spawn_win32.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/queues.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/popen_forkserver.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/reduction.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/semaphore_tracker.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/heap.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/sharedctypes.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/pool.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/synchronize.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/_ext.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/exceptions.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/dummy/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/dummy/__pycache__/connection.cpython-38.pyc: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/dummy/connection.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/dummy/__init__.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/util.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/popen_spawn_posix.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/resource_sharer.py: file format not recognized
+strip: /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0/lib/python3.8/site-packages/billiard/__init__.py: file format not recognized
+patching script interpreter paths in /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0
+checking for references to /build/ in /nix/store/qmq6wksn68zhb37rq9z4qyvfzlwzar9s-python3.8-billiard-3.6.3.0...
+Executing pythonRemoveTestsDir
+Finished executing pythonRemoveTestsDir
+running install tests
+no Makefile or custom installCheckPhase, doing nothing
+pythonCatchConflictsPhase
+pythonRemoveBinBytecodePhase
+pythonImportsCheckPhase
+Executing pythonImportsCheckPhase
+pytestCheckPhase
+Executing pytestCheckPhase
+============================= test session starts ==============================
+platform linux -- Python 3.8.6, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /build/billiard-3.6.3.0, configfile: setup.cfg, testpaths: t/unit/
+plugins: case-1.5.3
+collected 70 items                                                             
+
+t/unit/test_common.py ........                                           [ 11%]
+t/unit/test_dummy.py .                                                   [ 12%]
+t/unit/test_package.py .                                                 [ 14%]
+t/unit/test_pool.py ..                                                   [ 17%]
+t/unit/test_spawn.py ...                                                 [ 21%]
+t/unit/test_values.py ....                                               [ 27%]
+t/unit/test_win32.py sssssssssssssssssssssssssssssssssssssssssssssssssss [100%]
+
+======================== 19 passed, 51 skipped in 2.59s ========================
+Finished executing pytestCheckPhase
+pytestcachePhase

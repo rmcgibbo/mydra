@@ -1,0 +1,128 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing setuptools-build-hook
+Using setuptoolsBuildPhase
+Using setuptoolsShellHook
+Sourcing pip-install-hook
+Using pipInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing setuptools-check-hook
+unpacking sources
+unpacking source archive /nix/store/8k1vzp56dgfy99xhfzdvz3zwmszwbs0n-hmmlearn-0.2.4.tar.gz
+source root is hmmlearn-0.2.4
+setting SOURCE_DATE_EPOCH to timestamp 1599923859 of file hmmlearn-0.2.4/setup.cfg
+patching sources
+configuring
+no configure script, doing nothing
+building
+Executing setuptoolsBuildPhase
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib.linux-x86_64-3.8
+creating build/lib.linux-x86_64-3.8/hmmlearn
+copying lib/hmmlearn/__init__.py -> build/lib.linux-x86_64-3.8/hmmlearn
+copying lib/hmmlearn/stats.py -> build/lib.linux-x86_64-3.8/hmmlearn
+copying lib/hmmlearn/_version.py -> build/lib.linux-x86_64-3.8/hmmlearn
+copying lib/hmmlearn/base.py -> build/lib.linux-x86_64-3.8/hmmlearn
+copying lib/hmmlearn/hmm.py -> build/lib.linux-x86_64-3.8/hmmlearn
+copying lib/hmmlearn/_utils.py -> build/lib.linux-x86_64-3.8/hmmlearn
+copying lib/hmmlearn/utils.py -> build/lib.linux-x86_64-3.8/hmmlearn
+creating build/lib.linux-x86_64-3.8/hmmlearn/tests
+copying lib/hmmlearn/tests/test_gmm_hmm.py -> build/lib.linux-x86_64-3.8/hmmlearn/tests
+copying lib/hmmlearn/tests/test_utils.py -> build/lib.linux-x86_64-3.8/hmmlearn/tests
+copying lib/hmmlearn/tests/test_multinomial_hmm.py -> build/lib.linux-x86_64-3.8/hmmlearn/tests
+copying lib/hmmlearn/tests/conftest.py -> build/lib.linux-x86_64-3.8/hmmlearn/tests
+copying lib/hmmlearn/tests/test_base.py -> build/lib.linux-x86_64-3.8/hmmlearn/tests
+copying lib/hmmlearn/tests/__init__.py -> build/lib.linux-x86_64-3.8/hmmlearn/tests
+copying lib/hmmlearn/tests/test_gmm_hmm_new.py -> build/lib.linux-x86_64-3.8/hmmlearn/tests
+copying lib/hmmlearn/tests/test_gaussian_hmm.py -> build/lib.linux-x86_64-3.8/hmmlearn/tests
+running build_ext
+Finished executing setuptoolsBuildPhase
+installing
+Executing pipInstallPhase
+/build/hmmlearn-0.2.4/dist /build/hmmlearn-0.2.4
+Processing ./hmmlearn-0.2.4-cp38-cp38-linux_x86_64.whl
+Requirement already satisfied: scikit-learn>=0.16 in /nix/store/z8glbyrg47b24sqznvfja4c3vnymv5d2-python3.8-scikit-learn-0.23.2/lib/python3.8/site-packages (from hmmlearn==0.2.4) (0.23.2)
+Requirement already satisfied: numpy>=1.10 in /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages (from hmmlearn==0.2.4) (1.19.4)
+Requirement already satisfied: scipy>=0.19 in /nix/store/mj8cd16v7fdfvw6snk8hbm56k91ik3an-python3.8-scipy-1.5.4/lib/python3.8/site-packages (from hmmlearn==0.2.4) (1.5.4)
+Requirement already satisfied: scipy>=0.19 in /nix/store/mj8cd16v7fdfvw6snk8hbm56k91ik3an-python3.8-scipy-1.5.4/lib/python3.8/site-packages (from hmmlearn==0.2.4) (1.5.4)
+Requirement already satisfied: numpy>=1.10 in /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages (from hmmlearn==0.2.4) (1.19.4)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /nix/store/199yhwkj15sr2zf1yki6xwjylrlfb6yn-python3.8-threadpoolctl-2.1.0/lib/python3.8/site-packages (from scikit-learn>=0.16->hmmlearn==0.2.4) (2.1.0)
+Requirement already satisfied: joblib>=0.11 in /nix/store/akr8x5lrrzhib4xvj5k842sbc6fv7987-python3.8-joblib-0.17.0/lib/python3.8/site-packages (from scikit-learn>=0.16->hmmlearn==0.2.4) (0.17.0)
+Requirement already satisfied: numpy>=1.10 in /nix/store/n53zkd878ygn8ljzn2vkmh69m1jcw2av-python3.8-numpy-1.19.4/lib/python3.8/site-packages (from hmmlearn==0.2.4) (1.19.4)
+Installing collected packages: hmmlearn
+Successfully installed hmmlearn-0.2.4
+/build/hmmlearn-0.2.4
+Finished executing pipInstallPhase
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4
+shrinking /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/_hmmc.cpython-38-x86_64-linux-gnu.so
+strip is /nix/store/4l1qrgxfy171bngpphp4p9wj7bhrlfn3-binutils-2.34/bin/strip
+stripping (with command strip and flags -S) in /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib 
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/_version.py: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/utils.py: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/__init__.py: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/stats.py: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/_utils.py: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/base.py: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/__pycache__/utils.cpython-38.pyc: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/__pycache__/_utils.cpython-38.pyc: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/__pycache__/hmm.cpython-38.pyc: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/__pycache__/base.cpython-38.pyc: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/__pycache__/stats.cpython-38.pyc: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/__pycache__/_version.cpython-38.pyc: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/tests/test_gmm_hmm_new.py: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/tests/__pycache__/test_utils.cpython-38.pyc: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/tests/__pycache__/test_gaussian_hmm.cpython-38.pyc: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/tests/__pycache__/conftest.cpython-38.pyc: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/tests/__pycache__/test_gmm_hmm_new.cpython-38.pyc: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/tests/__pycache__/test_multinomial_hmm.cpython-38.pyc: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/tests/__pycache__/test_gmm_hmm.cpython-38.pyc: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/tests/__pycache__/test_base.cpython-38.pyc: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/tests/__pycache__/__init__.cpython-38.pyc: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/tests/test_gmm_hmm.py: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/tests/test_base.py: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/tests/test_multinomial_hmm.py: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/tests/__init__.py: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/tests/test_utils.py: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/tests/test_gaussian_hmm.py: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/tests/conftest.py: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn/hmm.py: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn-0.2.4.dist-info/RECORD: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn-0.2.4.dist-info/METADATA: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn-0.2.4.dist-info/direct_url.json: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn-0.2.4.dist-info/WHEEL: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn-0.2.4.dist-info/INSTALLER: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn-0.2.4.dist-info/top_level.txt: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn-0.2.4.dist-info/LICENSE.txt: file format not recognized
+strip: /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4/lib/python3.8/site-packages/hmmlearn-0.2.4.dist-info/entry_points.txt: file format not recognized
+patching script interpreter paths in /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4
+checking for references to /build/ in /nix/store/jq8d1iyygaasinzgccg7b1db8ggsyr98-python3.8-hmmlearn-0.2.4...
+Executing pythonRemoveTestsDir
+Finished executing pythonRemoveTestsDir
+running install tests
+============================= test session starts ==============================
+platform linux -- Python 3.8.6, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /build/hmmlearn-0.2.4, configfile: setup.cfg
+collecting ... set RNG seed to 666364068
+collected 115 items                                                            
+
+tests/test_base.py .............                                         [ 11%]
+tests/test_gaussian_hmm.py .......................................       [ 45%]
+tests/test_gmm_hmm.py xxxxxXxxxxxXxxxxxX                                 [ 60%]
+tests/test_gmm_hmm_new.py ................................               [ 88%]
+tests/test_multinomial_hmm.py ..........                                 [ 97%]
+tests/test_utils.py ...                                                  [100%]
+
+================== 97 passed, 15 xfailed, 3 xpassed in 36.90s ==================
+pythonCatchConflictsPhase
+pythonRemoveBinBytecodePhase
+pythonImportsCheckPhase
+Executing pythonImportsCheckPhase
+pytestcachePhase
