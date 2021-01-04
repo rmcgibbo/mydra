@@ -43,6 +43,7 @@ def chdir(dir):
     yield
     os.chdir(cwd)
 
+
 def main():
     td = tempfile.mkdtemp(prefix="mydra-hugo-")
 

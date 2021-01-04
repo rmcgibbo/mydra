@@ -24,16 +24,19 @@ jobs:
     - name: Cache build failures
       uses: actions/cache@v2
       with:
+        # If making a backward-incompatible change to the cache, bump
+        key: ${{ runner.os }}-mydra-2020.01.04
         path: |
-          ~/.cache/mydra
-        key: ${{ runner.os }}-mydra
-
+          ~/.cache/mydra        
+        
     - name: Run mydra
       run: |
         git clone https://github.com/NixOS/nixpkgs.git --branch master --single-branch nixpkgs  --depth 1 --quiet
         nix build -f .
         nix run -c mydra -f ./nixpkgs mydra.yml -t 60m
         nix run -c mydra-generate
+        find ~/.cache/mydra
+        cat ~/.cache/mydra/mydra-failures.json
         cp -r ~/.cache/mydra/logs ./public/logs
 
     # Deploy
