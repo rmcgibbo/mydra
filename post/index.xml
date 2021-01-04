@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on mydra</title>
+    <link>http://rmcgibbo.github.io/mydra/post/</link>
+    <description>Recent content in Posts on mydra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Jan 2021 15:32:38 +0000</lastBuildDate>
+    
+	<atom:link href="http://rmcgibbo.github.io/mydra/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>51c4cb72d4754f3c3f6dbd0a6198c985321cdf87</title>
+      <link>http://rmcgibbo.github.io/mydra/post/51c4cb72d4754f3c3f6dbd0a6198c985321cdf87/</link>
+      <pubDate>Mon, 04 Jan 2021 15:32:38 +0000</pubDate>
+      
+      <guid>http://rmcgibbo.github.io/mydra/post/51c4cb72d4754f3c3f6dbd0a6198c985321cdf87/</guid>
+      <description>&lt;p&gt;Front matter&lt;/p&gt;
+&lt;p&gt;sdfsdsf&lt;/p&gt;
+&lt;p&gt;sdf sdfdsf&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
