@@ -1,0 +1,3 @@
+[submodule "src/mydra/hugosite/themes/hugo-tranquilpeak-theme"]
+	path = src/mydra/hugosite/themes/hugo-tranquilpeak-theme
+	url = https://github.com/kakawait/hugo-tranquilpeak-theme.git

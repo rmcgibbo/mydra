@@ -15,3 +15,4 @@ classifiers=[
 
 [tool.flit.scripts]
 mydra = "mydra.cli:main"
+mydra-generate = "mydra.generate:main"

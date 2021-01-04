@@ -111,7 +111,7 @@ def build(
     logs_dir = cache_dir.joinpath("logs")
     logs_dir.mkdir(exist_ok=True)
 
-    cache_file = cache_dir.joinpath("build-results.json")
+    cache_file = cache_dir.joinpath("mydra-failures.json")
     if (use_cache or write_cache) and cache_file.exists():
         with open(cache_file, "r") as cf:
             result_cache = json.loads(cf.read())
@@ -138,11 +138,15 @@ def build(
             if reason not in ("MYDRA TIMEOUT",):
                 result_cache[drv] = reason
 
-        for drv in failures:
-            failure_log = log(drv)
-            if failure_log is not None:
-                with open(logs_dir.joinpath(Path(drv).name), "w") as f:
-                    f.write(failure_log)
+        # Save all available build logs
+        for drv in itertools.chain(success_storepaths, failures):
+            build_log_path = logs_dir.joinpath(Path(drv).name)
+            if not build_log_path.exists():
+                build_log = log(drv)
+                if build_log is not None:
+                    with open(build_log_path, "w") as f:
+                        f.write(build_log)
+        
         with open(cache_file, "w") as cf:
             # Write human-readable json for easy hacking.
             cf.write(json.dumps(result_cache, indent=4))

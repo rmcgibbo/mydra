@@ -26,6 +26,7 @@ in buildPythonPackage {
   doCheck = false;
   nativeBuildInputs = [ flit ];
   propagatedBuildInputs = [
+    # python
     appdirs
     GitPython
     pandas
@@ -35,5 +36,8 @@ in buildPythonPackage {
     strictyaml
     tabulate
     termcolor
+
+    # native
+    hugo
   ];
 }

@@ -29,7 +29,7 @@ def main():
     )
     p.add_argument("-t", "--timeout", type=pytimeparse.parse, default=None)
     p.add_argument("yml")
-    p.add_argument("-o", "--report", default=None)
+    # p.add_argument("-o", "--report", default=None)
 
     args = p.parse_args()
     deadline = (
@@ -38,9 +38,7 @@ def main():
         else None
     )
 
-    return execute(
-        nixpkgs=args.nixpkgs, yml=args.yml, report=args.report, deadline=deadline
-    )
+    return execute(nixpkgs=args.nixpkgs, yml=args.yml, deadline=deadline)
 
 
 def expand_package_attrnames(yml: str):
@@ -58,12 +56,17 @@ def expand_package_attrnames(yml: str):
 
 
 def execute(
-    nixpkgs: Path, yml: Path, report: Optional[str], deadline: Optional[datetime]
+    nixpkgs: Path,
+    yml: Path,
+    # report: Optional[str],
+    deadline: Optional[datetime],
 ):
     try:
-        nixpkgs_hash = str(git.Repo(nixpkgs).commit())
+        commit = git.Repo(nixpkgs).commit()
+        nixpkgs_hash = str(commit)
+        nixpkgs_date = datetime.fromtimestamp(commit.committed_date).isoformat()
     except git.exc.InvalidGitRepositoryError:
-        nixpkgs_hash = None
+        raise ValueError(f"Could not determine git hash from nixpkgs={nixpkgs}. Please use a git clone!")
 
     packages = list(expand_package_attrnames(yml))
     drv2attr = instantiate(packages, nixpkgs)
@@ -95,10 +98,11 @@ def execute(
     df = pd.DataFrame(rows)
     print(tabulate(df[["icon", "attr", "status"]].to_records(index=False)))
 
-    if report is not None:
-        outjson = {
-            "nixpkgs": nixpkgs_hash,
-            "build_results": rows,
-        }
-        with open(report, "w") as f:
-            json.dump(outjson, f, indent=4)
+    cache_dir = Path(AppDirs("mydra").user_cache_dir)
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    outjson = {
+        "nixpkgs": {"commit": nixpkgs_hash, "committed_date": nixpkgs_date},
+        "build_results": rows,
+    }
+    with open(cache_dir.joinpath(f"build-{nixpkgs_hash}.json"), "w") as f:
+        json.dump(outjson, f, indent=4)
