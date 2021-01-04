@@ -18,8 +18,7 @@ def process_file(fn: str):
         data = json.load(foo)
 
     df = pd.DataFrame(data["build_results"])
-    df["link"] = df["drvpath"].apply(lambda x: "https://raw.githubusercontent.com/rmcgibbo/mydra/gh-pages/logs/" + os.path.basename(x))
-
+    df["link"] = df["drvpath"].apply(lambda x: "http://mydra-logs.rmcgibbo.org/" + os.path.basename(x))
     df["name"] = df["drvpath"].apply(lambda x: os.path.basename(x)[33:][:-4])
     df["status_link"] = df.apply(axis=1, func=lambda row: f"[{row['status']}]({row['link']})")
     date = datetime.fromisoformat(data['nixpkgs']['committed_date'])
