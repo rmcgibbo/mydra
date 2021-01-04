@@ -4,6 +4,7 @@ on:
     branches:
       - master
   schedule:
+    # Run each dat at 00,06,12 and 18 hours.
     - cron: '0 00,06,12,18 * * *'
 
 jobs:
