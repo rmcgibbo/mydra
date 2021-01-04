@@ -1,12 +1,14 @@
-import os
-import subprocess
-import appdirs
 import glob
 import json
+import os
 import shutil
-import pandas as pd
+import subprocess
 import tempfile
 from contextlib import contextmanager
+from subprocess import run
+
+import appdirs
+import pandas as pd
 
 
 def process_file(fn: str):
@@ -34,16 +36,6 @@ draft: false
         print('{{< /table >}}', file=f)
 
 
-def copytree(src, dst, symlinks=False, ignore=None):
-    # https://stackoverflow.com/a/12514470
-    for item in os.listdir(src):
-        s = os.path.join(src, item)
-        d = os.path.join(dst, item)
-        if os.path.isdir(s):
-            shutil.copytree(s, d, symlinks, ignore, copy_function=shutil.copy)
-        else:
-            shutil.copy(s, d)
-
 @contextmanager
 def chdir(dir):
     cwd = os.path.abspath(os.getcwd())
@@ -52,8 +44,10 @@ def chdir(dir):
     os.chdir(cwd)
 
 def main():
-    td = tempfile.mkdtemp()
-    copytree(os.path.join(os.path.dirname(__file__), "hugosite"), td)
+    td = tempfile.mkdtemp(prefix="mydra-hugo-")
+
+    run(f"cp -r {os.path.join(os.path.dirname(__file__), 'hugosite')}/. {td}", check=True, shell=True)
+    run(f"find {td}/ -type d -exec chmod +rwx {{}} \;", check=True, shell=True)
     
     with chdir(td):
         print(td)
@@ -61,9 +55,8 @@ def main():
         cache_dir = appdirs.AppDirs("mydra").user_cache_dir
         for fn in glob.glob(cache_dir + "/build-*.json"):
             process_file(fn)
-        subprocess.run(["hugo"])
+        run(["hugo"], check=True)
     
     shutil.rmtree("public", ignore_errors=True)
-    copytree(td + "/public", "public")
-    print(td)
+    shutil.copytree(td + "/public", "public")
     shutil.rmtree(td, ignore_errors=False)

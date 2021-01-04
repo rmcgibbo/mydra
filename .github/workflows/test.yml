@@ -33,14 +33,14 @@ jobs:
         git clone https://github.com/NixOS/nixpkgs.git --branch master --single-branch nixpkgs  --depth 1 --quiet
         nix build -f .
         nix run -c mydra -f ./nixpkgs mydra.yml -t 60m
-        cp -r ~/.cache/mydra/logs ./public
+        nix run -c mydra-generate
+        cp -r ~/.cache/mydra/logs ./public/logs
 
     # Deploy
     - name: Deploy GH pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        keep_files: true
         publish_dir: ./public
         destination_dir: ./
 
