@@ -23,16 +23,18 @@ jobs:
       with:
         name: rmcgibbo-mydra
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-    - name: Cache build failures
-      uses: actions/cache@v2
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
       with:
-        # If making a backward-incompatible change to the cache, bump
-        key: ${{ runner.os }}-mydra-2020.01.04
-        path: |
-          ~/.cache/mydra        
-        
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+
     - name: Run mydra
       run: |
+        # Sync logs down
+        nix-shell -p awscli2 --command 'bash -c "aws s3 sync ~/.cache/mydra/ s3://rmcgibbo-mydra-cache"'
+
         ls ~/.cache/mydra  # Initial
         git clone https://github.com/NixOS/nixpkgs.git --branch master --single-branch nixpkgs  --depth 1 --quiet
         nix build -f .
@@ -41,6 +43,9 @@ jobs:
         ls ~/.cache/mydra  # Final
         cat ~/.cache/mydra/mydra-failures.json
         cp -r ~/.cache/mydra/logs ./public/logs
+
+        # Sync more logs up
+        nix-shell -p awscli2 --command 'bash -c "aws s3 sync ~/.cache/mydra/ s3://rmcgibbo-mydra-cache"'
 
     # Deploy
     - name: Deploy GH pages
