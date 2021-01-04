@@ -33,11 +33,12 @@ jobs:
         
     - name: Run mydra
       run: |
+        ls ~/.cache/mydra  # Initial
         git clone https://github.com/NixOS/nixpkgs.git --branch master --single-branch nixpkgs  --depth 1 --quiet
         nix build -f .
         nix run -c mydra -f ./nixpkgs mydra.yml -t 60m
         nix run -c mydra-generate
-        find ~/.cache/mydra
+        ls ~/.cache/mydra  # Final
         cat ~/.cache/mydra/mydra-failures.json
         cp -r ~/.cache/mydra/logs ./public/logs
 
