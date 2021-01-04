@@ -24,12 +24,17 @@ def process_file(fn: str):
 
     with open(f"content/post/build-{data['nixpkgs']['commit']}.md", "w") as f:
         f.write(f"""---
-title: "{data['nixpkgs']['commit']}"
+title: "nixpkgs {data['nixpkgs']['commit'][:8]}"
 date: "{data['nixpkgs']['committed_date']}"
 draft: false
 ---""")
-        print("Front matter\n\nsdfsdsf \n\nsdf sdfdsf\n\n", file=f)
-        print("<!--more-->", file=f)
+        print(f"""nixpkgs: [{data['nixpkgs']['commit'][:8]}](https://github.com/NixOS/nixpkgs/commit/{data['nixpkgs']['commit']})  
+date: {data['nixpkgs']['committed_date']}  
+failure(s): {", ".join(df.query("status == 'BUILDER FAILED'").name)}  
+
+<!--more-->
+""", file=f)
+        print("", file=f)
 
         print('{{< table "table table-striped table-bordered" >}}', file=f)
         f.write(df[["attr", "name", "status_link"]].to_markdown(index=False))
