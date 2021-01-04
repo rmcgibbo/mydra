@@ -96,6 +96,8 @@ def execute(
         )
 
     df = pd.DataFrame(rows)
+
+    print(nixpkgs_hash, nixpkgs_date)
     print(tabulate(df[["icon", "attr", "status"]].to_records(index=False)))
 
     cache_dir = Path(AppDirs("mydra").user_cache_dir)
