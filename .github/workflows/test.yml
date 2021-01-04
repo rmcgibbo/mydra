@@ -35,7 +35,7 @@ jobs:
         AWS_BUCKET_CACHE: "s3://rmcgibbo-mydra-cache"
         AWS_BUCKET_LOGS: "s3://rmcgibbo-mydra-build-logs"
       run: |
-        nix-env -i curl jq awscli2
+        nix-env -iA curl jq awscli2
         GITHUB_JOBRUN_ID=$(nix run nixpkgs.curl nixpkgs.jq -c curl -sS "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/jobs" | jq .jobs[0].id)
         echo $GITHUB_JOBRUN_ID
 
