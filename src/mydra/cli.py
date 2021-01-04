@@ -64,7 +64,7 @@ def execute(
     try:
         commit = git.Repo(nixpkgs).commit()
         nixpkgs_hash = str(commit)
-        nixpkgs_date = datetime.fromtimestamp(commit.committed_date).isoformat()
+        nixpkgs_date = datetime.fromtimestamp(commit.committed_date).astimezone().isoformat()
     except git.exc.InvalidGitRepositoryError:
         raise ValueError(f"Could not determine git hash from nixpkgs={nixpkgs}. Please use a git clone!")
 
