@@ -13,14 +13,23 @@ import pandas as pd
 import pytz
 
 
+LOG_URL = "http://mydra-logs.rmcgibbo.org/"
+
 def process_file(fn: str):
     with open(fn) as foo:
         data = json.load(foo)
 
+    def fmt_status_link(row):
+        status = row["status"]
+        link = LOG_URL + os.path.basename(row["drvpath"])
+        if status == "DEP FAILED":
+            return "DEP FAILED"
+        md_link = f"[{status}]({link})"
+        return md_link
+
     df = pd.DataFrame(data["build_results"])
-    df["link"] = df["drvpath"].apply(lambda x: "http://mydra-logs.rmcgibbo.org/" + os.path.basename(x))
     df["name"] = df["drvpath"].apply(lambda x: os.path.basename(x)[33:][:-4])
-    df["status_link"] = df.apply(axis=1, func=lambda row: f"[{row['status']}]({row['link']})")
+    df["status_link"] = df.apply(axis=1, func=fmt_status_link)
     date = datetime.fromisoformat(data['nixpkgs']['committed_date'])
     date_fmt = date.astimezone(pytz.timezone("US/Eastern")).strftime("%b %-d %-I:%M %p %Z")
 
