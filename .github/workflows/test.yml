@@ -51,7 +51,7 @@ jobs:
         cat ~/.cache/mydra/mydra-failures.json
 
         # Upload new build logs
-        nix run nixpkgs.awscli2 -c aws s3 sync --quiet ~/.cache/mydra-logs/ $AWS_BUCKET_LOGS
+        nix run nixpkgs.awscli2 -c aws s3 sync --quiet --content-type text/plain ~/.cache/mydra-logs/ $AWS_BUCKET_LOGS
 
     # Deploy
     - name: Deploy GH pages
