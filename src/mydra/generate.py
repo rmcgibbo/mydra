@@ -22,7 +22,7 @@ def process_file(fn: str):
     df["name"] = df["drvpath"].apply(lambda x: os.path.basename(x)[33:][:-4])
     df["status_link"] = df.apply(axis=1, func=lambda row: f"[{row['status']}]({row['link']})")
     date = datetime.fromisoformat(data['nixpkgs']['committed_date'])
-    date_fmt = date.astimezone(pytz.timezone("US/Eastern")).strftime("%b %-d %-H:%M %p %Z")
+    date_fmt = date.astimezone(pytz.timezone("US/Eastern")).strftime("%b %-d %-I:%M %p %Z")
 
     with open(f"content/post/build-{data['nixpkgs']['commit']}.md", "w") as f:
         f.write(f"""---
