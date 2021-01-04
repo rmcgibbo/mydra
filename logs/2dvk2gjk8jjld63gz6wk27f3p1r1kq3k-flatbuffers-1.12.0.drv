@@ -50,21 +50,21 @@ CMake Warning:
 @nix { "action": "setPhase", "phase": "buildPhase" }
 building
 build flags: -j2 -l2 SHELL=/nix/store/zcl19h06322c3kss6bvf05w2pxg4kfll-bash-4.4-p23/bin/bash
-[35m[1mScanning dependencies of target flatc[0m
 [35m[1mScanning dependencies of target flatbuffers[0m
+[35m[1mScanning dependencies of target flatc[0m
 [  1%] [32mBuilding CXX object CMakeFiles/flatbuffers.dir/src/idl_parser.cpp.o[0m
 [  2%] [32mBuilding CXX object CMakeFiles/flatc.dir/src/idl_parser.cpp.o[0m
-[  3%] [32mBuilding CXX object CMakeFiles/flatbuffers.dir/src/idl_gen_text.cpp.o[0m
-[  4%] [32mBuilding CXX object CMakeFiles/flatc.dir/src/idl_gen_text.cpp.o[0m
-[  5%] [32mBuilding CXX object CMakeFiles/flatbuffers.dir/src/reflection.cpp.o[0m
-[  7%] [32mBuilding CXX object CMakeFiles/flatc.dir/src/reflection.cpp.o[0m
-[  8%] [32mBuilding CXX object CMakeFiles/flatbuffers.dir/src/util.cpp.o[0m
-[  9%] [32mBuilding CXX object CMakeFiles/flatc.dir/src/util.cpp.o[0m
-[ 10%] [32m[1mLinking CXX static library libflatbuffers.a[0m
-[ 10%] Built target flatbuffers
+[  3%] [32mBuilding CXX object CMakeFiles/flatc.dir/src/idl_gen_text.cpp.o[0m
+[  4%] [32mBuilding CXX object CMakeFiles/flatbuffers.dir/src/idl_gen_text.cpp.o[0m
+[  5%] [32mBuilding CXX object CMakeFiles/flatc.dir/src/reflection.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/flatbuffers.dir/src/reflection.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/flatc.dir/src/util.cpp.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/flatbuffers.dir/src/util.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/flatc.dir/src/idl_gen_cpp.cpp.o[0m
+[ 11%] [32m[1mLinking CXX static library libflatbuffers.a[0m
+[ 11%] Built target flatbuffers
 [35m[1mScanning dependencies of target flathash[0m
-[ 11%] [32mBuilding CXX object CMakeFiles/flathash.dir/src/flathash.cpp.o[0m
-[ 12%] [32mBuilding CXX object CMakeFiles/flatc.dir/src/idl_gen_cpp.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/flathash.dir/src/flathash.cpp.o[0m
 [ 14%] [32m[1mLinking CXX executable flathash[0m
 [ 14%] Built target flathash
 [ 15%] [32mBuilding CXX object CMakeFiles/flatc.dir/src/idl_gen_csharp.cpp.o[0m
@@ -109,22 +109,22 @@ build flags: -j2 -l2 SHELL=/nix/store/zcl19h06322c3kss6bvf05w2pxg4kfll-bash-4.4-
 [ 57%] Built target generated_code
 [35m[1mScanning dependencies of target flatsamplebfbs[0m
 [35m[1mScanning dependencies of target flatsampletext[0m
-[ 58%] [32mBuilding CXX object CMakeFiles/flatsamplebfbs.dir/src/idl_parser.cpp.o[0m
-[ 60%] [32mBuilding CXX object CMakeFiles/flatsampletext.dir/src/idl_parser.cpp.o[0m
-[ 61%] [32mBuilding CXX object CMakeFiles/flatsampletext.dir/src/idl_gen_text.cpp.o[0m
-[ 62%] [32mBuilding CXX object CMakeFiles/flatsamplebfbs.dir/src/idl_gen_text.cpp.o[0m
-[ 63%] [32mBuilding CXX object CMakeFiles/flatsampletext.dir/src/reflection.cpp.o[0m
-[ 64%] [32mBuilding CXX object CMakeFiles/flatsamplebfbs.dir/src/reflection.cpp.o[0m
-[ 65%] [32mBuilding CXX object CMakeFiles/flatsampletext.dir/src/util.cpp.o[0m
-[ 67%] [32mBuilding CXX object CMakeFiles/flatsamplebfbs.dir/src/util.cpp.o[0m
-[ 68%] [32mBuilding CXX object CMakeFiles/flatsampletext.dir/samples/sample_text.cpp.o[0m
-[ 69%] [32mBuilding CXX object CMakeFiles/flatsamplebfbs.dir/samples/sample_bfbs.cpp.o[0m
-[ 70%] [32m[1mLinking CXX executable flatsampletext[0m
-[ 71%] Built target flatsampletext
+[ 58%] [32mBuilding CXX object CMakeFiles/flatsampletext.dir/src/idl_parser.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/flatsamplebfbs.dir/src/idl_parser.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/flatsamplebfbs.dir/src/idl_gen_text.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/flatsampletext.dir/src/idl_gen_text.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/flatsamplebfbs.dir/src/reflection.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/flatsampletext.dir/src/reflection.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/flatsamplebfbs.dir/src/util.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/flatsampletext.dir/src/util.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/flatsamplebfbs.dir/samples/sample_bfbs.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/flatsampletext.dir/samples/sample_text.cpp.o[0m
+[ 70%] [32m[1mLinking CXX executable flatsamplebfbs[0m
+[ 71%] Built target flatsamplebfbs
 [35m[1mScanning dependencies of target flatsamplebinary[0m
 [ 72%] [32mBuilding CXX object CMakeFiles/flatsamplebinary.dir/samples/sample_binary.cpp.o[0m
-[ 74%] [32m[1mLinking CXX executable flatsamplebfbs[0m
-[ 75%] Built target flatsamplebfbs
+[ 74%] [32m[1mLinking CXX executable flatsampletext[0m
+[ 75%] Built target flatsampletext
 [35m[1mScanning dependencies of target flattests[0m
 [ 76%] [32mBuilding CXX object CMakeFiles/flattests.dir/src/idl_parser.cpp.o[0m
 [ 77%] [32m[1mLinking CXX executable flatsamplebinary[0m

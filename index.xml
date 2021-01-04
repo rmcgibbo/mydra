@@ -21,15 +21,5 @@
 failure(s): flatbuffers-1.12.0&lt;/p&gt;</description>
     </item>
     
-    <item>
-      <title>nixpkgs 51c4cb72</title>
-      <link>https://rmcgibbo.github.io/mydra/post/nixpkgs-51c4cb72/</link>
-      <pubDate>Mon, 04 Jan 2021 15:32:38 +0000</pubDate>
-      
-      <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-51c4cb72/</guid>
-      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/51c4cb72d4754f3c3f6dbd0a6198c985321cdf87&#34;&gt;51c4cb72&lt;/a&gt;; Jan 4 10:32 AM EST&lt;br&gt;
-failure(s): flatbuffers-1.12.0&lt;/p&gt;</description>
-    </item>
-    
   </channel>
 </rss>
