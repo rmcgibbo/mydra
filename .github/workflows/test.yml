@@ -35,6 +35,7 @@ jobs:
         mkdir -p ~/.cache/mydra
         nix-env --quiet -f '<nixpkgs>' -iA curl jq awscli2
         nix-env --quiet -f . -i
+        git clone https://github.com/NixOS/nixpkgs.git --branch master --single-branch nixpkgs  --depth 1 --quiet
 
     - name: Run mydra
       env:
@@ -43,14 +44,15 @@ jobs:
       run: |
         GITHUB_JOBRUN_ID=$(curl -sS "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/jobs" | jq .jobs[0].id)
         GITHUB_JOBURL_URL="https://github.com/$GITHUB_REPOSITORY/runs/$GITHUB_JOBRUN_ID"
+        YAML_URL="https://github.com/$GITHUB_REPOSITORY/blob/$GITHUB_SHA/mydra.yml"
 
         # Sync down build-{hash}.json files and mydra-failures.json
         # We really only need mydra-failures.json now, the other ones are used for the
         # mydra-generate step.
         aws s3 sync --quiet $AWS_BUCKET_CACHE ~/.cache/mydra/
+        mydra -f ./nixpkgs mydra.yml -t 60m --log-url $GITHUB_JOBURL_URL --yaml-url $YAML_URL
 
-        git clone https://github.com/NixOS/nixpkgs.git --branch master --single-branch nixpkgs  --depth 1 --quiet
-        mydra -f ./nixpkgs mydra.yml -t 60m --log-url $GITHUB_JOBURL_URL
+        # This will read ~/.cache/mydra for all of the build-{hash}.json and generate ./public
         mydra-generate
 
         # Upload new build logs

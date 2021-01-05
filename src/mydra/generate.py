@@ -16,6 +16,7 @@ import pytz
 
 LOG_URL = "http://mydra-logs.rmcgibbo.org/"
 
+
 def process_file(fn: str):
     with open(fn) as foo:
         data = json.load(foo)
@@ -31,24 +32,38 @@ def process_file(fn: str):
     df = pd.DataFrame(data["build_results"])
     df["name"] = df["drvpath"].apply(lambda x: os.path.basename(x)[33:][:-4])
     df["status_link"] = df.apply(axis=1, func=fmt_status_link)
-    date = datetime.fromisoformat(data['nixpkgs']['committed_date'])
-    date_fmt = date.astimezone(pytz.timezone("US/Eastern")).strftime("%b %-d %-I:%M %p %Z")
+    date = datetime.fromisoformat(data["nixpkgs"]["committed_date"])
+    date_fmt = date.astimezone(pytz.timezone("US/Eastern")).strftime(
+        "%b %-d %-I:%M %p %Z"
+    )
 
     with open(f"content/post/build-{data['nixpkgs']['commit']}.md", "w") as f:
-        f.write(f"""---
+        f.write(
+            f"""---
 title: "nixpkgs {data['nixpkgs']['commit'][:8]}"
 date: "{date.isoformat()}"
 draft: false
----""")
-        print(f"""nixpkgs: [{data['nixpkgs']['commit'][:8]}](https://github.com/NixOS/nixpkgs/commit/{data['nixpkgs']['commit']}); {date_fmt}""", file=f, end="  \n")
-        print(f"""failure(s): {", ".join(df.query("status == 'BUILDER FAILED'").name)}""", file=f, end="  \n")
+---"""
+        )
+        print(
+            f"""nixpkgs: [{data['nixpkgs']['commit'][:8]}](https://github.com/NixOS/nixpkgs/commit/{data['nixpkgs']['commit']}); {date_fmt}""",
+            file=f,
+            end="  \n",
+        )
+        print(
+            f"""failure(s): {", ".join(df.query("status == 'BUILDER FAILED'").name)}""",
+            file=f,
+            end="  \n",
+        )
         print("<!--more-->\n\n", file=f)
         if "log_url" in data:
-            print(f"[githib actions log]({data['log_url']})", file=f)
+            print(f"[githib actions log]({data['log_url']})", file=f, end="  \n")
+        if "yaml_url" in data:
+            print(f"[mydra cfg]({data['yaml_url']})", file=f, end="  \n")
 
         print('{{< table "table table-striped table-bordered" >}}', file=f)
         f.write(df[["attr", "name", "status_link"]].to_markdown(index=False))
-        print('{{< /table >}}', file=f)
+        print("{{< /table >}}", file=f)
 
 
 @contextmanager
@@ -62,7 +77,11 @@ def chdir(dir):
 def execute():
     td = tempfile.mkdtemp(prefix="mydra-hugo-")
 
-    run(f"cp -r {os.path.join(os.path.dirname(__file__), 'hugosite')}/. {td}", check=True, shell=True)
+    run(
+        f"cp -r {os.path.join(os.path.dirname(__file__), 'hugosite')}/. {td}",
+        check=True,
+        shell=True,
+    )
     run(f"find {td}/ -type d -exec chmod +rwx {{}} \;", check=True, shell=True)
 
     with chdir(td):

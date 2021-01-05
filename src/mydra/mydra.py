@@ -146,7 +146,7 @@ def build(
                 if build_log is not None:
                     with open(build_log_path, "w") as f:
                         f.write(build_log)
-        
+
         with open(cache_file, "w") as cf:
             # Write human-readable json for easy hacking.
             cf.write(json.dumps(result_cache, indent=4))

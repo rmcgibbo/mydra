@@ -20,7 +20,7 @@ from .mydra import build, instantiate, log
 
 def main():
     p = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    p.add_argument("yml")
+    p.add_argument("yaml")
     p.add_argument(
         "-f",
         "--nixpkgs",
@@ -30,6 +30,7 @@ def main():
     )
     p.add_argument("-t", "--timeout", type=pytimeparse.parse, default=None)
     p.add_argument("--log-url")
+    p.add_argument("--yaml-url")
 
     args = p.parse_args()
     deadline = (
@@ -38,11 +39,17 @@ def main():
         else None
     )
 
-    return execute(nixpkgs=args.nixpkgs, yml=args.yml, deadline=deadline, log_url=args.log_url)
+    return execute(
+        nixpkgs=args.nixpkgs,
+        yaml=args.yaml,
+        deadline=deadline,
+        log_url=args.log_url,
+        yaml_url=args.yaml_url,
+    )
 
 
-def expand_package_attrnames(yml: str):
-    with open(yml) as f:
+def expand_package_attrnames(yaml: str):
+    with open(yaml) as f:
         cfg = strictyaml.load(f.read()).data
     if cfg["mydraApi"] != "0":
         raise NotImplementedError(f"Unsupported mydraApi = {cfg['mydraApi']}")
@@ -57,18 +64,23 @@ def expand_package_attrnames(yml: str):
 
 def execute(
     nixpkgs: Path,
-    yml: Path,
+    yaml: Path,
     deadline: Optional[datetime],
     log_url: Optional[str],
+    yaml_url: Optional[str],
 ):
     try:
         commit = git.Repo(nixpkgs).commit()
         nixpkgs_hash = str(commit)
-        nixpkgs_date = datetime.fromtimestamp(commit.committed_date).astimezone().isoformat()
+        nixpkgs_date = (
+            datetime.fromtimestamp(commit.committed_date).astimezone().isoformat()
+        )
     except git.exc.InvalidGitRepositoryError:
-        raise ValueError(f"Could not determine git hash from nixpkgs={nixpkgs}. Please use a git clone!")
+        raise ValueError(
+            f"Could not determine git hash from nixpkgs={nixpkgs}. Please use a git clone!"
+        )
 
-    packages = list(expand_package_attrnames(yml))
+    packages = list(expand_package_attrnames(yaml))
     drv2attr = instantiate(packages, nixpkgs)
     successes, failures = build(drv2attr, deadline=deadline)
 
@@ -105,6 +117,7 @@ def execute(
     outjson = {
         "nixpkgs": {"commit": nixpkgs_hash, "committed_date": nixpkgs_date},
         "log_url": log_url,
+        "yaml_url": yaml_url,
         "build_results": rows,
     }
     with open(cache_dir.joinpath(f"build-{nixpkgs_hash}.json"), "w") as f:
