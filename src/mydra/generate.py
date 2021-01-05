@@ -1,6 +1,7 @@
 import glob
 import json
 import os
+import argparse
 import shutil
 import subprocess
 import tempfile
@@ -42,6 +43,8 @@ draft: false
         print(f"""nixpkgs: [{data['nixpkgs']['commit'][:8]}](https://github.com/NixOS/nixpkgs/commit/{data['nixpkgs']['commit']}); {date_fmt}""", file=f, end="  \n")
         print(f"""failure(s): {", ".join(df.query("status == 'BUILDER FAILED'").name)}""", file=f, end="  \n")
         print("<!--more-->\n\n", file=f)
+        if "log_url" in data:
+            print(f"[githib actions log]({data['log_url']})", file=f)
 
         print('{{< table "table table-striped table-bordered" >}}', file=f)
         f.write(df[["attr", "name", "status_link"]].to_markdown(index=False))
@@ -56,7 +59,7 @@ def chdir(dir):
     os.chdir(cwd)
 
 
-def main():
+def execute():
     td = tempfile.mkdtemp(prefix="mydra-hugo-")
 
     run(f"cp -r {os.path.join(os.path.dirname(__file__), 'hugosite')}/. {td}", check=True, shell=True)
@@ -72,3 +75,8 @@ def main():
     shutil.rmtree("public", ignore_errors=True)
     shutil.copytree(td + "/public", "public")
     shutil.rmtree(td, ignore_errors=False)
+
+
+def main():
+    p = argparse.ArgumentParser()
+    return execute()

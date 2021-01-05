@@ -20,6 +20,7 @@ from .mydra import build, instantiate, log
 
 def main():
     p = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    p.add_argument("yml")
     p.add_argument(
         "-f",
         "--nixpkgs",
@@ -28,8 +29,7 @@ def main():
         type=os.path.abspath,
     )
     p.add_argument("-t", "--timeout", type=pytimeparse.parse, default=None)
-    p.add_argument("yml")
-    # p.add_argument("-o", "--report", default=None)
+    p.add_argument("--log-url")
 
     args = p.parse_args()
     deadline = (
@@ -38,7 +38,7 @@ def main():
         else None
     )
 
-    return execute(nixpkgs=args.nixpkgs, yml=args.yml, deadline=deadline)
+    return execute(nixpkgs=args.nixpkgs, yml=args.yml, deadline=deadline, log_url=log_url)
 
 
 def expand_package_attrnames(yml: str):
@@ -58,8 +58,8 @@ def expand_package_attrnames(yml: str):
 def execute(
     nixpkgs: Path,
     yml: Path,
-    # report: Optional[str],
     deadline: Optional[datetime],
+    log_url: Optional[str],
 ):
     try:
         commit = git.Repo(nixpkgs).commit()
@@ -104,6 +104,7 @@ def execute(
     cache_dir.mkdir(parents=True, exist_ok=True)
     outjson = {
         "nixpkgs": {"commit": nixpkgs_hash, "committed_date": nixpkgs_date},
+        "log_url": log_url,
         "build_results": rows,
     }
     with open(cache_dir.joinpath(f"build-{nixpkgs_hash}.json"), "w") as f:

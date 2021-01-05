@@ -32,31 +32,26 @@ jobs:
         aws-region: us-east-1
     - name: Install
       run: |
-        nix-env -f '<nixpkgs>' -iA curl jq awscli2
-        nix-env -f . -i
-        GITHUB_JOBRUN_ID=$(curl -sS "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/jobs" | jq .jobs[0].id)
+        mkdir -p ~/.cache/mydra
+        nix-env --quiet -f '<nixpkgs>' -iA curl jq awscli2
+        nix-env --quiet -f . -i
 
     - name: Run mydra
       env:
         AWS_BUCKET_CACHE: "s3://rmcgibbo-mydra-cache"
         AWS_BUCKET_LOGS: "s3://rmcgibbo-mydra-build-logs"
       run: |
-        echo "JOBRUN_ID $GITHUB_JOBRUN_ID"
+        GITHUB_JOBRUN_ID=$(curl -sS "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/jobs" | jq .jobs[0].id)
+        GITHUB_JOBURL_URL="https://github.com/$GITHUB_REPOSITORY/runs/$GITHUB_JOBRUN_ID"
 
         # Sync down build-{hash}.json files and mydra-failures.json
         # We really only need mydra-failures.json now, the other ones are used for the
         # mydra-generate step.
-        mkdir ~/.cache/mydra
         aws s3 sync --quiet $AWS_BUCKET_CACHE ~/.cache/mydra/
 
-        ls ~/.cache/mydra  # Initial
         git clone https://github.com/NixOS/nixpkgs.git --branch master --single-branch nixpkgs  --depth 1 --quiet
-        # nix build -f .
-        mydra -f ./nixpkgs mydra.yml -t 60m
+        mydra -f ./nixpkgs mydra.yml -t 60m --log-url $GITHUB_JOBURL_URL
         mydra-generate
-
-        ls ~/.cache/mydra  # Final
-        cat ~/.cache/mydra/mydra-failures.json
 
         # Upload new build logs
         aws s3 sync --quiet --content-type text/plain ~/.cache/mydra-logs/ $AWS_BUCKET_LOGS
