@@ -266,7 +266,8 @@ def _build_uncached(
         dry = build_dry(drvs_succeeded)
         for drv in dry[0] + dry[1]:
             drvs_failed[drv] = "MYDRA TIMEOUT"
-            drvs_succeeded.remove(drv)
+            if drv in drvs_succeeded:
+                drvs_succeeded.remove(drv)
 
     drvs_succeeded_names = {
         os.path.splitext(e)[0].split("-", 1)[1] for e in drvs_succeeded

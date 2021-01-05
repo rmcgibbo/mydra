@@ -5,3 +5,6 @@
 
 For toposorting
 (a) $ nix show-derivation /nix/store/0f9a3pvfbza1bk4l0p5zjcjpzc5pl5px-python3.9-numexpr-2.7.2.drv
+
+4. For top-level items in mydra.yml that are leaves, we should make sure we're not re-downloading
+   them from hydra if we don't need to.
