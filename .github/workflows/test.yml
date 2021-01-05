@@ -36,6 +36,7 @@ jobs:
         nix-env --quiet -f '<nixpkgs>' -iA curl jq awscli2
         nix-env --quiet -f . -i
         git clone https://github.com/NixOS/nixpkgs.git --branch master --single-branch nixpkgs  --depth 1 --quiet
+        (cg nixpkgs && git status)
 
     - name: Run mydra
       env:
