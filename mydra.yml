@@ -7,7 +7,7 @@ pythonVersions:
 
 pythonPackageNames:
   - aiomysql
-  - aplpy  
+  - aplpy
   - asdf
   - astropy
   - astroquery
@@ -31,12 +31,14 @@ pythonPackageNames:
   - pandas
   - paramz
   - pyerfa
+  - pytorch
   - reproject
+  - scikitlearn
+  - scikit-bio
   - scipy
   - spectral-cube
   - sunpy
   - typing-inspect
-  - scikitlearn
 
 nativePackages:
   - elfx86exts
