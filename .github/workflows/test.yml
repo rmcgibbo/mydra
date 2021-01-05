@@ -57,6 +57,8 @@ jobs:
 
         # Upload new build logs
         aws s3 sync --quiet --content-type text/plain ~/.cache/mydra-logs/ $AWS_BUCKET_LOGS
+        # Upload build failure records
+        aws s3 sync --quiet ~/.cache/mydra/ $AWS_BUCKET_CACHE
 
     # Deploy
     - name: Deploy GH pages
