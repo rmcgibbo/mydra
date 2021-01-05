@@ -40,4 +40,9 @@ in buildPythonPackage {
     # native
     hugo
   ];
+
+  shellHook = ''
+    # workaround because `python setup.py develop` breaks for me
+  '';
+
 }
