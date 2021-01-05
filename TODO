@@ -1,0 +1,7 @@
+1. Build dependency graph so that when something fails ("DEP FAILED") we can show
+   why and walk back.
+2. Make the web UI highlight the failures
+3. For each attr, we should be able to show whether it succeeded in the past.   
+
+For toposorting
+(a) $ nix show-derivation /nix/store/0f9a3pvfbza1bk4l0p5zjcjpzc5pl5px-python3.9-numexpr-2.7.2.drv
