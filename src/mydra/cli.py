@@ -38,7 +38,7 @@ def main():
         else None
     )
 
-    return execute(nixpkgs=args.nixpkgs, yml=args.yml, deadline=deadline, log_url=log_url)
+    return execute(nixpkgs=args.nixpkgs, yml=args.yml, deadline=deadline, log_url=args.log_url)
 
 
 def expand_package_attrnames(yml: str):
