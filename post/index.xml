@@ -21,35 +21,5 @@
 failure(s): flatbuffers-1.12.0&lt;/p&gt;</description>
     </item>
     
-    <item>
-      <title>nixpkgs f284b440</title>
-      <link>https://rmcgibbo.github.io/mydra/post/nixpkgs-f284b440/</link>
-      <pubDate>Mon, 04 Jan 2021 18:41:30 +0000</pubDate>
-      
-      <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-f284b440/</guid>
-      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/f284b44089bfd83bdba704789cb4ac457c374831&#34;&gt;f284b440&lt;/a&gt;; Jan 4 1:41 PM EST&lt;br&gt;
-failure(s): flatbuffers-1.12.0&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>nixpkgs bc1b1172</title>
-      <link>https://rmcgibbo.github.io/mydra/post/nixpkgs-bc1b1172/</link>
-      <pubDate>Sun, 03 Jan 2021 14:13:33 +0000</pubDate>
-      
-      <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-bc1b1172/</guid>
-      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/bc1b117218e4986c4518a087a0c64e906b6c5e61&#34;&gt;bc1b1172&lt;/a&gt;; Jan 3 9:13 AM EST&lt;br&gt;
-failure(s): flatbuffers-1.12.0&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>nixpkgs 030dc678</title>
-      <link>https://rmcgibbo.github.io/mydra/post/nixpkgs-030dc678/</link>
-      <pubDate>Sun, 03 Jan 2021 12:50:02 +0000</pubDate>
-      
-      <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-030dc678/</guid>
-      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/030dc6783470e5a86c8f1b08fa453343ac0663fc&#34;&gt;030dc678&lt;/a&gt;; Jan 3 7:50 AM EST&lt;br&gt;
-failure(s): flatbuffers-1.12.0&lt;/p&gt;</description>
-    </item>
-    
   </channel>
 </rss>
