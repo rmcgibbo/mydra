@@ -36,7 +36,6 @@ jobs:
         nix-env --quiet -f '<nixpkgs>' -iA curl jq awscli2
         nix-env --quiet -f . -i
         git clone https://github.com/NixOS/nixpkgs.git --branch master --single-branch nixpkgs  --depth 1 --quiet
-        (cd nixpkgs && git log --graph --pretty=format:'%C(auto)%h (%cr) %cn <%ce> %s' -n 1)
 
     - name: Run mydra
       env:
@@ -46,6 +45,8 @@ jobs:
         GITHUB_JOBRUN_ID=$(curl -sS "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/jobs" | jq .jobs[0].id)
         GITHUB_JOBURL_URL="https://github.com/$GITHUB_REPOSITORY/runs/$GITHUB_JOBRUN_ID"
         YAML_URL="https://github.com/$GITHUB_REPOSITORY/blob/$GITHUB_SHA/mydra.yml"
+
+        (cd nixpkgs && git log --graph --pretty=format:'%C(auto)%h (%cr) %cn <%ce> %s' -n 1)
 
         # Sync down build-{hash}.json files and mydra-failures.json
         # We really only need mydra-failures.json now, the other ones are used for the
