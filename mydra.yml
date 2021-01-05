@@ -36,6 +36,7 @@ pythonPackageNames:
   - spectral-cube
   - sunpy
   - typing-inspect
+  - scikitlearn
 
 nativePackages:
   - elfx86exts
