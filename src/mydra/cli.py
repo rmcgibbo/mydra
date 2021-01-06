@@ -29,8 +29,8 @@ def main():
         type=os.path.abspath,
     )
     p.add_argument("-t", "--timeout", type=pytimeparse.parse, default=None)
-    p.add_argument("--log-url")
-    p.add_argument("--yaml-url")
+    p.add_argument("--log-url", help=argparse.SUPPRESS)
+    p.add_argument("--yaml-url", help=argparse.SUPPRESS)
 
     args = p.parse_args()
     deadline = (
