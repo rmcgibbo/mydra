@@ -31,7 +31,6 @@ pythonPackageNames:
   - pandas
   - paramz
   - pyerfa
-  - pytorch
   - reproject
   - scikitlearn
   - scikit-bio
@@ -39,6 +38,7 @@ pythonPackageNames:
   - spectral-cube
   - sunpy
   - typing-inspect
+#  - pytorch
 
 nativePackages:
   - elfx86exts
