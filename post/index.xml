@@ -6,10 +6,20 @@
     <description>Recent content in Posts on mydra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jan 2021 11:31:59 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Jan 2021 17:10:30 +0000</lastBuildDate>
     
 	<atom:link href="https://rmcgibbo.github.io/mydra/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>nixpkgs 4746e171</title>
+      <link>https://rmcgibbo.github.io/mydra/post/nixpkgs-4746e171/</link>
+      <pubDate>Wed, 06 Jan 2021 17:10:30 +0000</pubDate>
+      
+      <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-4746e171/</guid>
+      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/4746e1717f082663813861046c2774f395402bda&#34;&gt;4746e171&lt;/a&gt;; Jan 6 12:10 PM EST&lt;br&gt;
+failure(s): python37Packages.clifford, python37Packages.imbalanced-learn, python38Packages.clifford&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>nixpkgs f41f0643</title>
@@ -18,7 +28,7 @@
       
       <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-f41f0643/</guid>
       <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/f41f0643f851ce2454958802a21bc48fdd463012&#34;&gt;f41f0643&lt;/a&gt;; Jan 6 6:31 AM EST&lt;br&gt;
-failure(s): python3.7-imbalanced-learn-0.7.0&lt;/p&gt;</description>
+failure(s): python37Packages.clifford, python37Packages.imbalanced-learn&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,7 +48,7 @@ failure(s):&lt;/p&gt;</description>
       
       <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-91f3a87b/</guid>
       <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/91f3a87b16944593fcee9b0537e870a1d5534b39&#34;&gt;91f3a87b&lt;/a&gt;; Jan 5 7:17 PM EST&lt;br&gt;
-failure(s):&lt;/p&gt;</description>
+failure(s): python37Packages.clifford, python38Packages.clifford&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,7 +58,7 @@ failure(s):&lt;/p&gt;</description>
       
       <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-0af4d597/</guid>
       <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/0af4d59732bf0b57facac0398b8a5e22993ab361&#34;&gt;0af4d597&lt;/a&gt;; Jan 5 6:19 PM EST&lt;br&gt;
-failure(s):&lt;/p&gt;</description>
+failure(s): python37Packages.clifford, python38Packages.clifford&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -58,7 +68,7 @@ failure(s):&lt;/p&gt;</description>
       
       <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-1cfa4cdc/</guid>
       <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/1cfa4cdc3e93b8ad825e1c78b709a554c9ccaaea&#34;&gt;1cfa4cdc&lt;/a&gt;; Jan 5 4:56 PM EST&lt;br&gt;
-failure(s):&lt;/p&gt;</description>
+failure(s): python37Packages.clifford, python38Packages.clifford&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -68,7 +78,7 @@ failure(s):&lt;/p&gt;</description>
       
       <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-0d7ccb77/</guid>
       <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/0d7ccb77915b54f28c2ceb95e4a59f11c2826593&#34;&gt;0d7ccb77&lt;/a&gt;; Jan 5 6:38 AM EST&lt;br&gt;
-failure(s): flatbuffers-1.12.0&lt;/p&gt;</description>
+failure(s): python37Packages.clifford, python37Packages.datasets, python38Packages.clifford, python38Packages.datasets&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -78,7 +88,7 @@ failure(s): flatbuffers-1.12.0&lt;/p&gt;</description>
       
       <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-9a27606a/</guid>
       <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/9a27606ab1781a01a75f7c2d519fd6ee2b4b867c&#34;&gt;9a27606a&lt;/a&gt;; Jan 5 12:48 AM EST&lt;br&gt;
-failure(s): flatbuffers-1.12.0&lt;/p&gt;</description>
+failure(s): python37Packages.clifford, python37Packages.datasets, python38Packages.clifford, python38Packages.datasets&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -88,7 +98,7 @@ failure(s): flatbuffers-1.12.0&lt;/p&gt;</description>
       
       <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-178ec897/</guid>
       <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/178ec8974ff70ef0acffa4cc8f47f3234898ff3d&#34;&gt;178ec897&lt;/a&gt;; Jan 4 10:36 PM EST&lt;br&gt;
-failure(s): flatbuffers-1.12.0&lt;/p&gt;</description>
+failure(s): python37Packages.clifford, python37Packages.datasets, python38Packages.clifford, python38Packages.datasets&lt;/p&gt;</description>
     </item>
     
   </channel>
