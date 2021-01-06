@@ -37,6 +37,8 @@ def process_file(fn: str):
         "%b %-d %-I:%M %p %Z"
     )
 
+    failed_attrs = sorted((a for a in df.query("status in ('BUILDER FAILED', 'DEP FAILED')").attr if a))
+
     with open(f"content/post/build-{data['nixpkgs']['commit']}.md", "w") as f:
         f.write(
             f"""---
@@ -51,7 +53,7 @@ draft: false
             end="  \n",
         )
         print(
-            f"""failure(s): {", ".join(df.query("status == 'BUILDER FAILED'").name)}""",
+            f"failure(s): {', '.join(failed_attrs)}",
             file=f,
             end="  \n",
         )
