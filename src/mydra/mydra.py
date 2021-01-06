@@ -25,12 +25,12 @@ Attribute = str
 Drvpath = str
 
 
-def log(drv: Drvpath, out="return") -> Optional[str]:
+def log(drv: Drvpath, out="return") -> Optional[bytes]:
     """Returns the build log of a store path."""
     if out == "stdout":
-        result = run(["nix", "log", "-f.", drv], text=True)
+        result = run(["nix", "log", "-f.", drv])
     else:
-        result = run(["nix", "log", "-f.", drv], stdout=PIPE, stderr=PIPE, text=True)
+        result = run(["nix", "log", "-f.", drv], stdout=PIPE, stderr=PIPE)
     if result.returncode != 0:
         return None
     return result.stdout
@@ -144,7 +144,7 @@ def build(
             if not build_log_path.exists():
                 build_log = log(drv)
                 if build_log is not None:
-                    with open(build_log_path, "w") as f:
+                    with open(build_log_path, "wb") as f:
                         f.write(build_log)
 
         with open(cache_file, "w") as cf:
@@ -174,16 +174,22 @@ def _build_uncached(
     # We need to use pexpect instead of subprocess.Popen here, since `nix
     # build` will not produce its regular output when it does not detect a tty.
     cmd = ["build", "--no-link", "--keep-going"]
-    if not sys.stdout.isatty():
-        cmd += ["--print-build-logs"]
 
-    # print(f"Building {drvs}")
+    # print(f"Building {'\n'.join(drvs)}")
     # sys.stdout.flush()
+
+    if sys.stdout.isatty():
+        logfile = sys.stdout.buffer
+        BUILD_TO_STDOUT = True
+    else:
+        cmd += ["--print-build-logs"]
+        logfile = open("build.log", "wb")
+        BUILD_TO_STDOUT = False
 
     build_process = pexpect.spawn(
         "nix",
         cmd + drvs,
-        logfile=sys.stdout.buffer,
+        logfile=logfile,
     )
 
     # adapted from the pexpect docs
@@ -232,12 +238,20 @@ def _build_uncached(
 
             match = _CANNOT_BUILD_PAT.match(line)
             if match is not None:
+                if not BUILD_TO_STDOUT:
+                    print(line.decode("utf-8"))
+                    sys.stdout.flush()
+
                 drv = match.group(1).decode()
                 _reason = match.group(2).decode()
                 drvs_failed[drv] = "DEP FAILED"
 
             match = _BUILD_FAILED_PAT.match(line)
             if match is not None:
+                if not BUILD_TO_STDOUT:
+                    print(line.decode("utf-8"))
+                    sys.stdout.flush()
+
                 drv_list = match.group(1).decode()
                 for drv in (drv.strip("'") for drv in drv_list.split(", ")):
                     if drv not in drvs_failed:
@@ -245,12 +259,20 @@ def _build_uncached(
 
             match = _BUILD_TIMEOUT_PAT.match(line)
             if match is not None:
+                if not BUILD_TO_STDOUT:
+                    print(line.decode("utf-8"))
+                    sys.stdout.flush()
+
                 drv = match.group(1).decode()
                 if drv not in drvs_failed:
                     drvs_failed[drv] = "BUILD TIMEOUT"
 
             match = _BUILDER_FAILED_PAT.match(line)
             if match is not None:
+                if not BUILD_TO_STDOUT:
+                    print(line.decode("utf-8"))
+                    sys.stdout.flush()
+
                 drv = match.group(1).decode()
                 _exit_code = match.group(2).decode()
                 if drv not in drvs_failed:
