@@ -6,10 +6,20 @@
     <description>Recent content on mydra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Jan 2021 12:14:56 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Jan 2021 17:06:01 +0000</lastBuildDate>
     
 	<atom:link href="https://rmcgibbo.github.io/mydra/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>nixpkgs fe0ee326</title>
+      <link>https://rmcgibbo.github.io/mydra/post/nixpkgs-fe0ee326/</link>
+      <pubDate>Sun, 10 Jan 2021 17:06:01 +0000</pubDate>
+      
+      <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-fe0ee326/</guid>
+      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/fe0ee326e0537c1cc3368fc05884f4918da5c8cd&#34;&gt;fe0ee326&lt;/a&gt;; Jan 10 12:06 PM EST&lt;br&gt;
+failure(s): python37Packages.aplpy, python37Packages.asdf, python37Packages.clifford, python37Packages.dask, python37Packages.reproject, python37Packages.spectral-cube, python37Packages.sunpy, python38Packages.clifford&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>nixpkgs ad97cdf8</title>
