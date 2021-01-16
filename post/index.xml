@@ -6,10 +6,20 @@
     <description>Recent content in Posts on mydra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Jan 2021 18:31:36 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Jan 2021 22:18:51 +0000</lastBuildDate>
     
 	<atom:link href="https://rmcgibbo.github.io/mydra/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>nixpkgs b3616bd9</title>
+      <link>https://rmcgibbo.github.io/mydra/post/nixpkgs-b3616bd9/</link>
+      <pubDate>Fri, 15 Jan 2021 22:18:51 +0000</pubDate>
+      
+      <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-b3616bd9/</guid>
+      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/b3616bd96400ce0252c241d76fcafb64389defc6&#34;&gt;b3616bd9&lt;/a&gt;; Jan 15 5:18 PM EST&lt;br&gt;
+failure(s): python37Packages.aplpy, python37Packages.asdf, python37Packages.clifford, python37Packages.dask, python37Packages.gpy, python37Packages.imbalanced-learn, python37Packages.reproject, python37Packages.spectral-cube, python37Packages.sunpy, python38Packages.aplpy, python38Packages.asdf, python38Packages.clifford, python38Packages.dask, python38Packages.gpy, python38Packages.imbalanced-learn, python38Packages.reproject, python38Packages.spectral-cube, python38Packages.sunpy, python39Packages.gpy&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>nixpkgs eba16531</title>
