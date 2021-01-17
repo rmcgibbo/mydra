@@ -18,7 +18,7 @@
       
       <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-c44acaac/</guid>
       <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/c44acaaceb04ab149b805656eeffcdf2acf939e6&#34;&gt;c44acaac&lt;/a&gt;; Jan 16 7:55 PM EST&lt;br&gt;
-failure(s): python37Packages.aplpy, python37Packages.asdf, python37Packages.clifford, python37Packages.dask, python37Packages.gpy, python37Packages.imbalanced-learn, python37Packages.reproject, python37Packages.spectral-cube, python37Packages.sunpy, python38Packages.aplpy, python38Packages.asdf, python38Packages.clifford, python38Packages.dask, python38Packages.gpy, python38Packages.imbalanced-learn, python38Packages.reproject, python38Packages.spectral-cube, python38Packages.sunpy, python39Packages.gpy&lt;/p&gt;</description>
+failure(s):&lt;/p&gt;</description>
     </item>
     
     <item>
