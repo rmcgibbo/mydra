@@ -53,6 +53,9 @@ jobs:
         # We really only need mydra-failures.json now, the other ones are used for the
         # mydra-generate step.
         aws s3 sync --quiet $AWS_BUCKET_CACHE ~/.cache/mydra/
+
+        rm ~/.cache/mydra/mydra-failures.json
+
         mydra -f ./nixpkgs mydra.yml -t 60m --log-url $GITHUB_JOBURL_URL --yaml-url $YAML_URL
 
         # This will read ~/.cache/mydra for all of the build-{hash}.json and generate ./public
