@@ -6,10 +6,20 @@
     <description>Recent content on mydra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Jan 2021 12:25:47 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Jan 2021 18:21:09 +0000</lastBuildDate>
     
 	<atom:link href="https://rmcgibbo.github.io/mydra/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>nixpkgs d1bfbb99</title>
+      <link>https://rmcgibbo.github.io/mydra/post/nixpkgs-d1bfbb99/</link>
+      <pubDate>Tue, 19 Jan 2021 18:21:09 +0000</pubDate>
+      
+      <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-d1bfbb99/</guid>
+      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/d1bfbb992db2ca20e5fc804ecdc174a419baa590&#34;&gt;d1bfbb99&lt;/a&gt;; Jan 19 1:21 PM EST&lt;br&gt;
+failure(s): python37Packages.astroquery, python37Packages.datasette, python37Packages.hmmlearn, python37Packages.imbalanced-learn, python37Packages.scikit-bio, python37Packages.scikitlearn, python38Packages.hmmlearn, python38Packages.imbalanced-learn, python38Packages.scikit-bio, python38Packages.scikitlearn, python39Packages.hmmlearn, python39Packages.scikitlearn&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>nixpkgs 101d4284</title>
