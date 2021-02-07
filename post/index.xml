@@ -6,10 +6,20 @@
     <description>Recent content in Posts on mydra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Feb 2021 06:06:35 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Feb 2021 11:37:10 +0000</lastBuildDate>
     
 	<atom:link href="https://rmcgibbo.github.io/mydra/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>nixpkgs 7467ba0b</title>
+      <link>https://rmcgibbo.github.io/mydra/post/nixpkgs-7467ba0b/</link>
+      <pubDate>Sun, 07 Feb 2021 11:37:10 +0000</pubDate>
+      
+      <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-7467ba0b/</guid>
+      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/7467ba0b1d7aa64dcb98b3c6235a33e1b4892a8a&#34;&gt;7467ba0b&lt;/a&gt;; Feb 7 6:37 AM EST&lt;br&gt;
+failure(s): python37Packages.imbalanced-learn, python38Packages.imbalanced-learn&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>nixpkgs f0d8828b</title>
