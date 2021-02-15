@@ -42,6 +42,7 @@ jobs:
         AWS_BUCKET_CACHE: "s3://rmcgibbo-mydra-cache"
         AWS_BUCKET_LOGS: "s3://rmcgibbo-mydra-build-logs"
       run: |
+        export NIXPKGS_ALLOW_UNFREE=1
         GITHUB_JOBRUN_ID=$(curl -sS "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/jobs" | jq .jobs[0].id)
         GITHUB_JOBURL_URL="https://github.com/$GITHUB_REPOSITORY/runs/$GITHUB_JOBRUN_ID"
         YAML_URL="https://github.com/$GITHUB_REPOSITORY/blob/$GITHUB_SHA/mydra.yml"
