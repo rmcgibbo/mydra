@@ -71,7 +71,7 @@ def instantiate(packages: List[Attribute], nixpkgs: str) -> Dict[Drvpath, Attrib
     # not broken or disabled get the drvpath for it.
     kv = nix.eval(
         """
-let pkgs = import nixpkgsPath { };
+let pkgs = import nixpkgsPath { config = { checkMeta = true; allowUnfree = true; }; };
   getPkg = n: (pkgs.lib.getAttrFromPath (pkgs.lib.splitString "." n) pkgs);
   getDrvPath = pkg:
     let maybe = builtins.tryEval pkg.drvPath;
@@ -87,7 +87,7 @@ in pkgs.lib.genAttrs maybePackages (n: getDrvPath (getPkg n))
         nixpkgs=nixpkgs, attribs=" ".join(answer.values())
     )
     cmd2 = [find_executable("nix-instantiate"), "-E", expr2]
-    run(cmd2, stdout=PIPE, stderr=PIPE, check=True, shell=False)
+    run(cmd2, check=True, shell=False)
 
     return answer
 

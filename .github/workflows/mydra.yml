@@ -10,7 +10,7 @@ on:
 jobs:
   Mydra:
     runs-on: ubuntu-20.04
-    timeout-minutes: 65
+    # timeout-minutes: 65
     steps:
 
     # Installation
@@ -56,7 +56,7 @@ jobs:
 
         rm ~/.cache/mydra/mydra-failures.json
 
-        mydra -f ./nixpkgs mydra.yml -t 60m --log-url $GITHUB_JOBURL_URL --yaml-url $YAML_URL
+        mydra -f ./nixpkgs mydra.yml --log-url $GITHUB_JOBURL_URL --yaml-url $YAML_URL
 
         # This will read ~/.cache/mydra for all of the build-{hash}.json and generate ./public
         mydra-generate

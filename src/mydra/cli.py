@@ -81,6 +81,7 @@ def execute(
         )
 
     packages = list(expand_package_attrnames(yaml))
+    print("Pre-instantiate 84", packages, nixpkgs)
     drv2attr = instantiate(packages, nixpkgs)
     successes, failures = build(drv2attr, deadline=deadline)
 
