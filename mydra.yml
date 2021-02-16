@@ -2,8 +2,8 @@ mydraApi: 0
 
 pythonVersions:
   - 37
-  - 38
-  - 39
+  # - 38
+  # - 39
 
 pythonPackageNames:
   # - aiomysql
