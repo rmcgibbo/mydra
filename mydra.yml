@@ -2,8 +2,8 @@ mydraApi: 0
 
 pythonVersions:
   - 37
-  # - 38
-  # - 39
+  - 38
+  - 39
 
 pythonPackageNames:
   # - aiomysql
@@ -20,26 +20,26 @@ pythonPackageNames:
   #- fastparquet
   #- fiona
   #- fixtures
-  #- flower
-  #- geopandas
-  #- gpy
-  #- hmmlearn
-  #- imageio-ffmpeg
-  #- imbalanced-learn
-  #- macropy
-  #- numexpr
-  #- pandas
-  #- paramz
-  #- pyerfa
-  #- reproject
-  #- scikitlearn
-  #- scikit-bio
-  #- scipy
-  #- spectral-cube
-  #- sunpy
-  #- typing-inspect
-  #- pytorch
-  - pytorchWithCuda
+  - flower
+  - geopandas
+  - gpy
+  - hmmlearn
+  - imageio-ffmpeg
+  - imbalanced-learn
+  - macropy
+  - numexpr
+  - pandas
+  - paramz
+  - pyerfa
+  - reproject
+  - scikitlearn
+  - scikit-bio
+  - scipy
+  - spectral-cube
+  - sunpy
+  - typing-inspect
+  - pytorch
+  #- pytorchWithCuda
 
 nativePackages:
-  - elfx86exts
+  #- elfx86exts
