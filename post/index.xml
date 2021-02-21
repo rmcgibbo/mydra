@@ -6,10 +6,20 @@
     <description>Recent content in Posts on mydra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Feb 2021 06:07:23 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Feb 2021 12:14:55 +0000</lastBuildDate>
     
 	<atom:link href="https://rmcgibbo.github.io/mydra/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>nixpkgs e3d3643f</title>
+      <link>https://rmcgibbo.github.io/mydra/post/nixpkgs-e3d3643f/</link>
+      <pubDate>Sun, 21 Feb 2021 12:14:55 +0000</pubDate>
+      
+      <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-e3d3643f/</guid>
+      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/e3d3643f1b26db3bb9892d7b6e433889ce8c5e60&#34;&gt;e3d3643f&lt;/a&gt;; Feb 21 7:14 AM EST&lt;br&gt;
+failure(s): python37Packages.geopandas, python37Packages.spectral-cube, python38Packages.geopandas, python38Packages.spectral-cube, python39Packages.geopandas, python39Packages.spectral-cube&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>nixpkgs f876a5df</title>
