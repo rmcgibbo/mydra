@@ -6,10 +6,20 @@
     <description>Recent content on mydra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Feb 2021 11:40:17 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Feb 2021 17:49:54 +0000</lastBuildDate>
     
 	<atom:link href="https://rmcgibbo.github.io/mydra/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>nixpkgs a859f27d</title>
+      <link>https://rmcgibbo.github.io/mydra/post/nixpkgs-a859f27d/</link>
+      <pubDate>Fri, 26 Feb 2021 17:49:54 +0000</pubDate>
+      
+      <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-a859f27d/</guid>
+      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/a859f27d615a0a920fbf508369371cf71b4545f4&#34;&gt;a859f27d&lt;/a&gt;; Feb 26 12:49 PM EST&lt;br&gt;
+failure(s): python37Packages.imbalanced-learn, python37Packages.reproject, python37Packages.scikit-bio, python37Packages.spectral-cube, python37Packages.sunpy, python38Packages.hmmlearn, python38Packages.imbalanced-learn, python38Packages.reproject, python38Packages.scikit-bio, python38Packages.scikitlearn, python38Packages.spectral-cube, python38Packages.sunpy, python39Packages.imbalanced-learn, python39Packages.reproject, python39Packages.scikit-bio, python39Packages.spectral-cube&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>nixpkgs c6f1dc23</title>

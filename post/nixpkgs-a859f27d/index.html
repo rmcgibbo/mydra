@@ -1,0 +1,2626 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.74.3 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="nixpkgs: a859f27d; Feb 26 12:49 PM EST
+failure(s): python37Packages.imbalanced-learn, python37Packages.reproject, python37Packages.scikit-bio, python37Packages.spectral-cube, python37Packages.sunpy, python38Packages.hmmlearn, python38Packages.imbalanced-learn, python38Packages.reproject, python38Packages.scikit-bio, python38Packages.scikitlearn, python38Packages.spectral-cube, python38Packages.sunpy, python39Packages.imbalanced-learn, python39Packages.reproject, python39Packages.scikit-bio, python39Packages.spectral-cube">
+
+
+<meta property="og:description" content="nixpkgs: a859f27d; Feb 26 12:49 PM EST
+failure(s): python37Packages.imbalanced-learn, python37Packages.reproject, python37Packages.scikit-bio, python37Packages.spectral-cube, python37Packages.sunpy, python38Packages.hmmlearn, python38Packages.imbalanced-learn, python38Packages.reproject, python38Packages.scikit-bio, python38Packages.scikitlearn, python38Packages.spectral-cube, python38Packages.sunpy, python39Packages.imbalanced-learn, python39Packages.reproject, python39Packages.scikit-bio, python39Packages.spectral-cube">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nixpkgs a859f27d">
+<meta name="twitter:title" content="nixpkgs a859f27d">
+<meta property="og:url" content="https://rmcgibbo.github.io/mydra/post/nixpkgs-a859f27d/">
+<meta property="twitter:url" content="https://rmcgibbo.github.io/mydra/post/nixpkgs-a859f27d/">
+<meta property="og:site_name" content="mydra">
+<meta property="og:description" content="nixpkgs: a859f27d; Feb 26 12:49 PM EST
+failure(s): python37Packages.imbalanced-learn, python37Packages.reproject, python37Packages.scikit-bio, python37Packages.spectral-cube, python37Packages.sunpy, python38Packages.hmmlearn, python38Packages.imbalanced-learn, python38Packages.reproject, python38Packages.scikit-bio, python38Packages.scikitlearn, python38Packages.spectral-cube, python38Packages.sunpy, python39Packages.imbalanced-learn, python39Packages.reproject, python39Packages.scikit-bio, python39Packages.spectral-cube">
+<meta name="twitter:description" content="nixpkgs: a859f27d; Feb 26 12:49 PM EST
+failure(s): python37Packages.imbalanced-learn, python37Packages.reproject, python37Packages.scikit-bio, python37Packages.spectral-cube, python37Packages.sunpy, python38Packages.hmmlearn, python38Packages.imbalanced-learn, python38Packages.reproject, python38Packages.scikit-bio, python38Packages.scikitlearn, python38Packages.spectral-cube, python38Packages.sunpy, python39Packages.imbalanced-learn, python39Packages.reproject, python39Packages.scikit-bio, python39Packages.spectral-cube">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2021-02-26T17:49:54">
+  
+  
+    <meta property="article:modified_time" content="2021-02-26T17:49:54">
+  
+  
+  
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+
+    <title>nixpkgs a859f27d</title>
+
+    <link rel="icon" href="https://rmcgibbo.github.io/mydra/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://rmcgibbo.github.io/mydra/post/nixpkgs-a859f27d/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://rmcgibbo.github.io/mydra/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="3">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://rmcgibbo.github.io/mydra/">mydra</a>
+  </div>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="3">
+  <div class="sidebar-container">
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://rmcgibbo.github.io/mydra/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/rmcgibbo/mydra" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="3"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      nixpkgs a859f27d
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2021-02-26T17:49:54Z">
+        
+  February 26, 2021
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>nixpkgs: <a href="https://github.com/NixOS/nixpkgs/commit/a859f27d615a0a920fbf508369371cf71b4545f4">a859f27d</a>; Feb 26 12:49 PM EST<br>
+failure(s): python37Packages.imbalanced-learn, python37Packages.reproject, python37Packages.scikit-bio, python37Packages.spectral-cube, python37Packages.sunpy, python38Packages.hmmlearn, python38Packages.imbalanced-learn, python38Packages.reproject, python38Packages.scikit-bio, python38Packages.scikitlearn, python38Packages.spectral-cube, python38Packages.sunpy, python39Packages.imbalanced-learn, python39Packages.reproject, python39Packages.scikit-bio, python39Packages.spectral-cube</p>
+<p><a href="https://github.com/rmcgibbo/mydra/runs/1989704149">githib actions log</a><br>
+<a href="https://github.com/rmcgibbo/mydra/blob/235a27c35e3550a35e12ab6e10dd50337d5073dd/mydra.yml">mydra cfg</a><br>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th align="left">attr</th>
+<th align="left">name</th>
+<th align="left">status_link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left">quickcheck-io-0.2.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/h6a0vx545hhfjqqlwxfar17x6bqy4nyc-quickcheck-io-0.2.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-pytest-timeout-1.4.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/9dacpyj0n6l18cdv1l7d6qk4dby5w574-python3.7-pytest-timeout-1.4.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.scipy</td>
+<td align="left">python3.7-scipy-1.6.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/s10aq9zkjx4pymjvx2sarkyv0cjdzpqc-python3.7-scipy-1.6.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hostname-1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ycypvrwzpq1q8myxkik591q368fqn2q2-hostname-1.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">sop-core-0.5.0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/237kfmq78y8483sjph87i207kmwjv3jh-sop-core-0.5.0.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">jailbreak-cabal-1.3.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/vbzl6fg2pa9lkb3hxwxk7n843plcfhjp-jailbreak-cabal-1.3.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">ansi-wl-pprint-0.6.9</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/kl7zlphfdwjqqipbgxk7p3wg5nkky0dv-ansi-wl-pprint-0.6.9.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.numexpr</td>
+<td align="left">python3.8-numexpr-2.7.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/76sg8vllbqfj66j6hqpyhy05vfisaz4x-python3.8-numexpr-2.7.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">optparse-applicative-0.15.1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/zb73xzr1fj7ickn2rhja8fklwrrm96aj-optparse-applicative-0.15.1.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">profunctors-5.5.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7vjpmi1m53b6lagrrm9nzj135372zna3-profunctors-5.5.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">basement-0.0.11</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/zlmhzka01gr4xwlk47llm5mmy51r4b15-basement-0.0.11.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-Werkzeug-1.0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/6h6yxsibx0va6vixzc1jvg69s3rzmhii-python3.9-Werkzeug-1.0.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">extensible-exceptions-0.1.1.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/gg0lm05kzs3rj60zp1f5096iryck5p6s-extensible-exceptions-0.1.1.4.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">primitive-0.7.1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/117c34nw9kamlhqv8mmpgzw9mnq7nqv9-primitive-0.7.1.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hspec-meta-2.7.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/fck5aclv08smvhv92fi32g9qf1k2g8mg-hspec-meta-2.7.8.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.gpy</td>
+<td align="left">python3.7-GPy-1.9.9</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/8v6my3jwf61yxkr9qax38pkhm8snbw0j-python3.7-GPy-1.9.9.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-parfive-1.2.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/qpbqvz77kln9fhvk97adap5lwdabf65x-python3.8-parfive-1.2.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hxt-unicode-9.0.2.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/6mrssyaywawq4vgcqhbhj00jyg8rhs0r-hxt-unicode-9.0.2.4.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-zeep-3.4.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/sb13l1zaacacbwna0d0yqp1762wzc345-python3.9-zeep-3.4.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">safe-0.3.19</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/1jzzdnw1vw8k0wr6b8q6wz3i3w07gq80-safe-0.3.19.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-Werkzeug-1.0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/nr863lbjvjqjfpfkl87q25hkrjrzfr3a-python3.7-Werkzeug-1.0.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-tensorboard_plugin_profile-2.4.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7ggqg2mjljrb6iqmqp3l0y1g7iya4204-python3.7-tensorboard_plugin_profile-2.4.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tf-random-0.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/hq8vrf3ym2r14z89hxs97cfvg4n760cl-tf-random-0.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tagsoup-0.14.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/gn5lva1q2iy76gdjqdh483w077ld8l71-tagsoup-0.14.8.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">file-embed-0.0.13.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/cdbx52zl48r7kylikaz2sx7mkaks8ijr-file-embed-0.0.13.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">reflection-2.1.6</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/yyvjpp3ii7lwgfpbxf66fndclmif01x6-reflection-2.1.6.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.imageio-ffmpeg</td>
+<td align="left">python3.9-imageio-ffmpeg-0.4.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/g366y0mj2wmhz0xcd2908a861ibdgrxg-python3.9-imageio-ffmpeg-0.4.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">haskell-lexer-1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/41dsw1mr43xi4w16fs9ps6k3n06n833w-haskell-lexer-1.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">xml-types-0.3.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/zpccwshhsmsp6v75ds1mv8gfk3n2aryh-xml-types-0.3.8.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">parallel-3.2.2.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/qr2jx90hys2j9ai4z1i3yj719q0fsf60-parallel-3.2.2.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">StateVar-1.2.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/scmzf7vhlm6r8ns2mnz1jhx2kcczlwl7-StateVar-1.2.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-pytest-timeout-1.4.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/s9dwgb8p5p04yajvwx0jy5mwbakkz97q-python3.9-pytest-timeout-1.4.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">ansi-terminal-0.10.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/qa5z75rilcw8lz2ic2g8n4v3a60524sm-ansi-terminal-0.10.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">old-time-1.1.0.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ryszs3wlaphm47wjxbxhhrf9zdv2sfad-old-time-1.1.0.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-tensorflow-tensorboard-2.4.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/422ziwh2naa4bd1gx204pdanfks2j12r-python3.8-tensorflow-tensorboard-2.4.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">call-stack-0.2.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/si951kh67z8h8j8cp1sdi1zw26wk67yf-call-stack-0.2.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-aioresponses-0.7.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/akld20sc8lf2k0gxryvbkj862nk46990-python3.9-aioresponses-0.7.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">memory-0.15.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/vix6152vi1qdphsnjxzylqhkgxd6kwzl-memory-0.15.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">foundation-0.0.25</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/j91br2jbvmak02b5av2pzadvxpvnsbm9-foundation-0.0.25.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">microlens-0.4.11.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/4lpy6pk4wrm9bfm9sfv448r5virnq1vq-microlens-0.4.11.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">executable-path-0.0.3.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7nw1vcj0vrrvsmbcigrsh9w7z6izg4h5-executable-path-0.0.3.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-google-auth-oauthlib-0.4.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/n295kva71sl08cxp88jy3vq5czxd0fsd-python3.8-google-auth-oauthlib-0.4.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">old-locale-1.0.0.7</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/vs35gnlwzbj9awsa2yl9yd5pz4fc6zcj-old-locale-1.0.0.7.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.gpy</td>
+<td align="left">python3.8-GPy-1.9.9</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/1vr45y57xcmiksc3b5c1kk1v4cbpkp77-python3.8-GPy-1.9.9.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">ghc-8.10.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/i6gxi9jzz7kk8rn69ibgb3m2fqlh4m75-ghc-8.10.4.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">remove-references-to</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/imqn6j16d121zk3pmyyibcax3i9k942h-remove-references-to.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">zlib-0.6.2.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/bx3r70phmgcni25vnlpplz3s04l46pf5-zlib-0.6.2.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">xml-1.3.14</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/i0xijkfzn9dzn9d21zwb2yqqfmpqz43k-xml-1.3.14.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">digest-0.0.1.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/b50h8k53h3hrqhx18a10fzh174jcbghq-digest-0.0.1.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">transformers-compat-0.6.6</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/wkfq21dr532m8iahbgl9g27iahzi0afr-transformers-compat-0.6.6.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.macropy</td>
+<td align="left">python3.7-macropy-1.1.0b2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/p9irhvxlypmzyxx636wpblb378kcfx6m-python3.7-macropy-1.1.0b2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">001.proj.patch</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/5dx4d38s6iixgwilp8f4ad56kwmrf8ai-001.proj.patch.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">data-default-0.7.1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/wb8hnp2c4xsdzk9fgi44cjcac4fw109b-data-default-0.7.1.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-google-auth-1.24.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/f4aq45kkpmxbiw25pfzk9y546ac3103b-python3.8-google-auth-1.24.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">resourcet-1.2.4.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/46cz3b1asqrj6pa8q1k2z47mzd9syl2a-resourcet-1.2.4.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hspec-2.7.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/k8daqdbwy1i84dz83h9aj68gdb0wldjw-hspec-2.7.8.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.gpy</td>
+<td align="left">python3.9-GPy-1.9.9</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/s073ni289frak8rsgfz098agy730xh6x-python3.9-GPy-1.9.9.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-tensorboard_plugin_profile-2.4.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/i09c16i1n2sc3i7969lbp7ikyaqrwd5c-python3.8-tensorboard_plugin_profile-2.4.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">data-default-instances-containers-0.0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/650zqr4khka5wz53ms52zi9mxiy3qcp4-data-default-instances-containers-0.0.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">wcwidth-0.0.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ld8qshwwgwq6xx9lz58bp7987c8v39rn-wcwidth-0.0.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tagged-0.8.6.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/byn5aqvs6rrb6qlg19cnibz9f0hjv1ni-tagged-0.8.6.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hxt-regex-xmlschema-9.2.0.7</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/f4rz6yxnq4r4jphjihdr2s0r9yj2glw6-hxt-regex-xmlschema-9.2.0.7.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">generic-deriving-1.13.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/yimff7rvgl4piy2mgy9cw6303iqcm8k2-generic-deriving-1.13.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">timeit-2.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/lj9azbvnrq16lgsy0kv2lbcsnpavz2dc-timeit-2.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">ghc-paths-0.1.0.12</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/8hw4mrjb5x7x8wp2yl1ynwpg8x0ap6f7-ghc-paths-0.1.0.12.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">contravariant-1.5.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7favr9327dhpsay9vd857l5p4kxdj97j-contravariant-1.5.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-pytest-localserver-0.5.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/zr9syjjzb47vy80zzd9k9a2kl94b3lnm-python3.7-pytest-localserver-0.5.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">library-paths.patch</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/3n5jlb0mq7q8s79qzs8w3711cy63ccba-library-paths.patch.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.scikitlearn</td>
+<td align="left">python3.7-scikit-learn-0.24.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/2nqi6gqydv6w4ksplx5zaa7h5pwiavxz-python3.7-scikit-learn-0.24.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">dlist-0.8.0.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/82yyjnk2lfh9yq9kbajzfvsmkbff4gpx-dlist-0.8.0.8.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-tensorflow-tensorboard-2.4.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/mpq198x24qgibq98029n2gx1vpfin7nq-python3.7-tensorflow-tensorboard-2.4.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">cabal-doctest-1.0.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/4f6fq5a9y0mw4vib8x3n5yr9p3xgbwfj-cabal-doctest-1.0.8.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.scipy</td>
+<td align="left">python3.9-scipy-1.6.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/5zf09155riixzxzj9nb50x394lmpk8l0-python3.9-scipy-1.6.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">base16-bytestring-0.1.1.7</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/zvyhwi7wrw9i2ksw031dihi1qgbmfl6v-base16-bytestring-0.1.1.7.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">quickcheck-unicode-1.0.1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/zczw00bnfbbfymmhvs19yhn96vf50j9j-quickcheck-unicode-1.0.1.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">splitmix-0.1.0.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/q635wkxbycsw59ccybvjnipr8pqmhnii-splitmix-0.1.0.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hxt-charproperties-9.5.0.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/m708ygsbk052palfaykwg8h78a2xc04y-hxt-charproperties-9.5.0.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">cmdargs-0.10.20</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/pr74a1zxz90g67fy12rsql819q198zki-cmdargs-0.10.20.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">happy-1.20.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/kwn6qb3m61daikqcnxbf9pqr8nchxjk9-happy-1.20.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">data-default-instances-dlist-0.0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/83qs5zf5hrcfr334qdbhm2ckzacp7262-data-default-instances-dlist-0.0.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.hmmlearn</td>
+<td align="left">python3.7-hmmlearn-0.2.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/m5hn9zyi0i2yi905m94264nw9mg2z0am-python3.7-hmmlearn-0.2.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">pcre-light-0.4.1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/0i2318shjm2f4v2rwx7cz3jm0fg5ilix-pcre-light-0.4.1.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">clock-0.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/1c8iyc862i4sszr1vkxnry6rrwa4qfn5-clock-0.8.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.paramz</td>
+<td align="left">python3.8-paramz-0.9.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/q6h2x6wbih97ambxdqcidpp7dn528qp5-python3.8-paramz-0.9.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">setenv-0.1.1.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/05z2z8wnssbl640dbkx38z2nd6qa0acd-setenv-0.1.1.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">random-1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/jmavvas3vl9p88lib5nb6qngzcc9i3h9-random-1.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">errors-2.3.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/vin6q8w0342f8v3ki8q8yn1yz7019nmr-errors-2.3.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">unbounded-delays-0.1.1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/wdp4sqccwz5bdrd6v9palcn0jk0kiprx-unbounded-delays-0.1.1.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hscolour-1.24.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/kgfjbsxv81kgywzqhwkadinlk2z8qdc0-hscolour-1.24.4.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.scikitlearn</td>
+<td align="left">python3.9-scikit-learn-0.24.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/i1zkzvr4mbh5dmqq50rfav051ay69lky-python3.9-scikit-learn-0.24.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.pyerfa</td>
+<td align="left">python3.9-pyerfa-1.7.1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/qb3rqn778xfrlffkbvlspml2nqk3dy7n-python3.9-pyerfa-1.7.1.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.imageio-ffmpeg</td>
+<td align="left">python3.7-imageio-ffmpeg-0.4.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/nvsk0whhbxfadgrrd1x6z7mpxyabvn8n-python3.7-imageio-ffmpeg-0.4.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.numexpr</td>
+<td align="left">python3.7-numexpr-2.7.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/pwzvm45xhlayhm9qmmdd7gpc70b78xjr-python3.7-numexpr-2.7.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">string-qq-0.0.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/kj600l3cdqx066l5w2vsdjb122zb41gl-string-qq-0.0.4.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">bytestring-builder-0.10.8.2.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/mdi673fk9sdlkrgr2ddjhv7lhzj8i0pv-bytestring-builder-0.10.8.2.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">comonad-5.0.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/xg6zbivb6d634nqi8i1f9ybzx76dk7b8-comonad-5.0.8.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-google-auth-oauthlib-0.4.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/gdk35c1m2nh1pwah8qj8jli9gx6f0p5r-python3.7-google-auth-oauthlib-0.4.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">HUnit-1.6.1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/z0ygab7rcl04qql333h7k5bcw925z9pn-HUnit-1.6.1.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.typing-inspect</td>
+<td align="left">python3.7-typing-inspect-0.6.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/gijkv6zbma4scgm2ch7v39d4gizpcm18-python3.7-typing-inspect-0.6.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-pytest-localserver-0.5.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/gdwhd2g8lxmn5dwg508lnd1r3zvlhbfy-python3.8-pytest-localserver-0.5.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">network-3.1.1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/8mdvj8w7rjzfpj964b7pr9wy3d1mph59-network-3.1.1.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-Flask-1.1.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/2z42m64lsjhlvbchl00a889s0qhf54ym-python3.7-Flask-1.1.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.pytorch</td>
+<td align="left">python3.7-pytorch-1.7.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/p22cwlwn418y10nzk6xn3hslhx1shqwl-python3.7-pytorch-1.7.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">base-orphans-0.8.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/12bybajxvh5niszp6y0ymrrhdhd6lxvk-base-orphans-0.8.4.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">QuickCheck-2.14.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/yxgvg3s7qv2jlcxpcfs95h7d4fyvbvfq-QuickCheck-2.14.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">bifunctors-5.5.10</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/vv473bw7p18v3fpw3p7az5mdqas83v29-bifunctors-5.5.10.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">data-default-class-0.1.2.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/8cigq3hjns9ik3qnysl4qk1k03jahd7v-data-default-class-0.1.2.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">nanospec-0.2.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/xkbykjgmsi3hlm5jc4cyrp9i4g7y1xr8-nanospec-0.2.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.numexpr</td>
+<td align="left">python3.9-numexpr-2.7.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/0y2rglzq5kalf356p7n5yq8gqqxasx1b-python3.9-numexpr-2.7.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.pyerfa</td>
+<td align="left">python3.7-pyerfa-1.7.1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/la9kasxqnyignv08wfmr9zb31x54csiz-python3.7-pyerfa-1.7.1.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.typing-inspect</td>
+<td align="left">python3.8-typing-inspect-0.6.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/f7d1585azwl09p3qw326wscx6mii8s82-python3.8-typing-inspect-0.6.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">distributive-0.6.2.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/l0158yh98zl1kkakqvlppxpx8pj5p2rz-distributive-0.6.2.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-CacheControl-0.12.6</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/apjfxjyxvqfqjsfiyjqx47mldjc09w7n-python3.9-CacheControl-0.12.6.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">integer-logarithms-1.0.3.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/wk91zpr4b7wcvagll2gib9bf5nkwa9dh-integer-logarithms-1.0.3.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-google-auth-1.24.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/gz5db7cj32jd0xm7dzy9zyc7kh7n326l-python3.7-google-auth-1.24.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">rfc5051-0.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/6iqfg2c902la4p3k1cwial1pqbvbz7nh-rfc5051-0.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">pretty-show-1.10</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/lrq5i54dxghns25986w3lma03r90br5i-pretty-show-1.10.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.paramz</td>
+<td align="left">python3.7-paramz-0.9.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/n15f0gqxlkqqpr4hsg6ci5mih2c8g26f-python3.7-paramz-0.9.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.imageio-ffmpeg</td>
+<td align="left">python3.8-imageio-ffmpeg-0.4.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/b29pg2zsvncfjiqky1vv6ckp2hskcf2b-python3.8-imageio-ffmpeg-0.4.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hspec-expectations-0.8.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ljcfwgya42nl50jqpcig9zs1dzj9xv3y-hspec-expectations-0.8.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">erf-2.0.0.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/3v4fpaq3fwz55cfvrvh7nnjd7c6qv9h1-erf-2.0.0.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.hmmlearn</td>
+<td align="left">python3.9-hmmlearn-0.2.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/y06vc0v6w7lhgz0x4d1gngii2gla8fsq-python3.9-hmmlearn-0.2.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">colour-2.3.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/bwdiih70cljgjc35dbzjjn1mdbn4vr2v-colour-2.3.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.paramz</td>
+<td align="left">python3.9-paramz-0.9.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/d7ngwiylgq1qkk4bgvq12pxmmfngqzn0-python3.9-paramz-0.9.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">mime-types-0.1.0.9</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/yqb3bw6ywf9h7m1r2qigqsaa1q8h4dc3-mime-types-0.1.0.9.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hspec-core-2.7.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/jblqfilsfacqhzrzyk014wbgx2c4d4hp-hspec-core-2.7.8.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-parfive-1.2.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/brnd7yz027xv3sxbnqd0fm1wjv4bhj7v-python3.7-parfive-1.2.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">emojis-0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/88xk9w3af9nkkc5jg9w7wjwzy1ghvzwz-emojis-0.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">th-abstraction-0.4.2.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/v7hq9vjbqn0f0m2lav0c1lbglvk8jk1q-th-abstraction-0.4.2.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">code-page-0.2.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/plcd938vs32nh76p9cndnjba7mwzx26p-code-page-0.2.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.scipy</td>
+<td align="left">python3.8-scipy-1.6.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/zqnppiiaqspffl8aq4j4f5pd361zqgc7-python3.8-scipy-1.6.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">unliftio-core-0.2.0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/wgyfshpnsvi6wz75gvnbmz9994ny8bi8-unliftio-core-0.2.0.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">transformers-base-0.4.5.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/h1p41cbgkk6zixlh5cqrd96z8fs0rj6j-transformers-base-0.4.5.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">base-compat-0.11.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/mrl2qmp1rxzsg9mf6bipa4pln3p10blq-base-compat-0.11.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">semigroups-0.19.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/w153jb0gi1c3561b4z22iy200xyxsnzd-semigroups-0.19.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">data-default-instances-old-locale-0.0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/sgmjxqramii684k13rv2lnbp6z9zsi82-data-default-instances-old-locale-0.0.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">void-0.7.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/rm1nlaqnk15ynfmlm54vsl7l8x9f8bfm-void-0.7.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">assoc-1.0.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/v35vwlf6p30q15qx6436ssy5zscgcdfw-assoc-1.0.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">indexed-traversable-0.1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/w1nmn15laqnp7k9cis026nvvgxsqlzsz-indexed-traversable-0.1.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hspec-discover-2.7.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/cgfah9dcjzilwixayid3iwldnjhg5b20-hspec-discover-2.7.8.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">base-compat-batteries-0.11.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/kdclh6yqd3a96aqj3bshln7a8q0z394n-base-compat-batteries-0.11.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-Flask-1.1.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/8ga0lfv49izxiw2l67cknndff2pvpi2j-python3.9-Flask-1.1.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">th-compat-0.1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/jdiafa2wpxqqaf724ix08fysx5ygy3qh-th-compat-0.1.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">utf8-string-1.0.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/xbgjvbkr62mb7zzghrmc7a3sim0xldw5-utf8-string-1.0.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.pyerfa</td>
+<td align="left">python3.8-pyerfa-1.7.1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/pvvlybkx5r2s3s19g81m2m388b7dj5dn-python3.8-pyerfa-1.7.1.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-Shapely-1.7.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/wjsszgmywnl5c5gwbviqjysz40vv2z2s-python3.7-Shapely-1.7.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-descartes-1.1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ip6f5qv6w2zzpci3wk2b14c83162067q-python3.7-descartes-1.1.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-pyproj-2.6.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/j6lypbq8njngpcb8prvwl6qm8pibqcp5-python3.7-pyproj-2.6.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.pandas</td>
+<td align="left">python3.7-pandas-1.1.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/gqgy6nicdj5zwvmg5iixd8n060s2mag1-python3.7-pandas-1.1.5.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-drms-0.6.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python37Packages.imbalanced-learn</td>
+<td align="left">python3.7-imbalanced-learn-0.7.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-partd-1.1.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python37Packages.scikit-bio</td>
+<td align="left">python3.7-scikit-bio-0.5.6</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-dask-2021.01.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-scikit-image-0.17.2</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-glymur-0.8.18</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-pytest-astropy-header-0.1.2</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-pytest-astropy-0.8.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-asdf-2.7.1</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-pyregion-2.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-radio_beam-0.3.2</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python37Packages.reproject</td>
+<td align="left">python3.7-reproject-0.7.1</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-aplpy-2.0.3</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python37Packages.spectral-cube</td>
+<td align="left">python3.7-spectral-cube-0.5.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-Shapely-1.7.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/drwa524b4zxgl99l750fdjvxng565nj8-python3.8-Shapely-1.7.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-descartes-1.1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/g6n0y0mv3vcrinaf7l65c6cd19rsi6wh-python3.8-descartes-1.1.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-pyproj-2.6.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/1bwgbq5fp38sffkl3wngs109m5hp2ls2-python3.8-pyproj-2.6.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.pandas</td>
+<td align="left">python3.8-pandas-1.1.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/3fwy78q61adwnv0jby7gv3rqvrvv9qxv-python3.8-pandas-1.1.5.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-drms-0.6.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-partd-1.1.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-dask-2021.01.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-scikit-image-0.17.2</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-glymur-0.8.18</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-pytest-astropy-header-0.1.2</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-pytest-astropy-0.8.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-asdf-2.7.1</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-pyregion-2.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-radio_beam-0.3.2</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python38Packages.reproject</td>
+<td align="left">python3.8-reproject-0.7.1</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-aplpy-2.0.3</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python38Packages.spectral-cube</td>
+<td align="left">python3.8-spectral-cube-0.5.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python37Packages.sunpy</td>
+<td align="left">python3.7-sunpy-2.0.6</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python38Packages.sunpy</td>
+<td align="left">python3.8-sunpy-2.0.6</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-Shapely-1.7.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/h4vpss62w483ghbj3nb1mv7n6qrm0wcy-python3.9-Shapely-1.7.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-descartes-1.1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/pr6agn2m34a2zfx5m2xw3lr9qi4mbrgd-python3.9-descartes-1.1.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-pyproj-2.6.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/12mz429nlz6a0sks8sgdhjp3mpc2q458-python3.9-pyproj-2.6.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.scikitlearn</td>
+<td align="left">python3.8-scikit-learn-0.24.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/zadn9zwf7i1g8np6wgq5f9wjlblwhlkk-python3.8-scikit-learn-0.24.1.drv">BUILDER FAILED</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.hmmlearn</td>
+<td align="left">python3.8-hmmlearn-0.2.5</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python38Packages.imbalanced-learn</td>
+<td align="left">python3.8-imbalanced-learn-0.7.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python38Packages.scikit-bio</td>
+<td align="left">python3.8-scikit-bio-0.5.6</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python39Packages.pandas</td>
+<td align="left">python3.9-pandas-1.1.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/5vvdgf6gjfq4r73z66r1i6x58jn5m0hq-python3.9-pandas-1.1.5.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-drms-0.6.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/5wfin84mwzvycwj05h5lqqdbaslncrk3-python3.9-drms-0.6.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.imbalanced-learn</td>
+<td align="left">python3.9-imbalanced-learn-0.7.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-partd-1.1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/svpdx7zinsrfx0nyxf2g23bh6rgafm3p-python3.9-partd-1.1.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.scikit-bio</td>
+<td align="left">python3.9-scikit-bio-0.5.6</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-dask-2021.01.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/mj49m3dmjl6jh9zwxdw8kf6ylfmfkl65-python3.9-dask-2021.01.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-scikit-image-0.17.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/rdn55q7msm4iwxzlff0l6asnmb8qjhra-python3.9-scikit-image-0.17.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-glymur-0.8.18</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/i4hdpyssmfp017j0fm17l4walckipqlg-python3.9-glymur-0.8.18.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-pytest-astropy-header-0.1.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/i42qm7gwzngsbn0zvmi64s8jadj7c861-python3.9-pytest-astropy-header-0.1.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-pytest-astropy-0.8.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/72shgn8fb0rc4kxhy47r03cn79pzan1x-python3.9-pytest-astropy-0.8.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-asdf-2.7.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/zr8h5gw12hp4djdb6as1mqpzj061vs0i-python3.9-asdf-2.7.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-pyregion-2.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-radio_beam-0.3.2</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python39Packages.reproject</td>
+<td align="left">python3.9-reproject-0.7.1</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-aplpy-2.0.3</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python39Packages.spectral-cube</td>
+<td align="left">python3.9-spectral-cube-0.5.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">regex-base-0.94.0.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/0j6rmpspgixzbfpafbndxz415l3bb8cy-regex-base-0.94.0.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">split-0.2.3.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/0m7gzwqd1saavi8g1brmy6lvgj9dfijf-split-0.2.3.4.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">regex-posix-0.96.0.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/s06b5gdp8r7m9lnj38bmnh3ilfrg246j-regex-posix-0.96.0.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">test-framework-0.8.2.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/gikv5fvkb5ghlbc9lbvbaj7i4zzq627p-test-framework-0.8.2.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">test-framework-hunit-0.3.0.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/i6f3cpy4j1qgbifd3wabk9ry6ypfsjx8-test-framework-hunit-0.3.0.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">test-framework-quickcheck2-0.3.0.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/rbzpdi604lvqj7v15mg5zd2c9rzjfdd4-test-framework-quickcheck2-0.3.0.5.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hashable-1.3.0.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/in8blpyp92rcaqq01a1q98xdibap4zg2-hashable-1.3.0.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">async-2.2.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/6dci1sypqvzid1k30ikq2hhwq2dhrysr-async-2.2.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tasty-1.2.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/6g8ibrgqg7a4j45kil536rjf1dbixj0p-tasty-1.2.3.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tasty-hunit-0.10.0.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/z3405qzrpwr5qfhwxch8vbhygb6l1w4i-tasty-hunit-0.10.0.3.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tasty-quickcheck-0.10.1.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/fjj0f79i8mx1wsk1k6b6spjxk4l01rzv-tasty-quickcheck-0.10.1.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">vector-0.12.2.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/qgv759yc1p7qxrxrlglzwqlp7817zimr-vector-0.12.2.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">vector-algorithms-0.8.0.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/0rxw5z7mjas2abjm3qyzp8na08jvapj8-vector-algorithms-0.8.0.4.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">syb-0.7.2.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/6dplrfsn8xjjf8n6xbq6qgjrlb33c2rd-syb-0.7.2.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">ChasingBottoms-1.3.1.10</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/9xm81d5awwyf9bbxpnvwvc7pc5c50jd4-ChasingBottoms-1.3.1.10.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">unordered-containers-0.2.13.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/73lw10wg38qyxb1hz926y4jbak3rgzgf-unordered-containers-0.2.13.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">semigroupoids-5.3.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/py7si4kfryz0l9msy9ayglkbvj3r1kaw-semigroupoids-5.3.5.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">free-5.1.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7clq0ragf9cbsa3c23nqmrc10v07lblq-free-5.1.5.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">adjunctions-4.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/65fyhyz85lhml49nff5rfm5la603pbhz-adjunctions-4.4.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">invariant-0.5.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/k5d4dfdgd0wvxif3if3jrdk9bjjygx1r-invariant-0.5.4.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">kan-extensions-5.2.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/689a7hr5jwgnkhjjc8vaicy25idy5k4k-kan-extensions-5.2.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">lens-4.19.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/14kpmyqzzincbfyprnx6z9himzvqgdf3-lens-4.19.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">temporary-1.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/2wkgz72kfglax29ddwzqa76y2xlvx1fp-temporary-1.3.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tasty-golden-2.3.3.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/mgibczh4xkck6amk378h06ckrafwc3k9-tasty-golden-2.3.3.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">doclayout-0.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/1b6xg21yn6lr6aak1j8j75n3x7w3kwws-doclayout-0.3.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">time-compat-1.9.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/1g40il27agdiskk88s0f2szdfaln2biv-time-compat-1.9.5.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">data-fix-0.3.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/3wcfzm6ihfni83i9x51bskkn60pnq95i-data-fix-0.3.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">case-insensitive-1.2.1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/fzj7jpzdqj6f2h9jx7pxdmqv139i8s91-case-insensitive-1.2.1.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">uuid-types-1.0.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/h13bgxdqw7iv41xazzfi6izhsbvbr879-uuid-types-1.0.3.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">logict-0.7.1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/fwaaxnk8bn3jdqvamnydxria2mddpsp6-logict-0.7.1.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">smallcheck-1.2.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/vi43rr54gcah1akg64y20jshicb0xhbb-smallcheck-1.2.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tasty-smallcheck-0.8.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/2yf14q1k6hv7s3z4873b2f5rsgjw3cwd-tasty-smallcheck-0.8.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tasty-ant-xml-1.1.7</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/726g8r83vr5mqb1h9w5p9k0ri8gkx7i3-tasty-ant-xml-1.1.7.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">scientific-0.3.6.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/inv93pwx6yms68zkd9c6lrh1bhzr8c0v-scientific-0.3.6.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">these-1.1.1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/kn5l4xz8402q350iy6j0lqvnqijzjjka-these-1.1.1.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">strict-0.4.0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/pfhv7gvfk1n27isbi0zz0il6p6gmnlcq-strict-0.4.0.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">quickcheck-instances-0.3.25.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/qbk5qn4rhazb0f4amlpj9wy67gydp2gh-quickcheck-instances-0.3.25.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hslua-1.2.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/86c18ihcr4na2dxinqidz9ap5nlfn8i2-hslua-1.2.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tasty-lua-0.2.3.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/3abn54gpva8p94iziivifxfw932q4zll-tasty-lua-0.2.3.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">doctest-0.16.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7fzhwrryaqy2l10nsfx0s5ky16zfci15-doctest-0.16.3.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">http-types-0.12.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/3xvrqz82vdm9blpb39qkddjnk713svzp-http-types-0.12.3.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">attoparsec-0.13.2.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/sxmf6ff0zicgqibgbdc80ash1x1qg9kw-attoparsec-0.13.2.5.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">aeson-1.5.5.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/4v8rr607hpy6nk9ss0mf30r5yi097b6v-aeson-1.5.5.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hslua-module-text-0.3.0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/61s043czdbz2aklvh3bb2f99bcp2rq73-hslua-module-text-0.3.0.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">base64-bytestring-1.1.0.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/hm3fdyq3gnvliks2q63krbgma6y62hi7-base64-bytestring-1.1.0.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">text-conversions-0.3.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/6cn4bkw5vrbkg195d55haz7n9xf5r0d2-text-conversions-0.3.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Glob-0.10.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7fnsjw3bcs2idik6c48l4zv98d9z8njr-Glob-0.10.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">SHA-1.6.4.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7lf1kqw0y562gvagmf3qm18kcdy0va04-SHA-1.6.4.4.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">silently-1.2.5.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/96ys4fai9yah0b775hyf16a84kdzsh9q-silently-1.2.5.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">generics-sop-0.5.1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/lqn323rb55w3xdahwh4ispqz1c4y2dfz-generics-sop-0.5.1.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">getopt-generics-0.13.0.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ka60316a0mvhfybxkj860yfhf903abhb-getopt-generics-0.13.0.4.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">unicode-transforms-0.3.7.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7rnb8as5s3n259k7b2a49rhzynkaw05a-unicode-transforms-0.3.7.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tasty-kat-0.0.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/54y1bj40bwpn50znkbmvsr8gw01jb4cl-tasty-kat-0.0.3.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">cryptonite-0.27</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/5fp16kjvbc611sllwffqiq5l33zgykfa-cryptonite-0.27.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">network-uri-2.6.4.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/9q5hrwdmn745swf2z2z7f1852ph90a2y-network-uri-2.6.4.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">pem-0.2.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/f2yvjrxx3mqv76s1m9szd42fdf6rvbzf-pem-0.2.4.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hourglass-0.2.12</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/v968vij5kh4vy71zyghsq1vyx7p20daz-hourglass-0.2.12.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">asn1-types-0.3.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/pq508wfcfq9bvc4mgwm6znk4bnpv9xrg-asn1-types-0.3.4.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">asn1-encoding-0.9.6</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/hwgx0d830qbggh77gc5iqwgjx0kibrfh-asn1-encoding-0.9.6.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">asn1-parse-0.9.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/qdabk966fzd7g549zbdm81v8n3sv71bc-asn1-parse-0.9.5.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">x509-1.7.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/6mv0g5ykcsgsb1n22y69kxp5xym2lbvp-x509-1.7.5.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">x509-store-1.6.7</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/l6crn40xx5200fiiv33lqsx4kl5gaqpn-x509-store-1.6.7.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">x509-validation-1.6.11</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/774y7k096lfpy5h1bhhbcpm64nn265qc-x509-validation-1.6.11.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">cereal-0.5.8.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ymvry49yjk33v9nczwlf8ixrizmqpk92-cereal-0.5.8.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tls-1.5.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/c1nh9kdc7h1ja2yv13ksml0kvj3flhsp-tls-1.5.5.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">socks-0.6.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/x8kxk02cm6qv67ks6v97z0gyrjv4n6ic-socks-0.6.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">x509-system-1.6.6</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ybdsmvhfal96gfqk46irxfk1y1mwn817-x509-system-1.6.6.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">connection-0.3.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/icjl8iig2lfzyp60mm8cx479ic0cclxq-connection-0.3.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">streaming-commons-0.2.2.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ryn963mrvfb337z2581qm5w2mzpd81qc-streaming-commons-0.2.2.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">blaze-builder-0.4.2.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/srkdcm24q47397zg9rhpzn5yjznainjh-blaze-builder-0.4.2.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">cookie-0.4.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/y0psxsvjhbzc3yimmpr6b0yr70lq8n9v-cookie-0.4.5.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">http-client-0.6.4.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/m8mpnirjncasn9fzk2jvq7mlmaj0jj2s-http-client-0.6.4.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">http-client-tls-0.3.5.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/8p42snf8mfc4k3cil3n6bpk0hwrzindi-http-client-tls-0.3.5.3.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">blaze-markup-0.8.2.7</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/8pw05x7a38crjq8wwz87n0h8733w9hg8-blaze-markup-0.8.2.7.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">microlens-aeson-2.3.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/6irkr8frvjvz11i089iz0sxr26nk9k4r-microlens-aeson-2.3.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">edit-distance-vector-1.0.0.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/qyfbw3mxvywp8cvwsa6s6c1xhc0w7fzw-edit-distance-vector-1.0.0.4.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">aeson-diff-1.1.0.9</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/bkyx5m4r3hgan7hd886mn7jhwlfgxf04-aeson-diff-1.1.0.9.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">ipynb-0.1.0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/9zzl3j7k8ihlhr6w3r4096klpxaymhp8-ipynb-0.1.0.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Diff-0.4.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/a3n8ix4z94qqgwndm23kqpzkchdq60k0-Diff-0.4.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">charset-0.3.7.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/g01m32anhk3m4ri24glvlrcy6vp5vxyi-charset-0.3.7.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">parsers-0.12.10</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/5i91hsscvhw6rfvhgn7qhf7bki3v244g-parsers-0.12.10.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">fingertree-0.1.4.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/rpn4nql3na62crwcddjhjsv6drbpzk5g-fingertree-0.1.4.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">reducers-3.12.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/5mwx2055kz73vg1qwl3sq00zlsf314ik-reducers-3.12.3.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">blaze-html-0.9.1.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/nqwq936r7kqqkpxd69p2vk11vjrnpbrl-blaze-html-0.9.1.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">pgp-wordlist-0.1.0.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/3n0dlfjarjp0n89gj12ap9h28ijyag8s-pgp-wordlist-0.1.0.3.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">prettyprinter-1.7.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/xv2h91xhf7vcwn03q2kl0sf9bl47bzzw-prettyprinter-1.7.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">prettyprinter-ansi-terminal-1.1.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/y0yqjpal4730ziv29bc6g6vy04nfppim-prettyprinter-ansi-terminal-1.1.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">trifecta-2.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/pcxianrwyh1sz64aj2a310a04zz4c5bm-trifecta-2.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tree-diff-0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/wb02zqw0as673kab5qlcjphyvb6k5kbk-tree-diff-0.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">haddock-library-1.9.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/bwlq5qx7xgz62cdpx3ygyd4sp8vdndbm-haddock-library-1.9.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">HsYAML-0.2.1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/gamd3bdm5fbxvcqnvh2xii55zvrz6fzs-HsYAML-0.2.1.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">commonmark-0.1.1.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/px77j6rrny6v726jj1559mxg2xxkvzfs-commonmark-0.1.1.4.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">commonmark-extensions-0.2.0.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ih5cprkg22wc8jspnq61gdfkyscd87pv-commonmark-extensions-0.2.0.4.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">doctemplates-0.9</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ij1gqq4syz1y09vc80qnhgjvi1qv01ri-doctemplates-0.9.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hxt-9.3.1.21</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/mgfqvn962g72k2dwz9k2183vkp7dl76j-hxt-9.3.1.21.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">skylighting-core-0.10.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/inzyia256h6qjfxrpf9b4g85mvaxz5ng-skylighting-core-0.10.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hslua-module-system-0.2.2.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/kbcrzcxp64jzqddqq4a5asmr4s63bn8b-hslua-module-system-0.2.2.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">zip-archive-0.4.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/n91yvlacaqkswfainb1ija067xnbr5i4-zip-archive-0.4.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">uniplate-1.6.13</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7f6gq2pl78syhlda1pswlr66wis86r68-uniplate-1.6.13.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">unliftio-0.2.14</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/5g272dcyrz96jpbfmgxx9g4lc58zyb97-unliftio-0.2.14.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">vector-th-unbox-0.2.1.7</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/z91zrpmg1ak44h1fj7iwd17w8miy4gh9-vector-th-unbox-0.2.1.7.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">math-functions-0.3.4.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/m8qka99b4calha0kyjs751yqacifvds3-math-functions-0.3.4.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">mwc-random-0.14.0.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/3nlviipy2d1hh2z21w2qmsfi8mqiqky2-mwc-random-0.14.0.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">foldl-1.4.10</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/4rk5qmr03hpfxgw7ksqj64hmf42x684a-foldl-1.4.10.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">mono-traversable-1.0.15.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ib04286yl6b5935vbdn3q60jh1g5m22k-mono-traversable-1.0.15.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">conduit-1.3.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/8v3a29qrvzhbhq5ybhqmd74kwzv637ym-conduit-1.3.4.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">typed-process-0.2.6.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/8zg6436wdcvirda78fw1j6fbzvzri5ls-typed-process-0.2.6.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">conduit-extra-1.3.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7y74f4ymcxdylvnk09wa2snjh9myw52p-conduit-extra-1.3.5.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">xml-conduit-1.9.0.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/kn6liqghvkzvk7x54kkmy1cqy6dljqnv-xml-conduit-1.9.0.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">pandoc-types-1.22</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/xwdcnhsf08r4ip07kqj6y77nirvm7f40-pandoc-types-1.22.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">citeproc-0.3.0.7</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ns7xa4v8g4f64906j2h1mch9k70x08l2-citeproc-0.3.0.7.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">texmath-0.12.1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/p0nigqd546x0hxdw4ac0kis4p4rg44s2-texmath-0.12.1.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">JuicyPixels-3.3.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ps4inc2b0za0xsspn5y18zismx1sm5q8-JuicyPixels-3.3.5.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">jira-wiki-markup-1.3.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/scqwma9qzy3xwwcgwl42mixi4ikq7z92-jira-wiki-markup-1.3.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">HTTP-4000.3.15</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/shdwfygan2vdkcdfqvfc22c9bkjn9y1a-HTTP-4000.3.15.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">aeson-pretty-0.8.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/wxw914sy5r2b9zxg3nh8rc4afjcyq6pr-aeson-pretty-0.8.8.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">skylighting-0.10.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/x67nahn3vpfl7frn8sjwk18kxp0yval2-skylighting-0.10.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">commonmark-pandoc-0.2.0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/zswm990lfaxrvhjbix4gn0w6qpjhgaf6-commonmark-pandoc-0.2.0.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">pandoc-2.11.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/cs7maf1c8y0j1kpihasab21y220gpnfx-pandoc-2.11.4.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">rdma-core-33.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/3x1h4bqna46mbs5w5kfs7wzddavwjmw8-rdma-core-33.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">pmix-3.2.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/azmlw402a42ad70931r6drwhcpdpj1jg-pmix-3.2.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">ucx-1.9.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ng7bhf071xi4l8hh3dm8lll0p1k8q2hj-ucx-1.9.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">openmpi-4.0.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/8nyrxb3zkqc5xiyglbldqznyh15b7b3b-openmpi-4.0.5.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">netcdf-4.7.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/770x4qg2ymas5zam5lds8b4dp247vkyh-netcdf-4.7.4.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">gdal-2.4.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/mfq8i5zx50s0s7xjc0ahzmf3bwkxngi5-gdal-2.4.4.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-Fiona-1.8.18</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/25mn94aiw7k6rpqqd4hgfsmjr5ihvb1i-python3.7-Fiona-1.8.18.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-pytest-localserver-0.5.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/lqnk7nwv3xzyf3kg17fk5z0wyv77mcjn-python3.9-pytest-localserver-0.5.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-parfive-1.2.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/2mbjic8x1jb8qn9cia2ig6126pg6w4p2-python3.9-parfive-1.2.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-Fiona-1.8.18</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/3kpw5mw1g74wh74diakd0w2q5bqd1f6a-python3.9-Fiona-1.8.18.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.geopandas</td>
+<td align="left">python3.7-geopandas-0.8.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/6dziawx3d7073jp0fv2r97a5kvwzk88v-python3.7-geopandas-0.8.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.geopandas</td>
+<td align="left">python3.9-geopandas-0.8.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/6g6v9gwig8avnhk7d9bxsm097zk90p2w-python3.9-geopandas-0.8.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-google-auth-1.24.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/p5shlnpz68v4y8z1c0k41sxamwhraysm-python3.9-google-auth-1.24.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-google-auth-oauthlib-0.4.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/8l3d7l7d1fxh4k6wg8w9k61g4kj8b1cg-python3.9-google-auth-oauthlib-0.4.2.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-tensorboard_plugin_profile-2.4.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/qjv4s70z6ah7xjym4jbsiaw81hs7pv1q-python3.9-tensorboard_plugin_profile-2.4.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-tensorflow-tensorboard-2.4.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ndzdyx03xpnmapan064x685aglzdlch3-python3.9-tensorflow-tensorboard-2.4.0.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.pytorch</td>
+<td align="left">python3.9-pytorch-1.7.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/g1vr59qljnj0s0l6dsw1hbkx139amqxl-python3.9-pytorch-1.7.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.pytorch</td>
+<td align="left">python3.8-pytorch-1.7.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/hsxxgrf5qnhjlj2706sf5249svs2igsd-python3.8-pytorch-1.7.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-Fiona-1.8.18</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ri9knf1i8iq6x2m9pw0d1ywwq3hi3qnp-python3.8-Fiona-1.8.18.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.geopandas</td>
+<td align="left">python3.8-geopandas-0.8.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/qy14mw10qjq87svnqk03343s88kb7anq-python3.8-geopandas-0.8.1.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.sunpy</td>
+<td align="left">python3.9-sunpy-2.0.6</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/v1k3if9fpjrkxrfd0hbyqbf8vvqj03ps-python3.9-sunpy-2.0.6.drv">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hspec-discover-2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/0jf2zmgiqkzg0fhbkgzpi4w5wfvpq27g-hspec-discover-2.7.8">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tagsoup-0.14.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/1ag7b5f41w6izzhkhlsa9g9kkl0ni47g-tagsoup-0.14.8-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">th-abstraction-0.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/1fa019rr91mffnk2n5n06bh87f95dqla-th-abstraction-0.4.2.0">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">semigroups-0.</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/1p9rxb262hzfwj74af43wj8l52bvdr7j-semigroups-0.19.1">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">random</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/1y4njsyvvc7jk4mcrbpi9h1ma51dzz4v-random-1.1">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">pretty-show-1.10-</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/1y73qjkzp9kcig5ggvkzbikvrzysrn84-pretty-show-1.10-data">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">pretty-show-1.10</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/1ybbxilcsranfkb1ndv2a7rsqm93i492-pretty-show-1.10-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">semigroups-0.19.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/280dkvaqgys6ks3krc7yqpydbvfyi8nk-semigroups-0.19.1-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hspec-meta-2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/2gzdz4p3nji41anps55gxwd36kdg6r5v-hspec-meta-2.7.8">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">assoc-1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/2jlh76g9msg5dn3wy66qqs3sz8fz88c9-assoc-1.0.2">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">safe-0.3.19</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/2q974hc1l9554q9kxl2hy6m1n173m3gh-safe-0.3.19-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">transformers-compat-0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/2zxrjh6210p5rfglxkjqhncc2hrdyx62-transformers-compat-0.6.6">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">xml-1.3.14</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/388prd2r9scmp73m5jrzlr6w6m5yri57-xml-1.3.14-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">QuickCheck-2.14.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/38wa48xd3fn4bka06w2wqq3lbpyx80ig-QuickCheck-2.14.2-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">base-orphans-0.8.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/3lb6axy0xc3x420i08apvpncakxvw67g-base-orphans-0.8.4-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">resourcet-1.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/40l5yvm26c0la1vywl6928wqayc2b6z7-resourcet-1.2.4.2">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">reflection-2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/43s8g21xsv9pn5wh2gf0m1rbqnasq03k-reflection-2.1.6">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">string-qq-0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/4djvbl7cdxdbyl9ngg04rj5rsjgbrhwj-string-qq-0.0.4">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">string-qq-0.0.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/4qml62mdvhg8sbwgr6ajvpj6afy9ww73-string-qq-0.0.4-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">parallel-3.2.2.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/56mgvmdawk7rl408lxwfhpznvw4b36iw-parallel-3.2.2.0-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">unliftio-core-0.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/5g2asxnyianrn3dclkvagj6a7972hywf-unliftio-core-0.2.0.1">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">th-compat-0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/6wdjq0mza8xcbyswa4gh1nl0rags13fz-th-compat-0.1.1">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hspec-expectations-0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7agml575dk8wdhkg2hn9x5lpdsg1sf52-hspec-expectations-0.8.2">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">comonad-5.0.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7ah6vf1jbd842pq3lzb8ndbcnkzbnxs5-comonad-5.0.8-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">pcre-light-0.4.1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7llz0ifcw0m2l2ww8qa4bi4xzzvshhmj-pcre-light-0.4.1.0-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tf-random</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/801s8cwnij2aybpqsy82ccx8px83mkrd-tf-random-0.5">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">transformers-base-0.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/86bmp2qlhwalvxf2ln30vlb2ihkw2sgk-transformers-base-0.4.5.2">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">zlib-0.6</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/8dd2sa1lcjwr4ri8kzi9cwgdg2rvjszn-zlib-0.6.2.2">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">transformers-base-0.4.5.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/8habzylwrj2bvw1w11m1i958ay74ln1g-transformers-base-0.4.5.2-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">unbounded-delays-0.1.1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/9a2jji6szpy5a1lsflbl7s8lf4d8ykzp-unbounded-delays-0.1.1.1-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">wcwidth-0.0.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/9gy3x1p1411qky6vyr4jqxq2rnvjwmc3-wcwidth-0.0.2-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">comonad-5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/9k1ls0ayajhhfc9nm1gngcwx76fm6rjp-comonad-5.0.8">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">splitmix-0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/9lh91jwgr13xcwc9543120v90c9pwj2y-splitmix-0.1.0.3">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">errors-2.3.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/9r054xjim3cqix1bvx7xj55aafqdk1f2-errors-2.3.0-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">th-abstraction-0.4.2.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/9xcar5hnrbl5p9p0kh1h543yny7i5x19-th-abstraction-0.4.2.0-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">setenv-0.1.1.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/a4crzdrm0jq335sh4rk23dwhkjp5478y-setenv-0.1.1.3-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">pretty-show-</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ab07yagjg6nfh1hwvzk3g1pzan2wlknf-pretty-show-1.10">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">profunctors-5.5.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/amwii613g4s35fn27fc0qacj7k0jrkhp-profunctors-5.5.2-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">random-1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/as478vbd1j3mjmrcjlyi6kajhygp1xkc-random-1.1-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hxt-regex-xmlschema-9.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/b3n18jr0cq8pvqidp3nf9f6l77glgypb-hxt-regex-xmlschema-9.2.0.7">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">timeit</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/b5q13idf674sw0v0n8b4yqvq8rwlybcj-timeit-2.0">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">unbounded-delays-0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/b9n8cjmlb7bhkabhi03aprxr86h3bvnz-unbounded-delays-0.1.1.1">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">profunctors-5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/bixc8h0p0sabs1i5m9d55lkp16s77w30-profunctors-5.5.2">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">splitmix-0.1.0.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/bpfmliksrdvl42w1phakgqph86smnwzz-splitmix-0.1.0.3-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">optparse-applicative-0.15.1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/bw3swd7raj68ak0rm2vvp29lhv71zf72-optparse-applicative-0.15.1.0-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">emojis</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/c38r4gfgpmp6v2vvsiizw68zji2c71ak-emojis-0.1">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hspec-2.7.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/cb61ka3n2i4bzw4rgng7068bk4f1yizk-hspec-2.7.8-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">generic-deriving-1.</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/clm1my6km18mizl2rgn9yzzn0mbxkb23-generic-deriving-1.13.1">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">utf8-string-1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/cvgw9pyilvpi6r7kdx5hc2sb6szx62q8-utf8-string-1.0.2">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">wcwidth-0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/d4ay9azibs04jhhf3f5fd88ch9in7zgz-wcwidth-0.0.2">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">sop-core-0.5.0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/d8yc38k3sqkwivby1yd6z7kil3kvv5l2-sop-core-0.5.0.1-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hspec-expectations-0.8.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/dhrbvgw6v4anivps027rad7xbzdanbi2-hspec-expectations-0.8.2-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">optparse-applicative-0.15</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/dibhwhwrz35adfjnk61gnbdjas872jwr-optparse-applicative-0.15.1.0">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">emojis-0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/f55lq23ngqmb0k4vcgklplkbzpvmc93s-emojis-0.1-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">void-0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/fik7fnkzsg89ir8f4mh0q7jbzx3ybxyl-void-0.7.3">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">xml-1.</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/fm90n623a2ssh7466s5lyps5pd3c5xnj-xml-1.3.14">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hspec-2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/fmri6hn1nd5gh076w9i8dzksrwy99vcv-hspec-2.7.8">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">data-default-0.7</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/fqjsajmz5xmy38ivywkqbw4ghlfmyk39-data-default-0.7.1.1">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">base-compat-batteries-0.11.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/g4lacvs5lwzi0r9mpyx1wzrrl8dzsx2g-base-compat-batteries-0.11.2-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tf-random-0.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/gcq40s84cnz1m67cw05kz38rj4f90mx6-tf-random-0.5-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">xml-types-0.3.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/gk495bg8nh7jifl5hvq3nj1zrlx3ngp2-xml-types-0.3.8-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">resourcet-1.2.4.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/h41nb0aygglp7ric3kglgz098wm4xx27-resourcet-1.2.4.2-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">rfc5051-0.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/i8li7nyraljwbsa7vj5rszhpmnwamdp5-rfc5051-0.2-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">assoc-1.0.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ijchyxjxvym4cqb9jvnrgwazhwj8iv79-assoc-1.0.2-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">void-0.7.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ippx1s7b38hcyqh7dzhx65graida6w68-void-0.7.3-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">QuickCheck-2.</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/j5700n6vhv3m0psbhcvmvhd7fbsc7j6v-QuickCheck-2.14.2">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hspec-meta-2.7.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/jndrv6lyha1z0y1lr50020dzlmzl43vw-hspec-meta-2.7.8-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">parallel-3.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/jvsxw3319chlpc0s8yc3sv5c91j7h41n-parallel-3.2.2.0">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">data-default-0.7.1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/kn8ldr74db2ql0f3hd4zksj8kia1w5sf-data-default-0.7.1.1-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hspec-core-2.7.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/krifgn3q9r34ll4lww0mc4h05mlmwnn8-hspec-core-2.7.8-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">rfc5051</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/kwhbm9mcnb1rjlly260dgk5075crnpl1-rfc5051-0.2">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">xml-types-0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/kybap1vsd2b28xy20d5hpg1xflvd4g49-xml-types-0.3.8">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">pcre-light-0.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/lcnxngxwndhvrgrd0a8i5ss86b6d8xb1-pcre-light-0.4.1.0">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">bifunctors-5.5.10</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/likyazxhi6p7vqncdahh0w033l28jz8f-bifunctors-5.5.10-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">th-compat-0.1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ny1557xyf97jy8vh51rvpjgylbxj8pfl-th-compat-0.1.1-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">safe-0.</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/p1alb29yq76ch5r5k7zi1c6czdn2xib6-safe-0.3.19">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hxt-regex-xmlschema-9.2.0.7</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/pc01gdk1ssi77mbggaikbgzldp2900ln-hxt-regex-xmlschema-9.2.0.7-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">sop-core-0.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/qcz1igv8sr5qzfiygzmhwvb5wcnfcd12-sop-core-0.5.0.1">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">old-time-1.1.0.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/qipk08m5lmhmkzdr8abqi6np9rn2v21f-old-time-1.1.0.3-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">quickcheck-io-0.2.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/qwryzp5h3mnzqcwxna92n1i40nyy2m06-quickcheck-io-0.2.0-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">quickcheck-unicode-1.0.1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/rc690rldpk6f2iqh5d247p4w6a6d8mpp-quickcheck-unicode-1.0.1.0-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">generic-deriving-1.13.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/rf1dpiirb6vpp3ij6092vgcawqsr1ncc-generic-deriving-1.13.1-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">zlib-0.6.2.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/sg5mmajy7v2h2xzbxbx8hmm49fkc3jbv-zlib-0.6.2.2-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hspec-discover-2.7.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/svararc5i3prc16ggy06xzjza8ngxwgd-hspec-discover-2.7.8-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">utf8-string-1.0.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/vai9jzcspp17pwdff7371xi9mddmxcav-utf8-string-1.0.2-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">base-compat-batteries-0.</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/vgpj2afidgrjaj9a3vh7y50mr4kyc9yn-base-compat-batteries-0.11.2">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tagsoup-0.</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/vj0r6kzbr7xx1xznzka94hqj4a8jzrbc-tagsoup-0.14.8">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">old-time-1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/vnc99k96cbsqld89yzf7dybqn4m979rm-old-time-1.1.0.3">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">unliftio-core-0.2.0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/vsy78gs72z2l0265cpnwhxq5vb3cihqa-unliftio-core-0.2.0.1-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">reflection-2.1.6</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/vx91r1gkh8m1rq0kzl26fx0h6l47iv4y-reflection-2.1.6-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">transformers-compat-0.6.6</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/w6gss7bnmz20vi47whd68aymzrrkpqbb-transformers-compat-0.6.6-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tagged-0.8</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/wkl4ybrj65vpzzcc0q6q6hz77digliqj-tagged-0.8.6.1">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">tagged-0.8.6.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/wl4miji28azzid5n7k83l4j91if6szz9-tagged-0.8.6.1-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">base-orphans-0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/wylydgzbmcsh79fxfm6627k39lmnclzi-base-orphans-0.8.4">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">bifunctors-5.</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/xan71zdjmyi72fb66vhznf9kiajrnczd-bifunctors-5.5.10">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">distributive-0.6.2.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/xg02l0xl754iz5czjh2zl1rqv4cmns1g-distributive-0.6.2.1-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">primitive-0.7</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/y28kz40w0zqb2mz56ihfdifk4yixikrp-primitive-0.7.1.0">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">quickcheck-unicode-1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/y9fw4l3z5qnzhin98rnl96njrk1cr2dh-quickcheck-unicode-1.0.1.0">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">distributive-0.6</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/yb4b4fvnvp8j9k9iildn6nz0rsby62hi-distributive-0.6.2.1">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">hspec-core-2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/yh7lqnrzxl02zwxd8nmnbirc4h7753n3-hspec-core-2.7.8">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">primitive-0.7.1.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ysxxzhi910nyydli5fnka14nb44q32sn-primitive-0.7.1.0-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">errors-2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/yzd3nf5pwv9088d6vv4jlzq0d8m0bs1n-errors-2.3.0">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">setenv-0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/zg6ph5kyb6r8zb0w3pmxrxdp8jf6qd45-setenv-0.1.1.3">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">timeit-2.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/zib55c7c7abjpl1zkbpnw3mfmcgn51n3-timeit-2.0-doc">MYDRA TIMEOUT</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">quickcheck-io-0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/zvkw0si7l3jajwp9lsyzl6gi0z0l12y8-quickcheck-io-0.2.0">MYDRA TIMEOUT</a></td>
+</tr>
+</tbody>
+</table>
+
+</p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://rmcgibbo.github.io/mydra/post/nixpkgs-c6f1dc23/" data-tooltip="nixpkgs c6f1dc23">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2021 <a href="https://github.com/rmcgibbo">Robert T. McGibbon</a>. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="3">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://rmcgibbo.github.io/mydra/post/nixpkgs-c6f1dc23/" data-tooltip="nixpkgs c6f1dc23">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="3">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+    <h4 id="about-card-name"></h4>
+    
+    
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://rmcgibbo.github.io/mydra/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://rmcgibbo.github.io/mydra/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+
