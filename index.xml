@@ -6,10 +6,20 @@
     <description>Recent content on mydra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Apr 2021 12:20:12 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Apr 2021 17:02:41 +0000</lastBuildDate>
     
 	<atom:link href="https://rmcgibbo.github.io/mydra/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>nixpkgs c6bd90d4</title>
+      <link>https://rmcgibbo.github.io/mydra/post/nixpkgs-c6bd90d4/</link>
+      <pubDate>Thu, 08 Apr 2021 17:02:41 +0000</pubDate>
+      
+      <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-c6bd90d4/</guid>
+      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/c6bd90d48fbb60297c9406edc1693b7aa66cd33b&#34;&gt;c6bd90d4&lt;/a&gt;; Apr 8 1:02 PM EDT&lt;br&gt;
+failure(s):&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>nixpkgs 936f450e</title>
