@@ -6,10 +6,20 @@
     <description>Recent content on mydra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 May 2021 06:05:25 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 May 2021 11:52:51 +0000</lastBuildDate>
     
 	<atom:link href="https://rmcgibbo.github.io/mydra/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>nixpkgs ff5fdec0</title>
+      <link>https://rmcgibbo.github.io/mydra/post/nixpkgs-ff5fdec0/</link>
+      <pubDate>Wed, 05 May 2021 11:52:51 +0000</pubDate>
+      
+      <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-ff5fdec0/</guid>
+      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/ff5fdec09358341fd2cc4a2069f0defd6529451a&#34;&gt;ff5fdec0&lt;/a&gt;; May 5 7:52 AM EDT&lt;br&gt;
+failure(s): python37Packages.aplpy, python37Packages.asdf, python37Packages.drms, python37Packages.reproject, python37Packages.spectral-cube, python37Packages.sunpy, python38Packages.aplpy, python38Packages.asdf, python38Packages.drms, python38Packages.reproject, python38Packages.spectral-cube, python38Packages.sunpy, python39Packages.aplpy, python39Packages.asdf, python39Packages.drms, python39Packages.reproject, python39Packages.spectral-cube, python39Packages.sunpy, rippled-validator-keys-tool&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>nixpkgs 42f21db6</title>
