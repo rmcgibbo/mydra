@@ -50,4 +50,4 @@ nativePackages:
   - inchi
   - maeparser
   - fst
-  - rippled-validator-keys-tool
+  # - rippled-validator-keys-tool  # i don't like this package
