@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.74.3 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="nixpkgs: f81bfe45; Jun 9 8:32 PM EDT
+failure(s): python37Packages.aplpy, python37Packages.asdf, python37Packages.dask, python37Packages.reproject, python37Packages.spectral-cube, python37Packages.sunpy, python38Packages.aplpy, python38Packages.asdf, python38Packages.dask, python38Packages.reproject, python38Packages.spectral-cube, python38Packages.sunpy, python39Packages.aplpy, python39Packages.asdf, python39Packages.dask, python39Packages.reproject, python39Packages.spectral-cube, python39Packages.sunpy">
+
+
+<meta property="og:description" content="nixpkgs: f81bfe45; Jun 9 8:32 PM EDT
+failure(s): python37Packages.aplpy, python37Packages.asdf, python37Packages.dask, python37Packages.reproject, python37Packages.spectral-cube, python37Packages.sunpy, python38Packages.aplpy, python38Packages.asdf, python38Packages.dask, python38Packages.reproject, python38Packages.spectral-cube, python38Packages.sunpy, python39Packages.aplpy, python39Packages.asdf, python39Packages.dask, python39Packages.reproject, python39Packages.spectral-cube, python39Packages.sunpy">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nixpkgs f81bfe45">
+<meta name="twitter:title" content="nixpkgs f81bfe45">
+<meta property="og:url" content="https://rmcgibbo.github.io/mydra/post/nixpkgs-f81bfe45/">
+<meta property="twitter:url" content="https://rmcgibbo.github.io/mydra/post/nixpkgs-f81bfe45/">
+<meta property="og:site_name" content="mydra">
+<meta property="og:description" content="nixpkgs: f81bfe45; Jun 9 8:32 PM EDT
+failure(s): python37Packages.aplpy, python37Packages.asdf, python37Packages.dask, python37Packages.reproject, python37Packages.spectral-cube, python37Packages.sunpy, python38Packages.aplpy, python38Packages.asdf, python38Packages.dask, python38Packages.reproject, python38Packages.spectral-cube, python38Packages.sunpy, python39Packages.aplpy, python39Packages.asdf, python39Packages.dask, python39Packages.reproject, python39Packages.spectral-cube, python39Packages.sunpy">
+<meta name="twitter:description" content="nixpkgs: f81bfe45; Jun 9 8:32 PM EDT
+failure(s): python37Packages.aplpy, python37Packages.asdf, python37Packages.dask, python37Packages.reproject, python37Packages.spectral-cube, python37Packages.sunpy, python38Packages.aplpy, python38Packages.asdf, python38Packages.dask, python38Packages.reproject, python38Packages.spectral-cube, python38Packages.sunpy, python39Packages.aplpy, python39Packages.asdf, python39Packages.dask, python39Packages.reproject, python39Packages.spectral-cube, python39Packages.sunpy">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2021-06-10T00:32:10">
+  
+  
+    <meta property="article:modified_time" content="2021-06-10T00:32:10">
+  
+  
+  
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+
+    <title>nixpkgs f81bfe45</title>
+
+    <link rel="icon" href="https://rmcgibbo.github.io/mydra/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://rmcgibbo.github.io/mydra/post/nixpkgs-f81bfe45/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://rmcgibbo.github.io/mydra/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="3">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://rmcgibbo.github.io/mydra/">mydra</a>
+  </div>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="3">
+  <div class="sidebar-container">
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://rmcgibbo.github.io/mydra/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/rmcgibbo/mydra" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="3"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      nixpkgs f81bfe45
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2021-06-10T00:32:10Z">
+        
+  June 10, 2021
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>nixpkgs: <a href="https://github.com/NixOS/nixpkgs/commit/f81bfe459f85d594609e597119fd59381a367237">f81bfe45</a>; Jun 9 8:32 PM EDT<br>
+failure(s): python37Packages.aplpy, python37Packages.asdf, python37Packages.dask, python37Packages.reproject, python37Packages.spectral-cube, python37Packages.sunpy, python38Packages.aplpy, python38Packages.asdf, python38Packages.dask, python38Packages.reproject, python38Packages.spectral-cube, python38Packages.sunpy, python39Packages.aplpy, python39Packages.asdf, python39Packages.dask, python39Packages.reproject, python39Packages.spectral-cube, python39Packages.sunpy</p>
+<p><a href="https://github.com/rmcgibbo/mydra/runs/2789041410">githib actions log</a><br>
+<a href="https://github.com/rmcgibbo/mydra/blob/280edfca305ec403a4c14b5c0adf5dd345d0f577/mydra.yml">mydra cfg</a><br>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th align="left">attr</th>
+<th align="left">name</th>
+<th align="left">status_link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">python37Packages.astropy</td>
+<td align="left">python3.7-astropy-4.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/n4vp2k6rjqjw8ays19g7d9vys2j7dcj5-python3.7-astropy-4.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.paramz</td>
+<td align="left">python3.9-paramz-0.9.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ymmwlig9j9ak9amjwdrwkddpbychi3ps-python3.9-paramz-0.9.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.drms</td>
+<td align="left">python3.9-drms-0.6.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/nr3pa9p8v2slqmj51c7kyyw80hdk0bzl-python3.9-drms-0.6.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.scikitlearn</td>
+<td align="left">python3.8-scikit-learn-0.24.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/6a69rimp8b0qy93zn8fzsjznp67pmn5j-python3.8-scikit-learn-0.24.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.rdkit</td>
+<td align="left">python3.9-rdkit-2020.09.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/0gdr2vmgq22pqb6f7d1x6qg7gamij468-python3.9-rdkit-2020.09.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.pyerfa</td>
+<td align="left">python3.9-pyerfa-1.7.1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/0p24i81i5dv4nvgyki2pk6vk0zwbf30j-python3.9-pyerfa-1.7.1.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.imageio-ffmpeg</td>
+<td align="left">python3.9-imageio-ffmpeg-0.4.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/apsm34qj9v8l8rh4kllb8cdfrxcg34gm-python3.9-imageio-ffmpeg-0.4.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">elfx86exts</td>
+<td align="left">elfx86exts-0.4.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/48b20kj4b14nrymmy83v55ir2w2k0spm-elfx86exts-0.4.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.humanize</td>
+<td align="left">python3.9-humanize-3.3.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/89xc3ygz2hx9g9spfgwf6prarvx7817h-python3.9-humanize-3.3.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.fiona</td>
+<td align="left">python3.8-Fiona-1.8.19</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7fxg3ncy6mikxli6smjn4ag003b1q8dm-python3.8-Fiona-1.8.19.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.pandas</td>
+<td align="left">python3.7-pandas-1.2.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/pxnzv489hk8av5cdch19230b37fm2481-python3.7-pandas-1.2.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.astroquery</td>
+<td align="left">python3.7-astroquery-0.4.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ii4izrff9qddjnwk2rvxzw4s6ff8bi45-python3.7-astroquery-0.4.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.imbalanced-learn</td>
+<td align="left">python3.8-imbalanced-learn-0.8.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/xzz9rhc25l14qlcccqgz0kcx3624565m-python3.8-imbalanced-learn-0.8.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.loguru</td>
+<td align="left">python3.8-loguru-0.5.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/48l5i9vaakc6qn9aga6pnhjhilk8zlxi-python3.8-loguru-0.5.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.aiostream</td>
+<td align="left">python3.7-aiostream-0.4.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/6ha998db1g1qz28mh2a18ll3503b8xib-python3.7-aiostream-0.4.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.fastparquet</td>
+<td align="left">python3.7-fastparquet-0.5.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/16x63lb1b1ldb5m3bw9kxgbqab9x5wa5-python3.7-fastparquet-0.5.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.fastparquet</td>
+<td align="left">python3.8-fastparquet-0.5.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/16nb4azprbrjp2hqdhvmp9fsw4qxnw24-python3.8-fastparquet-0.5.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.pyerfa</td>
+<td align="left">python3.7-pyerfa-1.7.1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/58m1baviybxnqvpx2my1rl09zry7kz2i-python3.7-pyerfa-1.7.1.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.paramz</td>
+<td align="left">python3.7-paramz-0.9.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/lpw46fh02w0fsycvjilkzqirypsvpp9w-python3.7-paramz-0.9.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.scikitlearn</td>
+<td align="left">python3.7-scikit-learn-0.24.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/53qr9z913m3m19whaym3x0p5ppi0j97d-python3.7-scikit-learn-0.24.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.fixtures</td>
+<td align="left">python3.8-fixtures-3.0.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/1cbj2gmyzx6mmyl4x576xjw1xf7vsfrj-python3.8-fixtures-3.0.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.humanize</td>
+<td align="left">python3.7-humanize-3.3.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/yhcyn0vqzh785000nsg9ia3v461b0qjy-python3.7-humanize-3.3.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.datasette</td>
+<td align="left">python3.7-datasette-0.54.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/z94fmjzbmfcz4mxsq0s1gkpcbc145c3r-python3.7-datasette-0.54.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.imbalanced-learn</td>
+<td align="left">python3.9-imbalanced-learn-0.8.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/910yxbqp3kdy42lpz8d5fz4zl2nlg7wv-python3.9-imbalanced-learn-0.8.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.hmmlearn</td>
+<td align="left">python3.9-hmmlearn-0.2.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7h1rscqj0nkxb2mcw27dgz5s74r02yi3-python3.9-hmmlearn-0.2.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.aiostream</td>
+<td align="left">python3.9-aiostream-0.4.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/sk4fvahn2vjjim0rp9d93xy3nxk380ca-python3.9-aiostream-0.4.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.drms</td>
+<td align="left">python3.7-drms-0.6.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/gxfc58bp0skz52ddlcy51sxshsmqxms7-python3.7-drms-0.6.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.pyerfa</td>
+<td align="left">python3.8-pyerfa-1.7.1.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/asgjf9lyhj3hkai8d4skk0fr2vvzy08b-python3.8-pyerfa-1.7.1.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.billiard</td>
+<td align="left">python3.9-billiard-3.6.3.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/icbjf7avkagw7dszc65mf7myixids50k-python3.9-billiard-3.6.3.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.aiomysql</td>
+<td align="left">python3.8-aiomysql-0.0.21</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/p2c1h5ajy6hidq9fgyjp7w8l7mfvvgdr-python3.8-aiomysql-0.0.21.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.pandas</td>
+<td align="left">python3.9-pandas-1.2.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/kh0h175l43xl1n7mppr20inm63k4dx82-python3.9-pandas-1.2.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.numexpr</td>
+<td align="left">python3.9-numexpr-2.7.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/3x8l5zac3nfzdyfp14jm2rj6807pjxm0-python3.9-numexpr-2.7.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.gpy</td>
+<td align="left">python3.7-GPy-1.9.9</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/jjsxs74vmw67d98lqif4w3rgrmhdv540-python3.7-GPy-1.9.9.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.aiomysql</td>
+<td align="left">python3.9-aiomysql-0.0.21</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/1hvqkw58ry9hrf7yfgm8ar3ynzjnv219-python3.9-aiomysql-0.0.21.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.datasette</td>
+<td align="left">python3.9-datasette-0.54.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/8jwgnl8bbg87brys4z98biy0f1jjn8i8-python3.9-datasette-0.54.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.gpy</td>
+<td align="left">python3.9-GPy-1.9.9</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/8lg4vrj4khc3jjlc5rg8q8kb2l82vb86-python3.9-GPy-1.9.9.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.hmmlearn</td>
+<td align="left">python3.8-hmmlearn-0.2.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/8f4fpplfq47dhfx033qh6i7xq8xf7bsc-python3.8-hmmlearn-0.2.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.datasette</td>
+<td align="left">python3.8-datasette-0.54.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/c49yszh31wgimbg8cv3kyca4pn7dbhip-python3.8-datasette-0.54.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.astroquery</td>
+<td align="left">python3.9-astroquery-0.4.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/vfxssg41356la67nhsk9636fzi60wkj0-python3.9-astroquery-0.4.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.billiard</td>
+<td align="left">python3.7-billiard-3.6.3.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/1xvg9dca765vs4b3wka618djhhcbcnkd-python3.7-billiard-3.6.3.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.astropy-extension-helpers</td>
+<td align="left">python3.7-extension-helpers-0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/jii2xna2x566v5kblk5qhbx0g0lnav8c-python3.7-extension-helpers-0.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.loguru</td>
+<td align="left">python3.7-loguru-0.5.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/94rr7lf0mpc7ivbp9s5mh78xhfplg7gv-python3.7-loguru-0.5.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.scikitlearn</td>
+<td align="left">python3.9-scikit-learn-0.24.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7dpqk77psqi3vymzcgns35s8ws8xs0x8-python3.9-scikit-learn-0.24.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.scipy</td>
+<td align="left">python3.8-scipy-1.6.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7q2shilcs32nrq0f9hw5hh82v0xp0i06-python3.8-scipy-1.6.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.rdkit</td>
+<td align="left">python3.7-rdkit-2020.09.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/7zdsqrkfrr9i50zd9ly266f6ji9snw2i-python3.7-rdkit-2020.09.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.imageio-ffmpeg</td>
+<td align="left">python3.8-imageio-ffmpeg-0.4.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/dnc3bn4xy91586mbmmxl5ab0jjani3lv-python3.8-imageio-ffmpeg-0.4.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.astroquery</td>
+<td align="left">python3.8-astroquery-0.4.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/r4iy2d6pxh0myl3c25amxflqxwi8ri1r-python3.8-astroquery-0.4.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.imageio-ffmpeg</td>
+<td align="left">python3.7-imageio-ffmpeg-0.4.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/gqacmmpz8rn0zwz806aihb43s10vhyl4-python3.7-imageio-ffmpeg-0.4.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.gpy</td>
+<td align="left">python3.8-GPy-1.9.9</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/jp14af9987x83c6zvi5bfkabi3243i7k-python3.8-GPy-1.9.9.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.scikit-bio</td>
+<td align="left">python3.8-scikit-bio-0.5.6</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/0smrqj1z0dipmkppc91hk5brripzlv2z-python3.8-scikit-bio-0.5.6.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.scikit-bio</td>
+<td align="left">python3.7-scikit-bio-0.5.6</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/k45aiaybgxl88gmbcllxr47nn2269r94-python3.7-scikit-bio-0.5.6.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.hmmlearn</td>
+<td align="left">python3.7-hmmlearn-0.2.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/jka3ncrywqccl4v1l938fhlcgms7cmgw-python3.7-hmmlearn-0.2.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">maeparser</td>
+<td align="left">maeparser-1.2.4</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/bizg8msnjvxvpj39ws566ybx13khjgn9-maeparser-1.2.4.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.drms</td>
+<td align="left">python3.8-drms-0.6.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ks6cyz6albbjwlg1nzll3srhbymgbnd0-python3.8-drms-0.6.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.macropy</td>
+<td align="left">python3.7-macropy-1.1.0b2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/aig6vsp7s70nvvc1dbly1fksd9r96j02-python3.7-macropy-1.1.0b2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.astropy-extension-helpers</td>
+<td align="left">python3.9-extension-helpers-0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/krydsb7fbyi6yga5d1w6k860w6gig2zh-python3.9-extension-helpers-0.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.imbalanced-learn</td>
+<td align="left">python3.7-imbalanced-learn-0.8.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/h5ldif324r32xjb107f423da5w38v709-python3.7-imbalanced-learn-0.8.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.paramz</td>
+<td align="left">python3.8-paramz-0.9.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/iskwf7s1ymx7h373hhbxqdrwz3cv79mf-python3.8-paramz-0.9.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.aiostream</td>
+<td align="left">python3.8-aiostream-0.4.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/27dn1gwliqi4mm1w29sb0x7y03q3bmg6-python3.8-aiostream-0.4.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.datasets</td>
+<td align="left">python3.7-datasets-1.4.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/6wv2qajm0nqwhr4xpfwzqggimw4sp4k0-python3.7-datasets-1.4.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.datasets</td>
+<td align="left">python3.9-datasets-1.4.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/dpf01l6h8nvlflvdfh2gd11zvkzhcas3-python3.9-datasets-1.4.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.billiard</td>
+<td align="left">python3.8-billiard-3.6.3.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/wqg1rylwcyjnggl9ahjs3cmvx0s400v1-python3.8-billiard-3.6.3.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.numexpr</td>
+<td align="left">python3.7-numexpr-2.7.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/x0kqskjm589ll1n7skazih6h1r252hm0-python3.7-numexpr-2.7.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.numexpr</td>
+<td align="left">python3.8-numexpr-2.7.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/6jm1h0d79s516avvh15rgh1lh1cld43v-python3.8-numexpr-2.7.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.fixtures</td>
+<td align="left">python3.7-fixtures-3.0.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/k0mbq2a9rwvg45x478abwc7rwbazsjnz-python3.7-fixtures-3.0.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.rdkit</td>
+<td align="left">python3.8-rdkit-2020.09.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/nd3k8jspf9crbk17w7zp2vvrrp1mw8p2-python3.8-rdkit-2020.09.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.fixtures</td>
+<td align="left">python3.9-fixtures-3.0.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/b7n6h1apyldcjcz3nh4i3v1xh4hxb3g1-python3.9-fixtures-3.0.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.astropy-extension-helpers</td>
+<td align="left">python3.8-extension-helpers-0.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/f2ic8v6ys2rjmmj0i5nbwmmwc5qhkr9k-python3.8-extension-helpers-0.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">fst</td>
+<td align="left">fst-0.4.5</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/k2k50h9lznsy1xqj4ki7462qvdjcm8q9-fst-0.4.5.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.scipy</td>
+<td align="left">python3.9-scipy-1.6.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/rmdh1l428yf0m2wk9rhmjyplmcbpsxki-python3.9-scipy-1.6.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.astropy</td>
+<td align="left">python3.8-astropy-4.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/m9h51932vcy43z2yq1z9cv6iqhj6cf2j-python3.8-astropy-4.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">inchi</td>
+<td align="left">inchi-1.0.6</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/kq4kdy409021zwkbcg8hc9m2sm95aks7-inchi-1.0.6.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.typing-inspect</td>
+<td align="left">python3.7-typing-inspect-0.6.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/n928mdl02b2hhnvnq2lh7a39n40zdl3a-python3.7-typing-inspect-0.6.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.fiona</td>
+<td align="left">python3.7-Fiona-1.8.19</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/hpzzk5dipad0jfzsxd86a5avxykcbm72-python3.7-Fiona-1.8.19.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.humanize</td>
+<td align="left">python3.8-humanize-3.3.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ps1fyg03bq4yiqc7zsihwxs0h1sbvpjs-python3.8-humanize-3.3.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.scikit-bio</td>
+<td align="left">python3.9-scikit-bio-0.5.6</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/fxm7rx11q0ns4pm2g5q9yw0p3zscrbza-python3.9-scikit-bio-0.5.6.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">coordgenlibs</td>
+<td align="left">coordgenlibs-2.0.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/ncg3q5kx6nag9ig8khhh6crirm4l60n9-coordgenlibs-2.0.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.pandas</td>
+<td align="left">python3.8-pandas-1.2.3</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/a4121yvg463ln70c8dnd4i28vp0l009v-python3.8-pandas-1.2.3.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.typing-inspect</td>
+<td align="left">python3.8-typing-inspect-0.6.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/sd769v8j0bq4a1q7qzshgva5kczbygzh-python3.8-typing-inspect-0.6.0.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.astropy</td>
+<td align="left">python3.9-astropy-4.2</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/3hksjn59n9zi3flq8hhfljqa0z48xw53-python3.9-astropy-4.2.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.datasets</td>
+<td align="left">python3.8-datasets-1.4.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/y35dlxjg1cbj9w31mpfh9wxrjd4l8sw8-python3.8-datasets-1.4.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.aiomysql</td>
+<td align="left">python3.7-aiomysql-0.0.21</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/6czcg8aiq2js0d5s7jljr626yg23dqzi-python3.7-aiomysql-0.0.21.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python39Packages.fiona</td>
+<td align="left">python3.9-Fiona-1.8.19</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/i2kmsamfc9q13h5xa7ifwanhlkj4fk52-python3.9-Fiona-1.8.19.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python37Packages.scipy</td>
+<td align="left">python3.7-scipy-1.6.1</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/k3nk3n4h1v0annvbbkb02jjsb5rwi973-python3.7-scipy-1.6.1.drv">SUCCESS</a></td>
+</tr>
+<tr>
+<td align="left">python38Packages.dask</td>
+<td align="left">python3.8-dask-2021.03.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/5q5yfj0xih8mgzmz2glm35kin6wfh3vv-python3.8-dask-2021.03.0.drv">BUILDER FAILED</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-scikit-image-0.18.1</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-glymur-0.9.3</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-pytest-astropy-header-0.1.2</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-pytest-astropy-0.8.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python38Packages.asdf</td>
+<td align="left">python3.8-asdf-2.7.3</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.8-pyregion-2.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python38Packages.reproject</td>
+<td align="left">python3.8-reproject-0.7.1</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python38Packages.aplpy</td>
+<td align="left">python3.8-aplpy-2.0.3</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python38Packages.sunpy</td>
+<td align="left">python3.8-sunpy-2.1.2</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python38Packages.spectral-cube</td>
+<td align="left">python3.8-spectral-cube-0.5.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python37Packages.dask</td>
+<td align="left">python3.7-dask-2021.03.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/5gyasgnscjd1vxf8v4ayjrfql4plzbwb-python3.7-dask-2021.03.0.drv">BUILDER FAILED</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-scikit-image-0.18.1</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-glymur-0.9.3</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-pytest-astropy-header-0.1.2</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-pytest-astropy-0.8.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python37Packages.asdf</td>
+<td align="left">python3.7-asdf-2.7.3</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.7-pyregion-2.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python37Packages.reproject</td>
+<td align="left">python3.7-reproject-0.7.1</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python37Packages.aplpy</td>
+<td align="left">python3.7-aplpy-2.0.3</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python37Packages.sunpy</td>
+<td align="left">python3.7-sunpy-2.1.2</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python37Packages.spectral-cube</td>
+<td align="left">python3.7-spectral-cube-0.5.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python39Packages.dask</td>
+<td align="left">python3.9-dask-2021.03.0</td>
+<td align="left"><a href="http://mydra-logs.rmcgibbo.org/pm1nj2kdwgyb5fcfvlq0xcbh7k329w2a-python3.9-dask-2021.03.0.drv">BUILDER FAILED</a></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-scikit-image-0.18.1</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-glymur-0.9.3</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-pytest-astropy-header-0.1.2</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-pytest-astropy-0.8.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python39Packages.asdf</td>
+<td align="left">python3.9-asdf-2.7.3</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">python3.9-pyregion-2.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python39Packages.reproject</td>
+<td align="left">python3.9-reproject-0.7.1</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python39Packages.aplpy</td>
+<td align="left">python3.9-aplpy-2.0.3</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python39Packages.sunpy</td>
+<td align="left">python3.9-sunpy-2.1.2</td>
+<td align="left">DEP FAILED</td>
+</tr>
+<tr>
+<td align="left">python39Packages.spectral-cube</td>
+<td align="left">python3.9-spectral-cube-0.5.0</td>
+<td align="left">DEP FAILED</td>
+</tr>
+</tbody>
+</table>
+
+</p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://rmcgibbo.github.io/mydra/post/nixpkgs-cd92f327/" data-tooltip="nixpkgs cd92f327">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2021 <a href="https://github.com/rmcgibbo">Robert T. McGibbon</a>. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="3">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://rmcgibbo.github.io/mydra/post/nixpkgs-cd92f327/" data-tooltip="nixpkgs cd92f327">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="3">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+    <h4 id="about-card-name"></h4>
+    
+    
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://rmcgibbo.github.io/mydra/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://rmcgibbo.github.io/mydra/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+
