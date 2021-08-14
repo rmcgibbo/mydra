@@ -6,10 +6,20 @@
     <description>Recent content on mydra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Aug 2021 11:56:52 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Aug 2021 18:04:27 +0000</lastBuildDate>
     
 	<atom:link href="https://rmcgibbo.github.io/mydra/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>nixpkgs d511a55f</title>
+      <link>https://rmcgibbo.github.io/mydra/post/nixpkgs-d511a55f/</link>
+      <pubDate>Sat, 14 Aug 2021 18:04:27 +0000</pubDate>
+      
+      <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-d511a55f/</guid>
+      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/d511a55fcb6fba8a087cea23ef1a819fee1b723a&#34;&gt;d511a55f&lt;/a&gt;; Aug 14 2:04 PM EDT&lt;br&gt;
+failure(s): python37Packages.aplpy, python37Packages.asdf, python37Packages.dask, python37Packages.datasets, python37Packages.datasette, python37Packages.fastparquet, python37Packages.flower, python37Packages.gpy, python37Packages.hmmlearn, python37Packages.imbalanced-learn, python37Packages.rdkit, python37Packages.reproject, python37Packages.scikit-bio, python37Packages.scikitlearn, python37Packages.spectral-cube, python37Packages.sunpy, python38Packages.aplpy, python38Packages.asdf, python38Packages.reproject, python38Packages.spectral-cube, python38Packages.sunpy, python39Packages.aplpy, python39Packages.asdf, python39Packages.reproject, python39Packages.spectral-cube, python39Packages.sunpy&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>nixpkgs d855d4cc</title>
