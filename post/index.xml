@@ -6,10 +6,20 @@
     <description>Recent content in Posts on mydra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Sep 2021 01:16:15 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Sep 2021 11:19:09 +0000</lastBuildDate>
     
 	<atom:link href="https://rmcgibbo.github.io/mydra/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>nixpkgs 93ba1f2f</title>
+      <link>https://rmcgibbo.github.io/mydra/post/nixpkgs-93ba1f2f/</link>
+      <pubDate>Wed, 01 Sep 2021 11:19:09 +0000</pubDate>
+      
+      <guid>https://rmcgibbo.github.io/mydra/post/nixpkgs-93ba1f2f/</guid>
+      <description>&lt;p&gt;nixpkgs: &lt;a href=&#34;https://github.com/NixOS/nixpkgs/commit/93ba1f2fee84bf286c5ced360c635e7052affc75&#34;&gt;93ba1f2f&lt;/a&gt;; Sep 1 7:19 AM EDT&lt;br&gt;
+failure(s): python37Packages.datasets, python37Packages.datasette, python37Packages.fastparquet, python37Packages.fiona, python37Packages.flower, python37Packages.geopandas, python37Packages.gpy, python37Packages.hmmlearn, python37Packages.imbalanced-learn, python37Packages.rdkit, python37Packages.scikit-bio, python37Packages.scikitlearn, python38Packages.fiona, python38Packages.geopandas, python39Packages.fiona, python39Packages.geopandas&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>nixpkgs d99cb5bd</title>
