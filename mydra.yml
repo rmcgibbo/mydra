@@ -51,3 +51,4 @@ nativePackages:
   - maeparser
   - fst
   - rippled-validator-keys-tool
+  - btop
